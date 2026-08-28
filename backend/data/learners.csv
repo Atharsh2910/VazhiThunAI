@@ -1,0 +1,241 @@
+learner_id,full_name,gender,city,state,college,degree,graduation_year,current_role,experience_level,experience_years_numeric,weekly_study_hours,preferred_learning_format,target_goal,goal_deadline_months,preferred_language,timezone
+LRN0001,Aarav Iyer,M,Bengaluru,Karnataka,IIT Bombay,B.Tech Computer Science,2026,Student,fresher,0,5,video_first,Data Analyst,3,en,Asia/Kolkata
+LRN0002,Diya Kulkarni,F,Hyderabad,Telangana,IIT Madras,B.Tech Electronics,2025,Software Engineer,0-2 years,1,7,hands_on_first,Data Scientist,6,en,Asia/Kolkata
+LRN0003,Aditya Krishnan,M,Chennai,Tamil Nadu,IIT Delhi,B.Tech Mechanical,2023,Data Analyst,2-5 years,3,10,text_first,Machine Learning Engineer,9,en,Asia/Kolkata
+LRN0004,Kavya Pandey,F,Pune,Maharashtra,NIT Trichy,B.Sc Computer Science,2020,QA Engineer,5+ years,6,14,project_first,Full Stack Developer,12,en,Asia/Kolkata
+LRN0005,Arjun Verma,M,Mumbai,Maharashtra,NIT Warangal,B.Sc Statistics,2026,System Administrator,fresher,0,5,video_first,Data Engineer,3,en,Asia/Kolkata
+LRN0006,Priya Mehta,F,Delhi,Delhi,BITS Pilani,BCA,2025,Business Analyst,0-2 years,1,7,hands_on_first,Cloud/DevOps Engineer,6,en,Asia/Kolkata
+LRN0007,Reyansh Menon,M,Gurugram,Haryana,Anna University,MCA,2023,Support Engineer,2-5 years,3,10,text_first,Data Analyst,9,en,Asia/Kolkata
+LRN0008,Saanvi Bansal,F,Noida,Uttar Pradesh,VIT Vellore,M.Tech Computer Science,2020,ERP Consultant,5+ years,6,14,project_first,Data Scientist,12,en,Asia/Kolkata
+LRN0009,Ishaan Malhotra,M,Kolkata,West Bengal,Delhi University,B.Com,2026,Mechanical Engineer,fresher,0,5,video_first,Machine Learning Engineer,3,en,Asia/Kolkata
+LRN0010,Tanvi Rao,F,Ahmedabad,Gujarat,PES University,B.Tech Information Technology,2025,Electronics Engineer,0-2 years,1,7,hands_on_first,Full Stack Developer,6,en,Asia/Kolkata
+LRN0011,Karthik Das,M,Kochi,Kerala,Manipal Institute of Technology,B.Tech Computer Science,2023,Non-IT Professional (Career Switcher),2-5 years,3,10,text_first,Data Engineer,9,en,Asia/Kolkata
+LRN0012,Bhavna Shah,F,Coimbatore,Tamil Nadu,SRM Institute of Science and Technology,B.Tech Electronics,2020,"Fresher (Unemployed, Job Seeking)",5+ years,6,14,project_first,Cloud/DevOps Engineer,12,en,Asia/Kolkata
+LRN0013,Siddharth Singh,M,Bengaluru,Karnataka,IIT Bombay,B.Tech Mechanical,2026,Student,fresher,0,5,video_first,Data Analyst,3,en,Asia/Kolkata
+LRN0014,Gauri Nair,F,Hyderabad,Telangana,IIT Madras,B.Sc Computer Science,2025,Software Engineer,0-2 years,1,7,hands_on_first,Data Scientist,6,en,Asia/Kolkata
+LRN0015,Rahul Chatterjee,M,Chennai,Tamil Nadu,IIT Delhi,B.Sc Statistics,2023,Data Analyst,2-5 years,3,10,text_first,Machine Learning Engineer,9,en,Asia/Kolkata
+LRN0016,Juhi Subramaniam,F,Pune,Maharashtra,NIT Trichy,BCA,2020,QA Engineer,5+ years,6,14,project_first,Full Stack Developer,12,en,Asia/Kolkata
+LRN0017,Manish Yadav,M,Mumbai,Maharashtra,NIT Warangal,MCA,2026,System Administrator,fresher,0,5,video_first,Data Engineer,3,en,Asia/Kolkata
+LRN0018,Neha Gupta,F,Delhi,Delhi,BITS Pilani,M.Tech Computer Science,2025,Business Analyst,0-2 years,1,7,hands_on_first,Cloud/DevOps Engineer,6,en,Asia/Kolkata
+LRN0019,Ganesh Joshi,M,Gurugram,Haryana,Anna University,B.Com,2023,Support Engineer,2-5 years,3,10,text_first,Data Analyst,9,en,Asia/Kolkata
+LRN0020,Radha Pillai,F,Noida,Uttar Pradesh,VIT Vellore,B.Tech Information Technology,2020,ERP Consultant,5+ years,6,14,project_first,Data Scientist,12,en,Asia/Kolkata
+LRN0021,Ajay Mishra,M,Kolkata,West Bengal,Delhi University,B.Tech Computer Science,2026,Mechanical Engineer,fresher,0,5,video_first,Machine Learning Engineer,3,en,Asia/Kolkata
+LRN0022,Swati Sharma,F,Ahmedabad,Gujarat,PES University,B.Tech Electronics,2025,Electronics Engineer,0-2 years,1,7,hands_on_first,Full Stack Developer,6,en,Asia/Kolkata
+LRN0023,Anand Patel,M,Kochi,Kerala,Manipal Institute of Technology,B.Tech Mechanical,2023,Non-IT Professional (Career Switcher),2-5 years,3,10,text_first,Data Engineer,9,en,Asia/Kolkata
+LRN0024,Varsha Bose,F,Coimbatore,Tamil Nadu,SRM Institute of Science and Technology,B.Sc Computer Science,2020,"Fresher (Unemployed, Job Seeking)",5+ years,6,14,project_first,Cloud/DevOps Engineer,12,en,Asia/Kolkata
+LRN0025,Harish Agarwal,M,Bengaluru,Karnataka,IIT Bombay,B.Sc Statistics,2026,Student,fresher,0,5,video_first,Data Analyst,3,en,Asia/Kolkata
+LRN0026,Deepika Kapoor,F,Hyderabad,Telangana,IIT Madras,BCA,2025,Software Engineer,0-2 years,1,7,hands_on_first,Data Scientist,6,en,Asia/Kolkata
+LRN0027,Naveen Reddy,M,Chennai,Tamil Nadu,IIT Delhi,MCA,2023,Data Analyst,2-5 years,3,10,text_first,Machine Learning Engineer,9,en,Asia/Kolkata
+LRN0028,Nandini Banerjee,F,Pune,Maharashtra,NIT Trichy,M.Tech Computer Science,2020,QA Engineer,5+ years,6,14,project_first,Full Stack Developer,12,en,Asia/Kolkata
+LRN0029,Sanjay Desai,M,Mumbai,Maharashtra,NIT Warangal,B.Com,2026,System Administrator,fresher,0,5,video_first,Data Engineer,3,en,Asia/Kolkata
+LRN0030,Sunita Chauhan,F,Delhi,Delhi,BITS Pilani,B.Tech Information Technology,2025,Business Analyst,0-2 years,1,7,hands_on_first,Cloud/DevOps Engineer,6,en,Asia/Kolkata
+LRN0031,Aarav Iyer 2,M,Gurugram,Haryana,Anna University,B.Tech Computer Science,2023,Support Engineer,2-5 years,3,10,text_first,Data Analyst,9,en,Asia/Kolkata
+LRN0032,Diya Kulkarni 2,F,Noida,Uttar Pradesh,VIT Vellore,B.Tech Electronics,2020,ERP Consultant,5+ years,6,14,project_first,Data Scientist,12,en,Asia/Kolkata
+LRN0033,Aditya Krishnan 2,M,Kolkata,West Bengal,Delhi University,B.Tech Mechanical,2026,Mechanical Engineer,fresher,0,5,video_first,Machine Learning Engineer,3,en,Asia/Kolkata
+LRN0034,Kavya Pandey 2,F,Ahmedabad,Gujarat,PES University,B.Sc Computer Science,2025,Electronics Engineer,0-2 years,1,7,hands_on_first,Full Stack Developer,6,en,Asia/Kolkata
+LRN0035,Arjun Verma 2,M,Kochi,Kerala,Manipal Institute of Technology,B.Sc Statistics,2023,Non-IT Professional (Career Switcher),2-5 years,3,10,text_first,Data Engineer,9,en,Asia/Kolkata
+LRN0036,Priya Mehta 2,F,Coimbatore,Tamil Nadu,SRM Institute of Science and Technology,BCA,2020,"Fresher (Unemployed, Job Seeking)",5+ years,6,14,project_first,Cloud/DevOps Engineer,12,en,Asia/Kolkata
+LRN0037,Reyansh Menon 2,M,Bengaluru,Karnataka,IIT Bombay,MCA,2026,Student,fresher,0,5,video_first,Data Analyst,3,en,Asia/Kolkata
+LRN0038,Saanvi Bansal 2,F,Hyderabad,Telangana,IIT Madras,M.Tech Computer Science,2025,Software Engineer,0-2 years,1,7,hands_on_first,Data Scientist,6,en,Asia/Kolkata
+LRN0039,Ishaan Malhotra 2,M,Chennai,Tamil Nadu,IIT Delhi,B.Com,2023,Data Analyst,2-5 years,3,10,text_first,Machine Learning Engineer,9,en,Asia/Kolkata
+LRN0040,Tanvi Rao 2,F,Pune,Maharashtra,NIT Trichy,B.Tech Information Technology,2020,QA Engineer,5+ years,6,14,project_first,Full Stack Developer,12,en,Asia/Kolkata
+LRN0041,Karthik Das 2,M,Mumbai,Maharashtra,NIT Warangal,B.Tech Computer Science,2026,System Administrator,fresher,0,5,video_first,Data Engineer,3,en,Asia/Kolkata
+LRN0042,Bhavna Shah 2,F,Delhi,Delhi,BITS Pilani,B.Tech Electronics,2025,Business Analyst,0-2 years,1,7,hands_on_first,Cloud/DevOps Engineer,6,en,Asia/Kolkata
+LRN0043,Siddharth Singh 2,M,Gurugram,Haryana,Anna University,B.Tech Mechanical,2023,Support Engineer,2-5 years,3,10,text_first,Data Analyst,9,en,Asia/Kolkata
+LRN0044,Gauri Nair 2,F,Noida,Uttar Pradesh,VIT Vellore,B.Sc Computer Science,2020,ERP Consultant,5+ years,6,14,project_first,Data Scientist,12,en,Asia/Kolkata
+LRN0045,Rahul Chatterjee 2,M,Kolkata,West Bengal,Delhi University,B.Sc Statistics,2026,Mechanical Engineer,fresher,0,5,video_first,Machine Learning Engineer,3,en,Asia/Kolkata
+LRN0046,Juhi Subramaniam 2,F,Ahmedabad,Gujarat,PES University,BCA,2025,Electronics Engineer,0-2 years,1,7,hands_on_first,Full Stack Developer,6,en,Asia/Kolkata
+LRN0047,Manish Yadav 2,M,Kochi,Kerala,Manipal Institute of Technology,MCA,2023,Non-IT Professional (Career Switcher),2-5 years,3,10,text_first,Data Engineer,9,en,Asia/Kolkata
+LRN0048,Neha Gupta 2,F,Coimbatore,Tamil Nadu,SRM Institute of Science and Technology,M.Tech Computer Science,2020,"Fresher (Unemployed, Job Seeking)",5+ years,6,14,project_first,Cloud/DevOps Engineer,12,en,Asia/Kolkata
+LRN0049,Ganesh Joshi 2,M,Bengaluru,Karnataka,IIT Bombay,B.Com,2026,Student,fresher,0,5,video_first,Data Analyst,3,en,Asia/Kolkata
+LRN0050,Radha Pillai 2,F,Hyderabad,Telangana,IIT Madras,B.Tech Information Technology,2025,Software Engineer,0-2 years,1,7,hands_on_first,Data Scientist,6,en,Asia/Kolkata
+LRN0051,Ajay Mishra 2,M,Chennai,Tamil Nadu,IIT Delhi,B.Tech Computer Science,2023,Data Analyst,2-5 years,3,10,text_first,Machine Learning Engineer,9,en,Asia/Kolkata
+LRN0052,Swati Sharma 2,F,Pune,Maharashtra,NIT Trichy,B.Tech Electronics,2020,QA Engineer,5+ years,6,14,project_first,Full Stack Developer,12,en,Asia/Kolkata
+LRN0053,Anand Patel 2,M,Mumbai,Maharashtra,NIT Warangal,B.Tech Mechanical,2026,System Administrator,fresher,0,5,video_first,Data Engineer,3,en,Asia/Kolkata
+LRN0054,Varsha Bose 2,F,Delhi,Delhi,BITS Pilani,B.Sc Computer Science,2025,Business Analyst,0-2 years,1,7,hands_on_first,Cloud/DevOps Engineer,6,en,Asia/Kolkata
+LRN0055,Harish Agarwal 2,M,Gurugram,Haryana,Anna University,B.Sc Statistics,2023,Support Engineer,2-5 years,3,10,text_first,Data Analyst,9,en,Asia/Kolkata
+LRN0056,Deepika Kapoor 2,F,Noida,Uttar Pradesh,VIT Vellore,BCA,2020,ERP Consultant,5+ years,6,14,project_first,Data Scientist,12,en,Asia/Kolkata
+LRN0057,Naveen Reddy 2,M,Kolkata,West Bengal,Delhi University,MCA,2026,Mechanical Engineer,fresher,0,5,video_first,Machine Learning Engineer,3,en,Asia/Kolkata
+LRN0058,Nandini Banerjee 2,F,Ahmedabad,Gujarat,PES University,M.Tech Computer Science,2025,Electronics Engineer,0-2 years,1,7,hands_on_first,Full Stack Developer,6,en,Asia/Kolkata
+LRN0059,Sanjay Desai 2,M,Kochi,Kerala,Manipal Institute of Technology,B.Com,2023,Non-IT Professional (Career Switcher),2-5 years,3,10,text_first,Data Engineer,9,en,Asia/Kolkata
+LRN0060,Sunita Chauhan 2,F,Coimbatore,Tamil Nadu,SRM Institute of Science and Technology,B.Tech Information Technology,2020,"Fresher (Unemployed, Job Seeking)",5+ years,6,14,project_first,Cloud/DevOps Engineer,12,en,Asia/Kolkata
+LRN0061,Aarav Iyer 3,M,Bengaluru,Karnataka,IIT Bombay,B.Tech Computer Science,2026,Student,fresher,0,5,video_first,Data Analyst,3,en,Asia/Kolkata
+LRN0062,Diya Kulkarni 3,F,Hyderabad,Telangana,IIT Madras,B.Tech Electronics,2025,Software Engineer,0-2 years,1,7,hands_on_first,Data Scientist,6,en,Asia/Kolkata
+LRN0063,Aditya Krishnan 3,M,Chennai,Tamil Nadu,IIT Delhi,B.Tech Mechanical,2023,Data Analyst,2-5 years,3,10,text_first,Machine Learning Engineer,9,en,Asia/Kolkata
+LRN0064,Kavya Pandey 3,F,Pune,Maharashtra,NIT Trichy,B.Sc Computer Science,2020,QA Engineer,5+ years,6,14,project_first,Full Stack Developer,12,en,Asia/Kolkata
+LRN0065,Arjun Verma 3,M,Mumbai,Maharashtra,NIT Warangal,B.Sc Statistics,2026,System Administrator,fresher,0,5,video_first,Data Engineer,3,en,Asia/Kolkata
+LRN0066,Priya Mehta 3,F,Delhi,Delhi,BITS Pilani,BCA,2025,Business Analyst,0-2 years,1,7,hands_on_first,Cloud/DevOps Engineer,6,en,Asia/Kolkata
+LRN0067,Reyansh Menon 3,M,Gurugram,Haryana,Anna University,MCA,2023,Support Engineer,2-5 years,3,10,text_first,Data Analyst,9,en,Asia/Kolkata
+LRN0068,Saanvi Bansal 3,F,Noida,Uttar Pradesh,VIT Vellore,M.Tech Computer Science,2020,ERP Consultant,5+ years,6,14,project_first,Data Scientist,12,en,Asia/Kolkata
+LRN0069,Ishaan Malhotra 3,M,Kolkata,West Bengal,Delhi University,B.Com,2026,Mechanical Engineer,fresher,0,5,video_first,Machine Learning Engineer,3,en,Asia/Kolkata
+LRN0070,Tanvi Rao 3,F,Ahmedabad,Gujarat,PES University,B.Tech Information Technology,2025,Electronics Engineer,0-2 years,1,7,hands_on_first,Full Stack Developer,6,en,Asia/Kolkata
+LRN0071,Karthik Das 3,M,Kochi,Kerala,Manipal Institute of Technology,B.Tech Computer Science,2023,Non-IT Professional (Career Switcher),2-5 years,3,10,text_first,Data Engineer,9,en,Asia/Kolkata
+LRN0072,Bhavna Shah 3,F,Coimbatore,Tamil Nadu,SRM Institute of Science and Technology,B.Tech Electronics,2020,"Fresher (Unemployed, Job Seeking)",5+ years,6,14,project_first,Cloud/DevOps Engineer,12,en,Asia/Kolkata
+LRN0073,Siddharth Singh 3,M,Bengaluru,Karnataka,IIT Bombay,B.Tech Mechanical,2026,Student,fresher,0,5,video_first,Data Analyst,3,en,Asia/Kolkata
+LRN0074,Gauri Nair 3,F,Hyderabad,Telangana,IIT Madras,B.Sc Computer Science,2025,Software Engineer,0-2 years,1,7,hands_on_first,Data Scientist,6,en,Asia/Kolkata
+LRN0075,Rahul Chatterjee 3,M,Chennai,Tamil Nadu,IIT Delhi,B.Sc Statistics,2023,Data Analyst,2-5 years,3,10,text_first,Machine Learning Engineer,9,en,Asia/Kolkata
+LRN0076,Juhi Subramaniam 3,F,Pune,Maharashtra,NIT Trichy,BCA,2020,QA Engineer,5+ years,6,14,project_first,Full Stack Developer,12,en,Asia/Kolkata
+LRN0077,Manish Yadav 3,M,Mumbai,Maharashtra,NIT Warangal,MCA,2026,System Administrator,fresher,0,5,video_first,Data Engineer,3,en,Asia/Kolkata
+LRN0078,Neha Gupta 3,F,Delhi,Delhi,BITS Pilani,M.Tech Computer Science,2025,Business Analyst,0-2 years,1,7,hands_on_first,Cloud/DevOps Engineer,6,en,Asia/Kolkata
+LRN0079,Ganesh Joshi 3,M,Gurugram,Haryana,Anna University,B.Com,2023,Support Engineer,2-5 years,3,10,text_first,Data Analyst,9,en,Asia/Kolkata
+LRN0080,Radha Pillai 3,F,Noida,Uttar Pradesh,VIT Vellore,B.Tech Information Technology,2020,ERP Consultant,5+ years,6,14,project_first,Data Scientist,12,en,Asia/Kolkata
+LRN0081,Ajay Mishra 3,M,Kolkata,West Bengal,Delhi University,B.Tech Computer Science,2026,Mechanical Engineer,fresher,0,5,video_first,Machine Learning Engineer,3,en,Asia/Kolkata
+LRN0082,Swati Sharma 3,F,Ahmedabad,Gujarat,PES University,B.Tech Electronics,2025,Electronics Engineer,0-2 years,1,7,hands_on_first,Full Stack Developer,6,en,Asia/Kolkata
+LRN0083,Anand Patel 3,M,Kochi,Kerala,Manipal Institute of Technology,B.Tech Mechanical,2023,Non-IT Professional (Career Switcher),2-5 years,3,10,text_first,Data Engineer,9,en,Asia/Kolkata
+LRN0084,Varsha Bose 3,F,Coimbatore,Tamil Nadu,SRM Institute of Science and Technology,B.Sc Computer Science,2020,"Fresher (Unemployed, Job Seeking)",5+ years,6,14,project_first,Cloud/DevOps Engineer,12,en,Asia/Kolkata
+LRN0085,Harish Agarwal 3,M,Bengaluru,Karnataka,IIT Bombay,B.Sc Statistics,2026,Student,fresher,0,5,video_first,Data Analyst,3,en,Asia/Kolkata
+LRN0086,Deepika Kapoor 3,F,Hyderabad,Telangana,IIT Madras,BCA,2025,Software Engineer,0-2 years,1,7,hands_on_first,Data Scientist,6,en,Asia/Kolkata
+LRN0087,Naveen Reddy 3,M,Chennai,Tamil Nadu,IIT Delhi,MCA,2023,Data Analyst,2-5 years,3,10,text_first,Machine Learning Engineer,9,en,Asia/Kolkata
+LRN0088,Nandini Banerjee 3,F,Pune,Maharashtra,NIT Trichy,M.Tech Computer Science,2020,QA Engineer,5+ years,6,14,project_first,Full Stack Developer,12,en,Asia/Kolkata
+LRN0089,Sanjay Desai 3,M,Mumbai,Maharashtra,NIT Warangal,B.Com,2026,System Administrator,fresher,0,5,video_first,Data Engineer,3,en,Asia/Kolkata
+LRN0090,Sunita Chauhan 3,F,Delhi,Delhi,BITS Pilani,B.Tech Information Technology,2025,Business Analyst,0-2 years,1,7,hands_on_first,Cloud/DevOps Engineer,6,en,Asia/Kolkata
+LRN0091,Aarav Iyer 4,M,Gurugram,Haryana,Anna University,B.Tech Computer Science,2023,Support Engineer,2-5 years,3,10,text_first,Data Analyst,9,en,Asia/Kolkata
+LRN0092,Diya Kulkarni 4,F,Noida,Uttar Pradesh,VIT Vellore,B.Tech Electronics,2020,ERP Consultant,5+ years,6,14,project_first,Data Scientist,12,en,Asia/Kolkata
+LRN0093,Aditya Krishnan 4,M,Kolkata,West Bengal,Delhi University,B.Tech Mechanical,2026,Mechanical Engineer,fresher,0,5,video_first,Machine Learning Engineer,3,en,Asia/Kolkata
+LRN0094,Kavya Pandey 4,F,Ahmedabad,Gujarat,PES University,B.Sc Computer Science,2025,Electronics Engineer,0-2 years,1,7,hands_on_first,Full Stack Developer,6,en,Asia/Kolkata
+LRN0095,Arjun Verma 4,M,Kochi,Kerala,Manipal Institute of Technology,B.Sc Statistics,2023,Non-IT Professional (Career Switcher),2-5 years,3,10,text_first,Data Engineer,9,en,Asia/Kolkata
+LRN0096,Priya Mehta 4,F,Coimbatore,Tamil Nadu,SRM Institute of Science and Technology,BCA,2020,"Fresher (Unemployed, Job Seeking)",5+ years,6,14,project_first,Cloud/DevOps Engineer,12,en,Asia/Kolkata
+LRN0097,Reyansh Menon 4,M,Bengaluru,Karnataka,IIT Bombay,MCA,2026,Student,fresher,0,5,video_first,Data Analyst,3,en,Asia/Kolkata
+LRN0098,Saanvi Bansal 4,F,Hyderabad,Telangana,IIT Madras,M.Tech Computer Science,2025,Software Engineer,0-2 years,1,7,hands_on_first,Data Scientist,6,en,Asia/Kolkata
+LRN0099,Ishaan Malhotra 4,M,Chennai,Tamil Nadu,IIT Delhi,B.Com,2023,Data Analyst,2-5 years,3,10,text_first,Machine Learning Engineer,9,en,Asia/Kolkata
+LRN0100,Tanvi Rao 4,F,Pune,Maharashtra,NIT Trichy,B.Tech Information Technology,2020,QA Engineer,5+ years,6,14,project_first,Full Stack Developer,12,en,Asia/Kolkata
+LRN0101,Karthik Das 4,M,Mumbai,Maharashtra,NIT Warangal,B.Tech Computer Science,2026,System Administrator,fresher,0,5,video_first,Data Engineer,3,en,Asia/Kolkata
+LRN0102,Bhavna Shah 4,F,Delhi,Delhi,BITS Pilani,B.Tech Electronics,2025,Business Analyst,0-2 years,1,7,hands_on_first,Cloud/DevOps Engineer,6,en,Asia/Kolkata
+LRN0103,Siddharth Singh 4,M,Gurugram,Haryana,Anna University,B.Tech Mechanical,2023,Support Engineer,2-5 years,3,10,text_first,Data Analyst,9,en,Asia/Kolkata
+LRN0104,Gauri Nair 4,F,Noida,Uttar Pradesh,VIT Vellore,B.Sc Computer Science,2020,ERP Consultant,5+ years,6,14,project_first,Data Scientist,12,en,Asia/Kolkata
+LRN0105,Rahul Chatterjee 4,M,Kolkata,West Bengal,Delhi University,B.Sc Statistics,2026,Mechanical Engineer,fresher,0,5,video_first,Machine Learning Engineer,3,en,Asia/Kolkata
+LRN0106,Juhi Subramaniam 4,F,Ahmedabad,Gujarat,PES University,BCA,2025,Electronics Engineer,0-2 years,1,7,hands_on_first,Full Stack Developer,6,en,Asia/Kolkata
+LRN0107,Manish Yadav 4,M,Kochi,Kerala,Manipal Institute of Technology,MCA,2023,Non-IT Professional (Career Switcher),2-5 years,3,10,text_first,Data Engineer,9,en,Asia/Kolkata
+LRN0108,Neha Gupta 4,F,Coimbatore,Tamil Nadu,SRM Institute of Science and Technology,M.Tech Computer Science,2020,"Fresher (Unemployed, Job Seeking)",5+ years,6,14,project_first,Cloud/DevOps Engineer,12,en,Asia/Kolkata
+LRN0109,Ganesh Joshi 4,M,Bengaluru,Karnataka,IIT Bombay,B.Com,2026,Student,fresher,0,5,video_first,Data Analyst,3,en,Asia/Kolkata
+LRN0110,Radha Pillai 4,F,Hyderabad,Telangana,IIT Madras,B.Tech Information Technology,2025,Software Engineer,0-2 years,1,7,hands_on_first,Data Scientist,6,en,Asia/Kolkata
+LRN0111,Ajay Mishra 4,M,Chennai,Tamil Nadu,IIT Delhi,B.Tech Computer Science,2023,Data Analyst,2-5 years,3,10,text_first,Machine Learning Engineer,9,en,Asia/Kolkata
+LRN0112,Swati Sharma 4,F,Pune,Maharashtra,NIT Trichy,B.Tech Electronics,2020,QA Engineer,5+ years,6,14,project_first,Full Stack Developer,12,en,Asia/Kolkata
+LRN0113,Anand Patel 4,M,Mumbai,Maharashtra,NIT Warangal,B.Tech Mechanical,2026,System Administrator,fresher,0,5,video_first,Data Engineer,3,en,Asia/Kolkata
+LRN0114,Varsha Bose 4,F,Delhi,Delhi,BITS Pilani,B.Sc Computer Science,2025,Business Analyst,0-2 years,1,7,hands_on_first,Cloud/DevOps Engineer,6,en,Asia/Kolkata
+LRN0115,Harish Agarwal 4,M,Gurugram,Haryana,Anna University,B.Sc Statistics,2023,Support Engineer,2-5 years,3,10,text_first,Data Analyst,9,en,Asia/Kolkata
+LRN0116,Deepika Kapoor 4,F,Noida,Uttar Pradesh,VIT Vellore,BCA,2020,ERP Consultant,5+ years,6,14,project_first,Data Scientist,12,en,Asia/Kolkata
+LRN0117,Naveen Reddy 4,M,Kolkata,West Bengal,Delhi University,MCA,2026,Mechanical Engineer,fresher,0,5,video_first,Machine Learning Engineer,3,en,Asia/Kolkata
+LRN0118,Nandini Banerjee 4,F,Ahmedabad,Gujarat,PES University,M.Tech Computer Science,2025,Electronics Engineer,0-2 years,1,7,hands_on_first,Full Stack Developer,6,en,Asia/Kolkata
+LRN0119,Sanjay Desai 4,M,Kochi,Kerala,Manipal Institute of Technology,B.Com,2023,Non-IT Professional (Career Switcher),2-5 years,3,10,text_first,Data Engineer,9,en,Asia/Kolkata
+LRN0120,Sunita Chauhan 4,F,Coimbatore,Tamil Nadu,SRM Institute of Science and Technology,B.Tech Information Technology,2020,"Fresher (Unemployed, Job Seeking)",5+ years,6,14,project_first,Cloud/DevOps Engineer,12,en,Asia/Kolkata
+LRN0121,Aarav Iyer 5,M,Bengaluru,Karnataka,IIT Bombay,B.Tech Computer Science,2026,Student,fresher,0,5,video_first,Data Analyst,3,en,Asia/Kolkata
+LRN0122,Diya Kulkarni 5,F,Hyderabad,Telangana,IIT Madras,B.Tech Electronics,2025,Software Engineer,0-2 years,1,7,hands_on_first,Data Scientist,6,en,Asia/Kolkata
+LRN0123,Aditya Krishnan 5,M,Chennai,Tamil Nadu,IIT Delhi,B.Tech Mechanical,2023,Data Analyst,2-5 years,3,10,text_first,Machine Learning Engineer,9,en,Asia/Kolkata
+LRN0124,Kavya Pandey 5,F,Pune,Maharashtra,NIT Trichy,B.Sc Computer Science,2020,QA Engineer,5+ years,6,14,project_first,Full Stack Developer,12,en,Asia/Kolkata
+LRN0125,Arjun Verma 5,M,Mumbai,Maharashtra,NIT Warangal,B.Sc Statistics,2026,System Administrator,fresher,0,5,video_first,Data Engineer,3,en,Asia/Kolkata
+LRN0126,Priya Mehta 5,F,Delhi,Delhi,BITS Pilani,BCA,2025,Business Analyst,0-2 years,1,7,hands_on_first,Cloud/DevOps Engineer,6,en,Asia/Kolkata
+LRN0127,Reyansh Menon 5,M,Gurugram,Haryana,Anna University,MCA,2023,Support Engineer,2-5 years,3,10,text_first,Data Analyst,9,en,Asia/Kolkata
+LRN0128,Saanvi Bansal 5,F,Noida,Uttar Pradesh,VIT Vellore,M.Tech Computer Science,2020,ERP Consultant,5+ years,6,14,project_first,Data Scientist,12,en,Asia/Kolkata
+LRN0129,Ishaan Malhotra 5,M,Kolkata,West Bengal,Delhi University,B.Com,2026,Mechanical Engineer,fresher,0,5,video_first,Machine Learning Engineer,3,en,Asia/Kolkata
+LRN0130,Tanvi Rao 5,F,Ahmedabad,Gujarat,PES University,B.Tech Information Technology,2025,Electronics Engineer,0-2 years,1,7,hands_on_first,Full Stack Developer,6,en,Asia/Kolkata
+LRN0131,Karthik Das 5,M,Kochi,Kerala,Manipal Institute of Technology,B.Tech Computer Science,2023,Non-IT Professional (Career Switcher),2-5 years,3,10,text_first,Data Engineer,9,en,Asia/Kolkata
+LRN0132,Bhavna Shah 5,F,Coimbatore,Tamil Nadu,SRM Institute of Science and Technology,B.Tech Electronics,2020,"Fresher (Unemployed, Job Seeking)",5+ years,6,14,project_first,Cloud/DevOps Engineer,12,en,Asia/Kolkata
+LRN0133,Siddharth Singh 5,M,Bengaluru,Karnataka,IIT Bombay,B.Tech Mechanical,2026,Student,fresher,0,5,video_first,Data Analyst,3,en,Asia/Kolkata
+LRN0134,Gauri Nair 5,F,Hyderabad,Telangana,IIT Madras,B.Sc Computer Science,2025,Software Engineer,0-2 years,1,7,hands_on_first,Data Scientist,6,en,Asia/Kolkata
+LRN0135,Rahul Chatterjee 5,M,Chennai,Tamil Nadu,IIT Delhi,B.Sc Statistics,2023,Data Analyst,2-5 years,3,10,text_first,Machine Learning Engineer,9,en,Asia/Kolkata
+LRN0136,Juhi Subramaniam 5,F,Pune,Maharashtra,NIT Trichy,BCA,2020,QA Engineer,5+ years,6,14,project_first,Full Stack Developer,12,en,Asia/Kolkata
+LRN0137,Manish Yadav 5,M,Mumbai,Maharashtra,NIT Warangal,MCA,2026,System Administrator,fresher,0,5,video_first,Data Engineer,3,en,Asia/Kolkata
+LRN0138,Neha Gupta 5,F,Delhi,Delhi,BITS Pilani,M.Tech Computer Science,2025,Business Analyst,0-2 years,1,7,hands_on_first,Cloud/DevOps Engineer,6,en,Asia/Kolkata
+LRN0139,Ganesh Joshi 5,M,Gurugram,Haryana,Anna University,B.Com,2023,Support Engineer,2-5 years,3,10,text_first,Data Analyst,9,en,Asia/Kolkata
+LRN0140,Radha Pillai 5,F,Noida,Uttar Pradesh,VIT Vellore,B.Tech Information Technology,2020,ERP Consultant,5+ years,6,14,project_first,Data Scientist,12,en,Asia/Kolkata
+LRN0141,Ajay Mishra 5,M,Kolkata,West Bengal,Delhi University,B.Tech Computer Science,2026,Mechanical Engineer,fresher,0,5,video_first,Machine Learning Engineer,3,en,Asia/Kolkata
+LRN0142,Swati Sharma 5,F,Ahmedabad,Gujarat,PES University,B.Tech Electronics,2025,Electronics Engineer,0-2 years,1,7,hands_on_first,Full Stack Developer,6,en,Asia/Kolkata
+LRN0143,Anand Patel 5,M,Kochi,Kerala,Manipal Institute of Technology,B.Tech Mechanical,2023,Non-IT Professional (Career Switcher),2-5 years,3,10,text_first,Data Engineer,9,en,Asia/Kolkata
+LRN0144,Varsha Bose 5,F,Coimbatore,Tamil Nadu,SRM Institute of Science and Technology,B.Sc Computer Science,2020,"Fresher (Unemployed, Job Seeking)",5+ years,6,14,project_first,Cloud/DevOps Engineer,12,en,Asia/Kolkata
+LRN0145,Harish Agarwal 5,M,Bengaluru,Karnataka,IIT Bombay,B.Sc Statistics,2026,Student,fresher,0,5,video_first,Data Analyst,3,en,Asia/Kolkata
+LRN0146,Deepika Kapoor 5,F,Hyderabad,Telangana,IIT Madras,BCA,2025,Software Engineer,0-2 years,1,7,hands_on_first,Data Scientist,6,en,Asia/Kolkata
+LRN0147,Naveen Reddy 5,M,Chennai,Tamil Nadu,IIT Delhi,MCA,2023,Data Analyst,2-5 years,3,10,text_first,Machine Learning Engineer,9,en,Asia/Kolkata
+LRN0148,Nandini Banerjee 5,F,Pune,Maharashtra,NIT Trichy,M.Tech Computer Science,2020,QA Engineer,5+ years,6,14,project_first,Full Stack Developer,12,en,Asia/Kolkata
+LRN0149,Sanjay Desai 5,M,Mumbai,Maharashtra,NIT Warangal,B.Com,2026,System Administrator,fresher,0,5,video_first,Data Engineer,3,en,Asia/Kolkata
+LRN0150,Sunita Chauhan 5,F,Delhi,Delhi,BITS Pilani,B.Tech Information Technology,2025,Business Analyst,0-2 years,1,7,hands_on_first,Cloud/DevOps Engineer,6,en,Asia/Kolkata
+LRN0151,Aarav Iyer 6,M,Gurugram,Haryana,Anna University,B.Tech Computer Science,2023,Support Engineer,2-5 years,3,10,text_first,Data Analyst,9,en,Asia/Kolkata
+LRN0152,Diya Kulkarni 6,F,Noida,Uttar Pradesh,VIT Vellore,B.Tech Electronics,2020,ERP Consultant,5+ years,6,14,project_first,Data Scientist,12,en,Asia/Kolkata
+LRN0153,Aditya Krishnan 6,M,Kolkata,West Bengal,Delhi University,B.Tech Mechanical,2026,Mechanical Engineer,fresher,0,5,video_first,Machine Learning Engineer,3,en,Asia/Kolkata
+LRN0154,Kavya Pandey 6,F,Ahmedabad,Gujarat,PES University,B.Sc Computer Science,2025,Electronics Engineer,0-2 years,1,7,hands_on_first,Full Stack Developer,6,en,Asia/Kolkata
+LRN0155,Arjun Verma 6,M,Kochi,Kerala,Manipal Institute of Technology,B.Sc Statistics,2023,Non-IT Professional (Career Switcher),2-5 years,3,10,text_first,Data Engineer,9,en,Asia/Kolkata
+LRN0156,Priya Mehta 6,F,Coimbatore,Tamil Nadu,SRM Institute of Science and Technology,BCA,2020,"Fresher (Unemployed, Job Seeking)",5+ years,6,14,project_first,Cloud/DevOps Engineer,12,en,Asia/Kolkata
+LRN0157,Reyansh Menon 6,M,Bengaluru,Karnataka,IIT Bombay,MCA,2026,Student,fresher,0,5,video_first,Data Analyst,3,en,Asia/Kolkata
+LRN0158,Saanvi Bansal 6,F,Hyderabad,Telangana,IIT Madras,M.Tech Computer Science,2025,Software Engineer,0-2 years,1,7,hands_on_first,Data Scientist,6,en,Asia/Kolkata
+LRN0159,Ishaan Malhotra 6,M,Chennai,Tamil Nadu,IIT Delhi,B.Com,2023,Data Analyst,2-5 years,3,10,text_first,Machine Learning Engineer,9,en,Asia/Kolkata
+LRN0160,Tanvi Rao 6,F,Pune,Maharashtra,NIT Trichy,B.Tech Information Technology,2020,QA Engineer,5+ years,6,14,project_first,Full Stack Developer,12,en,Asia/Kolkata
+LRN0161,Karthik Das 6,M,Mumbai,Maharashtra,NIT Warangal,B.Tech Computer Science,2026,System Administrator,fresher,0,5,video_first,Data Engineer,3,en,Asia/Kolkata
+LRN0162,Bhavna Shah 6,F,Delhi,Delhi,BITS Pilani,B.Tech Electronics,2025,Business Analyst,0-2 years,1,7,hands_on_first,Cloud/DevOps Engineer,6,en,Asia/Kolkata
+LRN0163,Siddharth Singh 6,M,Gurugram,Haryana,Anna University,B.Tech Mechanical,2023,Support Engineer,2-5 years,3,10,text_first,Data Analyst,9,en,Asia/Kolkata
+LRN0164,Gauri Nair 6,F,Noida,Uttar Pradesh,VIT Vellore,B.Sc Computer Science,2020,ERP Consultant,5+ years,6,14,project_first,Data Scientist,12,en,Asia/Kolkata
+LRN0165,Rahul Chatterjee 6,M,Kolkata,West Bengal,Delhi University,B.Sc Statistics,2026,Mechanical Engineer,fresher,0,5,video_first,Machine Learning Engineer,3,en,Asia/Kolkata
+LRN0166,Juhi Subramaniam 6,F,Ahmedabad,Gujarat,PES University,BCA,2025,Electronics Engineer,0-2 years,1,7,hands_on_first,Full Stack Developer,6,en,Asia/Kolkata
+LRN0167,Manish Yadav 6,M,Kochi,Kerala,Manipal Institute of Technology,MCA,2023,Non-IT Professional (Career Switcher),2-5 years,3,10,text_first,Data Engineer,9,en,Asia/Kolkata
+LRN0168,Neha Gupta 6,F,Coimbatore,Tamil Nadu,SRM Institute of Science and Technology,M.Tech Computer Science,2020,"Fresher (Unemployed, Job Seeking)",5+ years,6,14,project_first,Cloud/DevOps Engineer,12,en,Asia/Kolkata
+LRN0169,Ganesh Joshi 6,M,Bengaluru,Karnataka,IIT Bombay,B.Com,2026,Student,fresher,0,5,video_first,Data Analyst,3,en,Asia/Kolkata
+LRN0170,Radha Pillai 6,F,Hyderabad,Telangana,IIT Madras,B.Tech Information Technology,2025,Software Engineer,0-2 years,1,7,hands_on_first,Data Scientist,6,en,Asia/Kolkata
+LRN0171,Ajay Mishra 6,M,Chennai,Tamil Nadu,IIT Delhi,B.Tech Computer Science,2023,Data Analyst,2-5 years,3,10,text_first,Machine Learning Engineer,9,en,Asia/Kolkata
+LRN0172,Swati Sharma 6,F,Pune,Maharashtra,NIT Trichy,B.Tech Electronics,2020,QA Engineer,5+ years,6,14,project_first,Full Stack Developer,12,en,Asia/Kolkata
+LRN0173,Anand Patel 6,M,Mumbai,Maharashtra,NIT Warangal,B.Tech Mechanical,2026,System Administrator,fresher,0,5,video_first,Data Engineer,3,en,Asia/Kolkata
+LRN0174,Varsha Bose 6,F,Delhi,Delhi,BITS Pilani,B.Sc Computer Science,2025,Business Analyst,0-2 years,1,7,hands_on_first,Cloud/DevOps Engineer,6,en,Asia/Kolkata
+LRN0175,Harish Agarwal 6,M,Gurugram,Haryana,Anna University,B.Sc Statistics,2023,Support Engineer,2-5 years,3,10,text_first,Data Analyst,9,en,Asia/Kolkata
+LRN0176,Deepika Kapoor 6,F,Noida,Uttar Pradesh,VIT Vellore,BCA,2020,ERP Consultant,5+ years,6,14,project_first,Data Scientist,12,en,Asia/Kolkata
+LRN0177,Naveen Reddy 6,M,Kolkata,West Bengal,Delhi University,MCA,2026,Mechanical Engineer,fresher,0,5,video_first,Machine Learning Engineer,3,en,Asia/Kolkata
+LRN0178,Nandini Banerjee 6,F,Ahmedabad,Gujarat,PES University,M.Tech Computer Science,2025,Electronics Engineer,0-2 years,1,7,hands_on_first,Full Stack Developer,6,en,Asia/Kolkata
+LRN0179,Sanjay Desai 6,M,Kochi,Kerala,Manipal Institute of Technology,B.Com,2023,Non-IT Professional (Career Switcher),2-5 years,3,10,text_first,Data Engineer,9,en,Asia/Kolkata
+LRN0180,Sunita Chauhan 6,F,Coimbatore,Tamil Nadu,SRM Institute of Science and Technology,B.Tech Information Technology,2020,"Fresher (Unemployed, Job Seeking)",5+ years,6,14,project_first,Cloud/DevOps Engineer,12,en,Asia/Kolkata
+LRN0181,Aarav Iyer 7,M,Bengaluru,Karnataka,IIT Bombay,B.Tech Computer Science,2026,Student,fresher,0,5,video_first,Data Analyst,3,en,Asia/Kolkata
+LRN0182,Diya Kulkarni 7,F,Hyderabad,Telangana,IIT Madras,B.Tech Electronics,2025,Software Engineer,0-2 years,1,7,hands_on_first,Data Scientist,6,en,Asia/Kolkata
+LRN0183,Aditya Krishnan 7,M,Chennai,Tamil Nadu,IIT Delhi,B.Tech Mechanical,2023,Data Analyst,2-5 years,3,10,text_first,Machine Learning Engineer,9,en,Asia/Kolkata
+LRN0184,Kavya Pandey 7,F,Pune,Maharashtra,NIT Trichy,B.Sc Computer Science,2020,QA Engineer,5+ years,6,14,project_first,Full Stack Developer,12,en,Asia/Kolkata
+LRN0185,Arjun Verma 7,M,Mumbai,Maharashtra,NIT Warangal,B.Sc Statistics,2026,System Administrator,fresher,0,5,video_first,Data Engineer,3,en,Asia/Kolkata
+LRN0186,Priya Mehta 7,F,Delhi,Delhi,BITS Pilani,BCA,2025,Business Analyst,0-2 years,1,7,hands_on_first,Cloud/DevOps Engineer,6,en,Asia/Kolkata
+LRN0187,Reyansh Menon 7,M,Gurugram,Haryana,Anna University,MCA,2023,Support Engineer,2-5 years,3,10,text_first,Data Analyst,9,en,Asia/Kolkata
+LRN0188,Saanvi Bansal 7,F,Noida,Uttar Pradesh,VIT Vellore,M.Tech Computer Science,2020,ERP Consultant,5+ years,6,14,project_first,Data Scientist,12,en,Asia/Kolkata
+LRN0189,Ishaan Malhotra 7,M,Kolkata,West Bengal,Delhi University,B.Com,2026,Mechanical Engineer,fresher,0,5,video_first,Machine Learning Engineer,3,en,Asia/Kolkata
+LRN0190,Tanvi Rao 7,F,Ahmedabad,Gujarat,PES University,B.Tech Information Technology,2025,Electronics Engineer,0-2 years,1,7,hands_on_first,Full Stack Developer,6,en,Asia/Kolkata
+LRN0191,Karthik Das 7,M,Kochi,Kerala,Manipal Institute of Technology,B.Tech Computer Science,2023,Non-IT Professional (Career Switcher),2-5 years,3,10,text_first,Data Engineer,9,en,Asia/Kolkata
+LRN0192,Bhavna Shah 7,F,Coimbatore,Tamil Nadu,SRM Institute of Science and Technology,B.Tech Electronics,2020,"Fresher (Unemployed, Job Seeking)",5+ years,6,14,project_first,Cloud/DevOps Engineer,12,en,Asia/Kolkata
+LRN0193,Siddharth Singh 7,M,Bengaluru,Karnataka,IIT Bombay,B.Tech Mechanical,2026,Student,fresher,0,5,video_first,Data Analyst,3,en,Asia/Kolkata
+LRN0194,Gauri Nair 7,F,Hyderabad,Telangana,IIT Madras,B.Sc Computer Science,2025,Software Engineer,0-2 years,1,7,hands_on_first,Data Scientist,6,en,Asia/Kolkata
+LRN0195,Rahul Chatterjee 7,M,Chennai,Tamil Nadu,IIT Delhi,B.Sc Statistics,2023,Data Analyst,2-5 years,3,10,text_first,Machine Learning Engineer,9,en,Asia/Kolkata
+LRN0196,Juhi Subramaniam 7,F,Pune,Maharashtra,NIT Trichy,BCA,2020,QA Engineer,5+ years,6,14,project_first,Full Stack Developer,12,en,Asia/Kolkata
+LRN0197,Manish Yadav 7,M,Mumbai,Maharashtra,NIT Warangal,MCA,2026,System Administrator,fresher,0,5,video_first,Data Engineer,3,en,Asia/Kolkata
+LRN0198,Neha Gupta 7,F,Delhi,Delhi,BITS Pilani,M.Tech Computer Science,2025,Business Analyst,0-2 years,1,7,hands_on_first,Cloud/DevOps Engineer,6,en,Asia/Kolkata
+LRN0199,Ganesh Joshi 7,M,Gurugram,Haryana,Anna University,B.Com,2023,Support Engineer,2-5 years,3,10,text_first,Data Analyst,9,en,Asia/Kolkata
+LRN0200,Radha Pillai 7,F,Noida,Uttar Pradesh,VIT Vellore,B.Tech Information Technology,2020,ERP Consultant,5+ years,6,14,project_first,Data Scientist,12,en,Asia/Kolkata
+LRN0201,Ajay Mishra 7,M,Kolkata,West Bengal,Delhi University,B.Tech Computer Science,2026,Mechanical Engineer,fresher,0,5,video_first,Machine Learning Engineer,3,en,Asia/Kolkata
+LRN0202,Swati Sharma 7,F,Ahmedabad,Gujarat,PES University,B.Tech Electronics,2025,Electronics Engineer,0-2 years,1,7,hands_on_first,Full Stack Developer,6,en,Asia/Kolkata
+LRN0203,Anand Patel 7,M,Kochi,Kerala,Manipal Institute of Technology,B.Tech Mechanical,2023,Non-IT Professional (Career Switcher),2-5 years,3,10,text_first,Data Engineer,9,en,Asia/Kolkata
+LRN0204,Varsha Bose 7,F,Coimbatore,Tamil Nadu,SRM Institute of Science and Technology,B.Sc Computer Science,2020,"Fresher (Unemployed, Job Seeking)",5+ years,6,14,project_first,Cloud/DevOps Engineer,12,en,Asia/Kolkata
+LRN0205,Harish Agarwal 7,M,Bengaluru,Karnataka,IIT Bombay,B.Sc Statistics,2026,Student,fresher,0,5,video_first,Data Analyst,3,en,Asia/Kolkata
+LRN0206,Deepika Kapoor 7,F,Hyderabad,Telangana,IIT Madras,BCA,2025,Software Engineer,0-2 years,1,7,hands_on_first,Data Scientist,6,en,Asia/Kolkata
+LRN0207,Naveen Reddy 7,M,Chennai,Tamil Nadu,IIT Delhi,MCA,2023,Data Analyst,2-5 years,3,10,text_first,Machine Learning Engineer,9,en,Asia/Kolkata
+LRN0208,Nandini Banerjee 7,F,Pune,Maharashtra,NIT Trichy,M.Tech Computer Science,2020,QA Engineer,5+ years,6,14,project_first,Full Stack Developer,12,en,Asia/Kolkata
+LRN0209,Sanjay Desai 7,M,Mumbai,Maharashtra,NIT Warangal,B.Com,2026,System Administrator,fresher,0,5,video_first,Data Engineer,3,en,Asia/Kolkata
+LRN0210,Sunita Chauhan 7,F,Delhi,Delhi,BITS Pilani,B.Tech Information Technology,2025,Business Analyst,0-2 years,1,7,hands_on_first,Cloud/DevOps Engineer,6,en,Asia/Kolkata
+LRN0211,Aarav Iyer 8,M,Gurugram,Haryana,Anna University,B.Tech Computer Science,2023,Support Engineer,2-5 years,3,10,text_first,Data Analyst,9,en,Asia/Kolkata
+LRN0212,Diya Kulkarni 8,F,Noida,Uttar Pradesh,VIT Vellore,B.Tech Electronics,2020,ERP Consultant,5+ years,6,14,project_first,Data Scientist,12,en,Asia/Kolkata
+LRN0213,Aditya Krishnan 8,M,Kolkata,West Bengal,Delhi University,B.Tech Mechanical,2026,Mechanical Engineer,fresher,0,5,video_first,Machine Learning Engineer,3,en,Asia/Kolkata
+LRN0214,Kavya Pandey 8,F,Ahmedabad,Gujarat,PES University,B.Sc Computer Science,2025,Electronics Engineer,0-2 years,1,7,hands_on_first,Full Stack Developer,6,en,Asia/Kolkata
+LRN0215,Arjun Verma 8,M,Kochi,Kerala,Manipal Institute of Technology,B.Sc Statistics,2023,Non-IT Professional (Career Switcher),2-5 years,3,10,text_first,Data Engineer,9,en,Asia/Kolkata
+LRN0216,Priya Mehta 8,F,Coimbatore,Tamil Nadu,SRM Institute of Science and Technology,BCA,2020,"Fresher (Unemployed, Job Seeking)",5+ years,6,14,project_first,Cloud/DevOps Engineer,12,en,Asia/Kolkata
+LRN0217,Reyansh Menon 8,M,Bengaluru,Karnataka,IIT Bombay,MCA,2026,Student,fresher,0,5,video_first,Data Analyst,3,en,Asia/Kolkata
+LRN0218,Saanvi Bansal 8,F,Hyderabad,Telangana,IIT Madras,M.Tech Computer Science,2025,Software Engineer,0-2 years,1,7,hands_on_first,Data Scientist,6,en,Asia/Kolkata
+LRN0219,Ishaan Malhotra 8,M,Chennai,Tamil Nadu,IIT Delhi,B.Com,2023,Data Analyst,2-5 years,3,10,text_first,Machine Learning Engineer,9,en,Asia/Kolkata
+LRN0220,Tanvi Rao 8,F,Pune,Maharashtra,NIT Trichy,B.Tech Information Technology,2020,QA Engineer,5+ years,6,14,project_first,Full Stack Developer,12,en,Asia/Kolkata
+LRN0221,Karthik Das 8,M,Mumbai,Maharashtra,NIT Warangal,B.Tech Computer Science,2026,System Administrator,fresher,0,5,video_first,Data Engineer,3,en,Asia/Kolkata
+LRN0222,Bhavna Shah 8,F,Delhi,Delhi,BITS Pilani,B.Tech Electronics,2025,Business Analyst,0-2 years,1,7,hands_on_first,Cloud/DevOps Engineer,6,en,Asia/Kolkata
+LRN0223,Siddharth Singh 8,M,Gurugram,Haryana,Anna University,B.Tech Mechanical,2023,Support Engineer,2-5 years,3,10,text_first,Data Analyst,9,en,Asia/Kolkata
+LRN0224,Gauri Nair 8,F,Noida,Uttar Pradesh,VIT Vellore,B.Sc Computer Science,2020,ERP Consultant,5+ years,6,14,project_first,Data Scientist,12,en,Asia/Kolkata
+LRN0225,Rahul Chatterjee 8,M,Kolkata,West Bengal,Delhi University,B.Sc Statistics,2026,Mechanical Engineer,fresher,0,5,video_first,Machine Learning Engineer,3,en,Asia/Kolkata
+LRN0226,Juhi Subramaniam 8,F,Ahmedabad,Gujarat,PES University,BCA,2025,Electronics Engineer,0-2 years,1,7,hands_on_first,Full Stack Developer,6,en,Asia/Kolkata
+LRN0227,Manish Yadav 8,M,Kochi,Kerala,Manipal Institute of Technology,MCA,2023,Non-IT Professional (Career Switcher),2-5 years,3,10,text_first,Data Engineer,9,en,Asia/Kolkata
+LRN0228,Neha Gupta 8,F,Coimbatore,Tamil Nadu,SRM Institute of Science and Technology,M.Tech Computer Science,2020,"Fresher (Unemployed, Job Seeking)",5+ years,6,14,project_first,Cloud/DevOps Engineer,12,en,Asia/Kolkata
+LRN0229,Ganesh Joshi 8,M,Bengaluru,Karnataka,IIT Bombay,B.Com,2026,Student,fresher,0,5,video_first,Data Analyst,3,en,Asia/Kolkata
+LRN0230,Radha Pillai 8,F,Hyderabad,Telangana,IIT Madras,B.Tech Information Technology,2025,Software Engineer,0-2 years,1,7,hands_on_first,Data Scientist,6,en,Asia/Kolkata
+LRN0231,Ajay Mishra 8,M,Chennai,Tamil Nadu,IIT Delhi,B.Tech Computer Science,2023,Data Analyst,2-5 years,3,10,text_first,Machine Learning Engineer,9,en,Asia/Kolkata
+LRN0232,Swati Sharma 8,F,Pune,Maharashtra,NIT Trichy,B.Tech Electronics,2020,QA Engineer,5+ years,6,14,project_first,Full Stack Developer,12,en,Asia/Kolkata
+LRN0233,Anand Patel 8,M,Mumbai,Maharashtra,NIT Warangal,B.Tech Mechanical,2026,System Administrator,fresher,0,5,video_first,Data Engineer,3,en,Asia/Kolkata
+LRN0234,Varsha Bose 8,F,Delhi,Delhi,BITS Pilani,B.Sc Computer Science,2025,Business Analyst,0-2 years,1,7,hands_on_first,Cloud/DevOps Engineer,6,en,Asia/Kolkata
+LRN0235,Harish Agarwal 8,M,Gurugram,Haryana,Anna University,B.Sc Statistics,2023,Support Engineer,2-5 years,3,10,text_first,Data Analyst,9,en,Asia/Kolkata
+LRN0236,Deepika Kapoor 8,F,Noida,Uttar Pradesh,VIT Vellore,BCA,2020,ERP Consultant,5+ years,6,14,project_first,Data Scientist,12,en,Asia/Kolkata
+LRN0237,Naveen Reddy 8,M,Kolkata,West Bengal,Delhi University,MCA,2026,Mechanical Engineer,fresher,0,5,video_first,Machine Learning Engineer,3,en,Asia/Kolkata
+LRN0238,Nandini Banerjee 8,F,Ahmedabad,Gujarat,PES University,M.Tech Computer Science,2025,Electronics Engineer,0-2 years,1,7,hands_on_first,Full Stack Developer,6,en,Asia/Kolkata
+LRN0239,Sanjay Desai 8,M,Kochi,Kerala,Manipal Institute of Technology,B.Com,2023,Non-IT Professional (Career Switcher),2-5 years,3,10,text_first,Data Engineer,9,en,Asia/Kolkata
+LRN0240,Sunita Chauhan 8,F,Coimbatore,Tamil Nadu,SRM Institute of Science and Technology,B.Tech Information Technology,2020,"Fresher (Unemployed, Job Seeking)",5+ years,6,14,project_first,Cloud/DevOps Engineer,12,en,Asia/Kolkata

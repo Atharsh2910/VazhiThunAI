@@ -1,0 +1,241 @@
+path_id,learner_id,goal_id,target_role,total_required_items,total_estimated_hours,weekly_hours_committed,projected_weeks_to_complete,deadline_weeks,status,feasible_within_deadline
+PATH0001,LRN0001,GOAL0001,Data Analyst,4,31.5,5,6.3,12,active,True
+PATH0002,LRN0002,GOAL0002,Data Scientist,4,26.0,7,3.7,24,active,True
+PATH0003,LRN0003,GOAL0003,Machine Learning Engineer,4,28.5,10,2.8,36,active,True
+PATH0004,LRN0004,GOAL0004,Full Stack Developer,3,24.5,14,1.8,48,active,True
+PATH0005,LRN0005,GOAL0005,Data Engineer,2,10.5,5,2.1,12,active,True
+PATH0006,LRN0006,GOAL0006,Cloud/DevOps Engineer,4,23.5,7,3.4,24,active,True
+PATH0007,LRN0007,GOAL0007,Data Analyst,3,18.0,10,1.8,36,active,True
+PATH0008,LRN0008,GOAL0008,Data Scientist,4,18.5,14,1.3,48,active,True
+PATH0009,LRN0009,GOAL0009,Machine Learning Engineer,3,30.5,5,6.1,12,active,True
+PATH0010,LRN0010,GOAL0010,Full Stack Developer,3,18.5,7,2.6,24,active,True
+PATH0011,LRN0011,GOAL0011,Data Engineer,3,29.5,10,3.0,36,active,True
+PATH0012,LRN0012,GOAL0012,Cloud/DevOps Engineer,4,26.0,14,1.9,48,active,True
+PATH0013,LRN0013,GOAL0013,Data Analyst,3,20.5,5,4.1,12,active,True
+PATH0014,LRN0014,GOAL0014,Data Scientist,2,8.5,7,1.2,24,active,True
+PATH0015,LRN0015,GOAL0015,Machine Learning Engineer,3,26.5,10,2.6,36,active,True
+PATH0016,LRN0016,GOAL0016,Full Stack Developer,3,15.5,14,1.1,48,active,True
+PATH0017,LRN0017,GOAL0017,Data Engineer,4,32.0,5,6.4,12,active,True
+PATH0018,LRN0018,GOAL0018,Cloud/DevOps Engineer,4,28.5,7,4.1,24,active,True
+PATH0019,LRN0019,GOAL0019,Data Analyst,3,16.5,10,1.6,36,active,True
+PATH0020,LRN0020,GOAL0020,Data Scientist,3,16.5,14,1.2,48,active,True
+PATH0021,LRN0021,GOAL0021,Machine Learning Engineer,4,27.5,5,5.5,12,active,True
+PATH0022,LRN0022,GOAL0022,Full Stack Developer,4,22.0,7,3.1,24,active,True
+PATH0023,LRN0023,GOAL0023,Data Engineer,3,26.5,10,2.6,36,active,True
+PATH0024,LRN0024,GOAL0024,Cloud/DevOps Engineer,2,14.5,14,1.0,48,active,True
+PATH0025,LRN0025,GOAL0025,Data Analyst,3,24.5,5,4.9,12,active,True
+PATH0026,LRN0026,GOAL0026,Data Scientist,3,23.5,7,3.4,24,active,True
+PATH0027,LRN0027,GOAL0027,Machine Learning Engineer,3,22.0,10,2.2,36,active,True
+PATH0028,LRN0028,GOAL0028,Full Stack Developer,3,22.5,14,1.6,48,active,True
+PATH0029,LRN0029,GOAL0029,Data Engineer,3,20.5,5,4.1,12,active,True
+PATH0030,LRN0030,GOAL0030,Cloud/DevOps Engineer,3,16.5,7,2.4,24,active,True
+PATH0031,LRN0031,GOAL0031,Data Analyst,4,31.5,10,3.2,36,active,True
+PATH0032,LRN0032,GOAL0032,Data Scientist,4,26.0,14,1.9,48,active,True
+PATH0033,LRN0033,GOAL0033,Machine Learning Engineer,4,28.5,5,5.7,12,active,True
+PATH0034,LRN0034,GOAL0034,Full Stack Developer,3,24.5,7,3.5,24,active,True
+PATH0035,LRN0035,GOAL0035,Data Engineer,3,18.5,10,1.8,36,active,True
+PATH0036,LRN0036,GOAL0036,Cloud/DevOps Engineer,4,23.5,14,1.7,48,active,True
+PATH0037,LRN0037,GOAL0037,Data Analyst,4,28.0,5,5.6,12,active,True
+PATH0038,LRN0038,GOAL0038,Data Scientist,2,10.5,7,1.5,24,active,True
+PATH0039,LRN0039,GOAL0039,Machine Learning Engineer,3,30.5,10,3.0,36,active,True
+PATH0040,LRN0040,GOAL0040,Full Stack Developer,3,18.5,14,1.3,48,active,True
+PATH0041,LRN0041,GOAL0041,Data Engineer,3,29.5,5,5.9,12,active,True
+PATH0042,LRN0042,GOAL0042,Cloud/DevOps Engineer,3,24.0,7,3.4,24,active,True
+PATH0043,LRN0043,GOAL0043,Data Analyst,4,22.5,10,2.2,36,active,True
+PATH0044,LRN0044,GOAL0044,Data Scientist,2,8.5,14,0.6,48,active,True
+PATH0045,LRN0045,GOAL0045,Machine Learning Engineer,3,26.5,5,5.3,12,active,True
+PATH0046,LRN0046,GOAL0046,Full Stack Developer,4,21.5,7,3.1,24,active,True
+PATH0047,LRN0047,GOAL0047,Data Engineer,3,30.0,10,3.0,36,active,True
+PATH0048,LRN0048,GOAL0048,Cloud/DevOps Engineer,4,28.5,14,2.0,48,active,True
+PATH0049,LRN0049,GOAL0049,Data Analyst,3,16.5,5,3.3,12,active,True
+PATH0050,LRN0050,GOAL0050,Data Scientist,3,16.5,7,2.4,24,active,True
+PATH0051,LRN0051,GOAL0051,Machine Learning Engineer,3,19.5,10,2.0,36,active,True
+PATH0052,LRN0052,GOAL0052,Full Stack Developer,4,22.0,14,1.6,48,active,True
+PATH0053,LRN0053,GOAL0053,Data Engineer,4,36.5,5,7.3,12,active,True
+PATH0054,LRN0054,GOAL0054,Cloud/DevOps Engineer,3,22.5,7,3.2,24,active,True
+PATH0055,LRN0055,GOAL0055,Data Analyst,2,18.5,10,1.8,36,active,True
+PATH0056,LRN0056,GOAL0056,Data Scientist,4,25.5,14,1.8,48,active,True
+PATH0057,LRN0057,GOAL0057,Machine Learning Engineer,4,28.0,5,5.6,12,active,True
+PATH0058,LRN0058,GOAL0058,Full Stack Developer,3,22.5,7,3.2,24,active,True
+PATH0059,LRN0059,GOAL0059,Data Engineer,3,20.5,10,2.0,36,active,True
+PATH0060,LRN0060,GOAL0060,Cloud/DevOps Engineer,3,16.5,14,1.2,48,active,True
+PATH0061,LRN0061,GOAL0061,Data Analyst,3,27.5,5,5.5,12,active,True
+PATH0062,LRN0062,GOAL0062,Data Scientist,4,26.0,7,3.7,24,active,True
+PATH0063,LRN0063,GOAL0063,Machine Learning Engineer,3,26.5,10,2.6,36,active,True
+PATH0064,LRN0064,GOAL0064,Full Stack Developer,2,16.5,14,1.2,48,active,True
+PATH0065,LRN0065,GOAL0065,Data Engineer,3,18.5,5,3.7,12,active,True
+PATH0066,LRN0066,GOAL0066,Cloud/DevOps Engineer,4,23.5,7,3.4,24,active,True
+PATH0067,LRN0067,GOAL0067,Data Analyst,3,18.0,10,1.8,36,active,True
+PATH0068,LRN0068,GOAL0068,Data Scientist,3,14.5,14,1.0,48,active,True
+PATH0069,LRN0069,GOAL0069,Machine Learning Engineer,3,30.5,5,6.1,12,active,True
+PATH0070,LRN0070,GOAL0070,Full Stack Developer,2,12.5,7,1.8,24,active,True
+PATH0071,LRN0071,GOAL0071,Data Engineer,4,33.5,10,3.4,36,active,True
+PATH0072,LRN0072,GOAL0072,Cloud/DevOps Engineer,4,26.0,14,1.9,48,active,True
+PATH0073,LRN0073,GOAL0073,Data Analyst,4,22.5,5,4.5,12,active,True
+PATH0074,LRN0074,GOAL0074,Data Scientist,3,12.5,7,1.8,24,active,True
+PATH0075,LRN0075,GOAL0075,Machine Learning Engineer,3,26.5,10,2.6,36,active,True
+PATH0076,LRN0076,GOAL0076,Full Stack Developer,3,15.5,14,1.1,48,active,True
+PATH0077,LRN0077,GOAL0077,Data Engineer,4,32.0,5,6.4,12,active,True
+PATH0078,LRN0078,GOAL0078,Cloud/DevOps Engineer,3,26.5,7,3.8,24,active,True
+PATH0079,LRN0079,GOAL0079,Data Analyst,2,14.5,10,1.4,36,active,True
+PATH0080,LRN0080,GOAL0080,Data Scientist,3,16.5,14,1.2,48,active,True
+PATH0081,LRN0081,GOAL0081,Machine Learning Engineer,4,27.5,5,5.5,12,active,True
+PATH0082,LRN0082,GOAL0082,Full Stack Developer,4,22.0,7,3.1,24,active,True
+PATH0083,LRN0083,GOAL0083,Data Engineer,4,36.5,10,3.6,36,active,True
+PATH0084,LRN0084,GOAL0084,Cloud/DevOps Engineer,3,22.5,14,1.6,48,active,True
+PATH0085,LRN0085,GOAL0085,Data Analyst,3,24.5,5,4.9,12,active,True
+PATH0086,LRN0086,GOAL0086,Data Scientist,4,25.5,7,3.6,24,active,True
+PATH0087,LRN0087,GOAL0087,Machine Learning Engineer,3,22.0,10,2.2,36,active,True
+PATH0088,LRN0088,GOAL0088,Full Stack Developer,3,20.5,14,1.5,48,active,True
+PATH0089,LRN0089,GOAL0089,Data Engineer,3,20.5,5,4.1,12,active,True
+PATH0090,LRN0090,GOAL0090,Cloud/DevOps Engineer,3,16.5,7,2.4,24,active,True
+PATH0091,LRN0091,GOAL0091,Data Analyst,3,27.5,10,2.8,36,active,True
+PATH0092,LRN0092,GOAL0092,Data Scientist,4,26.0,14,1.9,48,active,True
+PATH0093,LRN0093,GOAL0093,Machine Learning Engineer,3,26.5,5,5.3,12,active,True
+PATH0094,LRN0094,GOAL0094,Full Stack Developer,3,24.5,7,3.5,24,active,True
+PATH0095,LRN0095,GOAL0095,Data Engineer,3,18.5,10,1.8,36,active,True
+PATH0096,LRN0096,GOAL0096,Cloud/DevOps Engineer,4,23.5,14,1.7,48,active,True
+PATH0097,LRN0097,GOAL0097,Data Analyst,4,28.0,5,5.6,12,active,True
+PATH0098,LRN0098,GOAL0098,Data Scientist,4,18.5,7,2.6,24,active,True
+PATH0099,LRN0099,GOAL0099,Machine Learning Engineer,3,30.5,10,3.0,36,active,True
+PATH0100,LRN0100,GOAL0100,Full Stack Developer,2,12.5,14,0.9,48,active,True
+PATH0101,LRN0101,GOAL0101,Data Engineer,4,33.5,5,6.7,12,active,True
+PATH0102,LRN0102,GOAL0102,Cloud/DevOps Engineer,3,24.0,7,3.4,24,active,True
+PATH0103,LRN0103,GOAL0103,Data Analyst,4,22.5,10,2.2,36,active,True
+PATH0104,LRN0104,GOAL0104,Data Scientist,2,8.5,14,0.6,48,active,True
+PATH0105,LRN0105,GOAL0105,Machine Learning Engineer,3,26.5,5,5.3,12,active,True
+PATH0106,LRN0106,GOAL0106,Full Stack Developer,4,21.5,7,3.1,24,active,True
+PATH0107,LRN0107,GOAL0107,Data Engineer,3,30.0,10,3.0,36,active,True
+PATH0108,LRN0108,GOAL0108,Cloud/DevOps Engineer,3,20.5,14,1.5,48,active,True
+PATH0109,LRN0109,GOAL0109,Data Analyst,3,16.5,5,3.3,12,active,True
+PATH0110,LRN0110,GOAL0110,Data Scientist,3,16.5,7,2.4,24,active,True
+PATH0111,LRN0111,GOAL0111,Machine Learning Engineer,4,27.5,10,2.8,36,active,True
+PATH0112,LRN0112,GOAL0112,Full Stack Developer,4,22.0,14,1.6,48,active,True
+PATH0113,LRN0113,GOAL0113,Data Engineer,3,26.5,5,5.3,12,active,True
+PATH0114,LRN0114,GOAL0114,Cloud/DevOps Engineer,3,22.5,7,3.2,24,active,True
+PATH0115,LRN0115,GOAL0115,Data Analyst,3,24.5,10,2.4,36,active,True
+PATH0116,LRN0116,GOAL0116,Data Scientist,4,25.5,14,1.8,48,active,True
+PATH0117,LRN0117,GOAL0117,Machine Learning Engineer,4,28.0,5,5.6,12,active,True
+PATH0118,LRN0118,GOAL0118,Full Stack Developer,4,24.5,7,3.5,24,active,True
+PATH0119,LRN0119,GOAL0119,Data Engineer,3,20.5,10,2.0,36,active,True
+PATH0120,LRN0120,GOAL0120,Cloud/DevOps Engineer,3,16.5,14,1.2,48,active,True
+PATH0121,LRN0121,GOAL0121,Data Analyst,4,31.5,5,6.3,12,active,True
+PATH0122,LRN0122,GOAL0122,Data Scientist,4,26.0,7,3.7,24,active,True
+PATH0123,LRN0123,GOAL0123,Machine Learning Engineer,4,28.5,10,2.8,36,active,True
+PATH0124,LRN0124,GOAL0124,Full Stack Developer,3,24.5,14,1.8,48,active,True
+PATH0125,LRN0125,GOAL0125,Data Engineer,3,18.5,5,3.7,12,active,True
+PATH0126,LRN0126,GOAL0126,Cloud/DevOps Engineer,4,23.5,7,3.4,24,active,True
+PATH0127,LRN0127,GOAL0127,Data Analyst,3,18.0,10,1.8,36,active,True
+PATH0128,LRN0128,GOAL0128,Data Scientist,2,10.5,14,0.8,48,active,True
+PATH0129,LRN0129,GOAL0129,Machine Learning Engineer,3,30.5,5,6.1,12,active,True
+PATH0130,LRN0130,GOAL0130,Full Stack Developer,3,18.5,7,2.6,24,active,True
+PATH0131,LRN0131,GOAL0131,Data Engineer,4,33.5,10,3.4,36,active,True
+PATH0132,LRN0132,GOAL0132,Cloud/DevOps Engineer,4,26.0,14,1.9,48,active,True
+PATH0133,LRN0133,GOAL0133,Data Analyst,3,14.5,5,2.9,12,active,True
+PATH0134,LRN0134,GOAL0134,Data Scientist,3,12.5,7,1.8,24,active,True
+PATH0135,LRN0135,GOAL0135,Machine Learning Engineer,3,26.5,10,2.6,36,active,True
+PATH0136,LRN0136,GOAL0136,Full Stack Developer,4,21.5,14,1.5,48,active,True
+PATH0137,LRN0137,GOAL0137,Data Engineer,4,32.0,5,6.4,12,active,True
+PATH0138,LRN0138,GOAL0138,Cloud/DevOps Engineer,4,28.5,7,4.1,24,active,True
+PATH0139,LRN0139,GOAL0139,Data Analyst,3,16.5,10,1.6,36,active,True
+PATH0140,LRN0140,GOAL0140,Data Scientist,2,14.5,14,1.0,48,active,True
+PATH0141,LRN0141,GOAL0141,Machine Learning Engineer,4,27.5,5,5.5,12,active,True
+PATH0142,LRN0142,GOAL0142,Full Stack Developer,4,22.0,7,3.1,24,active,True
+PATH0143,LRN0143,GOAL0143,Data Engineer,4,36.5,10,3.6,36,active,True
+PATH0144,LRN0144,GOAL0144,Cloud/DevOps Engineer,3,22.5,14,1.6,48,active,True
+PATH0145,LRN0145,GOAL0145,Data Analyst,2,18.5,5,3.7,12,active,True
+PATH0146,LRN0146,GOAL0146,Data Scientist,4,25.5,7,3.6,24,active,True
+PATH0147,LRN0147,GOAL0147,Machine Learning Engineer,4,28.0,10,2.8,36,active,True
+PATH0148,LRN0148,GOAL0148,Full Stack Developer,4,24.5,14,1.8,48,active,True
+PATH0149,LRN0149,GOAL0149,Data Engineer,3,20.5,5,4.1,12,active,True
+PATH0150,LRN0150,GOAL0150,Cloud/DevOps Engineer,3,16.5,7,2.4,24,active,True
+PATH0151,LRN0151,GOAL0151,Data Analyst,4,31.5,10,3.2,36,active,True
+PATH0152,LRN0152,GOAL0152,Data Scientist,3,18.0,14,1.3,48,active,True
+PATH0153,LRN0153,GOAL0153,Machine Learning Engineer,4,28.5,5,5.7,12,active,True
+PATH0154,LRN0154,GOAL0154,Full Stack Developer,2,16.5,7,2.4,24,active,True
+PATH0155,LRN0155,GOAL0155,Data Engineer,3,18.5,10,1.8,36,active,True
+PATH0156,LRN0156,GOAL0156,Cloud/DevOps Engineer,4,23.5,14,1.7,48,active,True
+PATH0157,LRN0157,GOAL0157,Data Analyst,4,28.0,5,5.6,12,active,True
+PATH0158,LRN0158,GOAL0158,Data Scientist,4,18.5,7,2.6,24,active,True
+PATH0159,LRN0159,GOAL0159,Machine Learning Engineer,3,30.5,10,3.0,36,active,True
+PATH0160,LRN0160,GOAL0160,Full Stack Developer,3,18.5,14,1.3,48,active,True
+PATH0161,LRN0161,GOAL0161,Data Engineer,4,33.5,5,6.7,12,active,True
+PATH0162,LRN0162,GOAL0162,Cloud/DevOps Engineer,3,24.0,7,3.4,24,active,True
+PATH0163,LRN0163,GOAL0163,Data Analyst,3,14.5,10,1.4,36,active,True
+PATH0164,LRN0164,GOAL0164,Data Scientist,3,11.0,14,0.8,48,active,True
+PATH0165,LRN0165,GOAL0165,Machine Learning Engineer,2,18.5,5,3.7,12,active,True
+PATH0166,LRN0166,GOAL0166,Full Stack Developer,4,21.5,7,3.1,24,active,True
+PATH0167,LRN0167,GOAL0167,Data Engineer,3,30.0,10,3.0,36,active,True
+PATH0168,LRN0168,GOAL0168,Cloud/DevOps Engineer,3,26.5,14,1.9,48,active,True
+PATH0169,LRN0169,GOAL0169,Data Analyst,3,16.5,5,3.3,12,active,True
+PATH0170,LRN0170,GOAL0170,Data Scientist,3,16.5,7,2.4,24,active,True
+PATH0171,LRN0171,GOAL0171,Machine Learning Engineer,4,27.5,10,2.8,36,active,True
+PATH0172,LRN0172,GOAL0172,Full Stack Developer,4,22.0,14,1.6,48,active,True
+PATH0173,LRN0173,GOAL0173,Data Engineer,4,36.5,5,7.3,12,active,True
+PATH0174,LRN0174,GOAL0174,Cloud/DevOps Engineer,2,14.5,7,2.1,24,active,True
+PATH0175,LRN0175,GOAL0175,Data Analyst,3,24.5,10,2.4,36,active,True
+PATH0176,LRN0176,GOAL0176,Data Scientist,4,25.5,14,1.8,48,active,True
+PATH0177,LRN0177,GOAL0177,Machine Learning Engineer,4,28.0,5,5.6,12,active,True
+PATH0178,LRN0178,GOAL0178,Full Stack Developer,3,20.5,7,2.9,24,active,True
+PATH0179,LRN0179,GOAL0179,Data Engineer,3,20.5,10,2.0,36,active,True
+PATH0180,LRN0180,GOAL0180,Cloud/DevOps Engineer,3,16.5,14,1.2,48,active,True
+PATH0181,LRN0181,GOAL0181,Data Analyst,4,31.5,5,6.3,12,active,True
+PATH0182,LRN0182,GOAL0182,Data Scientist,4,26.0,7,3.7,24,active,True
+PATH0183,LRN0183,GOAL0183,Machine Learning Engineer,4,28.5,10,2.8,36,active,True
+PATH0184,LRN0184,GOAL0184,Full Stack Developer,2,16.5,14,1.2,48,active,True
+PATH0185,LRN0185,GOAL0185,Data Engineer,3,18.5,5,3.7,12,active,True
+PATH0186,LRN0186,GOAL0186,Cloud/DevOps Engineer,4,23.5,7,3.4,24,active,True
+PATH0187,LRN0187,GOAL0187,Data Analyst,4,28.0,10,2.8,36,active,True
+PATH0188,LRN0188,GOAL0188,Data Scientist,3,14.5,14,1.0,48,active,True
+PATH0189,LRN0189,GOAL0189,Machine Learning Engineer,3,30.5,5,6.1,12,active,True
+PATH0190,LRN0190,GOAL0190,Full Stack Developer,3,18.5,7,2.6,24,active,True
+PATH0191,LRN0191,GOAL0191,Data Engineer,3,29.5,10,3.0,36,active,True
+PATH0192,LRN0192,GOAL0192,Cloud/DevOps Engineer,4,26.0,14,1.9,48,active,True
+PATH0193,LRN0193,GOAL0193,Data Analyst,3,14.5,5,2.9,12,active,True
+PATH0194,LRN0194,GOAL0194,Data Scientist,2,8.5,7,1.2,24,active,True
+PATH0195,LRN0195,GOAL0195,Machine Learning Engineer,3,26.5,10,2.6,36,active,True
+PATH0196,LRN0196,GOAL0196,Full Stack Developer,4,21.5,14,1.5,48,active,True
+PATH0197,LRN0197,GOAL0197,Data Engineer,4,32.0,5,6.4,12,active,True
+PATH0198,LRN0198,GOAL0198,Cloud/DevOps Engineer,4,28.5,7,4.1,24,active,True
+PATH0199,LRN0199,GOAL0199,Data Analyst,3,16.5,10,1.6,36,active,True
+PATH0200,LRN0200,GOAL0200,Data Scientist,3,16.5,14,1.2,48,active,True
+PATH0201,LRN0201,GOAL0201,Machine Learning Engineer,4,27.5,5,5.5,12,active,True
+PATH0202,LRN0202,GOAL0202,Full Stack Developer,4,22.0,7,3.1,24,active,True
+PATH0203,LRN0203,GOAL0203,Data Engineer,4,36.5,10,3.6,36,active,True
+PATH0204,LRN0204,GOAL0204,Cloud/DevOps Engineer,3,22.5,14,1.6,48,active,True
+PATH0205,LRN0205,GOAL0205,Data Analyst,3,24.5,5,4.9,12,active,True
+PATH0206,LRN0206,GOAL0206,Data Scientist,4,25.5,7,3.6,24,active,True
+PATH0207,LRN0207,GOAL0207,Machine Learning Engineer,4,28.0,10,2.8,36,active,True
+PATH0208,LRN0208,GOAL0208,Full Stack Developer,3,22.5,14,1.6,48,active,True
+PATH0209,LRN0209,GOAL0209,Data Engineer,2,16.5,5,3.3,12,active,True
+PATH0210,LRN0210,GOAL0210,Cloud/DevOps Engineer,3,16.5,7,2.4,24,active,True
+PATH0211,LRN0211,GOAL0211,Data Analyst,4,31.5,10,3.2,36,active,True
+PATH0212,LRN0212,GOAL0212,Data Scientist,3,18.0,14,1.3,48,active,True
+PATH0213,LRN0213,GOAL0213,Machine Learning Engineer,3,24.5,5,4.9,12,active,True
+PATH0214,LRN0214,GOAL0214,Full Stack Developer,3,24.5,7,3.5,24,active,True
+PATH0215,LRN0215,GOAL0215,Data Engineer,2,10.5,10,1.0,36,active,True
+PATH0216,LRN0216,GOAL0216,Cloud/DevOps Engineer,4,23.5,14,1.7,48,active,True
+PATH0217,LRN0217,GOAL0217,Data Analyst,3,18.0,5,3.6,12,active,True
+PATH0218,LRN0218,GOAL0218,Data Scientist,4,18.5,7,2.6,24,active,True
+PATH0219,LRN0219,GOAL0219,Machine Learning Engineer,2,20.5,10,2.0,36,active,True
+PATH0220,LRN0220,GOAL0220,Full Stack Developer,3,18.5,14,1.3,48,active,True
+PATH0221,LRN0221,GOAL0221,Data Engineer,4,33.5,5,6.7,12,active,True
+PATH0222,LRN0222,GOAL0222,Cloud/DevOps Engineer,3,24.0,7,3.4,24,active,True
+PATH0223,LRN0223,GOAL0223,Data Analyst,2,12.5,10,1.2,36,active,True
+PATH0224,LRN0224,GOAL0224,Data Scientist,2,8.5,14,0.6,48,active,True
+PATH0225,LRN0225,GOAL0225,Machine Learning Engineer,3,26.5,5,5.3,12,active,True
+PATH0226,LRN0226,GOAL0226,Full Stack Developer,4,21.5,7,3.1,24,active,True
+PATH0227,LRN0227,GOAL0227,Data Engineer,4,32.0,10,3.2,36,active,True
+PATH0228,LRN0228,GOAL0228,Cloud/DevOps Engineer,4,28.5,14,2.0,48,active,True
+PATH0229,LRN0229,GOAL0229,Data Analyst,3,16.5,5,3.3,12,active,True
+PATH0230,LRN0230,GOAL0230,Data Scientist,3,16.5,7,2.4,24,active,True
+PATH0231,LRN0231,GOAL0231,Machine Learning Engineer,4,27.5,10,2.8,36,active,True
+PATH0232,LRN0232,GOAL0232,Full Stack Developer,4,22.0,14,1.6,48,active,True
+PATH0233,LRN0233,GOAL0233,Data Engineer,3,26.5,5,5.3,12,active,True
+PATH0234,LRN0234,GOAL0234,Cloud/DevOps Engineer,2,14.5,7,2.1,24,active,True
+PATH0235,LRN0235,GOAL0235,Data Analyst,3,24.5,10,2.4,36,active,True
+PATH0236,LRN0236,GOAL0236,Data Scientist,3,23.5,14,1.7,48,active,True
+PATH0237,LRN0237,GOAL0237,Machine Learning Engineer,4,28.0,5,5.6,12,active,True
+PATH0238,LRN0238,GOAL0238,Full Stack Developer,3,20.5,7,2.9,24,active,True
+PATH0239,LRN0239,GOAL0239,Data Engineer,3,20.5,10,2.0,36,active,True
+PATH0240,LRN0240,GOAL0240,Cloud/DevOps Engineer,3,16.5,14,1.2,48,active,True

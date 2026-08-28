@@ -1,0 +1,62 @@
+prerequisite_edge_id,skill_id,skill_name,prerequisite_skill_id,prerequisite_skill_name,relationship_strength
+PR001,SK003,Python Data Structures,SK001,Python Basics,0.89
+PR002,SK005,OOP in Python,SK003,Python Data Structures,0.71
+PR003,SK007,Data Structures & Algorithms,SK005,OOP in Python,0.78
+PR004,SK008,Problem Solving (DSA Practice),SK007,Data Structures & Algorithms,0.77
+PR005,SK009,Competitive Programming,SK008,Problem Solving (DSA Practice),0.92
+PR006,SK010,System Design Basics,SK007,Data Structures & Algorithms,0.9
+PR007,SK004,Java Basics,SK001,Python Basics,0.97
+PR008,SK006,C++ Basics,SK001,Python Basics,0.73
+PR009,SK002,Git & Version Control,SK001,Python Basics,0.83
+PR010,SK015,Probability Fundamentals,SK011,Descriptive Statistics,0.71
+PR011,SK017,Inferential Statistics,SK015,Probability Fundamentals,0.77
+PR012,SK020,Calculus for ML,SK014,Linear Algebra,0.85
+PR013,SK019,Advanced SQL,SK012,SQL Basics,0.71
+PR014,SK016,Data Visualization,SK013,Excel for Data Analysis,0.76
+PR015,SK018,Exploratory Data Analysis,SK016,Data Visualization,0.89
+PR016,SK018,Exploratory Data Analysis,SK011,Descriptive Statistics,0.86
+PR017,SK021,ML Foundations,SK017,Inferential Statistics,0.77
+PR018,SK021,ML Foundations,SK003,Python Data Structures,0.88
+PR019,SK022,Regression Techniques,SK021,ML Foundations,0.94
+PR020,SK023,Classification Techniques,SK022,Regression Techniques,0.7
+PR021,SK024,Model Evaluation,SK023,Classification Techniques,0.94
+PR022,SK025,Feature Engineering,SK024,Model Evaluation,0.91
+PR023,SK026,Ensemble Methods,SK025,Feature Engineering,0.8
+PR024,SK027,Neural Networks,SK014,Linear Algebra,0.75
+PR025,SK027,Neural Networks,SK020,Calculus for ML,0.99
+PR026,SK027,Neural Networks,SK021,ML Foundations,0.8
+PR027,SK028,Deep Learning,SK027,Neural Networks,0.73
+PR028,SK029,Computer Vision,SK028,Deep Learning,0.73
+PR029,SK030,Natural Language Processing,SK028,Deep Learning,0.95
+PR030,SK032,JavaScript Basics,SK031,HTML & CSS,0.88
+PR031,SK035,React Fundamentals,SK032,JavaScript Basics,0.94
+PR032,SK036,Node.js Basics,SK032,JavaScript Basics,0.92
+PR033,SK037,REST API Design,SK036,Node.js Basics,0.86
+PR034,SK034,Database Design (RDBMS),SK012,SQL Basics,0.99
+PR035,SK033,Responsive UI Design,SK031,HTML & CSS,0.81
+PR036,SK038,Authentication & Security Basics,SK037,REST API Design,0.87
+PR037,SK039,Testing Fundamentals,SK037,REST API Design,0.95
+PR038,SK040,Full Stack Project Architecture,SK037,REST API Design,0.89
+PR039,SK040,Full Stack Project Architecture,SK035,React Fundamentals,0.96
+PR040,SK042,Cloud Computing Basics,SK041,Linux Fundamentals,0.87
+PR041,SK044,AWS Core Services,SK042,Cloud Computing Basics,0.91
+PR042,SK045,Docker Fundamentals,SK041,Linux Fundamentals,0.71
+PR043,SK047,Kubernetes Basics,SK045,Docker Fundamentals,0.77
+PR044,SK048,CI/CD Pipelines,SK045,Docker Fundamentals,0.79
+PR045,SK049,Infrastructure as Code,SK044,AWS Core Services,0.72
+PR046,SK046,Monitoring & Logging,SK042,Cloud Computing Basics,0.77
+PR047,SK050,Model Deployment,SK045,Docker Fundamentals,0.73
+PR048,SK050,Model Deployment,SK021,ML Foundations,0.78
+PR049,SK043,Cloud Security Basics,SK042,Cloud Computing Basics,0.89
+PR050,SK051,Data Modeling,SK034,Database Design (RDBMS),0.81
+PR051,SK053,ETL Fundamentals,SK051,Data Modeling,0.81
+PR052,SK053,ETL Fundamentals,SK019,Advanced SQL,0.76
+PR053,SK057,Apache Spark Basics,SK053,ETL Fundamentals,0.78
+PR054,SK054,Data Warehousing,SK051,Data Modeling,0.98
+PR055,SK055,Big Data Fundamentals,SK053,ETL Fundamentals,0.89
+PR056,SK056,Airflow Orchestration,SK053,ETL Fundamentals,0.88
+PR057,SK059,Streaming Data (Kafka Basics),SK055,Big Data Fundamentals,0.75
+PR058,SK052,NoSQL Databases,SK034,Database Design (RDBMS),0.92
+PR059,SK058,Data Quality & Governance,SK054,Data Warehousing,0.75
+PR060,SK060,Data Pipeline Design,SK057,Apache Spark Basics,0.81
+PR061,SK060,Data Pipeline Design,SK056,Airflow Orchestration,1.0

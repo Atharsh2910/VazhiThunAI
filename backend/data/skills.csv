@@ -1,0 +1,61 @@
+skill_id,skill_name,domain,difficulty_tier,difficulty_score,decay_rate
+SK001,Python Basics,Programming Foundations,1,0.15,0.015
+SK002,Git & Version Control,Programming Foundations,1,0.15,0.015
+SK003,Python Data Structures,Programming Foundations,2,0.35,0.02
+SK004,Java Basics,Programming Foundations,2,0.35,0.02
+SK005,OOP in Python,Programming Foundations,3,0.55,0.025
+SK006,C++ Basics,Programming Foundations,3,0.55,0.025
+SK007,Data Structures & Algorithms,Programming Foundations,4,0.75,0.03
+SK008,Problem Solving (DSA Practice),Programming Foundations,4,0.75,0.03
+SK009,Competitive Programming,Programming Foundations,5,0.95,0.035
+SK010,System Design Basics,Programming Foundations,5,0.95,0.035
+SK011,Descriptive Statistics,Data & Statistics,1,0.15,0.015
+SK012,SQL Basics,Data & Statistics,1,0.15,0.015
+SK013,Excel for Data Analysis,Data & Statistics,2,0.35,0.02
+SK014,Linear Algebra,Data & Statistics,2,0.35,0.02
+SK015,Probability Fundamentals,Data & Statistics,3,0.55,0.025
+SK016,Data Visualization,Data & Statistics,3,0.55,0.025
+SK017,Inferential Statistics,Data & Statistics,4,0.75,0.03
+SK018,Exploratory Data Analysis,Data & Statistics,4,0.75,0.03
+SK019,Advanced SQL,Data & Statistics,5,0.95,0.035
+SK020,Calculus for ML,Data & Statistics,5,0.95,0.035
+SK021,ML Foundations,Machine Learning,1,0.15,0.015
+SK022,Regression Techniques,Machine Learning,1,0.15,0.015
+SK023,Classification Techniques,Machine Learning,2,0.35,0.02
+SK024,Model Evaluation,Machine Learning,2,0.35,0.02
+SK025,Feature Engineering,Machine Learning,3,0.55,0.025
+SK026,Ensemble Methods,Machine Learning,3,0.55,0.025
+SK027,Neural Networks,Machine Learning,4,0.75,0.03
+SK028,Deep Learning,Machine Learning,4,0.75,0.03
+SK029,Computer Vision,Machine Learning,5,0.95,0.035
+SK030,Natural Language Processing,Machine Learning,5,0.95,0.035
+SK031,HTML & CSS,Web Development,1,0.15,0.015
+SK032,JavaScript Basics,Web Development,1,0.15,0.015
+SK033,Responsive UI Design,Web Development,2,0.35,0.02
+SK034,Database Design (RDBMS),Web Development,2,0.35,0.02
+SK035,React Fundamentals,Web Development,3,0.55,0.025
+SK036,Node.js Basics,Web Development,3,0.55,0.025
+SK037,REST API Design,Web Development,4,0.75,0.03
+SK038,Authentication & Security Basics,Web Development,4,0.75,0.03
+SK039,Testing Fundamentals,Web Development,5,0.95,0.035
+SK040,Full Stack Project Architecture,Web Development,5,0.95,0.035
+SK041,Linux Fundamentals,Cloud & DevOps,1,0.15,0.015
+SK042,Cloud Computing Basics,Cloud & DevOps,1,0.15,0.015
+SK043,Cloud Security Basics,Cloud & DevOps,2,0.35,0.02
+SK044,AWS Core Services,Cloud & DevOps,2,0.35,0.02
+SK045,Docker Fundamentals,Cloud & DevOps,3,0.55,0.025
+SK046,Monitoring & Logging,Cloud & DevOps,3,0.55,0.025
+SK047,Kubernetes Basics,Cloud & DevOps,4,0.75,0.03
+SK048,CI/CD Pipelines,Cloud & DevOps,4,0.75,0.03
+SK049,Infrastructure as Code,Cloud & DevOps,5,0.95,0.035
+SK050,Model Deployment,Cloud & DevOps,5,0.95,0.035
+SK051,Data Modeling,Data Engineering,1,0.15,0.015
+SK052,NoSQL Databases,Data Engineering,1,0.15,0.015
+SK053,ETL Fundamentals,Data Engineering,2,0.35,0.02
+SK054,Data Warehousing,Data Engineering,2,0.35,0.02
+SK055,Big Data Fundamentals,Data Engineering,3,0.55,0.025
+SK056,Airflow Orchestration,Data Engineering,3,0.55,0.025
+SK057,Apache Spark Basics,Data Engineering,4,0.75,0.03
+SK058,Data Quality & Governance,Data Engineering,4,0.75,0.03
+SK059,Streaming Data (Kafka Basics),Data Engineering,5,0.95,0.035
+SK060,Data Pipeline Design,Data Engineering,5,0.95,0.035

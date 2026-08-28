@@ -1,0 +1,651 @@
+message_id,message_text,intent_label
+MSG0001,Can you explain the concept of a p-value simply?,ASK_CONCEPT_EXPLANATION
+MSG0002,I want an entirely new roadmap considering everything I've learned so far.,REQUEST_REPLAN
+MSG0003,Please build me a roadmap to become an ML engineer.,CREATE_GOAL
+MSG0004,I am a fresher and I want to become job ready for a software engineer role.,CREATE_GOAL
+MSG0005,What would my timeline look like with twelve hours a week instead of seven?,WHAT_IF_SIMULATION
+MSG0006,Can you suggest a project I can complete in two weekends?,REQUEST_PROJECT
+MSG0007,I need something easier before I attempt this project.,REQUEST_EASIER
+MSG0008,Can you suggest a full stack project I can build this month?,REQUEST_PROJECT
+MSG0009,What does backpropagation mean in neural networks?,ASK_CONCEPT_EXPLANATION
+MSG0010,This was a great hands-on experience with Kubernetes.,GIVE_FEEDBACK
+MSG0011,This course on Docker was clear and easy to follow.,GIVE_FEEDBACK
+MSG0012,What is the difference between a milestone and a phase in my roadmap?,GENERAL_QUESTION
+MSG0013,What if I want to combine full stack development with cloud skills?,WHAT_IF_SIMULATION
+MSG0014,Can we update my goal now that I have cleared the SQL basics assessment?,MODIFY_GOAL
+MSG0015,I want to add cloud skills to my existing data engineer goal.,MODIFY_GOAL
+MSG0016,"My deadline needs to change, I now have a job so I have less time.",MODIFY_GOAL
+MSG0017,Can we reduce the number of resources to save time?,REQUEST_FASTER
+MSG0018,This resource gave me confidence before my interview.,GIVE_FEEDBACK
+MSG0019,I want a new plan generated using my updated mastery scores.,REQUEST_REPLAN
+MSG0020,"Please rebuild my roadmap, I feel it does not match my pace.",REQUEST_REPLAN
+MSG0021,Can you explain the bias-variance tradeoff simply?,ASK_CONCEPT_EXPLANATION
+MSG0022,I want a project to apply my machine learning knowledge.,REQUEST_PROJECT
+MSG0023,Can we regenerate my learning plan based on my new scores?,REQUEST_REPLAN
+MSG0024,Please modify my goal to add a portfolio-first approach.,MODIFY_GOAL
+MSG0025,How is my next milestone decided by the system?,GENERAL_QUESTION
+MSG0026,I want to learn cloud computing and become an AWS certified engineer.,CREATE_GOAL
+MSG0027,"I need to finish this in half the time, please optimize.",REQUEST_FASTER
+MSG0028,"I want to change my time budget, I now have twelve hours a week.",MODIFY_GOAL
+MSG0029,Can you recommend a good restaurant in Delhi?,OUT_OF_SCOPE
+MSG0030,Why do you recommend this practice set instead of a full course?,ASK_WHY_RECOMMENDATION
+MSG0031,Why is this project suggested before I learn machine learning basics?,ASK_WHY_RECOMMENDATION
+MSG0032,"I already understand data visualization, can this be skipped?",REQUEST_SKIP
+MSG0033,Please make my plan more aggressive so I finish sooner.,REQUEST_FASTER
+MSG0034,Can you suggest a project idea combining Excel and Power BI style analysis?,REQUEST_PROJECT
+MSG0035,"This course exceeded my expectations, very well structured.",GIVE_FEEDBACK
+MSG0036,"I want a completely new plan, the current one is not suitable.",REQUEST_REPLAN
+MSG0037,I want to switch from QA testing to data analytics.,CREATE_GOAL
+MSG0038,Can I mark this resource as already known and move ahead?,REQUEST_SKIP
+MSG0039,Can we change my target role from data analyst to data scientist?,MODIFY_GOAL
+MSG0040,"Can we start a new goal, I want to become a DevOps engineer?",CREATE_GOAL
+MSG0041,"Set a new learning goal, I want to specialize in NLP and become an ML engineer.",CREATE_GOAL
+MSG0042,Why is this resource considered high priority in my path?,ASK_WHY_RECOMMENDATION
+MSG0043,What does normalization form mean in database design?,ASK_CONCEPT_EXPLANATION
+MSG0044,What if I want to finish this in three months instead of six?,WHAT_IF_SIMULATION
+MSG0045,Can you explain why I need to do this statistics course first?,ASK_WHY_RECOMMENDATION
+MSG0046,Can you explain what an inner join versus a left join is?,ASK_CONCEPT_EXPLANATION
+MSG0047,Please help me plan my path to becoming a data scientist from a BCA background.,CREATE_GOAL
+MSG0048,"I found this resource too long, it could be shorter.",GIVE_FEEDBACK
+MSG0049,What if I want to switch from exam mode to career mode?,WHAT_IF_SIMULATION
+MSG0050,"I want to speed up my learning path, can you optimize for time?",REQUEST_FASTER
+MSG0051,Why do I need advanced SQL before starting the data modeling module?,ASK_WHY_RECOMMENDATION
+MSG0052,I want to prepare for data engineering roles in Indian product companies.,CREATE_GOAL
+MSG0053,"This course was really helpful, thank you for recommending it.",GIVE_FEEDBACK
+MSG0054,"I already covered this in an online course before, can it be skipped?",REQUEST_SKIP
+MSG0055,"What if I only had weekends free to study, how would that affect my plan?",WHAT_IF_SIMULATION
+MSG0056,What would my plan look like if I already cleared all diagnostics with high scores?,WHAT_IF_SIMULATION
+MSG0057,Can you give me a project idea involving UPI or fintech data?,REQUEST_PROJECT
+MSG0058,Please replan considering I now have less time available.,REQUEST_REPLAN
+MSG0059,What does CI/CD mean in software development?,ASK_CONCEPT_EXPLANATION
+MSG0060,This assessment was fair and matched my skill level well.,GIVE_FEEDBACK
+MSG0061,Can we regenerate the plan since I completed extra courses outside this platform?,REQUEST_REPLAN
+MSG0062,I want to fast track my preparation before placements.,REQUEST_FASTER
+MSG0063,Why is this resource ranked higher than the other one?,ASK_WHY_RECOMMENDATION
+MSG0064,Can I skip this topic since I have prior experience?,REQUEST_SKIP
+MSG0065,"This was a fantastic project, I added it to my resume.",GIVE_FEEDBACK
+MSG0066,"I want an easier path, this is too much pressure.",REQUEST_EASIER
+MSG0067,Can we mark this as mastered and skip to the next skill?,REQUEST_SKIP
+MSG0068,"My priorities changed, please shift my goal towards ML engineering.",MODIFY_GOAL
+MSG0069,The video quality was good but the pace was too fast.,GIVE_FEEDBACK
+MSG0070,Why does the system think I am ready for this advanced topic?,ASK_WHY_RECOMMENDATION
+MSG0071,Can you recommend a good yoga routine for beginners?,OUT_OF_SCOPE
+MSG0072,"Can I move past this resource, I am already comfortable with it?",REQUEST_SKIP
+MSG0073,Can you give me a project that uses both Python and SQL?,REQUEST_PROJECT
+MSG0074,I want a hands-on project to practice what I have learned.,REQUEST_PROJECT
+MSG0075,How does the platform support career transitions from non-tech backgrounds?,GENERAL_QUESTION
+MSG0076,What is a root gap and how is it different from a normal skill gap?,GENERAL_QUESTION
+MSG0077,Can you tell me the rules of the game of cricket?,OUT_OF_SCOPE
+MSG0078,Can you tell me more about how mastery scores are calculated?,GENERAL_QUESTION
+MSG0079,Can I skip this and move directly to the assessment?,REQUEST_SKIP
+MSG0080,I want a project idea that is relevant to Indian e-commerce.,REQUEST_PROJECT
+MSG0081,What happens to my timeline if my weekly hours drop to three?,WHAT_IF_SIMULATION
+MSG0082,"I already know this from my college coursework, can it be skipped?",REQUEST_SKIP
+MSG0083,Can you explain why this project was chosen for my portfolio?,ASK_WHY_RECOMMENDATION
+MSG0084,"Please suggest simpler content, I am new to programming.",REQUEST_EASIER
+MSG0085,How accurate are the time estimates given for each resource?,GENERAL_QUESTION
+MSG0086,Can you replan my path to be faster given my deadline changed?,REQUEST_FASTER
+MSG0087,I want to build a dashboard project for my portfolio.,REQUEST_PROJECT
+MSG0088,"I need to move quicker, can the plan be made leaner?",REQUEST_FASTER
+MSG0089,I want an updated path after this diagnostic assessment.,REQUEST_REPLAN
+MSG0090,This resource covered exactly the skill gap I had.,GIVE_FEEDBACK
+MSG0091,Why is this the very next recommended action for me?,ASK_WHY_RECOMMENDATION
+MSG0092,This resource was too easy for where I currently am.,GIVE_FEEDBACK
+MSG0093,"What if I already know SQL well, how much time would that save?",WHAT_IF_SIMULATION
+MSG0094,Can you give me a faster track to reach my goal?,REQUEST_FASTER
+MSG0095,I want to switch my specialization from computer vision to NLP.,MODIFY_GOAL
+MSG0096,"I know React already from a previous project, can I skip this?",REQUEST_SKIP
+MSG0097,"Can you change my goal deadline to be more aggressive, three months instead?",MODIFY_GOAL
+MSG0098,I want to prepare for a data science interview at a Hyderabad company.,CREATE_GOAL
+MSG0099,Can you help me write a resignation letter for my job?,OUT_OF_SCOPE
+MSG0100,What is the difference between OLTP and OLAP systems?,ASK_CONCEPT_EXPLANATION
+MSG0101,What does learning debt mean in the context of my roadmap?,GENERAL_QUESTION
+MSG0102,I want to change my target from data engineer to analytics engineer.,MODIFY_GOAL
+MSG0103,Can you recommend some good podcasts about history?,OUT_OF_SCOPE
+MSG0104,Can you replan considering I am stronger in Python than before?,REQUEST_REPLAN
+MSG0105,"I know Kubernetes basics from my current job, can this be skipped?",REQUEST_SKIP
+MSG0106,I want to move from manual testing to a data analyst role.,CREATE_GOAL
+MSG0107,Can you tell me about the history of the Taj Mahal?,OUT_OF_SCOPE
+MSG0108,I want a project I can add to my GitHub portfolio.,REQUEST_PROJECT
+MSG0109,How do I provide feedback on a course I just completed?,GENERAL_QUESTION
+MSG0110,Can you explain what an embedding is in NLP?,ASK_CONCEPT_EXPLANATION
+MSG0111,What is the purpose of a data warehouse?,ASK_CONCEPT_EXPLANATION
+MSG0112,Can we modify the roadmap to prioritize interview preparation earlier?,MODIFY_GOAL
+MSG0113,Can my next resource be easier than this one?,REQUEST_EASIER
+MSG0114,Can we skip some practice and go straight to the project?,REQUEST_FASTER
+MSG0115,Can you explain what a Kubernetes pod is?,ASK_CONCEPT_EXPLANATION
+MSG0116,How is the estimated completion date for my goal calculated?,GENERAL_QUESTION
+MSG0117,"I really enjoyed this hands-on lab, very practical.",GIVE_FEEDBACK
+MSG0118,What if I reduce my target skills to only the most essential ones?,WHAT_IF_SIMULATION
+MSG0119,I want to restart my roadmap with updated skill information.,REQUEST_REPLAN
+MSG0120,I want a project to strengthen my data engineering resume.,REQUEST_PROJECT
+MSG0121,I want to start learning towards a data engineer career.,CREATE_GOAL
+MSG0122,Please create a learning path for me to become a machine learning engineer.,CREATE_GOAL
+MSG0123,What is the difference between AWS EC2 and S3?,ASK_CONCEPT_EXPLANATION
+MSG0124,"Please simplify my current milestone, it feels too hard.",REQUEST_EASIER
+MSG0125,I want the system to replan after several weeks of inactivity.,REQUEST_REPLAN
+MSG0126,What is the difference between the fast track and deep mastery modes?,GENERAL_QUESTION
+MSG0127,Can we update my roadmap since I already have SQL experience from my job?,MODIFY_GOAL
+MSG0128,I want a new roadmap that reflects my current actual skill level.,REQUEST_REPLAN
+MSG0129,I want to finish this phase faster than planned.,REQUEST_FASTER
+MSG0130,"I did not find this article helpful, it was too basic.",GIVE_FEEDBACK
+MSG0131,"Please regenerate my plan, this one no longer fits my needs.",REQUEST_REPLAN
+MSG0132,What are some good gift ideas for a birthday?,OUT_OF_SCOPE
+MSG0133,Can you explain the reason behind recommending this particular project?,ASK_WHY_RECOMMENDATION
+MSG0134,Can you recommend a project idea for a beginner full stack developer?,REQUEST_PROJECT
+MSG0135,How does this platform decide what to recommend to me?,GENERAL_QUESTION
+MSG0136,Can you recalculate my roadmap after my project submission?,REQUEST_REPLAN
+MSG0137,What is the best way to learn classical Indian music?,OUT_OF_SCOPE
+MSG0138,I want to plan a career switch into machine learning engineering.,CREATE_GOAL
+MSG0139,Can we regenerate my plan after my recent milestone failure?,REQUEST_REPLAN
+MSG0140,Can we skip this and jump directly to the capstone project?,REQUEST_SKIP
+MSG0141,"I have limited time now, please accelerate my plan.",REQUEST_FASTER
+MSG0142,"I found this course too generic, not India-specific enough.",GIVE_FEEDBACK
+MSG0143,Can we redo my learning path from the current phase onward?,REQUEST_REPLAN
+MSG0144,I want to learn the full stack in nine months and get a developer job.,CREATE_GOAL
+MSG0145,"Please accelerate my plan, my company wants me ready sooner.",REQUEST_FASTER
+MSG0146,What if I want to prioritize cloud skills over machine learning?,WHAT_IF_SIMULATION
+MSG0147,Can we prioritize only the highest impact resources?,REQUEST_FASTER
+MSG0148,This topic needs to be broken into easier smaller pieces.,REQUEST_EASIER
+MSG0149,What is the traffic situation on the Bengaluru outer ring road?,OUT_OF_SCOPE
+MSG0150,Why do I need to complete this quiz before moving to the next phase?,ASK_WHY_RECOMMENDATION
+MSG0151,Can you explain what portfolio readiness means on this platform?,GENERAL_QUESTION
+MSG0152,I want a fresh path generated using all my latest evidence.,REQUEST_REPLAN
+MSG0153,Can you reduce the difficulty of my current learning path?,REQUEST_EASIER
+MSG0154,What if I want to finish the assessments faster than the course content?,WHAT_IF_SIMULATION
+MSG0155,Can you suggest a project involving Indian Railways or IRCTC data?,REQUEST_PROJECT
+MSG0156,"I want to reach my goal quicker, please adjust the plan.",REQUEST_FASTER
+MSG0157,"This course is too difficult for me, can you suggest something easier?",REQUEST_EASIER
+MSG0158,Can you explain why this resource matches my weekly time budget?,ASK_WHY_RECOMMENDATION
+MSG0159,Please cut down my roadmap to the essentials only.,REQUEST_FASTER
+MSG0160,I have finished my B.Tech and I want to prepare for a data engineer role.,CREATE_GOAL
+MSG0161,"What is a REST API, can you explain it simply?",ASK_CONCEPT_EXPLANATION
+MSG0162,"I have prior AWS experience, can this module be skipped?",REQUEST_SKIP
+MSG0163,"This is too much for a beginner like me, please simplify.",REQUEST_EASIER
+MSG0164,"Please update my goal, my company now needs Java skills, not Python.",MODIFY_GOAL
+MSG0165,"I did not like this course, the audio quality was poor.",GIVE_FEEDBACK
+MSG0166,What is the difference between skippable and mandatory content?,GENERAL_QUESTION
+MSG0167,Can you suggest a Docker and Kubernetes based project?,REQUEST_PROJECT
+MSG0168,Can you tell me the reasoning behind suggesting this milestone now?,ASK_WHY_RECOMMENDATION
+MSG0169,I want to become a full stack developer and get placed through campus recruitment.,CREATE_GOAL
+MSG0170,What happens to my mastery estimate if I do not practice for a month?,WHAT_IF_SIMULATION
+MSG0171,Can you explain why my path recommends this specific sequence?,ASK_WHY_RECOMMENDATION
+MSG0172,Can you explain what a load balancer does?,ASK_CONCEPT_EXPLANATION
+MSG0173,"I got a new offer, please change my goal to DevOps engineering.",MODIFY_GOAL
+MSG0174,I want my path recalculated after this week's assessment results.,REQUEST_REPLAN
+MSG0175,"Please rebuild my plan, it currently feels misaligned with my goal.",REQUEST_REPLAN
+MSG0176,I want to modify my plan to add a DevOps specialization at the end.,MODIFY_GOAL
+MSG0177,What is the best time to visit Ladakh?,OUT_OF_SCOPE
+MSG0178,Help me become proficient in machine learning for a product-based company interview.,CREATE_GOAL
+MSG0179,Please rebuild my path using my most recent assessment data.,REQUEST_REPLAN
+MSG0180,Can you adjust my path to be less intense for now?,REQUEST_EASIER
+MSG0181,What if I already completed a similar course outside this platform?,WHAT_IF_SIMULATION
+MSG0182,Can you prioritize speed since my deadline moved closer?,REQUEST_FASTER
+MSG0183,Please remove low priority resources to save time.,REQUEST_FASTER
+MSG0184,"Please replan my path, I failed the last assessment badly.",REQUEST_REPLAN
+MSG0185,"Can we skip this milestone assessment, I already know the material?",REQUEST_SKIP
+MSG0186,Can you explain what horizontal scaling means?,ASK_CONCEPT_EXPLANATION
+MSG0187,Can I skip this reading since I already know the concept?,REQUEST_SKIP
+MSG0188,I want to modify my target company size to enterprise instead of startup.,MODIFY_GOAL
+MSG0189,Can you explain why this particular provider was chosen for me?,ASK_WHY_RECOMMENDATION
+MSG0190,Help me create a goal to become a backend focused full stack developer.,CREATE_GOAL
+MSG0191,Can you update my weekly study hours from seven to ten?,MODIFY_GOAL
+MSG0192,What is the difference between standard mode and exam mode?,GENERAL_QUESTION
+MSG0193,What would happen if I skip the machine learning phase entirely?,WHAT_IF_SIMULATION
+MSG0194,"Can we skip this course, I already passed the related assessment?",REQUEST_SKIP
+MSG0195,"This assessment was too hard, can I get easier practice first?",REQUEST_EASIER
+MSG0196,Can we replan my journey to better fit my current schedule?,REQUEST_REPLAN
+MSG0197,Can you replan my path after considering my recent project work?,REQUEST_REPLAN
+MSG0198,Why do you think this course will close my biggest skill gap?,ASK_WHY_RECOMMENDATION
+MSG0199,Can you help me file my income tax returns?,OUT_OF_SCOPE
+MSG0200,I want a project idea to demonstrate my NLP skills.,REQUEST_PROJECT
+MSG0201,Can you explain what happens during a replanning event?,GENERAL_QUESTION
+MSG0202,Why is REST API design recommended before authentication basics?,ASK_WHY_RECOMMENDATION
+MSG0203,This resource on data visualization was very engaging.,GIVE_FEEDBACK
+MSG0204,Can I get an easier version of this data structures course?,REQUEST_EASIER
+MSG0205,What is the population of India as of this year?,OUT_OF_SCOPE
+MSG0206,What would change if I want to focus only on interview preparation?,WHAT_IF_SIMULATION
+MSG0207,I want my roadmap recalculated based on my updated preferences.,REQUEST_REPLAN
+MSG0208,Can you rebuild my entire roadmap from scratch?,REQUEST_REPLAN
+MSG0209,What is the current interest rate on fixed deposits in India?,OUT_OF_SCOPE
+MSG0210,How often does my learning path get updated?,GENERAL_QUESTION
+MSG0211,Can we skip the optional content to save time?,REQUEST_FASTER
+MSG0212,I want to shift my career into full stack web development.,CREATE_GOAL
+MSG0213,What happens to my path if I already have two years of related experience?,WHAT_IF_SIMULATION
+MSG0214,Why do you think I should learn Kubernetes before CI/CD pipelines?,ASK_WHY_RECOMMENDATION
+MSG0215,Can you help me finish this before my exams start?,REQUEST_FASTER
+MSG0216,I am from a mechanical engineering background and want to switch to data science.,CREATE_GOAL
+MSG0217,Please remove non-essential resources so I can finish quicker.,REQUEST_FASTER
+MSG0218,I want a machine learning project I can showcase to recruiters.,REQUEST_PROJECT
+MSG0219,The examples in this resource were not very practical.,GIVE_FEEDBACK
+MSG0220,Can you give me an advanced project idea for deep learning?,REQUEST_PROJECT
+MSG0221,Can I skip this project since I have done something similar before?,REQUEST_SKIP
+MSG0222,I want a project to demonstrate my full stack skills end-to-end.,REQUEST_PROJECT
+MSG0223,I want the system to adjust my plan based on my last three attempts.,REQUEST_REPLAN
+MSG0224,Can you update my goal to focus on AWS instead of Azure?,MODIFY_GOAL
+MSG0225,I want to transition from a non-IT job to a tech role in data analytics.,CREATE_GOAL
+MSG0226,The project rubric was not clear enough for me.,GIVE_FEEDBACK
+MSG0227,Can you tell me how feedback affects future recommendations?,GENERAL_QUESTION
+MSG0228,Can we bypass this resource since I know the fundamentals well?,REQUEST_SKIP
+MSG0229,What is the weather like in Bengaluru today?,OUT_OF_SCOPE
+MSG0230,This is too difficult to complete within my available time.,REQUEST_EASIER
+MSG0231,Please regenerate my roadmap now that I know more SQL than before.,REQUEST_REPLAN
+MSG0232,What is the best route from Pune to Mumbai by car?,OUT_OF_SCOPE
+MSG0233,Why are you recommending this SQL course to me?,ASK_WHY_RECOMMENDATION
+MSG0234,Can I skip the introductory video and go to the practice set?,REQUEST_SKIP
+MSG0235,How does the platform choose between similar courses from different providers?,GENERAL_QUESTION
+MSG0236,Please help me finish this milestone ahead of schedule.,REQUEST_FASTER
+MSG0237,Can we skip this since my mastery score is already high?,REQUEST_SKIP
+MSG0238,What is the difference between synchronous and asynchronous programming?,ASK_CONCEPT_EXPLANATION
+MSG0239,How many hours of content are typically in one phase?,GENERAL_QUESTION
+MSG0240,Can we shift my goal from machine learning engineer to data engineer?,MODIFY_GOAL
+MSG0241,I want a condensed version of this learning path.,REQUEST_FASTER
+MSG0242,"This machine learning module is too tough, can we go slower?",REQUEST_EASIER
+MSG0243,Can you suggest a good playlist for a road trip?,OUT_OF_SCOPE
+MSG0244,Please give me the quickest path to cover my skill gaps.,REQUEST_FASTER
+MSG0245,Can you explain how skill prerequisites are structured?,GENERAL_QUESTION
+MSG0246,Can you tell me a joke to lighten my mood?,OUT_OF_SCOPE
+MSG0247,What is a good workout routine for weight loss?,OUT_OF_SCOPE
+MSG0248,How does the platform track project-based learning evidence?,GENERAL_QUESTION
+MSG0249,Can you explain what feature engineering means?,ASK_CONCEPT_EXPLANATION
+MSG0250,Can you regenerate my roadmap considering my new career target?,REQUEST_REPLAN
+MSG0251,"I have already mastered this topic, please skip it in my path.",REQUEST_SKIP
+MSG0252,I want a project that will impress recruiters at product companies.,REQUEST_PROJECT
+MSG0253,Please shift my focus from theory-heavy resources to more projects.,MODIFY_GOAL
+MSG0254,I found the SQL practice questions repetitive.,GIVE_FEEDBACK
+MSG0255,Can you explain the difference between supervised and unsupervised learning?,ASK_CONCEPT_EXPLANATION
+MSG0256,Why do I need to revise probability before starting machine learning?,ASK_WHY_RECOMMENDATION
+MSG0257,"I know HTML and CSS well, can I skip straight to JavaScript?",REQUEST_SKIP
+MSG0258,How does the platform handle knowledge decay over time?,GENERAL_QUESTION
+MSG0259,This course helped me understand SQL joins much better.,GIVE_FEEDBACK
+MSG0260,Can you explain what an epoch means in deep learning training?,ASK_CONCEPT_EXPLANATION
+MSG0261,Can you help me book a doctor's appointment?,OUT_OF_SCOPE
+MSG0262,"I think my current path is not working, can you replan it?",REQUEST_REPLAN
+MSG0263,This course gave me a strong foundation in statistics.,GIVE_FEEDBACK
+MSG0264,What if I want to target a data engineer role instead of an analyst role?,WHAT_IF_SIMULATION
+MSG0265,How does the platform decide which projects go into my portfolio track?,GENERAL_QUESTION
+MSG0266,Why is this book recommended instead of an interactive lab?,ASK_WHY_RECOMMENDATION
+MSG0267,Why is feature engineering recommended before ensemble methods?,ASK_WHY_RECOMMENDATION
+MSG0268,Can you explain the difference between GET and POST requests?,ASK_CONCEPT_EXPLANATION
+MSG0269,Can we skip this since I already cleared the diagnostic for it?,REQUEST_SKIP
+MSG0270,Can you explain how assessments influence my mastery score?,GENERAL_QUESTION
+MSG0271,Can I fast forward past this since I already understand it?,REQUEST_SKIP
+MSG0272,What is the fastest way to reach the airport from Koramangala?,OUT_OF_SCOPE
+MSG0273,I want to learn everything needed for a data scientist role at a product company.,CREATE_GOAL
+MSG0274,Can you explain what data partitioning means in Spark?,ASK_CONCEPT_EXPLANATION
+MSG0275,What is the difference between classification and regression?,ASK_CONCEPT_EXPLANATION
+MSG0276,Please create a new roadmap since my situation has changed.,REQUEST_REPLAN
+MSG0277,I want to become job ready as a Python developer within four months.,CREATE_GOAL
+MSG0278,Can you optimize my roadmap for speed over depth?,REQUEST_FASTER
+MSG0279,"I have relevant experience here, can this be left out of my path?",REQUEST_SKIP
+MSG0280,I want to become a data analyst in six months.,CREATE_GOAL
+MSG0281,"I want a roadmap for becoming a data analyst, I only know Excel currently.",CREATE_GOAL
+MSG0282,I want to build a data engineering pipeline project.,REQUEST_PROJECT
+MSG0283,Can you explain why my path prioritizes projects over courses?,ASK_WHY_RECOMMENDATION
+MSG0284,Please change my learning goal deadline to align with placement season.,MODIFY_GOAL
+MSG0285,"I am finding this topic very hard to follow, please simplify it.",REQUEST_EASIER
+MSG0286,Why is this resource considered relevant to my target role?,ASK_WHY_RECOMMENDATION
+MSG0287,Can you explain what a foreign key constraint does?,ASK_CONCEPT_EXPLANATION
+MSG0288,What if I can only study four hours a week instead of seven?,WHAT_IF_SIMULATION
+MSG0289,Can you suggest a project involving a CI/CD pipeline setup?,REQUEST_PROJECT
+MSG0290,I appreciated how practical this ETL course was.,GIVE_FEEDBACK
+MSG0291,"I am targeting an ML engineer role, please build my roadmap.",CREATE_GOAL
+MSG0292,Can you explain why this resource fits my current skill level?,ASK_WHY_RECOMMENDATION
+MSG0293,What happens to my timeline if I change my target to data engineer?,WHAT_IF_SIMULATION
+MSG0294,What happens to my roadmap if I switch to project-first mode?,WHAT_IF_SIMULATION
+MSG0295,I want a project idea that fits my available weekend hours.,REQUEST_PROJECT
+MSG0296,Please modify my goal to remove machine learning and focus only on data engineering.,MODIFY_GOAL
+MSG0297,"I really liked this NPTEL course, very well explained.",GIVE_FEEDBACK
+MSG0298,Can you explain what a join is in SQL with an example?,ASK_CONCEPT_EXPLANATION
+MSG0299,Can you recommend a cloud deployment project for practice?,REQUEST_PROJECT
+MSG0300,Can we speed up by skipping resources I am already strong in?,REQUEST_FASTER
+MSG0301,What would happen if I want to finish before the next placement drive?,WHAT_IF_SIMULATION
+MSG0302,"Please change my goal, I now want to become a cloud engineer instead.",MODIFY_GOAL
+MSG0303,How does the system know which resources are high quality?,GENERAL_QUESTION
+MSG0304,Can you explain why this resource was picked given my preferences?,ASK_WHY_RECOMMENDATION
+MSG0305,Why do I need to learn Linux before starting Docker?,ASK_WHY_RECOMMENDATION
+MSG0306,"I am not ready for this level, can you go easier?",REQUEST_EASIER
+MSG0307,Why is this article recommended instead of a video for this topic?,ASK_WHY_RECOMMENDATION
+MSG0308,What would change if I switch my learning format to hands-on only?,WHAT_IF_SIMULATION
+MSG0309,Can I skip this since I learned it during my internship?,REQUEST_SKIP
+MSG0310,"I want to update my goal, I am now open to relocating for a data role.",MODIFY_GOAL
+MSG0311,This resource matched my learning style very well.,GIVE_FEEDBACK
+MSG0312,"I am targeting an entry level data engineer position, please guide me.",CREATE_GOAL
+MSG0313,"This SQL topic is too complex, please give a simpler resource.",REQUEST_EASIER
+MSG0314,"This assessment felt confusing, the questions were unclear.",GIVE_FEEDBACK
+MSG0315,Can you help me set a reminder for my sister's wedding?,OUT_OF_SCOPE
+MSG0316,I want to switch my target from full stack developer to backend developer.,MODIFY_GOAL
+MSG0317,What are some good stress relief techniques?,OUT_OF_SCOPE
+MSG0318,How does the system detect if I am at risk of losing motivation?,GENERAL_QUESTION
+MSG0319,Can we replan my journey now that my deadline is closer?,REQUEST_REPLAN
+MSG0320,The project was too time consuming for the credit it gave.,GIVE_FEEDBACK
+MSG0321,"I already know Git, can we skip this resource?",REQUEST_SKIP
+MSG0322,Can we update the goal to focus more on backend than frontend?,MODIFY_GOAL
+MSG0323,Please cut the timeline down as much as possible.,REQUEST_FASTER
+MSG0324,What is the difference between a stack and a queue?,ASK_CONCEPT_EXPLANATION
+MSG0325,"I need to be ready in two months, can you speed things up?",REQUEST_FASTER
+MSG0326,What if I want to explore an additional specialization alongside my main goal?,WHAT_IF_SIMULATION
+MSG0327,What does the evidence strength score mean for my skills?,GENERAL_QUESTION
+MSG0328,I want a capstone project idea for my data engineer roadmap.,REQUEST_PROJECT
+MSG0329,Please rebuild my learning journey considering my recent struggles.,REQUEST_REPLAN
+MSG0330,What happens if I complete the capstone project ahead of schedule?,WHAT_IF_SIMULATION
+MSG0331,I want a project idea for my data analyst portfolio.,REQUEST_PROJECT
+MSG0332,"What if I already have a portfolio project, how much time would that save?",WHAT_IF_SIMULATION
+MSG0333,"This concept is too complicated, can you explain it more simply?",REQUEST_EASIER
+MSG0334,I am a commerce graduate and want to become a data analyst.,CREATE_GOAL
+MSG0335,Can you explain why my career relevance score is high for this resource?,ASK_WHY_RECOMMENDATION
+MSG0336,"I already know descriptive statistics well, can this be skipped?",REQUEST_SKIP
+MSG0337,This resource was not relevant to what I actually needed.,GIVE_FEEDBACK
+MSG0338,The pacing of this course was too slow for me.,GIVE_FEEDBACK
+MSG0339,I need a softer starting point for this skill.,REQUEST_EASIER
+MSG0340,What if I want to become job ready in just two months?,WHAT_IF_SIMULATION
+MSG0341,What is the difference between batch processing and stream processing?,ASK_CONCEPT_EXPLANATION
+MSG0342,Please replan my path considering my updated weekly availability.,REQUEST_REPLAN
+MSG0343,Can we edit my roadmap to remove the web development phase?,MODIFY_GOAL
+MSG0344,Can we speed run the foundational topics I already partly know?,REQUEST_FASTER
+MSG0345,"This project seems too difficult, can I get a simpler one?",REQUEST_EASIER
+MSG0346,Why does the roadmap suggest this over something from GeeksforGeeks?,ASK_WHY_RECOMMENDATION
+MSG0347,This deep learning content is too advanced for my level.,REQUEST_EASIER
+MSG0348,I want to switch my focus from Java to Python for my full stack goal.,MODIFY_GOAL
+MSG0349,Can you suggest an easier alternative for neural networks?,REQUEST_EASIER
+MSG0350,Can you suggest something practical I can build with Python?,REQUEST_PROJECT
+MSG0351,Can you make my next few recommendations easier?,REQUEST_EASIER
+MSG0352,Can you help me plan my wedding guest list?,OUT_OF_SCOPE
+MSG0353,What if I want a deep mastery approach instead of fast track?,WHAT_IF_SIMULATION
+MSG0354,Can you extend my deadline by two more months?,MODIFY_GOAL
+MSG0355,I want a project that combines React and Node.js.,REQUEST_PROJECT
+MSG0356,"I am overwhelmed, can the difficulty be reduced?",REQUEST_EASIER
+MSG0357,Please make my next phase quicker to complete.,REQUEST_FASTER
+MSG0358,"This is too hard to grasp in one go, please simplify.",REQUEST_EASIER
+MSG0359,Why is this course recommended instead of the one I picked?,ASK_WHY_RECOMMENDATION
+MSG0360,How is the weekly time budget used in generating my roadmap?,GENERAL_QUESTION
+MSG0361,I think this course is outdated compared to current practices.,GIVE_FEEDBACK
+MSG0362,Can you recommend a project using Indian datasets?,REQUEST_PROJECT
+MSG0363,"Please rebuild my path, too many resources feel irrelevant now.",REQUEST_REPLAN
+MSG0364,Can you tell me how projects are selected for my roadmap?,GENERAL_QUESTION
+MSG0365,Can I skip this quiz since I am confident about the topic?,REQUEST_SKIP
+MSG0366,Can you recommend a project that uses AWS services?,REQUEST_PROJECT
+MSG0367,What is the difference between a monolith and microservices architecture?,ASK_CONCEPT_EXPLANATION
+MSG0368,What is the procedure to get a driving license in India?,OUT_OF_SCOPE
+MSG0369,Can you tell me why this resource covers two skills at once?,ASK_WHY_RECOMMENDATION
+MSG0370,Can you explain what a decision tree is with an example?,ASK_CONCEPT_EXPLANATION
+MSG0371,I want to become job ready for cloud engineering roles in Pune.,CREATE_GOAL
+MSG0372,Can you tell me why this assessment is required at this stage?,ASK_WHY_RECOMMENDATION
+MSG0373,What is the exchange rate between rupee and dollar today?,OUT_OF_SCOPE
+MSG0374,"Please replan my journey, I am behind schedule.",REQUEST_REPLAN
+MSG0375,Can you explain how career relevance is scored for recommendations?,GENERAL_QUESTION
+MSG0376,Can you recommend a portfolio project for a cloud engineer role?,REQUEST_PROJECT
+MSG0377,Can you tell me how resource quality scores are calculated?,GENERAL_QUESTION
+MSG0378,Can you give me a project idea related to data analysis?,REQUEST_PROJECT
+MSG0379,What does ETL stand for and what does it involve?,ASK_CONCEPT_EXPLANATION
+MSG0380,How is my skill gap calculated by the system?,GENERAL_QUESTION
+MSG0381,Please give me a gentler introduction to this topic.,REQUEST_EASIER
+MSG0382,Can we replan after factoring in my recent skip requests?,REQUEST_REPLAN
+MSG0383,My goal is to be interview ready for full stack roles in six months.,CREATE_GOAL
+MSG0384,Set a goal for me to become a backend developer in nine months.,CREATE_GOAL
+MSG0385,I found this book too dense and hard to follow.,GIVE_FEEDBACK
+MSG0386,I want a beginner friendly project to start practicing.,REQUEST_PROJECT
+MSG0387,Help me set a goal for becoming a machine learning engineer at an Indian startup.,CREATE_GOAL
+MSG0388,What would my roadmap look like if my deadline moved to four months?,WHAT_IF_SIMULATION
+MSG0389,Please replan since I am now stronger in statistics than expected.,REQUEST_REPLAN
+MSG0390,"I already know Python basics, can I skip this course?",REQUEST_SKIP
+MSG0391,This project really helped me understand full stack architecture.,GIVE_FEEDBACK
+MSG0392,I want to minimize the total hours needed for this goal.,REQUEST_FASTER
+MSG0393,Can you tell me why this course addresses my current skill gap?,ASK_WHY_RECOMMENDATION
+MSG0394,Can you explain why this was marked high impact for me?,ASK_WHY_RECOMMENDATION
+MSG0395,Can you explain what a neural network layer does?,ASK_CONCEPT_EXPLANATION
+MSG0396,Can we skip this topic and move to feature engineering directly?,REQUEST_SKIP
+MSG0397,My target is to get a data scientist job at a Bengaluru startup.,CREATE_GOAL
+MSG0398,"Can you recommend a good gym near Whitefield, Bengaluru?",OUT_OF_SCOPE
+MSG0399,This was a well organized and beginner friendly resource.,GIVE_FEEDBACK
+MSG0400,Can you recommend a project that covers ETL and Spark?,REQUEST_PROJECT
+MSG0401,"Can we finish this faster, I have a job interview coming up soon?",REQUEST_FASTER
+MSG0402,What does statelessness mean in REST API design?,ASK_CONCEPT_EXPLANATION
+MSG0403,Can you compress my roadmap into a shorter timeline?,REQUEST_FASTER
+MSG0404,How is the difficulty of a course determined?,GENERAL_QUESTION
+MSG0405,How does the system decide the order of resources in my roadmap?,GENERAL_QUESTION
+MSG0406,What are the best places to visit in Kerala during monsoon?,OUT_OF_SCOPE
+MSG0407,"Why do I need to redo this topic, I thought I already knew it?",ASK_WHY_RECOMMENDATION
+MSG0408,Can we modify my current goal to include a Kubernetes specialization?,MODIFY_GOAL
+MSG0409,What would my roadmap look like if I start today with zero prior knowledge?,WHAT_IF_SIMULATION
+MSG0410,What happens to my data if I change my goal midway?,GENERAL_QUESTION
+MSG0411,"I feel lost with this material, can it be made easier?",REQUEST_EASIER
+MSG0412,I want an updated roadmap reflecting my recent skill improvements.,REQUEST_REPLAN
+MSG0413,I want my learning path recalculated from today onward.,REQUEST_REPLAN
+MSG0414,What would change if I only had six hours a week starting next month?,WHAT_IF_SIMULATION
+MSG0415,Can you give me something less technical to start with?,REQUEST_EASIER
+MSG0416,What is the difference between a class and an object in OOP?,ASK_CONCEPT_EXPLANATION
+MSG0417,I want to reduce my weekly hours from ten to five.,MODIFY_GOAL
+MSG0418,Please update my target company type from startup to product company.,MODIFY_GOAL
+MSG0419,Please change my target role since my manager wants me to specialize in cloud.,MODIFY_GOAL
+MSG0420,"I have already done SQL basics in college, can this be skipped?",REQUEST_SKIP
+MSG0421,I want to update my deadline from six months to nine months.,MODIFY_GOAL
+MSG0422,Can you explain the difference between L1 and L2 regularization?,ASK_CONCEPT_EXPLANATION
+MSG0423,What is the best biryani place near Hyderabad?,OUT_OF_SCOPE
+MSG0424,My goal is to crack a cloud engineer job within a year.,CREATE_GOAL
+MSG0425,Why is this particular assessment mandatory for my goal?,ASK_WHY_RECOMMENDATION
+MSG0426,"Can we skip this beginner content, it is too basic for me?",REQUEST_SKIP
+MSG0427,What does normalization mean in the context of databases?,ASK_CONCEPT_EXPLANATION
+MSG0428,Can we replan now that my weekly hours have increased?,REQUEST_REPLAN
+MSG0429,"This project was excellent, I learned a lot from it.",GIVE_FEEDBACK
+MSG0430,Can you book a train ticket for me to Chennai?,OUT_OF_SCOPE
+MSG0431,I want a project involving Indian weather or climate data.,REQUEST_PROJECT
+MSG0432,Can you create an updated roadmap considering my new job constraints?,REQUEST_REPLAN
+MSG0433,Can you tell me how often I should expect assessments in my path?,GENERAL_QUESTION
+MSG0434,Can you suggest the shortest path to cover these skill gaps?,REQUEST_FASTER
+MSG0435,Can you give me a compressed timeline for this goal?,REQUEST_FASTER
+MSG0436,This course helped me clear my machine learning basics.,GIVE_FEEDBACK
+MSG0437,The course content felt outdated for current cloud tools.,GIVE_FEEDBACK
+MSG0438,"I only have three months left, can we accelerate the plan?",REQUEST_FASTER
+MSG0439,"Please modify my target role, I now want to specialize in NLP.",MODIFY_GOAL
+MSG0440,Can you suggest a beginner friendly version of this course?,REQUEST_EASIER
+MSG0441,The assessment feedback was not detailed enough.,GIVE_FEEDBACK
+MSG0442,What is the difference between confidence and mastery score?,GENERAL_QUESTION
+MSG0443,I want to reach job readiness faster than the current plan.,REQUEST_FASTER
+MSG0444,I want to build a career roadmap into data analytics from a non-tech background.,CREATE_GOAL
+MSG0445,What is the best way to negotiate rent with a landlord?,OUT_OF_SCOPE
+MSG0446,What happens if I do not complete an assessment on time?,GENERAL_QUESTION
+MSG0447,Can we switch my mode to fast track for the rest of the path?,REQUEST_FASTER
+MSG0448,Why is this recommended over a similar course from another provider?,ASK_WHY_RECOMMENDATION
+MSG0449,"I have done this exact topic in my degree, can it be skipped?",REQUEST_SKIP
+MSG0450,This was a helpful refresher on statistics fundamentals.,GIVE_FEEDBACK
+MSG0451,"I know Node.js from a hackathon project, can this be skipped?",REQUEST_SKIP
+MSG0452,I think the difficulty rating for this course is wrong.,GIVE_FEEDBACK
+MSG0453,Can you recommend easier practice questions for SQL?,REQUEST_EASIER
+MSG0454,"This resource was exactly what I needed, thank you.",GIVE_FEEDBACK
+MSG0455,"This is too fast paced, can we slow down the difficulty?",REQUEST_EASIER
+MSG0456,What is the difference between a primary key and a foreign key?,ASK_CONCEPT_EXPLANATION
+MSG0457,I want the most time efficient version of this roadmap.,REQUEST_FASTER
+MSG0458,Can you justify why this course was placed in phase two of my roadmap?,ASK_WHY_RECOMMENDATION
+MSG0459,I want to plan out my next eight months to become a cloud engineer.,CREATE_GOAL
+MSG0460,What happens to my plan if I take a two week break?,WHAT_IF_SIMULATION
+MSG0461,"I want to learn AWS, Docker and Kubernetes to become a cloud engineer.",CREATE_GOAL
+MSG0462,Can you shorten my learning path without skipping important skills?,REQUEST_FASTER
+MSG0463,"I have already built projects using this, can it be skipped?",REQUEST_SKIP
+MSG0464,This resource was too advanced for a first course on the topic.,GIVE_FEEDBACK
+MSG0465,What is the average rainfall in Mumbai during monsoon?,OUT_OF_SCOPE
+MSG0466,What is the current price of gold in India?,OUT_OF_SCOPE
+MSG0467,Can you lower the difficulty level of my next recommendation?,REQUEST_EASIER
+MSG0468,Can you explain what a hash map is used for?,ASK_CONCEPT_EXPLANATION
+MSG0469,What does idempotency mean in API design?,ASK_CONCEPT_EXPLANATION
+MSG0470,How do I know if I am on track to reach my goal on time?,GENERAL_QUESTION
+MSG0471,"This explanation was too theoretical, I needed more examples.",GIVE_FEEDBACK
+MSG0472,Can you update my weekly hours since college exams are approaching?,MODIFY_GOAL
+MSG0473,This resource explained neural networks very clearly.,GIVE_FEEDBACK
+MSG0474,"This resource assumes too much prior knowledge, please simplify.",REQUEST_EASIER
+MSG0475,"I have work experience in this area, can this be skipped?",REQUEST_SKIP
+MSG0476,Can you help me plan a budget for a family vacation?,OUT_OF_SCOPE
+MSG0477,I want a project that demonstrates end-to-end ML deployment.,REQUEST_PROJECT
+MSG0478,The quiz questions did not match what the course taught.,GIVE_FEEDBACK
+MSG0479,I want an accelerated version of my current roadmap.,REQUEST_FASTER
+MSG0480,I think this assessment was too difficult for a diagnostic.,GIVE_FEEDBACK
+MSG0481,I want a project idea to practice model evaluation techniques.,REQUEST_PROJECT
+MSG0482,"Please update my deadline, my internship starts in two months.",MODIFY_GOAL
+MSG0483,I want to change my preferred learning format from video to hands-on.,MODIFY_GOAL
+MSG0484,"I am not able to understand this, can it be simplified?",REQUEST_EASIER
+MSG0485,What happens if I want an easier path even if it takes longer?,WHAT_IF_SIMULATION
+MSG0486,Can you suggest some good books for leisure reading?,OUT_OF_SCOPE
+MSG0487,"I have used Excel extensively at work, can this be skipped?",REQUEST_SKIP
+MSG0488,What does eventual consistency mean in distributed systems?,ASK_CONCEPT_EXPLANATION
+MSG0489,Can you tell me why this resource was chosen over a shorter one?,ASK_WHY_RECOMMENDATION
+MSG0490,I want a fresh roadmap based on my latest diagnostic results.,REQUEST_REPLAN
+MSG0491,Can you change my current goal to include a system design track?,MODIFY_GOAL
+MSG0492,"Please make this topic simpler, I am getting confused.",REQUEST_EASIER
+MSG0493,What movies are releasing this week in theatres?,OUT_OF_SCOPE
+MSG0494,What is the difference between a data lake and a data warehouse?,ASK_CONCEPT_EXPLANATION
+MSG0495,Can you explain what cross-validation is in model evaluation?,ASK_CONCEPT_EXPLANATION
+MSG0496,I want to change my target company from service-based to product-based.,MODIFY_GOAL
+MSG0497,What festivals are celebrated in Tamil Nadu in October?,OUT_OF_SCOPE
+MSG0498,Can you help me plan a surprise party for my friend?,OUT_OF_SCOPE
+MSG0499,Can we switch to fast track mode for my goal?,REQUEST_FASTER
+MSG0500,Help me plan a path to become a full stack developer from scratch.,CREATE_GOAL
+MSG0501,I want a project idea that uses SQL and data visualization.,REQUEST_PROJECT
+MSG0502,Why is data visualization placed before exploratory data analysis?,ASK_WHY_RECOMMENDATION
+MSG0503,Can you recommend a small project for practicing REST APIs?,REQUEST_PROJECT
+MSG0504,Can you explain the logic behind this recommendation?,ASK_WHY_RECOMMENDATION
+MSG0505,What does normalization mean in machine learning preprocessing?,ASK_CONCEPT_EXPLANATION
+MSG0506,I want to become proficient enough in SQL and Python for a data analyst role.,CREATE_GOAL
+MSG0507,The explanations in this resource were too fast paced.,GIVE_FEEDBACK
+MSG0508,I want a real world project to apply my SQL skills.,REQUEST_PROJECT
+MSG0509,Can you suggest something project based to replace this course?,REQUEST_PROJECT
+MSG0510,I am working as a support engineer but I want to move into cloud/devops.,CREATE_GOAL
+MSG0511,What is the process to apply for an Indian passport?,OUT_OF_SCOPE
+MSG0512,What would change if I move from a service company to a product company target?,WHAT_IF_SIMULATION
+MSG0513,Can you explain gradient descent in simple terms?,ASK_CONCEPT_EXPLANATION
+MSG0514,What would happen if I add a cloud specialization to my current goal?,WHAT_IF_SIMULATION
+MSG0515,Can you suggest a project related to Indian agriculture data?,REQUEST_PROJECT
+MSG0516,What happens if I want to add machine learning to my data engineer goal?,WHAT_IF_SIMULATION
+MSG0517,Can we remove this resource since I already have this skill?,REQUEST_SKIP
+MSG0518,Can you suggest something I can build to prepare for interviews?,REQUEST_PROJECT
+MSG0519,"I need to complete this before next month, can we speed up?",REQUEST_FASTER
+MSG0520,"What if my new job requires AWS instead of GCP, how does my plan change?",WHAT_IF_SIMULATION
+MSG0521,Please plan my roadmap for becoming a cloud engineer with AWS focus.,CREATE_GOAL
+MSG0522,Can I skip this course and go straight to the advanced one?,REQUEST_SKIP
+MSG0523,"Please rebuild everything, my goal priorities have changed.",REQUEST_REPLAN
+MSG0524,This was a great introduction to cloud computing concepts.,GIVE_FEEDBACK
+MSG0525,Please help me finish before the next hiring cycle.,REQUEST_FASTER
+MSG0526,I want a project idea related to customer churn prediction.,REQUEST_PROJECT
+MSG0527,How does the platform balance speed and depth in my roadmap?,GENERAL_QUESTION
+MSG0528,How can I see my overall progress towards my goal?,GENERAL_QUESTION
+MSG0529,Can you recommend a good web series to watch this weekend?,OUT_OF_SCOPE
+MSG0530,Can you break this down into smaller and easier steps?,REQUEST_EASIER
+MSG0531,What are the visa requirements for Indians travelling to Europe?,OUT_OF_SCOPE
+MSG0532,I want to change my target deadline to before the next hiring season.,MODIFY_GOAL
+MSG0533,Can you explain how my next best action is chosen?,GENERAL_QUESTION
+MSG0534,Can you recommend a project using an IPL or cricket dataset?,REQUEST_PROJECT
+MSG0535,"This coding exercise is too hard, can I get an easier one?",REQUEST_EASIER
+MSG0536,What if I skip all the foundational courses I feel confident about?,WHAT_IF_SIMULATION
+MSG0537,I want the system to replan based on my recent feedback.,REQUEST_REPLAN
+MSG0538,I want the fastest possible route to become job ready.,REQUEST_FASTER
+MSG0539,Please revise my goal since I got promoted and now have less free time.,MODIFY_GOAL
+MSG0540,What does containerization mean in software deployment?,ASK_CONCEPT_EXPLANATION
+MSG0541,Can you explain what a Docker container actually is?,ASK_CONCEPT_EXPLANATION
+MSG0542,"I want to build something for my resume, any project suggestions?",REQUEST_PROJECT
+MSG0543,Can you help me find a good tailor near my house?,OUT_OF_SCOPE
+MSG0544,My aim is to join a data science team within a year.,CREATE_GOAL
+MSG0545,What happens if I choose exam mode instead of my current standard mode?,WHAT_IF_SIMULATION
+MSG0546,"Please regenerate my roadmap, I have not been making good progress.",REQUEST_REPLAN
+MSG0547,Can you replan my path after I completed the capstone project early?,REQUEST_REPLAN
+MSG0548,Can you explain how the system avoids recommending redundant resources?,GENERAL_QUESTION
+MSG0549,Can you recommend a project using a loan default or NBFC dataset?,REQUEST_PROJECT
+MSG0550,Can you explain what a window function does in SQL?,ASK_CONCEPT_EXPLANATION
+MSG0551,What happens if I fail the next milestone assessment?,WHAT_IF_SIMULATION
+MSG0552,This practice set was very useful for interview preparation.,GIVE_FEEDBACK
+MSG0553,Can you rebuild my path after I switched my target role?,REQUEST_REPLAN
+MSG0554,Can you help me choose a good name for my new pet dog?,OUT_OF_SCOPE
+MSG0555,Please remove redundant courses so I can move faster.,REQUEST_FASTER
+MSG0556,"This is too advanced, I need something more basic first.",REQUEST_EASIER
+MSG0557,Can you explain what confidence interval means in statistics?,ASK_CONCEPT_EXPLANATION
+MSG0558,Can you replan considering I want to focus more on projects now?,REQUEST_REPLAN
+MSG0559,"My interest has shifted, update my goal to cloud computing instead.",MODIFY_GOAL
+MSG0560,I want to revise my roadmap deadline since my exams got postponed.,MODIFY_GOAL
+MSG0561,Please suggest a simpler resource for REST API design.,REQUEST_EASIER
+MSG0562,"I am struggling with this, can you provide an easier alternative?",REQUEST_EASIER
+MSG0563,What if my company suddenly requires Java instead of Python?,WHAT_IF_SIMULATION
+MSG0564,What if I only focus on projects and skip most of the courses?,WHAT_IF_SIMULATION
+MSG0565,I want a complete plan to become a data engineer within a year.,CREATE_GOAL
+MSG0566,I struggled to complete this within the estimated time.,GIVE_FEEDBACK
+MSG0567,What does it mean when a resource is marked as high impact?,GENERAL_QUESTION
+MSG0568,What would my path look like if I had ten hours a week instead of five?,WHAT_IF_SIMULATION
+MSG0569,"This resource is too dense, please give something simpler.",REQUEST_EASIER
+MSG0570,Can you let me skip ahead to the next phase?,REQUEST_SKIP
+MSG0571,Can you change my target from data analyst to business analyst?,MODIFY_GOAL
+MSG0572,"Set up a goal, I want to master data engineering tools like Spark and Airflow.",CREATE_GOAL
+MSG0573,What if my weekly hours vary each week instead of staying fixed?,WHAT_IF_SIMULATION
+MSG0574,Can you tell me some fun facts about the Indian Space Research Organisation?,OUT_OF_SCOPE
+MSG0575,What is the best investment option for a beginner in India?,OUT_OF_SCOPE
+MSG0576,"What if my exams start next month, how should my plan adjust?",WHAT_IF_SIMULATION
+MSG0577,I want to build a learning plan to switch from mechanical to software engineering.,CREATE_GOAL
+MSG0578,Can you suggest a more gradual path for machine learning?,REQUEST_EASIER
+MSG0579,Can you help me plan a trip to Goa next month?,OUT_OF_SCOPE
+MSG0580,What kind of data does the platform use to personalize my path?,GENERAL_QUESTION
+MSG0581,Can you explain why this assessment score triggered this recommendation?,ASK_WHY_RECOMMENDATION
+MSG0582,I want a project idea using a Zomato or Swiggy style dataset.,REQUEST_PROJECT
+MSG0583,Why is Git suggested before I start data structures?,ASK_WHY_RECOMMENDATION
+MSG0584,Can you help me become a full stack developer? I know only HTML and CSS right now.,CREATE_GOAL
+MSG0585,What is the difference between authentication and authorization?,ASK_CONCEPT_EXPLANATION
+MSG0586,Can we change the goal to prioritize SQL over Excel?,MODIFY_GOAL
+MSG0587,Can you recommend a more beginner friendly resource for Docker?,REQUEST_EASIER
+MSG0588,Can we fast track only the career critical skills?,REQUEST_FASTER
+MSG0589,Can you recommend a project that showcases cloud deployment skills?,REQUEST_PROJECT
+MSG0590,Can you suggest a good recipe for making dosa at home?,OUT_OF_SCOPE
+MSG0591,This was a good balance of theory and practice.,GIVE_FEEDBACK
+MSG0592,This is too advanced given my current mastery level.,REQUEST_EASIER
+MSG0593,Can you update my target skillset to include Kafka and Spark?,MODIFY_GOAL
+MSG0594,Please regenerate my roadmap after this milestone review.,REQUEST_REPLAN
+MSG0595,Please suggest something less advanced for cloud computing.,REQUEST_EASIER
+MSG0596,Can you explain why NPTEL was chosen over Coursera for this topic?,ASK_WHY_RECOMMENDATION
+MSG0597,Why was this particular difficulty level chosen for me?,ASK_WHY_RECOMMENDATION
+MSG0598,How do I switch between different learning modes on this platform?,GENERAL_QUESTION
+MSG0599,"I already have this skill from my previous job, can it be skipped?",REQUEST_SKIP
+MSG0600,"This topic is too theoretical, can you make it more basic?",REQUEST_EASIER
+MSG0601,What happens if I switch my goal from data analyst to data scientist now?,WHAT_IF_SIMULATION
+MSG0602,Please update my roadmap since I already completed a Python course elsewhere.,MODIFY_GOAL
+MSG0603,The project instructions were unclear and hard to follow.,GIVE_FEEDBACK
+MSG0604,Why do I need this project when I already know the basics?,ASK_WHY_RECOMMENDATION
+MSG0605,Can I skip ahead since my diagnostic score was already high here?,REQUEST_SKIP
+MSG0606,"I know Docker basics already, can this be removed from my path?",REQUEST_SKIP
+MSG0607,I recently graduated and I want to target a data engineer role.,CREATE_GOAL
+MSG0608,"Can we skip this module, I am confident in this skill?",REQUEST_SKIP
+MSG0609,What if my deadline extends by three more months?,WHAT_IF_SIMULATION
+MSG0610,Can I skip this assessment since I already passed a similar one?,REQUEST_SKIP
+MSG0611,What if I want to combine my data analyst and data engineer goals?,WHAT_IF_SIMULATION
+MSG0612,"I already completed a similar course elsewhere, can I skip it?",REQUEST_SKIP
+MSG0613,Why does my path include this specific NPTEL course?,ASK_WHY_RECOMMENDATION
+MSG0614,Can you suggest a project I can build for my portfolio?,REQUEST_PROJECT
+MSG0615,Can you recommend a good mobile phone under twenty thousand rupees?,OUT_OF_SCOPE
+MSG0616,Can you make my path more time efficient?,REQUEST_FASTER
+MSG0617,"This is overwhelming, can we start with something more basic?",REQUEST_EASIER
+MSG0618,Can you give me an easier resource for probability?,REQUEST_EASIER
+MSG0619,I want a project that uses Kafka for streaming data.,REQUEST_PROJECT
+MSG0620,"I have an upcoming interview, can we fast track the key topics?",REQUEST_FASTER
+MSG0621,I want to finish my roadmap in half the original time.,REQUEST_FASTER
+MSG0622,I am an ECE graduate and I want to become a software developer.,CREATE_GOAL
+MSG0623,"I have prior exposure to this, please skip it in my roadmap.",REQUEST_SKIP
+MSG0624,Can you explain what an API endpoint is?,ASK_CONCEPT_EXPLANATION
+MSG0625,"I want to get into machine learning, I only know Python basics for now.",CREATE_GOAL
+MSG0626,"I know this topic from my previous role, please skip it.",REQUEST_SKIP
+MSG0627,"What if I increase my weekly hours to fifteen, how much faster would I finish?",WHAT_IF_SIMULATION
+MSG0628,Why is this the highest priority item in my dashboard right now?,ASK_WHY_RECOMMENDATION
+MSG0629,Can you explain what overfitting means in machine learning?,ASK_CONCEPT_EXPLANATION
+MSG0630,Why does my roadmap suggest this resource before the capstone project?,ASK_WHY_RECOMMENDATION
+MSG0631,What is the score of today's India cricket match?,OUT_OF_SCOPE
+MSG0632,Can you recommend a good coffee shop to work from in Pune?,OUT_OF_SCOPE
+MSG0633,How does the diagnostic assessment work exactly?,GENERAL_QUESTION
+MSG0634,What happens if I want to prioritize speed over depth for this goal?,WHAT_IF_SIMULATION
+MSG0635,"I am confident about statistics, can we skip this course?",REQUEST_SKIP
+MSG0636,I want to revise my goal after switching colleges.,MODIFY_GOAL
+MSG0637,How can I trust that these recommendations are not random?,GENERAL_QUESTION
+MSG0638,Please replan my path since I switched from fast track to deep mastery mode.,REQUEST_REPLAN
+MSG0639,What is the difference between a list and a tuple in Python?,ASK_CONCEPT_EXPLANATION
+MSG0640,Please suggest an easier course for statistics.,REQUEST_EASIER
+MSG0641,What is the difference between precision and recall?,ASK_CONCEPT_EXPLANATION
+MSG0642,What if I want to remove the web development phase from my path?,WHAT_IF_SIMULATION
+MSG0643,How does the platform personalize content for my learning style?,GENERAL_QUESTION
+MSG0644,"I already know Linux basics, can this be marked complete?",REQUEST_SKIP
+MSG0645,What is the best diet plan for gaining muscle?,OUT_OF_SCOPE
+MSG0646,What is the difference between a diagnostic and a formative quiz?,GENERAL_QUESTION
+MSG0647,Please change my deadline to six months from today.,MODIFY_GOAL
+MSG0648,"This is beyond my current level, please adjust it.",REQUEST_EASIER
+MSG0649,I want to finish this goal in the shortest time possible.,REQUEST_FASTER
+MSG0650,"I want to become a cloud/devops engineer, I know Linux basics only.",CREATE_GOAL

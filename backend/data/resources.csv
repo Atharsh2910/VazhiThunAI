@@ -1,0 +1,181 @@
+resource_id,title,provider,resource_type,format,primary_skill_id,primary_skill_name,domain,difficulty_score,duration_minutes,language,quality_score,status
+RES0001,Python Basics — Foundations,Great Learning,article,text,SK001,Python Basics,Programming Foundations,0.05,120,en,0.82,active
+RES0002,Python Basics — Core Concepts,Simplilearn,book,text,SK001,Python Basics,Programming Foundations,0.15,210,en,0.77,active
+RES0003,Python Basics — Applied Practice,Naukri Learning,video_course,video,SK001,Python Basics,Programming Foundations,0.27,300,en,0.83,active
+RES0004,Git & Version Control — Foundations,NPTEL,practice_set,hands_on,SK002,Git & Version Control,Programming Foundations,0.05,120,en,0.9,active
+RES0005,Git & Version Control — Core Concepts,Scaler,article,text,SK002,Git & Version Control,Programming Foundations,0.15,210,en,0.76,active
+RES0006,Git & Version Control — Applied Practice,Coursera India,book,text,SK002,Git & Version Control,Programming Foundations,0.27,300,en,0.76,active
+RES0007,Python Data Structures — Foundations,IIT Madras Online Degree,interactive_lab,hands_on,SK003,Python Data Structures,Programming Foundations,0.25,240,en,0.91,active
+RES0008,Python Data Structures — Core Concepts,Infosys Springboard,practice_set,hands_on,SK003,Python Data Structures,Programming Foundations,0.35,330,en,0.84,active
+RES0009,Python Data Structures — Applied Practice,GeeksforGeeks,article,text,SK003,Python Data Structures,Programming Foundations,0.47,420,en,0.74,active
+RES0010,Java Basics — Foundations,Coding Ninjas,video_course,video,SK004,Java Basics,Programming Foundations,0.25,240,en,0.82,active
+RES0011,Java Basics — Core Concepts,TCS iON,interactive_lab,hands_on,SK004,Java Basics,Programming Foundations,0.35,330,en,0.74,active
+RES0012,Java Basics — Applied Practice,upGrad,practice_set,hands_on,SK004,Java Basics,Programming Foundations,0.47,420,en,0.74,active
+RES0013,OOP in Python — Foundations,Great Learning,book,text,SK005,OOP in Python,Programming Foundations,0.45,360,en,0.8,active
+RES0014,OOP in Python — Core Concepts,Simplilearn,video_course,video,SK005,OOP in Python,Programming Foundations,0.55,450,en,0.63,active
+RES0015,OOP in Python — Applied Practice,Naukri Learning,interactive_lab,hands_on,SK005,OOP in Python,Programming Foundations,0.67,540,en,0.64,active
+RES0016,C++ Basics — Foundations,NPTEL,article,text,SK006,C++ Basics,Programming Foundations,0.45,360,en,0.74,active
+RES0017,C++ Basics — Core Concepts,Scaler,book,text,SK006,C++ Basics,Programming Foundations,0.55,450,en,0.7,active
+RES0018,C++ Basics — Applied Practice,Coursera India,video_course,video,SK006,C++ Basics,Programming Foundations,0.67,540,en,0.81,active
+RES0019,Data Structures & Algorithms — Foundations,IIT Madras Online Degree,practice_set,hands_on,SK007,Data Structures & Algorithms,Programming Foundations,0.65,480,en,0.71,active
+RES0020,Data Structures & Algorithms — Core Concepts,Infosys Springboard,article,text,SK007,Data Structures & Algorithms,Programming Foundations,0.75,570,en,0.67,active
+RES0021,Data Structures & Algorithms — Applied Practice,GeeksforGeeks,book,text,SK007,Data Structures & Algorithms,Programming Foundations,0.87,660,en,0.9,active
+RES0022,Problem Solving (DSA Practice) — Foundations,Coding Ninjas,interactive_lab,hands_on,SK008,Problem Solving (DSA Practice),Programming Foundations,0.65,480,en,0.76,active
+RES0023,Problem Solving (DSA Practice) — Core Concepts,TCS iON,practice_set,hands_on,SK008,Problem Solving (DSA Practice),Programming Foundations,0.75,570,en,0.79,active
+RES0024,Problem Solving (DSA Practice) — Applied Practice,upGrad,article,text,SK008,Problem Solving (DSA Practice),Programming Foundations,0.87,660,en,0.67,active
+RES0025,Competitive Programming — Foundations,Great Learning,video_course,video,SK009,Competitive Programming,Programming Foundations,0.85,600,en,0.74,active
+RES0026,Competitive Programming — Core Concepts,Simplilearn,interactive_lab,hands_on,SK009,Competitive Programming,Programming Foundations,0.95,690,en,0.79,active
+RES0027,Competitive Programming — Applied Practice,Naukri Learning,practice_set,hands_on,SK009,Competitive Programming,Programming Foundations,0.98,780,en,0.69,active
+RES0028,System Design Basics — Foundations,NPTEL,book,text,SK010,System Design Basics,Programming Foundations,0.85,600,en,0.81,active
+RES0029,System Design Basics — Core Concepts,Scaler,video_course,video,SK010,System Design Basics,Programming Foundations,0.95,690,en,0.73,active
+RES0030,System Design Basics — Applied Practice,Coursera India,interactive_lab,hands_on,SK010,System Design Basics,Programming Foundations,0.98,780,en,0.76,active
+RES0031,Descriptive Statistics — Foundations,IIT Madras Online Degree,article,text,SK011,Descriptive Statistics,Data & Statistics,0.05,120,en,0.73,active
+RES0032,Descriptive Statistics — Core Concepts,Infosys Springboard,book,text,SK011,Descriptive Statistics,Data & Statistics,0.15,210,en,0.93,active
+RES0033,Descriptive Statistics — Applied Practice,GeeksforGeeks,video_course,video,SK011,Descriptive Statistics,Data & Statistics,0.27,300,en,0.78,active
+RES0034,SQL Basics — Foundations,Coding Ninjas,practice_set,hands_on,SK012,SQL Basics,Data & Statistics,0.05,120,en,0.7,active
+RES0035,SQL Basics — Core Concepts,TCS iON,article,text,SK012,SQL Basics,Data & Statistics,0.15,210,en,0.85,active
+RES0036,SQL Basics — Applied Practice,upGrad,book,text,SK012,SQL Basics,Data & Statistics,0.27,300,en,0.68,active
+RES0037,Excel for Data Analysis — Foundations,Great Learning,interactive_lab,hands_on,SK013,Excel for Data Analysis,Data & Statistics,0.25,240,en,0.8,active
+RES0038,Excel for Data Analysis — Core Concepts,Simplilearn,practice_set,hands_on,SK013,Excel for Data Analysis,Data & Statistics,0.35,330,en,0.62,active
+RES0039,Excel for Data Analysis — Applied Practice,Naukri Learning,article,text,SK013,Excel for Data Analysis,Data & Statistics,0.47,420,en,0.67,active
+RES0040,Linear Algebra — Foundations,NPTEL,video_course,video,SK014,Linear Algebra,Data & Statistics,0.25,240,en,0.8,active
+RES0041,Linear Algebra — Core Concepts,Scaler,interactive_lab,hands_on,SK014,Linear Algebra,Data & Statistics,0.35,330,en,0.84,active
+RES0042,Linear Algebra — Applied Practice,Coursera India,practice_set,hands_on,SK014,Linear Algebra,Data & Statistics,0.47,420,en,0.79,active
+RES0043,Probability Fundamentals — Foundations,IIT Madras Online Degree,book,text,SK015,Probability Fundamentals,Data & Statistics,0.45,360,en,0.77,active
+RES0044,Probability Fundamentals — Core Concepts,Infosys Springboard,video_course,video,SK015,Probability Fundamentals,Data & Statistics,0.55,450,en,0.76,active
+RES0045,Probability Fundamentals — Applied Practice,GeeksforGeeks,interactive_lab,hands_on,SK015,Probability Fundamentals,Data & Statistics,0.67,540,en,0.66,active
+RES0046,Data Visualization — Foundations,Coding Ninjas,article,text,SK016,Data Visualization,Data & Statistics,0.45,360,en,0.72,active
+RES0047,Data Visualization — Core Concepts,TCS iON,book,text,SK016,Data Visualization,Data & Statistics,0.55,450,en,0.74,active
+RES0048,Data Visualization — Applied Practice,upGrad,video_course,video,SK016,Data Visualization,Data & Statistics,0.67,540,en,0.86,active
+RES0049,Inferential Statistics — Foundations,Great Learning,practice_set,hands_on,SK017,Inferential Statistics,Data & Statistics,0.65,480,en,0.81,active
+RES0050,Inferential Statistics — Core Concepts,Simplilearn,article,text,SK017,Inferential Statistics,Data & Statistics,0.75,570,en,0.64,active
+RES0051,Inferential Statistics — Applied Practice,Naukri Learning,book,text,SK017,Inferential Statistics,Data & Statistics,0.87,660,en,0.81,active
+RES0052,Exploratory Data Analysis — Foundations,NPTEL,interactive_lab,hands_on,SK018,Exploratory Data Analysis,Data & Statistics,0.65,480,en,0.75,active
+RES0053,Exploratory Data Analysis — Core Concepts,Scaler,practice_set,hands_on,SK018,Exploratory Data Analysis,Data & Statistics,0.75,570,en,0.73,active
+RES0054,Exploratory Data Analysis — Applied Practice,Coursera India,article,text,SK018,Exploratory Data Analysis,Data & Statistics,0.87,660,en,0.83,active
+RES0055,Advanced SQL — Foundations,IIT Madras Online Degree,video_course,video,SK019,Advanced SQL,Data & Statistics,0.85,600,en,0.86,active
+RES0056,Advanced SQL — Core Concepts,Infosys Springboard,interactive_lab,hands_on,SK019,Advanced SQL,Data & Statistics,0.95,690,en,0.85,active
+RES0057,Advanced SQL — Applied Practice,GeeksforGeeks,practice_set,hands_on,SK019,Advanced SQL,Data & Statistics,0.98,780,en,0.71,active
+RES0058,Calculus for ML — Foundations,Coding Ninjas,book,text,SK020,Calculus for ML,Data & Statistics,0.85,600,en,0.76,active
+RES0059,Calculus for ML — Core Concepts,TCS iON,video_course,video,SK020,Calculus for ML,Data & Statistics,0.95,690,en,0.81,active
+RES0060,Calculus for ML — Applied Practice,upGrad,interactive_lab,hands_on,SK020,Calculus for ML,Data & Statistics,0.98,780,en,0.86,active
+RES0061,ML Foundations — Foundations,Great Learning,article,text,SK021,ML Foundations,Machine Learning,0.05,120,en,0.74,active
+RES0062,ML Foundations — Core Concepts,Simplilearn,book,text,SK021,ML Foundations,Machine Learning,0.15,210,en,0.77,active
+RES0063,ML Foundations — Applied Practice,Naukri Learning,video_course,video,SK021,ML Foundations,Machine Learning,0.27,300,en,0.69,active
+RES0064,Regression Techniques — Foundations,NPTEL,practice_set,hands_on,SK022,Regression Techniques,Machine Learning,0.05,120,en,0.68,active
+RES0065,Regression Techniques — Core Concepts,Scaler,article,text,SK022,Regression Techniques,Machine Learning,0.15,210,en,0.85,active
+RES0066,Regression Techniques — Applied Practice,Coursera India,book,text,SK022,Regression Techniques,Machine Learning,0.27,300,en,0.89,active
+RES0067,Classification Techniques — Foundations,IIT Madras Online Degree,interactive_lab,hands_on,SK023,Classification Techniques,Machine Learning,0.25,240,en,0.77,active
+RES0068,Classification Techniques — Core Concepts,Infosys Springboard,practice_set,hands_on,SK023,Classification Techniques,Machine Learning,0.35,330,en,0.86,active
+RES0069,Classification Techniques — Applied Practice,GeeksforGeeks,article,text,SK023,Classification Techniques,Machine Learning,0.47,420,en,0.81,active
+RES0070,Model Evaluation — Foundations,Coding Ninjas,video_course,video,SK024,Model Evaluation,Machine Learning,0.25,240,en,0.73,active
+RES0071,Model Evaluation — Core Concepts,TCS iON,interactive_lab,hands_on,SK024,Model Evaluation,Machine Learning,0.35,330,en,0.81,active
+RES0072,Model Evaluation — Applied Practice,upGrad,practice_set,hands_on,SK024,Model Evaluation,Machine Learning,0.47,420,en,0.9,active
+RES0073,Feature Engineering — Foundations,Great Learning,book,text,SK025,Feature Engineering,Machine Learning,0.45,360,en,0.78,active
+RES0074,Feature Engineering — Core Concepts,Simplilearn,video_course,video,SK025,Feature Engineering,Machine Learning,0.55,450,en,0.91,active
+RES0075,Feature Engineering — Applied Practice,Naukri Learning,interactive_lab,hands_on,SK025,Feature Engineering,Machine Learning,0.67,540,en,0.57,active
+RES0076,Ensemble Methods — Foundations,NPTEL,article,text,SK026,Ensemble Methods,Machine Learning,0.45,360,en,0.85,active
+RES0077,Ensemble Methods — Core Concepts,Scaler,book,text,SK026,Ensemble Methods,Machine Learning,0.55,450,en,0.79,active
+RES0078,Ensemble Methods — Applied Practice,Coursera India,video_course,video,SK026,Ensemble Methods,Machine Learning,0.67,540,en,0.76,active
+RES0079,Neural Networks — Foundations,IIT Madras Online Degree,practice_set,hands_on,SK027,Neural Networks,Machine Learning,0.65,480,en,0.79,active
+RES0080,Neural Networks — Core Concepts,Infosys Springboard,article,text,SK027,Neural Networks,Machine Learning,0.75,570,en,0.62,active
+RES0081,Neural Networks — Applied Practice,GeeksforGeeks,book,text,SK027,Neural Networks,Machine Learning,0.87,660,en,0.76,active
+RES0082,Deep Learning — Foundations,Coding Ninjas,interactive_lab,hands_on,SK028,Deep Learning,Machine Learning,0.65,480,en,0.81,active
+RES0083,Deep Learning — Core Concepts,TCS iON,practice_set,hands_on,SK028,Deep Learning,Machine Learning,0.75,570,en,0.9,active
+RES0084,Deep Learning — Applied Practice,upGrad,article,text,SK028,Deep Learning,Machine Learning,0.87,660,en,0.74,active
+RES0085,Computer Vision — Foundations,Great Learning,video_course,video,SK029,Computer Vision,Machine Learning,0.85,600,en,0.72,active
+RES0086,Computer Vision — Core Concepts,Simplilearn,interactive_lab,hands_on,SK029,Computer Vision,Machine Learning,0.95,690,en,0.74,active
+RES0087,Computer Vision — Applied Practice,Naukri Learning,practice_set,hands_on,SK029,Computer Vision,Machine Learning,0.98,780,en,0.85,active
+RES0088,Natural Language Processing — Foundations,NPTEL,book,text,SK030,Natural Language Processing,Machine Learning,0.85,600,en,0.81,active
+RES0089,Natural Language Processing — Core Concepts,Scaler,video_course,video,SK030,Natural Language Processing,Machine Learning,0.95,690,en,0.74,active
+RES0090,Natural Language Processing — Applied Practice,Coursera India,interactive_lab,hands_on,SK030,Natural Language Processing,Machine Learning,0.98,780,en,0.82,active
+RES0091,HTML & CSS — Foundations,IIT Madras Online Degree,article,text,SK031,HTML & CSS,Web Development,0.05,120,en,0.79,active
+RES0092,HTML & CSS — Core Concepts,Infosys Springboard,book,text,SK031,HTML & CSS,Web Development,0.15,210,en,0.86,active
+RES0093,HTML & CSS — Applied Practice,GeeksforGeeks,video_course,video,SK031,HTML & CSS,Web Development,0.27,300,en,0.72,active
+RES0094,JavaScript Basics — Foundations,Coding Ninjas,practice_set,hands_on,SK032,JavaScript Basics,Web Development,0.05,120,en,0.75,active
+RES0095,JavaScript Basics — Core Concepts,TCS iON,article,text,SK032,JavaScript Basics,Web Development,0.15,210,en,0.75,active
+RES0096,JavaScript Basics — Applied Practice,upGrad,book,text,SK032,JavaScript Basics,Web Development,0.27,300,en,0.66,active
+RES0097,Responsive UI Design — Foundations,Great Learning,interactive_lab,hands_on,SK033,Responsive UI Design,Web Development,0.25,240,en,0.8,active
+RES0098,Responsive UI Design — Core Concepts,Simplilearn,practice_set,hands_on,SK033,Responsive UI Design,Web Development,0.35,330,en,0.8,active
+RES0099,Responsive UI Design — Applied Practice,Naukri Learning,article,text,SK033,Responsive UI Design,Web Development,0.47,420,en,0.78,active
+RES0100,Database Design (RDBMS) — Foundations,NPTEL,video_course,video,SK034,Database Design (RDBMS),Web Development,0.25,240,en,0.76,active
+RES0101,Database Design (RDBMS) — Core Concepts,Scaler,interactive_lab,hands_on,SK034,Database Design (RDBMS),Web Development,0.35,330,en,0.67,active
+RES0102,Database Design (RDBMS) — Applied Practice,Coursera India,practice_set,hands_on,SK034,Database Design (RDBMS),Web Development,0.47,420,en,0.75,active
+RES0103,React Fundamentals — Foundations,IIT Madras Online Degree,book,text,SK035,React Fundamentals,Web Development,0.45,360,en,0.75,active
+RES0104,React Fundamentals — Core Concepts,Infosys Springboard,video_course,video,SK035,React Fundamentals,Web Development,0.55,450,en,0.72,active
+RES0105,React Fundamentals — Applied Practice,GeeksforGeeks,interactive_lab,hands_on,SK035,React Fundamentals,Web Development,0.67,540,en,0.77,active
+RES0106,Node.js Basics — Foundations,Coding Ninjas,article,text,SK036,Node.js Basics,Web Development,0.45,360,en,0.81,active
+RES0107,Node.js Basics — Core Concepts,TCS iON,book,text,SK036,Node.js Basics,Web Development,0.55,450,en,0.93,active
+RES0108,Node.js Basics — Applied Practice,upGrad,video_course,video,SK036,Node.js Basics,Web Development,0.67,540,en,0.79,active
+RES0109,REST API Design — Foundations,Great Learning,practice_set,hands_on,SK037,REST API Design,Web Development,0.65,480,en,0.8,active
+RES0110,REST API Design — Core Concepts,Simplilearn,article,text,SK037,REST API Design,Web Development,0.75,570,en,0.77,active
+RES0111,REST API Design — Applied Practice,Naukri Learning,book,text,SK037,REST API Design,Web Development,0.87,660,en,0.63,active
+RES0112,Authentication & Security Basics — Foundations,NPTEL,interactive_lab,hands_on,SK038,Authentication & Security Basics,Web Development,0.65,480,en,0.78,active
+RES0113,Authentication & Security Basics — Core Concepts,Scaler,practice_set,hands_on,SK038,Authentication & Security Basics,Web Development,0.75,570,en,0.78,active
+RES0114,Authentication & Security Basics — Applied Practice,Coursera India,article,text,SK038,Authentication & Security Basics,Web Development,0.87,660,en,0.98,active
+RES0115,Testing Fundamentals — Foundations,IIT Madras Online Degree,video_course,video,SK039,Testing Fundamentals,Web Development,0.85,600,en,0.76,active
+RES0116,Testing Fundamentals — Core Concepts,Infosys Springboard,interactive_lab,hands_on,SK039,Testing Fundamentals,Web Development,0.95,690,en,0.8,active
+RES0117,Testing Fundamentals — Applied Practice,GeeksforGeeks,practice_set,hands_on,SK039,Testing Fundamentals,Web Development,0.98,780,en,0.78,active
+RES0118,Full Stack Project Architecture — Foundations,Coding Ninjas,book,text,SK040,Full Stack Project Architecture,Web Development,0.85,600,en,0.69,active
+RES0119,Full Stack Project Architecture — Core Concepts,TCS iON,video_course,video,SK040,Full Stack Project Architecture,Web Development,0.95,690,en,0.87,active
+RES0120,Full Stack Project Architecture — Applied Practice,upGrad,interactive_lab,hands_on,SK040,Full Stack Project Architecture,Web Development,0.98,780,en,0.84,active
+RES0121,Linux Fundamentals — Foundations,Great Learning,article,text,SK041,Linux Fundamentals,Cloud & DevOps,0.05,120,en,0.84,active
+RES0122,Linux Fundamentals — Core Concepts,Simplilearn,book,text,SK041,Linux Fundamentals,Cloud & DevOps,0.15,210,en,0.71,active
+RES0123,Linux Fundamentals — Applied Practice,Naukri Learning,video_course,video,SK041,Linux Fundamentals,Cloud & DevOps,0.27,300,en,0.89,active
+RES0124,Cloud Computing Basics — Foundations,NPTEL,practice_set,hands_on,SK042,Cloud Computing Basics,Cloud & DevOps,0.05,120,en,0.67,active
+RES0125,Cloud Computing Basics — Core Concepts,Scaler,article,text,SK042,Cloud Computing Basics,Cloud & DevOps,0.15,210,en,0.83,active
+RES0126,Cloud Computing Basics — Applied Practice,Coursera India,book,text,SK042,Cloud Computing Basics,Cloud & DevOps,0.27,300,en,0.96,active
+RES0127,Cloud Security Basics — Foundations,IIT Madras Online Degree,interactive_lab,hands_on,SK043,Cloud Security Basics,Cloud & DevOps,0.25,240,en,0.7,active
+RES0128,Cloud Security Basics — Core Concepts,Infosys Springboard,practice_set,hands_on,SK043,Cloud Security Basics,Cloud & DevOps,0.35,330,en,0.73,active
+RES0129,Cloud Security Basics — Applied Practice,GeeksforGeeks,article,text,SK043,Cloud Security Basics,Cloud & DevOps,0.47,420,en,0.79,active
+RES0130,AWS Core Services — Foundations,Coding Ninjas,video_course,video,SK044,AWS Core Services,Cloud & DevOps,0.25,240,en,0.74,active
+RES0131,AWS Core Services — Core Concepts,TCS iON,interactive_lab,hands_on,SK044,AWS Core Services,Cloud & DevOps,0.35,330,en,0.66,active
+RES0132,AWS Core Services — Applied Practice,upGrad,practice_set,hands_on,SK044,AWS Core Services,Cloud & DevOps,0.47,420,en,0.79,active
+RES0133,Docker Fundamentals — Foundations,Great Learning,book,text,SK045,Docker Fundamentals,Cloud & DevOps,0.45,360,en,0.7,active
+RES0134,Docker Fundamentals — Core Concepts,Simplilearn,video_course,video,SK045,Docker Fundamentals,Cloud & DevOps,0.55,450,en,0.82,active
+RES0135,Docker Fundamentals — Applied Practice,Naukri Learning,interactive_lab,hands_on,SK045,Docker Fundamentals,Cloud & DevOps,0.67,540,en,0.71,active
+RES0136,Monitoring & Logging — Foundations,NPTEL,article,text,SK046,Monitoring & Logging,Cloud & DevOps,0.45,360,en,0.9,active
+RES0137,Monitoring & Logging — Core Concepts,Scaler,book,text,SK046,Monitoring & Logging,Cloud & DevOps,0.55,450,en,0.72,active
+RES0138,Monitoring & Logging — Applied Practice,Coursera India,video_course,video,SK046,Monitoring & Logging,Cloud & DevOps,0.67,540,en,0.75,active
+RES0139,Kubernetes Basics — Foundations,IIT Madras Online Degree,practice_set,hands_on,SK047,Kubernetes Basics,Cloud & DevOps,0.65,480,en,0.85,active
+RES0140,Kubernetes Basics — Core Concepts,Infosys Springboard,article,text,SK047,Kubernetes Basics,Cloud & DevOps,0.75,570,en,0.68,active
+RES0141,Kubernetes Basics — Applied Practice,GeeksforGeeks,book,text,SK047,Kubernetes Basics,Cloud & DevOps,0.87,660,en,0.8,active
+RES0142,CI/CD Pipelines — Foundations,Coding Ninjas,interactive_lab,hands_on,SK048,CI/CD Pipelines,Cloud & DevOps,0.65,480,en,0.88,active
+RES0143,CI/CD Pipelines — Core Concepts,TCS iON,practice_set,hands_on,SK048,CI/CD Pipelines,Cloud & DevOps,0.75,570,en,0.65,active
+RES0144,CI/CD Pipelines — Applied Practice,upGrad,article,text,SK048,CI/CD Pipelines,Cloud & DevOps,0.87,660,en,0.79,active
+RES0145,Infrastructure as Code — Foundations,Great Learning,video_course,video,SK049,Infrastructure as Code,Cloud & DevOps,0.85,600,en,0.8,active
+RES0146,Infrastructure as Code — Core Concepts,Simplilearn,interactive_lab,hands_on,SK049,Infrastructure as Code,Cloud & DevOps,0.95,690,en,0.84,active
+RES0147,Infrastructure as Code — Applied Practice,Naukri Learning,practice_set,hands_on,SK049,Infrastructure as Code,Cloud & DevOps,0.98,780,en,0.68,active
+RES0148,Model Deployment — Foundations,NPTEL,book,text,SK050,Model Deployment,Cloud & DevOps,0.85,600,en,0.67,active
+RES0149,Model Deployment — Core Concepts,Scaler,video_course,video,SK050,Model Deployment,Cloud & DevOps,0.95,690,en,0.82,active
+RES0150,Model Deployment — Applied Practice,Coursera India,interactive_lab,hands_on,SK050,Model Deployment,Cloud & DevOps,0.98,780,en,0.8,active
+RES0151,Data Modeling — Foundations,IIT Madras Online Degree,article,text,SK051,Data Modeling,Data Engineering,0.05,120,en,0.8,active
+RES0152,Data Modeling — Core Concepts,Infosys Springboard,book,text,SK051,Data Modeling,Data Engineering,0.15,210,en,0.81,active
+RES0153,Data Modeling — Applied Practice,GeeksforGeeks,video_course,video,SK051,Data Modeling,Data Engineering,0.27,300,en,0.73,active
+RES0154,NoSQL Databases — Foundations,Coding Ninjas,practice_set,hands_on,SK052,NoSQL Databases,Data Engineering,0.05,120,en,0.8,active
+RES0155,NoSQL Databases — Core Concepts,TCS iON,article,text,SK052,NoSQL Databases,Data Engineering,0.15,210,en,0.8,active
+RES0156,NoSQL Databases — Applied Practice,upGrad,book,text,SK052,NoSQL Databases,Data Engineering,0.27,300,en,0.72,active
+RES0157,ETL Fundamentals — Foundations,Great Learning,interactive_lab,hands_on,SK053,ETL Fundamentals,Data Engineering,0.25,240,en,0.93,active
+RES0158,ETL Fundamentals — Core Concepts,Simplilearn,practice_set,hands_on,SK053,ETL Fundamentals,Data Engineering,0.35,330,en,0.82,active
+RES0159,ETL Fundamentals — Applied Practice,Naukri Learning,article,text,SK053,ETL Fundamentals,Data Engineering,0.47,420,en,0.68,active
+RES0160,Data Warehousing — Foundations,NPTEL,video_course,video,SK054,Data Warehousing,Data Engineering,0.25,240,en,0.83,active
+RES0161,Data Warehousing — Core Concepts,Scaler,interactive_lab,hands_on,SK054,Data Warehousing,Data Engineering,0.35,330,en,0.7,active
+RES0162,Data Warehousing — Applied Practice,Coursera India,practice_set,hands_on,SK054,Data Warehousing,Data Engineering,0.47,420,en,0.84,active
+RES0163,Big Data Fundamentals — Foundations,IIT Madras Online Degree,book,text,SK055,Big Data Fundamentals,Data Engineering,0.45,360,en,0.87,active
+RES0164,Big Data Fundamentals — Core Concepts,Infosys Springboard,video_course,video,SK055,Big Data Fundamentals,Data Engineering,0.55,450,en,0.71,active
+RES0165,Big Data Fundamentals — Applied Practice,GeeksforGeeks,interactive_lab,hands_on,SK055,Big Data Fundamentals,Data Engineering,0.67,540,en,0.86,active
+RES0166,Airflow Orchestration — Foundations,Coding Ninjas,article,text,SK056,Airflow Orchestration,Data Engineering,0.45,360,en,0.81,active
+RES0167,Airflow Orchestration — Core Concepts,TCS iON,book,text,SK056,Airflow Orchestration,Data Engineering,0.55,450,en,0.85,active
+RES0168,Airflow Orchestration — Applied Practice,upGrad,video_course,video,SK056,Airflow Orchestration,Data Engineering,0.67,540,en,0.93,active
+RES0169,Apache Spark Basics — Foundations,Great Learning,practice_set,hands_on,SK057,Apache Spark Basics,Data Engineering,0.65,480,en,0.76,active
+RES0170,Apache Spark Basics — Core Concepts,Simplilearn,article,text,SK057,Apache Spark Basics,Data Engineering,0.75,570,en,0.72,active
+RES0171,Apache Spark Basics — Applied Practice,Naukri Learning,book,text,SK057,Apache Spark Basics,Data Engineering,0.87,660,en,0.71,active
+RES0172,Data Quality & Governance — Foundations,NPTEL,interactive_lab,hands_on,SK058,Data Quality & Governance,Data Engineering,0.65,480,en,0.71,active
+RES0173,Data Quality & Governance — Core Concepts,Scaler,practice_set,hands_on,SK058,Data Quality & Governance,Data Engineering,0.75,570,en,0.77,active
+RES0174,Data Quality & Governance — Applied Practice,Coursera India,article,text,SK058,Data Quality & Governance,Data Engineering,0.87,660,en,0.81,active
+RES0175,Streaming Data (Kafka Basics) — Foundations,IIT Madras Online Degree,video_course,video,SK059,Streaming Data (Kafka Basics),Data Engineering,0.85,600,en,0.8,active
+RES0176,Streaming Data (Kafka Basics) — Core Concepts,Infosys Springboard,interactive_lab,hands_on,SK059,Streaming Data (Kafka Basics),Data Engineering,0.95,690,en,0.85,active
+RES0177,Streaming Data (Kafka Basics) — Applied Practice,GeeksforGeeks,practice_set,hands_on,SK059,Streaming Data (Kafka Basics),Data Engineering,0.98,780,en,0.78,active
+RES0178,Data Pipeline Design — Foundations,Coding Ninjas,book,text,SK060,Data Pipeline Design,Data Engineering,0.85,600,en,0.9,active
+RES0179,Data Pipeline Design — Core Concepts,TCS iON,video_course,video,SK060,Data Pipeline Design,Data Engineering,0.95,690,en,0.76,active
+RES0180,Data Pipeline Design — Applied Practice,upGrad,interactive_lab,hands_on,SK060,Data Pipeline Design,Data Engineering,0.98,780,en,0.98,active

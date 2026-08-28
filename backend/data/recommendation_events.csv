@@ -1,0 +1,791 @@
+recommendation_event_id,learner_id,resource_id,skill_name,score,reason,accepted
+REC00001,LRN0001,RES0036,SQL Basics,0.685,Addresses skill gap in SQL Basics required for Data Analyst,False
+REC00002,LRN0001,RES0056,Advanced SQL,0.887,Addresses skill gap in Advanced SQL required for Data Analyst,True
+REC00003,LRN0001,RES0037,Excel for Data Analysis,0.763,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00004,LRN0001,RES0054,Exploratory Data Analysis,0.779,Addresses skill gap in Exploratory Data Analysis required for Data Analyst,False
+REC00005,LRN0002,RES0008,Python Data Structures,0.725,Addresses skill gap in Python Data Structures required for Data Scientist,True
+REC00006,LRN0002,RES0049,Inferential Statistics,0.876,Addresses skill gap in Inferential Statistics required for Data Scientist,True
+REC00007,LRN0002,RES0069,Classification Techniques,0.863,Addresses skill gap in Classification Techniques required for Data Scientist,True
+REC00008,LRN0002,RES0071,Model Evaluation,0.913,Addresses skill gap in Model Evaluation required for Data Scientist,True
+REC00009,LRN0003,RES0061,ML Foundations,0.812,Addresses skill gap in ML Foundations required for Machine Learning Engineer,True
+REC00010,LRN0003,RES0084,Deep Learning,0.828,Addresses skill gap in Deep Learning required for Machine Learning Engineer,True
+REC00011,LRN0003,RES0149,Model Deployment,0.752,Addresses skill gap in Model Deployment required for Machine Learning Engineer,True
+REC00012,LRN0003,RES0070,Model Evaluation,0.806,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00013,LRN0004,RES0105,React Fundamentals,0.7,Addresses skill gap in React Fundamentals required for Full Stack Developer,False
+REC00014,LRN0004,RES0107,Node.js Basics,0.84,Addresses skill gap in Node.js Basics required for Full Stack Developer,True
+REC00015,LRN0004,RES0109,REST API Design,0.74,Addresses skill gap in REST API Design required for Full Stack Developer,True
+REC00016,LRN0005,RES0153,Data Modeling,0.753,Addresses skill gap in Data Modeling required for Data Engineer,False
+REC00017,LRN0005,RES0158,ETL Fundamentals,0.766,Addresses skill gap in ETL Fundamentals required for Data Engineer,True
+REC00018,LRN0006,RES0123,Linux Fundamentals,0.735,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,False
+REC00019,LRN0006,RES0125,Cloud Computing Basics,0.771,Addresses skill gap in Cloud Computing Basics required for Cloud/DevOps Engineer,True
+REC00020,LRN0006,RES0130,AWS Core Services,0.805,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,True
+REC00021,LRN0006,RES0144,CI/CD Pipelines,0.85,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00022,LRN0007,RES0035,SQL Basics,0.867,Addresses skill gap in SQL Basics required for Data Analyst,True
+REC00023,LRN0007,RES0033,Descriptive Statistics,0.91,Addresses skill gap in Descriptive Statistics required for Data Analyst,False
+REC00024,LRN0007,RES0053,Exploratory Data Analysis,0.868,Addresses skill gap in Exploratory Data Analysis required for Data Analyst,True
+REC00025,LRN0008,RES0007,Python Data Structures,0.748,Addresses skill gap in Python Data Structures required for Data Scientist,True
+REC00026,LRN0008,RES0066,Regression Techniques,0.822,Addresses skill gap in Regression Techniques required for Data Scientist,True
+REC00027,LRN0008,RES0068,Classification Techniques,0.746,Addresses skill gap in Classification Techniques required for Data Scientist,True
+REC00028,LRN0008,RES0070,Model Evaluation,0.677,Addresses skill gap in Model Evaluation required for Data Scientist,True
+REC00029,LRN0009,RES0081,Neural Networks,0.703,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00030,LRN0009,RES0083,Deep Learning,0.78,Addresses skill gap in Deep Learning required for Machine Learning Engineer,True
+REC00031,LRN0009,RES0148,Model Deployment,0.695,Addresses skill gap in Model Deployment required for Machine Learning Engineer,True
+REC00032,LRN0010,RES0096,JavaScript Basics,0.852,Addresses skill gap in JavaScript Basics required for Full Stack Developer,True
+REC00033,LRN0010,RES0104,React Fundamentals,0.722,Addresses skill gap in React Fundamentals required for Full Stack Developer,False
+REC00034,LRN0010,RES0106,Node.js Basics,0.833,Addresses skill gap in Node.js Basics required for Full Stack Developer,False
+REC00035,LRN0011,RES0057,Advanced SQL,0.777,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00036,LRN0011,RES0152,Data Modeling,0.791,Addresses skill gap in Data Modeling required for Data Engineer,False
+REC00037,LRN0011,RES0180,Data Pipeline Design,0.671,Addresses skill gap in Data Pipeline Design required for Data Engineer,True
+REC00038,LRN0012,RES0122,Linux Fundamentals,0.796,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,True
+REC00039,LRN0012,RES0124,Cloud Computing Basics,0.735,Addresses skill gap in Cloud Computing Basics required for Cloud/DevOps Engineer,True
+REC00040,LRN0012,RES0141,Kubernetes Basics,0.978,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,True
+REC00041,LRN0012,RES0143,CI/CD Pipelines,0.735,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00042,LRN0013,RES0048,Data Visualization,0.779,Addresses skill gap in Data Visualization required for Data Analyst,True
+REC00043,LRN0013,RES0032,Descriptive Statistics,0.584,Addresses skill gap in Descriptive Statistics required for Data Analyst,True
+REC00044,LRN0013,RES0052,Exploratory Data Analysis,0.939,Addresses skill gap in Exploratory Data Analysis required for Data Analyst,True
+REC00045,LRN0014,RES0063,ML Foundations,0.935,Addresses skill gap in ML Foundations required for Data Scientist,True
+REC00046,LRN0014,RES0065,Regression Techniques,0.721,Addresses skill gap in Regression Techniques required for Data Scientist,False
+REC00047,LRN0015,RES0075,Feature Engineering,0.841,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,True
+REC00048,LRN0015,RES0080,Neural Networks,0.828,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00049,LRN0015,RES0082,Deep Learning,0.98,Addresses skill gap in Deep Learning required for Machine Learning Engineer,True
+REC00050,LRN0016,RES0093,HTML & CSS,0.77,Addresses skill gap in HTML & CSS required for Full Stack Developer,True
+REC00051,LRN0016,RES0095,JavaScript Basics,0.791,Addresses skill gap in JavaScript Basics required for Full Stack Developer,False
+REC00052,LRN0016,RES0102,Database Design (RDBMS),0.791,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,True
+REC00053,LRN0017,RES0056,Advanced SQL,0.756,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00054,LRN0017,RES0151,Data Modeling,0.672,Addresses skill gap in Data Modeling required for Data Engineer,True
+REC00055,LRN0017,RES0162,Data Warehousing,0.804,Addresses skill gap in Data Warehousing required for Data Engineer,True
+REC00056,LRN0017,RES0179,Data Pipeline Design,0.727,Addresses skill gap in Data Pipeline Design required for Data Engineer,True
+REC00057,LRN0018,RES0121,Linux Fundamentals,0.73,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,True
+REC00058,LRN0018,RES0135,Docker Fundamentals,0.797,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True
+REC00059,LRN0018,RES0140,Kubernetes Basics,0.864,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,True
+REC00060,LRN0018,RES0142,CI/CD Pipelines,0.836,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00061,LRN0019,RES0039,Excel for Data Analysis,0.754,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00062,LRN0019,RES0047,Data Visualization,0.717,Addresses skill gap in Data Visualization required for Data Analyst,True
+REC00063,LRN0019,RES0031,Descriptive Statistics,0.576,Addresses skill gap in Descriptive Statistics required for Data Analyst,True
+REC00064,LRN0020,RES0051,Inferential Statistics,0.616,Addresses skill gap in Inferential Statistics required for Data Scientist,False
+REC00065,LRN0020,RES0062,ML Foundations,0.685,Addresses skill gap in ML Foundations required for Data Scientist,True
+REC00066,LRN0020,RES0064,Regression Techniques,0.851,Addresses skill gap in Regression Techniques required for Data Scientist,False
+REC00067,LRN0021,RES0063,ML Foundations,0.639,Addresses skill gap in ML Foundations required for Machine Learning Engineer,True
+REC00068,LRN0021,RES0074,Feature Engineering,0.818,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,True
+REC00069,LRN0021,RES0079,Neural Networks,0.886,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00070,LRN0021,RES0072,Model Evaluation,0.863,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00071,LRN0022,RES0092,HTML & CSS,0.764,Addresses skill gap in HTML & CSS required for Full Stack Developer,True
+REC00072,LRN0022,RES0094,JavaScript Basics,0.678,Addresses skill gap in JavaScript Basics required for Full Stack Developer,False
+REC00073,LRN0022,RES0111,REST API Design,0.831,Addresses skill gap in REST API Design required for Full Stack Developer,False
+REC00074,LRN0022,RES0101,Database Design (RDBMS),0.974,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,True
+REC00075,LRN0023,RES0171,Apache Spark Basics,0.919,Addresses skill gap in Apache Spark Basics required for Data Engineer,True
+REC00076,LRN0023,RES0161,Data Warehousing,0.978,Addresses skill gap in Data Warehousing required for Data Engineer,True
+REC00077,LRN0023,RES0178,Data Pipeline Design,0.832,Addresses skill gap in Data Pipeline Design required for Data Engineer,True
+REC00078,LRN0024,RES0132,AWS Core Services,0.799,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,True
+REC00079,LRN0024,RES0134,Docker Fundamentals,0.75,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True
+REC00080,LRN0025,RES0057,Advanced SQL,0.776,Addresses skill gap in Advanced SQL required for Data Analyst,False
+REC00081,LRN0025,RES0038,Excel for Data Analysis,0.666,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00082,LRN0025,RES0046,Data Visualization,0.705,Addresses skill gap in Data Visualization required for Data Analyst,True
+REC00083,LRN0026,RES0009,Python Data Structures,0.845,Addresses skill gap in Python Data Structures required for Data Scientist,False
+REC00084,LRN0026,RES0050,Inferential Statistics,0.81,Addresses skill gap in Inferential Statistics required for Data Scientist,False
+REC00085,LRN0026,RES0072,Model Evaluation,0.864,Addresses skill gap in Model Evaluation required for Data Scientist,True
+REC00086,LRN0027,RES0062,ML Foundations,0.718,Addresses skill gap in ML Foundations required for Machine Learning Engineer,True
+REC00087,LRN0027,RES0150,Model Deployment,0.69,Addresses skill gap in Model Deployment required for Machine Learning Engineer,False
+REC00088,LRN0027,RES0071,Model Evaluation,0.693,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00089,LRN0028,RES0108,Node.js Basics,0.899,Addresses skill gap in Node.js Basics required for Full Stack Developer,True
+REC00090,LRN0028,RES0110,REST API Design,0.778,Addresses skill gap in REST API Design required for Full Stack Developer,True
+REC00091,LRN0028,RES0100,Database Design (RDBMS),0.833,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,True
+REC00092,LRN0029,RES0159,ETL Fundamentals,0.786,Addresses skill gap in ETL Fundamentals required for Data Engineer,True
+REC00093,LRN0029,RES0170,Apache Spark Basics,0.712,Addresses skill gap in Apache Spark Basics required for Data Engineer,True
+REC00094,LRN0029,RES0160,Data Warehousing,0.799,Addresses skill gap in Data Warehousing required for Data Engineer,True
+REC00095,LRN0030,RES0126,Cloud Computing Basics,0.712,Addresses skill gap in Cloud Computing Basics required for Cloud/DevOps Engineer,True
+REC00096,LRN0030,RES0131,AWS Core Services,0.829,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,True
+REC00097,LRN0030,RES0133,Docker Fundamentals,0.82,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True
+REC00098,LRN0031,RES0036,SQL Basics,0.747,Addresses skill gap in SQL Basics required for Data Analyst,True
+REC00099,LRN0031,RES0056,Advanced SQL,0.803,Addresses skill gap in Advanced SQL required for Data Analyst,True
+REC00100,LRN0031,RES0037,Excel for Data Analysis,0.824,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00101,LRN0031,RES0054,Exploratory Data Analysis,0.865,Addresses skill gap in Exploratory Data Analysis required for Data Analyst,True
+REC00102,LRN0032,RES0008,Python Data Structures,0.798,Addresses skill gap in Python Data Structures required for Data Scientist,False
+REC00103,LRN0032,RES0049,Inferential Statistics,0.786,Addresses skill gap in Inferential Statistics required for Data Scientist,True
+REC00104,LRN0032,RES0069,Classification Techniques,0.776,Addresses skill gap in Classification Techniques required for Data Scientist,True
+REC00105,LRN0032,RES0071,Model Evaluation,0.656,Addresses skill gap in Model Evaluation required for Data Scientist,True
+REC00106,LRN0033,RES0061,ML Foundations,0.692,Addresses skill gap in ML Foundations required for Machine Learning Engineer,True
+REC00107,LRN0033,RES0084,Deep Learning,0.767,Addresses skill gap in Deep Learning required for Machine Learning Engineer,True
+REC00108,LRN0033,RES0149,Model Deployment,0.776,Addresses skill gap in Model Deployment required for Machine Learning Engineer,False
+REC00109,LRN0033,RES0070,Model Evaluation,0.824,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00110,LRN0034,RES0105,React Fundamentals,0.738,Addresses skill gap in React Fundamentals required for Full Stack Developer,True
+REC00111,LRN0034,RES0107,Node.js Basics,0.609,Addresses skill gap in Node.js Basics required for Full Stack Developer,True
+REC00112,LRN0034,RES0109,REST API Design,0.852,Addresses skill gap in REST API Design required for Full Stack Developer,True
+REC00113,LRN0035,RES0153,Data Modeling,0.669,Addresses skill gap in Data Modeling required for Data Engineer,False
+REC00114,LRN0035,RES0158,ETL Fundamentals,0.901,Addresses skill gap in ETL Fundamentals required for Data Engineer,True
+REC00115,LRN0035,RES0169,Apache Spark Basics,0.809,Addresses skill gap in Apache Spark Basics required for Data Engineer,True
+REC00116,LRN0036,RES0123,Linux Fundamentals,0.702,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,True
+REC00117,LRN0036,RES0125,Cloud Computing Basics,0.731,Addresses skill gap in Cloud Computing Basics required for Cloud/DevOps Engineer,True
+REC00118,LRN0036,RES0130,AWS Core Services,0.786,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,True
+REC00119,LRN0036,RES0144,CI/CD Pipelines,0.799,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00120,LRN0037,RES0035,SQL Basics,0.747,Addresses skill gap in SQL Basics required for Data Analyst,False
+REC00121,LRN0037,RES0055,Advanced SQL,0.768,Addresses skill gap in Advanced SQL required for Data Analyst,True
+REC00122,LRN0037,RES0033,Descriptive Statistics,0.858,Addresses skill gap in Descriptive Statistics required for Data Analyst,True
+REC00123,LRN0037,RES0053,Exploratory Data Analysis,0.829,Addresses skill gap in Exploratory Data Analysis required for Data Analyst,True
+REC00124,LRN0038,RES0066,Regression Techniques,0.801,Addresses skill gap in Regression Techniques required for Data Scientist,True
+REC00125,LRN0038,RES0068,Classification Techniques,0.874,Addresses skill gap in Classification Techniques required for Data Scientist,True
+REC00126,LRN0039,RES0081,Neural Networks,0.866,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00127,LRN0039,RES0083,Deep Learning,0.764,Addresses skill gap in Deep Learning required for Machine Learning Engineer,True
+REC00128,LRN0039,RES0148,Model Deployment,0.916,Addresses skill gap in Model Deployment required for Machine Learning Engineer,True
+REC00129,LRN0040,RES0096,JavaScript Basics,0.735,Addresses skill gap in JavaScript Basics required for Full Stack Developer,True
+REC00130,LRN0040,RES0104,React Fundamentals,0.63,Addresses skill gap in React Fundamentals required for Full Stack Developer,True
+REC00131,LRN0040,RES0106,Node.js Basics,0.801,Addresses skill gap in Node.js Basics required for Full Stack Developer,True
+REC00132,LRN0041,RES0057,Advanced SQL,0.91,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00133,LRN0041,RES0152,Data Modeling,0.756,Addresses skill gap in Data Modeling required for Data Engineer,True
+REC00134,LRN0041,RES0180,Data Pipeline Design,0.77,Addresses skill gap in Data Pipeline Design required for Data Engineer,True
+REC00135,LRN0042,RES0122,Linux Fundamentals,0.816,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,True
+REC00136,LRN0042,RES0141,Kubernetes Basics,0.791,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,True
+REC00137,LRN0042,RES0143,CI/CD Pipelines,0.712,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00138,LRN0043,RES0034,SQL Basics,0.775,Addresses skill gap in SQL Basics required for Data Analyst,True
+REC00139,LRN0043,RES0048,Data Visualization,0.748,Addresses skill gap in Data Visualization required for Data Analyst,True
+REC00140,LRN0043,RES0032,Descriptive Statistics,0.872,Addresses skill gap in Descriptive Statistics required for Data Analyst,True
+REC00141,LRN0043,RES0052,Exploratory Data Analysis,0.821,Addresses skill gap in Exploratory Data Analysis required for Data Analyst,False
+REC00142,LRN0044,RES0063,ML Foundations,0.759,Addresses skill gap in ML Foundations required for Data Scientist,True
+REC00143,LRN0044,RES0065,Regression Techniques,0.727,Addresses skill gap in Regression Techniques required for Data Scientist,True
+REC00144,LRN0045,RES0075,Feature Engineering,0.722,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,True
+REC00145,LRN0045,RES0080,Neural Networks,0.864,Addresses skill gap in Neural Networks required for Machine Learning Engineer,False
+REC00146,LRN0045,RES0082,Deep Learning,0.837,Addresses skill gap in Deep Learning required for Machine Learning Engineer,False
+REC00147,LRN0046,RES0093,HTML & CSS,0.693,Addresses skill gap in HTML & CSS required for Full Stack Developer,True
+REC00148,LRN0046,RES0095,JavaScript Basics,0.732,Addresses skill gap in JavaScript Basics required for Full Stack Developer,True
+REC00149,LRN0046,RES0103,React Fundamentals,0.852,Addresses skill gap in React Fundamentals required for Full Stack Developer,True
+REC00150,LRN0046,RES0102,Database Design (RDBMS),0.873,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,False
+REC00151,LRN0047,RES0056,Advanced SQL,0.78,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00152,LRN0047,RES0162,Data Warehousing,0.727,Addresses skill gap in Data Warehousing required for Data Engineer,True
+REC00153,LRN0047,RES0179,Data Pipeline Design,0.692,Addresses skill gap in Data Pipeline Design required for Data Engineer,False
+REC00154,LRN0048,RES0121,Linux Fundamentals,0.76,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,True
+REC00155,LRN0048,RES0135,Docker Fundamentals,0.717,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True
+REC00156,LRN0048,RES0140,Kubernetes Basics,0.899,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,True
+REC00157,LRN0048,RES0142,CI/CD Pipelines,0.643,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00158,LRN0049,RES0039,Excel for Data Analysis,0.889,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00159,LRN0049,RES0047,Data Visualization,0.929,Addresses skill gap in Data Visualization required for Data Analyst,False
+REC00160,LRN0049,RES0031,Descriptive Statistics,0.759,Addresses skill gap in Descriptive Statistics required for Data Analyst,True
+REC00161,LRN0050,RES0051,Inferential Statistics,0.753,Addresses skill gap in Inferential Statistics required for Data Scientist,True
+REC00162,LRN0050,RES0062,ML Foundations,0.808,Addresses skill gap in ML Foundations required for Data Scientist,False
+REC00163,LRN0050,RES0064,Regression Techniques,0.689,Addresses skill gap in Regression Techniques required for Data Scientist,False
+REC00164,LRN0051,RES0063,ML Foundations,0.807,Addresses skill gap in ML Foundations required for Machine Learning Engineer,True
+REC00165,LRN0051,RES0074,Feature Engineering,0.738,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,True
+REC00166,LRN0051,RES0072,Model Evaluation,0.685,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00167,LRN0052,RES0092,HTML & CSS,0.682,Addresses skill gap in HTML & CSS required for Full Stack Developer,True
+REC00168,LRN0052,RES0094,JavaScript Basics,0.721,Addresses skill gap in JavaScript Basics required for Full Stack Developer,True
+REC00169,LRN0052,RES0111,REST API Design,0.751,Addresses skill gap in REST API Design required for Full Stack Developer,True
+REC00170,LRN0052,RES0101,Database Design (RDBMS),0.701,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,True
+REC00171,LRN0053,RES0055,Advanced SQL,0.798,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00172,LRN0053,RES0171,Apache Spark Basics,0.816,Addresses skill gap in Apache Spark Basics required for Data Engineer,True
+REC00173,LRN0053,RES0161,Data Warehousing,0.782,Addresses skill gap in Data Warehousing required for Data Engineer,True
+REC00174,LRN0053,RES0178,Data Pipeline Design,0.807,Addresses skill gap in Data Pipeline Design required for Data Engineer,True
+REC00175,LRN0054,RES0132,AWS Core Services,0.621,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,True
+REC00176,LRN0054,RES0134,Docker Fundamentals,0.71,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True
+REC00177,LRN0054,RES0139,Kubernetes Basics,0.79,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,True
+REC00178,LRN0055,RES0057,Advanced SQL,0.773,Addresses skill gap in Advanced SQL required for Data Analyst,True
+REC00179,LRN0055,RES0038,Excel for Data Analysis,0.672,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00180,LRN0056,RES0009,Python Data Structures,0.864,Addresses skill gap in Python Data Structures required for Data Scientist,True
+REC00181,LRN0056,RES0050,Inferential Statistics,0.589,Addresses skill gap in Inferential Statistics required for Data Scientist,True
+REC00182,LRN0056,RES0061,ML Foundations,0.85,Addresses skill gap in ML Foundations required for Data Scientist,True
+REC00183,LRN0056,RES0072,Model Evaluation,0.838,Addresses skill gap in Model Evaluation required for Data Scientist,True
+REC00184,LRN0057,RES0062,ML Foundations,0.817,Addresses skill gap in ML Foundations required for Machine Learning Engineer,False
+REC00185,LRN0057,RES0073,Feature Engineering,0.721,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,True
+REC00186,LRN0057,RES0150,Model Deployment,0.729,Addresses skill gap in Model Deployment required for Machine Learning Engineer,False
+REC00187,LRN0057,RES0071,Model Evaluation,0.727,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00188,LRN0058,RES0108,Node.js Basics,0.7,Addresses skill gap in Node.js Basics required for Full Stack Developer,True
+REC00189,LRN0058,RES0110,REST API Design,0.762,Addresses skill gap in REST API Design required for Full Stack Developer,False
+REC00190,LRN0058,RES0100,Database Design (RDBMS),0.863,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,True
+REC00191,LRN0059,RES0159,ETL Fundamentals,0.887,Addresses skill gap in ETL Fundamentals required for Data Engineer,True
+REC00192,LRN0059,RES0170,Apache Spark Basics,0.847,Addresses skill gap in Apache Spark Basics required for Data Engineer,False
+REC00193,LRN0059,RES0160,Data Warehousing,0.721,Addresses skill gap in Data Warehousing required for Data Engineer,True
+REC00194,LRN0060,RES0126,Cloud Computing Basics,0.836,Addresses skill gap in Cloud Computing Basics required for Cloud/DevOps Engineer,True
+REC00195,LRN0060,RES0131,AWS Core Services,0.736,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,True
+REC00196,LRN0060,RES0133,Docker Fundamentals,0.715,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True
+REC00197,LRN0061,RES0036,SQL Basics,0.662,Addresses skill gap in SQL Basics required for Data Analyst,True
+REC00198,LRN0061,RES0056,Advanced SQL,0.684,Addresses skill gap in Advanced SQL required for Data Analyst,True
+REC00199,LRN0061,RES0054,Exploratory Data Analysis,0.739,Addresses skill gap in Exploratory Data Analysis required for Data Analyst,True
+REC00200,LRN0062,RES0008,Python Data Structures,0.676,Addresses skill gap in Python Data Structures required for Data Scientist,True
+REC00201,LRN0062,RES0049,Inferential Statistics,0.778,Addresses skill gap in Inferential Statistics required for Data Scientist,True
+REC00202,LRN0062,RES0069,Classification Techniques,0.679,Addresses skill gap in Classification Techniques required for Data Scientist,True
+REC00203,LRN0062,RES0071,Model Evaluation,0.778,Addresses skill gap in Model Evaluation required for Data Scientist,True
+REC00204,LRN0063,RES0084,Deep Learning,0.804,Addresses skill gap in Deep Learning required for Machine Learning Engineer,True
+REC00205,LRN0063,RES0149,Model Deployment,0.733,Addresses skill gap in Model Deployment required for Machine Learning Engineer,False
+REC00206,LRN0063,RES0070,Model Evaluation,0.748,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00207,LRN0064,RES0105,React Fundamentals,0.88,Addresses skill gap in React Fundamentals required for Full Stack Developer,True
+REC00208,LRN0064,RES0107,Node.js Basics,0.746,Addresses skill gap in Node.js Basics required for Full Stack Developer,True
+REC00209,LRN0065,RES0153,Data Modeling,0.762,Addresses skill gap in Data Modeling required for Data Engineer,True
+REC00210,LRN0065,RES0158,ETL Fundamentals,0.826,Addresses skill gap in ETL Fundamentals required for Data Engineer,True
+REC00211,LRN0065,RES0169,Apache Spark Basics,0.84,Addresses skill gap in Apache Spark Basics required for Data Engineer,True
+REC00212,LRN0066,RES0123,Linux Fundamentals,0.822,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,False
+REC00213,LRN0066,RES0125,Cloud Computing Basics,0.748,Addresses skill gap in Cloud Computing Basics required for Cloud/DevOps Engineer,False
+REC00214,LRN0066,RES0130,AWS Core Services,0.753,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,True
+REC00215,LRN0066,RES0144,CI/CD Pipelines,0.809,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00216,LRN0067,RES0035,SQL Basics,0.799,Addresses skill gap in SQL Basics required for Data Analyst,True
+REC00217,LRN0067,RES0033,Descriptive Statistics,0.788,Addresses skill gap in Descriptive Statistics required for Data Analyst,True
+REC00218,LRN0067,RES0053,Exploratory Data Analysis,0.842,Addresses skill gap in Exploratory Data Analysis required for Data Analyst,True
+REC00219,LRN0068,RES0007,Python Data Structures,0.631,Addresses skill gap in Python Data Structures required for Data Scientist,True
+REC00220,LRN0068,RES0066,Regression Techniques,0.97,Addresses skill gap in Regression Techniques required for Data Scientist,False
+REC00221,LRN0068,RES0068,Classification Techniques,0.731,Addresses skill gap in Classification Techniques required for Data Scientist,True
+REC00222,LRN0069,RES0081,Neural Networks,0.732,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00223,LRN0069,RES0083,Deep Learning,0.817,Addresses skill gap in Deep Learning required for Machine Learning Engineer,False
+REC00224,LRN0069,RES0148,Model Deployment,0.746,Addresses skill gap in Model Deployment required for Machine Learning Engineer,False
+REC00225,LRN0070,RES0096,JavaScript Basics,0.71,Addresses skill gap in JavaScript Basics required for Full Stack Developer,False
+REC00226,LRN0070,RES0104,React Fundamentals,0.703,Addresses skill gap in React Fundamentals required for Full Stack Developer,False
+REC00227,LRN0071,RES0057,Advanced SQL,0.76,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00228,LRN0071,RES0152,Data Modeling,0.862,Addresses skill gap in Data Modeling required for Data Engineer,True
+REC00229,LRN0071,RES0157,ETL Fundamentals,0.896,Addresses skill gap in ETL Fundamentals required for Data Engineer,True
+REC00230,LRN0071,RES0180,Data Pipeline Design,0.835,Addresses skill gap in Data Pipeline Design required for Data Engineer,True
+REC00231,LRN0072,RES0122,Linux Fundamentals,0.873,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,False
+REC00232,LRN0072,RES0124,Cloud Computing Basics,0.848,Addresses skill gap in Cloud Computing Basics required for Cloud/DevOps Engineer,True
+REC00233,LRN0072,RES0141,Kubernetes Basics,0.815,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,True
+REC00234,LRN0072,RES0143,CI/CD Pipelines,0.8,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00235,LRN0073,RES0034,SQL Basics,0.723,Addresses skill gap in SQL Basics required for Data Analyst,False
+REC00236,LRN0073,RES0048,Data Visualization,0.854,Addresses skill gap in Data Visualization required for Data Analyst,True
+REC00237,LRN0073,RES0032,Descriptive Statistics,0.647,Addresses skill gap in Descriptive Statistics required for Data Analyst,True
+REC00238,LRN0073,RES0052,Exploratory Data Analysis,0.81,Addresses skill gap in Exploratory Data Analysis required for Data Analyst,True
+REC00239,LRN0074,RES0063,ML Foundations,0.846,Addresses skill gap in ML Foundations required for Data Scientist,True
+REC00240,LRN0074,RES0065,Regression Techniques,0.704,Addresses skill gap in Regression Techniques required for Data Scientist,True
+REC00241,LRN0074,RES0067,Classification Techniques,0.78,Addresses skill gap in Classification Techniques required for Data Scientist,True
+REC00242,LRN0075,RES0075,Feature Engineering,0.682,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,True
+REC00243,LRN0075,RES0080,Neural Networks,0.626,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00244,LRN0075,RES0082,Deep Learning,0.886,Addresses skill gap in Deep Learning required for Machine Learning Engineer,True
+REC00245,LRN0076,RES0093,HTML & CSS,0.739,Addresses skill gap in HTML & CSS required for Full Stack Developer,True
+REC00246,LRN0076,RES0095,JavaScript Basics,0.686,Addresses skill gap in JavaScript Basics required for Full Stack Developer,True
+REC00247,LRN0076,RES0102,Database Design (RDBMS),0.715,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,True
+REC00248,LRN0077,RES0056,Advanced SQL,0.897,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00249,LRN0077,RES0151,Data Modeling,0.862,Addresses skill gap in Data Modeling required for Data Engineer,True
+REC00250,LRN0077,RES0162,Data Warehousing,0.771,Addresses skill gap in Data Warehousing required for Data Engineer,False
+REC00251,LRN0077,RES0179,Data Pipeline Design,0.632,Addresses skill gap in Data Pipeline Design required for Data Engineer,True
+REC00252,LRN0078,RES0135,Docker Fundamentals,0.807,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True
+REC00253,LRN0078,RES0140,Kubernetes Basics,0.855,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,True
+REC00254,LRN0078,RES0142,CI/CD Pipelines,0.925,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00255,LRN0079,RES0039,Excel for Data Analysis,0.576,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00256,LRN0079,RES0047,Data Visualization,0.768,Addresses skill gap in Data Visualization required for Data Analyst,True
+REC00257,LRN0080,RES0051,Inferential Statistics,0.733,Addresses skill gap in Inferential Statistics required for Data Scientist,True
+REC00258,LRN0080,RES0062,ML Foundations,0.851,Addresses skill gap in ML Foundations required for Data Scientist,True
+REC00259,LRN0080,RES0064,Regression Techniques,0.782,Addresses skill gap in Regression Techniques required for Data Scientist,True
+REC00260,LRN0081,RES0063,ML Foundations,0.906,Addresses skill gap in ML Foundations required for Machine Learning Engineer,False
+REC00261,LRN0081,RES0074,Feature Engineering,0.854,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,True
+REC00262,LRN0081,RES0079,Neural Networks,0.804,Addresses skill gap in Neural Networks required for Machine Learning Engineer,False
+REC00263,LRN0081,RES0072,Model Evaluation,0.715,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00264,LRN0082,RES0092,HTML & CSS,0.729,Addresses skill gap in HTML & CSS required for Full Stack Developer,False
+REC00265,LRN0082,RES0094,JavaScript Basics,0.662,Addresses skill gap in JavaScript Basics required for Full Stack Developer,False
+REC00266,LRN0082,RES0111,REST API Design,0.673,Addresses skill gap in REST API Design required for Full Stack Developer,True
+REC00267,LRN0082,RES0101,Database Design (RDBMS),0.749,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,True
+REC00268,LRN0083,RES0055,Advanced SQL,0.785,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00269,LRN0083,RES0171,Apache Spark Basics,0.839,Addresses skill gap in Apache Spark Basics required for Data Engineer,False
+REC00270,LRN0083,RES0161,Data Warehousing,0.759,Addresses skill gap in Data Warehousing required for Data Engineer,True
+REC00271,LRN0083,RES0178,Data Pipeline Design,0.782,Addresses skill gap in Data Pipeline Design required for Data Engineer,True
+REC00272,LRN0084,RES0132,AWS Core Services,0.761,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,True
+REC00273,LRN0084,RES0134,Docker Fundamentals,0.787,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True
+REC00274,LRN0084,RES0139,Kubernetes Basics,0.782,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,True
+REC00275,LRN0085,RES0057,Advanced SQL,0.827,Addresses skill gap in Advanced SQL required for Data Analyst,True
+REC00276,LRN0085,RES0038,Excel for Data Analysis,0.799,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00277,LRN0085,RES0046,Data Visualization,0.959,Addresses skill gap in Data Visualization required for Data Analyst,True
+REC00278,LRN0086,RES0009,Python Data Structures,0.865,Addresses skill gap in Python Data Structures required for Data Scientist,True
+REC00279,LRN0086,RES0050,Inferential Statistics,0.852,Addresses skill gap in Inferential Statistics required for Data Scientist,True
+REC00280,LRN0086,RES0061,ML Foundations,0.828,Addresses skill gap in ML Foundations required for Data Scientist,True
+REC00281,LRN0086,RES0072,Model Evaluation,0.753,Addresses skill gap in Model Evaluation required for Data Scientist,True
+REC00282,LRN0087,RES0062,ML Foundations,0.693,Addresses skill gap in ML Foundations required for Machine Learning Engineer,True
+REC00283,LRN0087,RES0150,Model Deployment,0.883,Addresses skill gap in Model Deployment required for Machine Learning Engineer,True
+REC00284,LRN0087,RES0071,Model Evaluation,0.915,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00285,LRN0088,RES0091,HTML & CSS,0.74,Addresses skill gap in HTML & CSS required for Full Stack Developer,True
+REC00286,LRN0088,RES0108,Node.js Basics,0.619,Addresses skill gap in Node.js Basics required for Full Stack Developer,True
+REC00287,LRN0088,RES0110,REST API Design,0.82,Addresses skill gap in REST API Design required for Full Stack Developer,True
+REC00288,LRN0089,RES0159,ETL Fundamentals,0.815,Addresses skill gap in ETL Fundamentals required for Data Engineer,True
+REC00289,LRN0089,RES0170,Apache Spark Basics,0.874,Addresses skill gap in Apache Spark Basics required for Data Engineer,True
+REC00290,LRN0089,RES0160,Data Warehousing,0.698,Addresses skill gap in Data Warehousing required for Data Engineer,True
+REC00291,LRN0090,RES0126,Cloud Computing Basics,0.738,Addresses skill gap in Cloud Computing Basics required for Cloud/DevOps Engineer,True
+REC00292,LRN0090,RES0131,AWS Core Services,0.822,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,True
+REC00293,LRN0090,RES0133,Docker Fundamentals,0.801,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True
+REC00294,LRN0091,RES0036,SQL Basics,0.691,Addresses skill gap in SQL Basics required for Data Analyst,False
+REC00295,LRN0091,RES0056,Advanced SQL,0.745,Addresses skill gap in Advanced SQL required for Data Analyst,True
+REC00296,LRN0091,RES0054,Exploratory Data Analysis,0.736,Addresses skill gap in Exploratory Data Analysis required for Data Analyst,True
+REC00297,LRN0092,RES0008,Python Data Structures,0.846,Addresses skill gap in Python Data Structures required for Data Scientist,True
+REC00298,LRN0092,RES0049,Inferential Statistics,0.762,Addresses skill gap in Inferential Statistics required for Data Scientist,True
+REC00299,LRN0092,RES0069,Classification Techniques,0.72,Addresses skill gap in Classification Techniques required for Data Scientist,True
+REC00300,LRN0092,RES0071,Model Evaluation,0.764,Addresses skill gap in Model Evaluation required for Data Scientist,True
+REC00301,LRN0093,RES0084,Deep Learning,0.756,Addresses skill gap in Deep Learning required for Machine Learning Engineer,True
+REC00302,LRN0093,RES0149,Model Deployment,0.735,Addresses skill gap in Model Deployment required for Machine Learning Engineer,True
+REC00303,LRN0093,RES0070,Model Evaluation,0.76,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00304,LRN0094,RES0105,React Fundamentals,0.735,Addresses skill gap in React Fundamentals required for Full Stack Developer,False
+REC00305,LRN0094,RES0107,Node.js Basics,0.806,Addresses skill gap in Node.js Basics required for Full Stack Developer,True
+REC00306,LRN0094,RES0109,REST API Design,0.77,Addresses skill gap in REST API Design required for Full Stack Developer,True
+REC00307,LRN0095,RES0153,Data Modeling,0.692,Addresses skill gap in Data Modeling required for Data Engineer,True
+REC00308,LRN0095,RES0158,ETL Fundamentals,0.7,Addresses skill gap in ETL Fundamentals required for Data Engineer,True
+REC00309,LRN0095,RES0169,Apache Spark Basics,0.771,Addresses skill gap in Apache Spark Basics required for Data Engineer,True
+REC00310,LRN0096,RES0123,Linux Fundamentals,0.914,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,True
+REC00311,LRN0096,RES0125,Cloud Computing Basics,0.683,Addresses skill gap in Cloud Computing Basics required for Cloud/DevOps Engineer,True
+REC00312,LRN0096,RES0130,AWS Core Services,0.83,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,False
+REC00313,LRN0096,RES0144,CI/CD Pipelines,0.839,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00314,LRN0097,RES0035,SQL Basics,0.842,Addresses skill gap in SQL Basics required for Data Analyst,True
+REC00315,LRN0097,RES0055,Advanced SQL,0.725,Addresses skill gap in Advanced SQL required for Data Analyst,True
+REC00316,LRN0097,RES0033,Descriptive Statistics,0.96,Addresses skill gap in Descriptive Statistics required for Data Analyst,True
+REC00317,LRN0097,RES0053,Exploratory Data Analysis,0.921,Addresses skill gap in Exploratory Data Analysis required for Data Analyst,False
+REC00318,LRN0098,RES0007,Python Data Structures,0.828,Addresses skill gap in Python Data Structures required for Data Scientist,True
+REC00319,LRN0098,RES0066,Regression Techniques,0.874,Addresses skill gap in Regression Techniques required for Data Scientist,True
+REC00320,LRN0098,RES0068,Classification Techniques,0.767,Addresses skill gap in Classification Techniques required for Data Scientist,True
+REC00321,LRN0098,RES0070,Model Evaluation,0.778,Addresses skill gap in Model Evaluation required for Data Scientist,True
+REC00322,LRN0099,RES0081,Neural Networks,0.828,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00323,LRN0099,RES0083,Deep Learning,0.712,Addresses skill gap in Deep Learning required for Machine Learning Engineer,True
+REC00324,LRN0099,RES0148,Model Deployment,0.701,Addresses skill gap in Model Deployment required for Machine Learning Engineer,True
+REC00325,LRN0100,RES0096,JavaScript Basics,0.636,Addresses skill gap in JavaScript Basics required for Full Stack Developer,True
+REC00326,LRN0100,RES0104,React Fundamentals,0.965,Addresses skill gap in React Fundamentals required for Full Stack Developer,True
+REC00327,LRN0101,RES0057,Advanced SQL,0.763,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00328,LRN0101,RES0152,Data Modeling,0.843,Addresses skill gap in Data Modeling required for Data Engineer,False
+REC00329,LRN0101,RES0157,ETL Fundamentals,0.784,Addresses skill gap in ETL Fundamentals required for Data Engineer,True
+REC00330,LRN0101,RES0180,Data Pipeline Design,0.932,Addresses skill gap in Data Pipeline Design required for Data Engineer,True
+REC00331,LRN0102,RES0122,Linux Fundamentals,0.693,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,True
+REC00332,LRN0102,RES0141,Kubernetes Basics,0.826,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,True
+REC00333,LRN0102,RES0143,CI/CD Pipelines,0.679,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00334,LRN0103,RES0034,SQL Basics,0.704,Addresses skill gap in SQL Basics required for Data Analyst,False
+REC00335,LRN0103,RES0048,Data Visualization,0.734,Addresses skill gap in Data Visualization required for Data Analyst,True
+REC00336,LRN0103,RES0032,Descriptive Statistics,0.666,Addresses skill gap in Descriptive Statistics required for Data Analyst,True
+REC00337,LRN0103,RES0052,Exploratory Data Analysis,0.728,Addresses skill gap in Exploratory Data Analysis required for Data Analyst,True
+REC00338,LRN0104,RES0063,ML Foundations,0.856,Addresses skill gap in ML Foundations required for Data Scientist,True
+REC00339,LRN0104,RES0065,Regression Techniques,0.704,Addresses skill gap in Regression Techniques required for Data Scientist,True
+REC00340,LRN0105,RES0075,Feature Engineering,0.765,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,True
+REC00341,LRN0105,RES0080,Neural Networks,0.833,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00342,LRN0105,RES0082,Deep Learning,0.729,Addresses skill gap in Deep Learning required for Machine Learning Engineer,True
+REC00343,LRN0106,RES0093,HTML & CSS,0.767,Addresses skill gap in HTML & CSS required for Full Stack Developer,True
+REC00344,LRN0106,RES0095,JavaScript Basics,0.806,Addresses skill gap in JavaScript Basics required for Full Stack Developer,False
+REC00345,LRN0106,RES0103,React Fundamentals,0.783,Addresses skill gap in React Fundamentals required for Full Stack Developer,True
+REC00346,LRN0106,RES0102,Database Design (RDBMS),0.681,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,True
+REC00347,LRN0107,RES0056,Advanced SQL,0.764,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00348,LRN0107,RES0162,Data Warehousing,0.711,Addresses skill gap in Data Warehousing required for Data Engineer,True
+REC00349,LRN0107,RES0179,Data Pipeline Design,0.756,Addresses skill gap in Data Pipeline Design required for Data Engineer,True
+REC00350,LRN0108,RES0121,Linux Fundamentals,0.795,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,True
+REC00351,LRN0108,RES0135,Docker Fundamentals,0.863,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True
+REC00352,LRN0108,RES0140,Kubernetes Basics,0.777,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,True
+REC00353,LRN0109,RES0039,Excel for Data Analysis,0.846,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00354,LRN0109,RES0047,Data Visualization,0.845,Addresses skill gap in Data Visualization required for Data Analyst,True
+REC00355,LRN0109,RES0031,Descriptive Statistics,0.76,Addresses skill gap in Descriptive Statistics required for Data Analyst,True
+REC00356,LRN0110,RES0051,Inferential Statistics,0.748,Addresses skill gap in Inferential Statistics required for Data Scientist,True
+REC00357,LRN0110,RES0062,ML Foundations,0.81,Addresses skill gap in ML Foundations required for Data Scientist,False
+REC00358,LRN0110,RES0064,Regression Techniques,0.745,Addresses skill gap in Regression Techniques required for Data Scientist,True
+REC00359,LRN0111,RES0063,ML Foundations,0.612,Addresses skill gap in ML Foundations required for Machine Learning Engineer,False
+REC00360,LRN0111,RES0074,Feature Engineering,0.924,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,True
+REC00361,LRN0111,RES0079,Neural Networks,0.909,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00362,LRN0111,RES0072,Model Evaluation,0.873,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00363,LRN0112,RES0092,HTML & CSS,0.877,Addresses skill gap in HTML & CSS required for Full Stack Developer,True
+REC00364,LRN0112,RES0094,JavaScript Basics,0.843,Addresses skill gap in JavaScript Basics required for Full Stack Developer,True
+REC00365,LRN0112,RES0111,REST API Design,0.723,Addresses skill gap in REST API Design required for Full Stack Developer,True
+REC00366,LRN0112,RES0101,Database Design (RDBMS),0.776,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,True
+REC00367,LRN0113,RES0055,Advanced SQL,0.731,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00368,LRN0113,RES0171,Apache Spark Basics,0.786,Addresses skill gap in Apache Spark Basics required for Data Engineer,True
+REC00369,LRN0113,RES0161,Data Warehousing,0.66,Addresses skill gap in Data Warehousing required for Data Engineer,True
+REC00370,LRN0114,RES0132,AWS Core Services,0.725,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,True
+REC00371,LRN0114,RES0134,Docker Fundamentals,0.888,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True
+REC00372,LRN0114,RES0139,Kubernetes Basics,0.697,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,True
+REC00373,LRN0115,RES0057,Advanced SQL,0.777,Addresses skill gap in Advanced SQL required for Data Analyst,True
+REC00374,LRN0115,RES0038,Excel for Data Analysis,0.761,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00375,LRN0115,RES0046,Data Visualization,0.681,Addresses skill gap in Data Visualization required for Data Analyst,True
+REC00376,LRN0116,RES0009,Python Data Structures,0.861,Addresses skill gap in Python Data Structures required for Data Scientist,False
+REC00377,LRN0116,RES0050,Inferential Statistics,0.779,Addresses skill gap in Inferential Statistics required for Data Scientist,True
+REC00378,LRN0116,RES0061,ML Foundations,0.666,Addresses skill gap in ML Foundations required for Data Scientist,True
+REC00379,LRN0116,RES0072,Model Evaluation,0.675,Addresses skill gap in Model Evaluation required for Data Scientist,True
+REC00380,LRN0117,RES0062,ML Foundations,0.834,Addresses skill gap in ML Foundations required for Machine Learning Engineer,True
+REC00381,LRN0117,RES0073,Feature Engineering,0.803,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,False
+REC00382,LRN0117,RES0150,Model Deployment,0.803,Addresses skill gap in Model Deployment required for Machine Learning Engineer,True
+REC00383,LRN0117,RES0071,Model Evaluation,0.841,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00384,LRN0118,RES0091,HTML & CSS,0.804,Addresses skill gap in HTML & CSS required for Full Stack Developer,True
+REC00385,LRN0118,RES0108,Node.js Basics,0.712,Addresses skill gap in Node.js Basics required for Full Stack Developer,True
+REC00386,LRN0118,RES0110,REST API Design,0.947,Addresses skill gap in REST API Design required for Full Stack Developer,True
+REC00387,LRN0118,RES0100,Database Design (RDBMS),0.925,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,True
+REC00388,LRN0119,RES0159,ETL Fundamentals,0.722,Addresses skill gap in ETL Fundamentals required for Data Engineer,True
+REC00389,LRN0119,RES0170,Apache Spark Basics,0.892,Addresses skill gap in Apache Spark Basics required for Data Engineer,False
+REC00390,LRN0119,RES0160,Data Warehousing,0.899,Addresses skill gap in Data Warehousing required for Data Engineer,False
+REC00391,LRN0120,RES0126,Cloud Computing Basics,0.668,Addresses skill gap in Cloud Computing Basics required for Cloud/DevOps Engineer,True
+REC00392,LRN0120,RES0131,AWS Core Services,0.596,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,True
+REC00393,LRN0120,RES0133,Docker Fundamentals,0.727,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True
+REC00394,LRN0121,RES0036,SQL Basics,0.809,Addresses skill gap in SQL Basics required for Data Analyst,True
+REC00395,LRN0121,RES0056,Advanced SQL,0.772,Addresses skill gap in Advanced SQL required for Data Analyst,False
+REC00396,LRN0121,RES0037,Excel for Data Analysis,0.78,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00397,LRN0121,RES0054,Exploratory Data Analysis,0.854,Addresses skill gap in Exploratory Data Analysis required for Data Analyst,True
+REC00398,LRN0122,RES0008,Python Data Structures,0.694,Addresses skill gap in Python Data Structures required for Data Scientist,True
+REC00399,LRN0122,RES0049,Inferential Statistics,0.801,Addresses skill gap in Inferential Statistics required for Data Scientist,True
+REC00400,LRN0122,RES0069,Classification Techniques,0.719,Addresses skill gap in Classification Techniques required for Data Scientist,True
+REC00401,LRN0122,RES0071,Model Evaluation,0.663,Addresses skill gap in Model Evaluation required for Data Scientist,False
+REC00402,LRN0123,RES0061,ML Foundations,0.626,Addresses skill gap in ML Foundations required for Machine Learning Engineer,True
+REC00403,LRN0123,RES0084,Deep Learning,0.768,Addresses skill gap in Deep Learning required for Machine Learning Engineer,True
+REC00404,LRN0123,RES0149,Model Deployment,0.787,Addresses skill gap in Model Deployment required for Machine Learning Engineer,True
+REC00405,LRN0123,RES0070,Model Evaluation,0.913,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00406,LRN0124,RES0105,React Fundamentals,0.752,Addresses skill gap in React Fundamentals required for Full Stack Developer,True
+REC00407,LRN0124,RES0107,Node.js Basics,0.771,Addresses skill gap in Node.js Basics required for Full Stack Developer,True
+REC00408,LRN0124,RES0109,REST API Design,0.722,Addresses skill gap in REST API Design required for Full Stack Developer,True
+REC00409,LRN0125,RES0153,Data Modeling,0.836,Addresses skill gap in Data Modeling required for Data Engineer,False
+REC00410,LRN0125,RES0158,ETL Fundamentals,0.719,Addresses skill gap in ETL Fundamentals required for Data Engineer,True
+REC00411,LRN0125,RES0169,Apache Spark Basics,0.734,Addresses skill gap in Apache Spark Basics required for Data Engineer,True
+REC00412,LRN0126,RES0123,Linux Fundamentals,0.604,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,True
+REC00413,LRN0126,RES0125,Cloud Computing Basics,0.778,Addresses skill gap in Cloud Computing Basics required for Cloud/DevOps Engineer,False
+REC00414,LRN0126,RES0130,AWS Core Services,0.841,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,True
+REC00415,LRN0126,RES0144,CI/CD Pipelines,0.756,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00416,LRN0127,RES0035,SQL Basics,0.691,Addresses skill gap in SQL Basics required for Data Analyst,True
+REC00417,LRN0127,RES0033,Descriptive Statistics,0.813,Addresses skill gap in Descriptive Statistics required for Data Analyst,False
+REC00418,LRN0127,RES0053,Exploratory Data Analysis,0.927,Addresses skill gap in Exploratory Data Analysis required for Data Analyst,True
+REC00419,LRN0128,RES0066,Regression Techniques,0.784,Addresses skill gap in Regression Techniques required for Data Scientist,True
+REC00420,LRN0128,RES0068,Classification Techniques,0.807,Addresses skill gap in Classification Techniques required for Data Scientist,True
+REC00421,LRN0129,RES0081,Neural Networks,0.697,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00422,LRN0129,RES0083,Deep Learning,0.779,Addresses skill gap in Deep Learning required for Machine Learning Engineer,True
+REC00423,LRN0129,RES0148,Model Deployment,0.812,Addresses skill gap in Model Deployment required for Machine Learning Engineer,False
+REC00424,LRN0130,RES0096,JavaScript Basics,0.692,Addresses skill gap in JavaScript Basics required for Full Stack Developer,True
+REC00425,LRN0130,RES0104,React Fundamentals,0.922,Addresses skill gap in React Fundamentals required for Full Stack Developer,True
+REC00426,LRN0130,RES0106,Node.js Basics,0.9,Addresses skill gap in Node.js Basics required for Full Stack Developer,True
+REC00427,LRN0131,RES0057,Advanced SQL,0.907,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00428,LRN0131,RES0152,Data Modeling,0.805,Addresses skill gap in Data Modeling required for Data Engineer,False
+REC00429,LRN0131,RES0157,ETL Fundamentals,0.766,Addresses skill gap in ETL Fundamentals required for Data Engineer,True
+REC00430,LRN0131,RES0180,Data Pipeline Design,0.856,Addresses skill gap in Data Pipeline Design required for Data Engineer,False
+REC00431,LRN0132,RES0122,Linux Fundamentals,0.775,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,False
+REC00432,LRN0132,RES0124,Cloud Computing Basics,0.776,Addresses skill gap in Cloud Computing Basics required for Cloud/DevOps Engineer,True
+REC00433,LRN0132,RES0141,Kubernetes Basics,0.693,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,False
+REC00434,LRN0132,RES0143,CI/CD Pipelines,0.597,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00435,LRN0133,RES0034,SQL Basics,0.782,Addresses skill gap in SQL Basics required for Data Analyst,False
+REC00436,LRN0133,RES0048,Data Visualization,0.815,Addresses skill gap in Data Visualization required for Data Analyst,False
+REC00437,LRN0133,RES0032,Descriptive Statistics,0.784,Addresses skill gap in Descriptive Statistics required for Data Analyst,True
+REC00438,LRN0134,RES0063,ML Foundations,0.806,Addresses skill gap in ML Foundations required for Data Scientist,True
+REC00439,LRN0134,RES0065,Regression Techniques,0.682,Addresses skill gap in Regression Techniques required for Data Scientist,True
+REC00440,LRN0134,RES0067,Classification Techniques,0.765,Addresses skill gap in Classification Techniques required for Data Scientist,True
+REC00441,LRN0135,RES0075,Feature Engineering,0.856,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,True
+REC00442,LRN0135,RES0080,Neural Networks,0.716,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00443,LRN0135,RES0082,Deep Learning,0.864,Addresses skill gap in Deep Learning required for Machine Learning Engineer,True
+REC00444,LRN0136,RES0093,HTML & CSS,0.814,Addresses skill gap in HTML & CSS required for Full Stack Developer,True
+REC00445,LRN0136,RES0095,JavaScript Basics,0.86,Addresses skill gap in JavaScript Basics required for Full Stack Developer,True
+REC00446,LRN0136,RES0103,React Fundamentals,0.822,Addresses skill gap in React Fundamentals required for Full Stack Developer,True
+REC00447,LRN0136,RES0102,Database Design (RDBMS),0.747,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,True
+REC00448,LRN0137,RES0056,Advanced SQL,0.672,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00449,LRN0137,RES0151,Data Modeling,0.862,Addresses skill gap in Data Modeling required for Data Engineer,False
+REC00450,LRN0137,RES0162,Data Warehousing,0.792,Addresses skill gap in Data Warehousing required for Data Engineer,False
+REC00451,LRN0137,RES0179,Data Pipeline Design,0.727,Addresses skill gap in Data Pipeline Design required for Data Engineer,True
+REC00452,LRN0138,RES0121,Linux Fundamentals,0.754,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,False
+REC00453,LRN0138,RES0135,Docker Fundamentals,0.688,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,False
+REC00454,LRN0138,RES0140,Kubernetes Basics,0.816,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,True
+REC00455,LRN0138,RES0142,CI/CD Pipelines,0.676,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00456,LRN0139,RES0039,Excel for Data Analysis,0.738,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00457,LRN0139,RES0047,Data Visualization,0.846,Addresses skill gap in Data Visualization required for Data Analyst,True
+REC00458,LRN0139,RES0031,Descriptive Statistics,0.726,Addresses skill gap in Descriptive Statistics required for Data Analyst,True
+REC00459,LRN0140,RES0051,Inferential Statistics,0.722,Addresses skill gap in Inferential Statistics required for Data Scientist,True
+REC00460,LRN0140,RES0062,ML Foundations,0.807,Addresses skill gap in ML Foundations required for Data Scientist,True
+REC00461,LRN0141,RES0063,ML Foundations,0.924,Addresses skill gap in ML Foundations required for Machine Learning Engineer,True
+REC00462,LRN0141,RES0074,Feature Engineering,0.721,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,False
+REC00463,LRN0141,RES0079,Neural Networks,0.794,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00464,LRN0141,RES0072,Model Evaluation,0.875,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00465,LRN0142,RES0092,HTML & CSS,0.907,Addresses skill gap in HTML & CSS required for Full Stack Developer,True
+REC00466,LRN0142,RES0094,JavaScript Basics,0.84,Addresses skill gap in JavaScript Basics required for Full Stack Developer,True
+REC00467,LRN0142,RES0111,REST API Design,0.811,Addresses skill gap in REST API Design required for Full Stack Developer,True
+REC00468,LRN0142,RES0101,Database Design (RDBMS),0.753,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,True
+REC00469,LRN0143,RES0055,Advanced SQL,0.689,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00470,LRN0143,RES0171,Apache Spark Basics,0.83,Addresses skill gap in Apache Spark Basics required for Data Engineer,True
+REC00471,LRN0143,RES0161,Data Warehousing,0.86,Addresses skill gap in Data Warehousing required for Data Engineer,True
+REC00472,LRN0143,RES0178,Data Pipeline Design,0.941,Addresses skill gap in Data Pipeline Design required for Data Engineer,True
+REC00473,LRN0144,RES0132,AWS Core Services,0.753,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,True
+REC00474,LRN0144,RES0134,Docker Fundamentals,0.792,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True
+REC00475,LRN0144,RES0139,Kubernetes Basics,0.814,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,False
+REC00476,LRN0145,RES0057,Advanced SQL,0.774,Addresses skill gap in Advanced SQL required for Data Analyst,True
+REC00477,LRN0145,RES0038,Excel for Data Analysis,0.688,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00478,LRN0146,RES0009,Python Data Structures,0.816,Addresses skill gap in Python Data Structures required for Data Scientist,True
+REC00479,LRN0146,RES0050,Inferential Statistics,0.844,Addresses skill gap in Inferential Statistics required for Data Scientist,True
+REC00480,LRN0146,RES0061,ML Foundations,0.746,Addresses skill gap in ML Foundations required for Data Scientist,False
+REC00481,LRN0146,RES0072,Model Evaluation,0.808,Addresses skill gap in Model Evaluation required for Data Scientist,True
+REC00482,LRN0147,RES0062,ML Foundations,0.741,Addresses skill gap in ML Foundations required for Machine Learning Engineer,True
+REC00483,LRN0147,RES0073,Feature Engineering,0.754,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,True
+REC00484,LRN0147,RES0150,Model Deployment,0.696,Addresses skill gap in Model Deployment required for Machine Learning Engineer,True
+REC00485,LRN0147,RES0071,Model Evaluation,0.69,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,False
+REC00486,LRN0148,RES0091,HTML & CSS,0.863,Addresses skill gap in HTML & CSS required for Full Stack Developer,True
+REC00487,LRN0148,RES0108,Node.js Basics,0.781,Addresses skill gap in Node.js Basics required for Full Stack Developer,True
+REC00488,LRN0148,RES0110,REST API Design,0.81,Addresses skill gap in REST API Design required for Full Stack Developer,True
+REC00489,LRN0148,RES0100,Database Design (RDBMS),0.827,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,False
+REC00490,LRN0149,RES0159,ETL Fundamentals,0.732,Addresses skill gap in ETL Fundamentals required for Data Engineer,True
+REC00491,LRN0149,RES0170,Apache Spark Basics,0.808,Addresses skill gap in Apache Spark Basics required for Data Engineer,True
+REC00492,LRN0149,RES0160,Data Warehousing,0.674,Addresses skill gap in Data Warehousing required for Data Engineer,True
+REC00493,LRN0150,RES0126,Cloud Computing Basics,0.784,Addresses skill gap in Cloud Computing Basics required for Cloud/DevOps Engineer,True
+REC00494,LRN0150,RES0131,AWS Core Services,0.77,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,False
+REC00495,LRN0150,RES0133,Docker Fundamentals,0.747,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True
+REC00496,LRN0151,RES0036,SQL Basics,0.773,Addresses skill gap in SQL Basics required for Data Analyst,True
+REC00497,LRN0151,RES0056,Advanced SQL,0.847,Addresses skill gap in Advanced SQL required for Data Analyst,False
+REC00498,LRN0151,RES0037,Excel for Data Analysis,0.829,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00499,LRN0151,RES0054,Exploratory Data Analysis,0.715,Addresses skill gap in Exploratory Data Analysis required for Data Analyst,True
+REC00500,LRN0152,RES0008,Python Data Structures,0.857,Addresses skill gap in Python Data Structures required for Data Scientist,True
+REC00501,LRN0152,RES0069,Classification Techniques,0.908,Addresses skill gap in Classification Techniques required for Data Scientist,True
+REC00502,LRN0152,RES0071,Model Evaluation,0.651,Addresses skill gap in Model Evaluation required for Data Scientist,False
+REC00503,LRN0153,RES0061,ML Foundations,0.735,Addresses skill gap in ML Foundations required for Machine Learning Engineer,True
+REC00504,LRN0153,RES0084,Deep Learning,0.685,Addresses skill gap in Deep Learning required for Machine Learning Engineer,True
+REC00505,LRN0153,RES0149,Model Deployment,0.788,Addresses skill gap in Model Deployment required for Machine Learning Engineer,True
+REC00506,LRN0153,RES0070,Model Evaluation,0.847,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00507,LRN0154,RES0105,React Fundamentals,0.684,Addresses skill gap in React Fundamentals required for Full Stack Developer,False
+REC00508,LRN0154,RES0107,Node.js Basics,0.824,Addresses skill gap in Node.js Basics required for Full Stack Developer,True
+REC00509,LRN0155,RES0153,Data Modeling,0.616,Addresses skill gap in Data Modeling required for Data Engineer,False
+REC00510,LRN0155,RES0158,ETL Fundamentals,0.693,Addresses skill gap in ETL Fundamentals required for Data Engineer,True
+REC00511,LRN0155,RES0169,Apache Spark Basics,0.838,Addresses skill gap in Apache Spark Basics required for Data Engineer,False
+REC00512,LRN0156,RES0123,Linux Fundamentals,0.707,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,True
+REC00513,LRN0156,RES0125,Cloud Computing Basics,0.854,Addresses skill gap in Cloud Computing Basics required for Cloud/DevOps Engineer,True
+REC00514,LRN0156,RES0130,AWS Core Services,0.706,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,False
+REC00515,LRN0156,RES0144,CI/CD Pipelines,0.847,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00516,LRN0157,RES0035,SQL Basics,0.701,Addresses skill gap in SQL Basics required for Data Analyst,True
+REC00517,LRN0157,RES0055,Advanced SQL,0.635,Addresses skill gap in Advanced SQL required for Data Analyst,True
+REC00518,LRN0157,RES0033,Descriptive Statistics,0.652,Addresses skill gap in Descriptive Statistics required for Data Analyst,True
+REC00519,LRN0157,RES0053,Exploratory Data Analysis,0.83,Addresses skill gap in Exploratory Data Analysis required for Data Analyst,True
+REC00520,LRN0158,RES0007,Python Data Structures,0.664,Addresses skill gap in Python Data Structures required for Data Scientist,True
+REC00521,LRN0158,RES0066,Regression Techniques,0.683,Addresses skill gap in Regression Techniques required for Data Scientist,True
+REC00522,LRN0158,RES0068,Classification Techniques,0.845,Addresses skill gap in Classification Techniques required for Data Scientist,True
+REC00523,LRN0158,RES0070,Model Evaluation,0.739,Addresses skill gap in Model Evaluation required for Data Scientist,False
+REC00524,LRN0159,RES0081,Neural Networks,0.69,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00525,LRN0159,RES0083,Deep Learning,0.785,Addresses skill gap in Deep Learning required for Machine Learning Engineer,False
+REC00526,LRN0159,RES0148,Model Deployment,0.602,Addresses skill gap in Model Deployment required for Machine Learning Engineer,False
+REC00527,LRN0160,RES0096,JavaScript Basics,0.745,Addresses skill gap in JavaScript Basics required for Full Stack Developer,True
+REC00528,LRN0160,RES0104,React Fundamentals,0.655,Addresses skill gap in React Fundamentals required for Full Stack Developer,True
+REC00529,LRN0160,RES0106,Node.js Basics,0.754,Addresses skill gap in Node.js Basics required for Full Stack Developer,False
+REC00530,LRN0161,RES0057,Advanced SQL,0.759,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00531,LRN0161,RES0152,Data Modeling,0.736,Addresses skill gap in Data Modeling required for Data Engineer,True
+REC00532,LRN0161,RES0157,ETL Fundamentals,0.797,Addresses skill gap in ETL Fundamentals required for Data Engineer,True
+REC00533,LRN0161,RES0180,Data Pipeline Design,0.782,Addresses skill gap in Data Pipeline Design required for Data Engineer,True
+REC00534,LRN0162,RES0122,Linux Fundamentals,0.817,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,True
+REC00535,LRN0162,RES0141,Kubernetes Basics,0.919,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,True
+REC00536,LRN0162,RES0143,CI/CD Pipelines,0.802,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00537,LRN0163,RES0034,SQL Basics,0.724,Addresses skill gap in SQL Basics required for Data Analyst,True
+REC00538,LRN0163,RES0048,Data Visualization,0.775,Addresses skill gap in Data Visualization required for Data Analyst,True
+REC00539,LRN0163,RES0032,Descriptive Statistics,0.878,Addresses skill gap in Descriptive Statistics required for Data Analyst,False
+REC00540,LRN0164,RES0062,ML Foundations,0.737,Addresses skill gap in ML Foundations required for Data Scientist,True
+REC00541,LRN0164,RES0065,Regression Techniques,0.753,Addresses skill gap in Regression Techniques required for Data Scientist,True
+REC00542,LRN0164,RES0067,Classification Techniques,0.646,Addresses skill gap in Classification Techniques required for Data Scientist,True
+REC00543,LRN0165,RES0075,Feature Engineering,0.745,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,False
+REC00544,LRN0165,RES0080,Neural Networks,0.753,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00545,LRN0166,RES0093,HTML & CSS,0.757,Addresses skill gap in HTML & CSS required for Full Stack Developer,True
+REC00546,LRN0166,RES0095,JavaScript Basics,0.734,Addresses skill gap in JavaScript Basics required for Full Stack Developer,True
+REC00547,LRN0166,RES0103,React Fundamentals,0.728,Addresses skill gap in React Fundamentals required for Full Stack Developer,True
+REC00548,LRN0166,RES0102,Database Design (RDBMS),0.69,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,True
+REC00549,LRN0167,RES0056,Advanced SQL,0.797,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00550,LRN0167,RES0162,Data Warehousing,0.608,Addresses skill gap in Data Warehousing required for Data Engineer,True
+REC00551,LRN0167,RES0179,Data Pipeline Design,0.791,Addresses skill gap in Data Pipeline Design required for Data Engineer,False
+REC00552,LRN0168,RES0135,Docker Fundamentals,0.823,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True
+REC00553,LRN0168,RES0140,Kubernetes Basics,0.875,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,True
+REC00554,LRN0168,RES0142,CI/CD Pipelines,0.889,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00555,LRN0169,RES0039,Excel for Data Analysis,0.867,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00556,LRN0169,RES0047,Data Visualization,0.612,Addresses skill gap in Data Visualization required for Data Analyst,True
+REC00557,LRN0169,RES0031,Descriptive Statistics,0.767,Addresses skill gap in Descriptive Statistics required for Data Analyst,True
+REC00558,LRN0170,RES0051,Inferential Statistics,0.712,Addresses skill gap in Inferential Statistics required for Data Scientist,True
+REC00559,LRN0170,RES0062,ML Foundations,0.731,Addresses skill gap in ML Foundations required for Data Scientist,True
+REC00560,LRN0170,RES0064,Regression Techniques,0.796,Addresses skill gap in Regression Techniques required for Data Scientist,True
+REC00561,LRN0171,RES0063,ML Foundations,0.695,Addresses skill gap in ML Foundations required for Machine Learning Engineer,True
+REC00562,LRN0171,RES0074,Feature Engineering,0.672,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,False
+REC00563,LRN0171,RES0079,Neural Networks,0.729,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00564,LRN0171,RES0072,Model Evaluation,0.887,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00565,LRN0172,RES0092,HTML & CSS,0.684,Addresses skill gap in HTML & CSS required for Full Stack Developer,True
+REC00566,LRN0172,RES0094,JavaScript Basics,0.792,Addresses skill gap in JavaScript Basics required for Full Stack Developer,True
+REC00567,LRN0172,RES0111,REST API Design,0.842,Addresses skill gap in REST API Design required for Full Stack Developer,True
+REC00568,LRN0172,RES0101,Database Design (RDBMS),0.859,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,True
+REC00569,LRN0173,RES0055,Advanced SQL,0.888,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00570,LRN0173,RES0171,Apache Spark Basics,0.823,Addresses skill gap in Apache Spark Basics required for Data Engineer,False
+REC00571,LRN0173,RES0161,Data Warehousing,0.873,Addresses skill gap in Data Warehousing required for Data Engineer,True
+REC00572,LRN0173,RES0178,Data Pipeline Design,0.702,Addresses skill gap in Data Pipeline Design required for Data Engineer,True
+REC00573,LRN0174,RES0132,AWS Core Services,0.874,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,True
+REC00574,LRN0174,RES0134,Docker Fundamentals,0.792,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,False
+REC00575,LRN0175,RES0057,Advanced SQL,0.872,Addresses skill gap in Advanced SQL required for Data Analyst,True
+REC00576,LRN0175,RES0038,Excel for Data Analysis,0.863,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00577,LRN0175,RES0046,Data Visualization,0.821,Addresses skill gap in Data Visualization required for Data Analyst,True
+REC00578,LRN0176,RES0009,Python Data Structures,0.841,Addresses skill gap in Python Data Structures required for Data Scientist,True
+REC00579,LRN0176,RES0050,Inferential Statistics,0.783,Addresses skill gap in Inferential Statistics required for Data Scientist,True
+REC00580,LRN0176,RES0061,ML Foundations,0.68,Addresses skill gap in ML Foundations required for Data Scientist,True
+REC00581,LRN0176,RES0072,Model Evaluation,0.726,Addresses skill gap in Model Evaluation required for Data Scientist,False
+REC00582,LRN0177,RES0062,ML Foundations,0.662,Addresses skill gap in ML Foundations required for Machine Learning Engineer,True
+REC00583,LRN0177,RES0073,Feature Engineering,0.844,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,True
+REC00584,LRN0177,RES0150,Model Deployment,0.843,Addresses skill gap in Model Deployment required for Machine Learning Engineer,False
+REC00585,LRN0177,RES0071,Model Evaluation,0.882,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00586,LRN0178,RES0091,HTML & CSS,0.799,Addresses skill gap in HTML & CSS required for Full Stack Developer,True
+REC00587,LRN0178,RES0108,Node.js Basics,0.777,Addresses skill gap in Node.js Basics required for Full Stack Developer,True
+REC00588,LRN0178,RES0110,REST API Design,0.872,Addresses skill gap in REST API Design required for Full Stack Developer,True
+REC00589,LRN0179,RES0159,ETL Fundamentals,0.886,Addresses skill gap in ETL Fundamentals required for Data Engineer,True
+REC00590,LRN0179,RES0170,Apache Spark Basics,0.788,Addresses skill gap in Apache Spark Basics required for Data Engineer,True
+REC00591,LRN0179,RES0160,Data Warehousing,0.798,Addresses skill gap in Data Warehousing required for Data Engineer,True
+REC00592,LRN0180,RES0126,Cloud Computing Basics,0.808,Addresses skill gap in Cloud Computing Basics required for Cloud/DevOps Engineer,True
+REC00593,LRN0180,RES0131,AWS Core Services,0.767,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,True
+REC00594,LRN0180,RES0133,Docker Fundamentals,0.885,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True
+REC00595,LRN0181,RES0036,SQL Basics,0.768,Addresses skill gap in SQL Basics required for Data Analyst,True
+REC00596,LRN0181,RES0056,Advanced SQL,0.813,Addresses skill gap in Advanced SQL required for Data Analyst,True
+REC00597,LRN0181,RES0037,Excel for Data Analysis,0.677,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00598,LRN0181,RES0054,Exploratory Data Analysis,0.824,Addresses skill gap in Exploratory Data Analysis required for Data Analyst,True
+REC00599,LRN0182,RES0008,Python Data Structures,0.925,Addresses skill gap in Python Data Structures required for Data Scientist,True
+REC00600,LRN0182,RES0049,Inferential Statistics,0.803,Addresses skill gap in Inferential Statistics required for Data Scientist,True
+REC00601,LRN0182,RES0069,Classification Techniques,0.815,Addresses skill gap in Classification Techniques required for Data Scientist,False
+REC00602,LRN0182,RES0071,Model Evaluation,0.786,Addresses skill gap in Model Evaluation required for Data Scientist,True
+REC00603,LRN0183,RES0061,ML Foundations,0.701,Addresses skill gap in ML Foundations required for Machine Learning Engineer,True
+REC00604,LRN0183,RES0084,Deep Learning,0.899,Addresses skill gap in Deep Learning required for Machine Learning Engineer,True
+REC00605,LRN0183,RES0149,Model Deployment,0.773,Addresses skill gap in Model Deployment required for Machine Learning Engineer,True
+REC00606,LRN0183,RES0070,Model Evaluation,0.654,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,False
+REC00607,LRN0184,RES0105,React Fundamentals,0.769,Addresses skill gap in React Fundamentals required for Full Stack Developer,True
+REC00608,LRN0184,RES0107,Node.js Basics,0.808,Addresses skill gap in Node.js Basics required for Full Stack Developer,True
+REC00609,LRN0185,RES0153,Data Modeling,0.875,Addresses skill gap in Data Modeling required for Data Engineer,True
+REC00610,LRN0185,RES0158,ETL Fundamentals,0.776,Addresses skill gap in ETL Fundamentals required for Data Engineer,True
+REC00611,LRN0185,RES0169,Apache Spark Basics,0.806,Addresses skill gap in Apache Spark Basics required for Data Engineer,True
+REC00612,LRN0186,RES0123,Linux Fundamentals,0.903,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,True
+REC00613,LRN0186,RES0125,Cloud Computing Basics,0.727,Addresses skill gap in Cloud Computing Basics required for Cloud/DevOps Engineer,True
+REC00614,LRN0186,RES0130,AWS Core Services,0.872,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,True
+REC00615,LRN0186,RES0144,CI/CD Pipelines,0.77,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00616,LRN0187,RES0035,SQL Basics,0.781,Addresses skill gap in SQL Basics required for Data Analyst,True
+REC00617,LRN0187,RES0055,Advanced SQL,0.795,Addresses skill gap in Advanced SQL required for Data Analyst,False
+REC00618,LRN0187,RES0033,Descriptive Statistics,0.751,Addresses skill gap in Descriptive Statistics required for Data Analyst,True
+REC00619,LRN0187,RES0053,Exploratory Data Analysis,0.536,Addresses skill gap in Exploratory Data Analysis required for Data Analyst,True
+REC00620,LRN0188,RES0066,Regression Techniques,0.737,Addresses skill gap in Regression Techniques required for Data Scientist,True
+REC00621,LRN0188,RES0068,Classification Techniques,0.619,Addresses skill gap in Classification Techniques required for Data Scientist,True
+REC00622,LRN0188,RES0070,Model Evaluation,0.76,Addresses skill gap in Model Evaluation required for Data Scientist,True
+REC00623,LRN0189,RES0081,Neural Networks,0.722,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00624,LRN0189,RES0083,Deep Learning,0.724,Addresses skill gap in Deep Learning required for Machine Learning Engineer,False
+REC00625,LRN0189,RES0148,Model Deployment,0.96,Addresses skill gap in Model Deployment required for Machine Learning Engineer,True
+REC00626,LRN0190,RES0096,JavaScript Basics,0.783,Addresses skill gap in JavaScript Basics required for Full Stack Developer,False
+REC00627,LRN0190,RES0104,React Fundamentals,0.729,Addresses skill gap in React Fundamentals required for Full Stack Developer,False
+REC00628,LRN0190,RES0106,Node.js Basics,0.773,Addresses skill gap in Node.js Basics required for Full Stack Developer,False
+REC00629,LRN0191,RES0057,Advanced SQL,0.894,Addresses skill gap in Advanced SQL required for Data Engineer,False
+REC00630,LRN0191,RES0152,Data Modeling,0.838,Addresses skill gap in Data Modeling required for Data Engineer,True
+REC00631,LRN0191,RES0180,Data Pipeline Design,0.762,Addresses skill gap in Data Pipeline Design required for Data Engineer,True
+REC00632,LRN0192,RES0122,Linux Fundamentals,0.777,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,True
+REC00633,LRN0192,RES0124,Cloud Computing Basics,0.8,Addresses skill gap in Cloud Computing Basics required for Cloud/DevOps Engineer,True
+REC00634,LRN0192,RES0141,Kubernetes Basics,0.655,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,True
+REC00635,LRN0192,RES0143,CI/CD Pipelines,0.83,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,False
+REC00636,LRN0193,RES0034,SQL Basics,0.87,Addresses skill gap in SQL Basics required for Data Analyst,False
+REC00637,LRN0193,RES0048,Data Visualization,0.788,Addresses skill gap in Data Visualization required for Data Analyst,False
+REC00638,LRN0193,RES0032,Descriptive Statistics,0.805,Addresses skill gap in Descriptive Statistics required for Data Analyst,True
+REC00639,LRN0194,RES0063,ML Foundations,0.796,Addresses skill gap in ML Foundations required for Data Scientist,True
+REC00640,LRN0194,RES0065,Regression Techniques,0.759,Addresses skill gap in Regression Techniques required for Data Scientist,True
+REC00641,LRN0195,RES0075,Feature Engineering,0.79,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,True
+REC00642,LRN0195,RES0080,Neural Networks,0.746,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00643,LRN0195,RES0082,Deep Learning,0.765,Addresses skill gap in Deep Learning required for Machine Learning Engineer,True
+REC00644,LRN0196,RES0093,HTML & CSS,0.913,Addresses skill gap in HTML & CSS required for Full Stack Developer,True
+REC00645,LRN0196,RES0095,JavaScript Basics,0.747,Addresses skill gap in JavaScript Basics required for Full Stack Developer,True
+REC00646,LRN0196,RES0103,React Fundamentals,0.739,Addresses skill gap in React Fundamentals required for Full Stack Developer,True
+REC00647,LRN0196,RES0102,Database Design (RDBMS),0.834,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,True
+REC00648,LRN0197,RES0056,Advanced SQL,0.704,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00649,LRN0197,RES0151,Data Modeling,0.666,Addresses skill gap in Data Modeling required for Data Engineer,True
+REC00650,LRN0197,RES0162,Data Warehousing,0.688,Addresses skill gap in Data Warehousing required for Data Engineer,True
+REC00651,LRN0197,RES0179,Data Pipeline Design,0.732,Addresses skill gap in Data Pipeline Design required for Data Engineer,True
+REC00652,LRN0198,RES0121,Linux Fundamentals,0.78,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,True
+REC00653,LRN0198,RES0135,Docker Fundamentals,0.737,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True
+REC00654,LRN0198,RES0140,Kubernetes Basics,0.98,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,True
+REC00655,LRN0198,RES0142,CI/CD Pipelines,0.728,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,False
+REC00656,LRN0199,RES0039,Excel for Data Analysis,0.823,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00657,LRN0199,RES0047,Data Visualization,0.657,Addresses skill gap in Data Visualization required for Data Analyst,True
+REC00658,LRN0199,RES0031,Descriptive Statistics,0.904,Addresses skill gap in Descriptive Statistics required for Data Analyst,False
+REC00659,LRN0200,RES0051,Inferential Statistics,0.875,Addresses skill gap in Inferential Statistics required for Data Scientist,False
+REC00660,LRN0200,RES0062,ML Foundations,0.684,Addresses skill gap in ML Foundations required for Data Scientist,True
+REC00661,LRN0200,RES0064,Regression Techniques,0.739,Addresses skill gap in Regression Techniques required for Data Scientist,True
+REC00662,LRN0201,RES0063,ML Foundations,0.859,Addresses skill gap in ML Foundations required for Machine Learning Engineer,True
+REC00663,LRN0201,RES0074,Feature Engineering,0.874,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,True
+REC00664,LRN0201,RES0079,Neural Networks,0.781,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00665,LRN0201,RES0072,Model Evaluation,0.709,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00666,LRN0202,RES0092,HTML & CSS,0.709,Addresses skill gap in HTML & CSS required for Full Stack Developer,True
+REC00667,LRN0202,RES0094,JavaScript Basics,0.931,Addresses skill gap in JavaScript Basics required for Full Stack Developer,False
+REC00668,LRN0202,RES0111,REST API Design,0.723,Addresses skill gap in REST API Design required for Full Stack Developer,True
+REC00669,LRN0202,RES0101,Database Design (RDBMS),0.917,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,True
+REC00670,LRN0203,RES0055,Advanced SQL,0.867,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00671,LRN0203,RES0171,Apache Spark Basics,0.973,Addresses skill gap in Apache Spark Basics required for Data Engineer,True
+REC00672,LRN0203,RES0161,Data Warehousing,0.866,Addresses skill gap in Data Warehousing required for Data Engineer,False
+REC00673,LRN0203,RES0178,Data Pipeline Design,0.695,Addresses skill gap in Data Pipeline Design required for Data Engineer,False
+REC00674,LRN0204,RES0132,AWS Core Services,0.818,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,False
+REC00675,LRN0204,RES0134,Docker Fundamentals,0.691,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True
+REC00676,LRN0204,RES0139,Kubernetes Basics,0.793,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,True
+REC00677,LRN0205,RES0057,Advanced SQL,0.889,Addresses skill gap in Advanced SQL required for Data Analyst,True
+REC00678,LRN0205,RES0038,Excel for Data Analysis,0.854,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00679,LRN0205,RES0046,Data Visualization,0.88,Addresses skill gap in Data Visualization required for Data Analyst,True
+REC00680,LRN0206,RES0009,Python Data Structures,0.705,Addresses skill gap in Python Data Structures required for Data Scientist,True
+REC00681,LRN0206,RES0050,Inferential Statistics,0.698,Addresses skill gap in Inferential Statistics required for Data Scientist,False
+REC00682,LRN0206,RES0061,ML Foundations,0.845,Addresses skill gap in ML Foundations required for Data Scientist,True
+REC00683,LRN0206,RES0072,Model Evaluation,0.85,Addresses skill gap in Model Evaluation required for Data Scientist,True
+REC00684,LRN0207,RES0062,ML Foundations,0.716,Addresses skill gap in ML Foundations required for Machine Learning Engineer,True
+REC00685,LRN0207,RES0073,Feature Engineering,0.675,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,True
+REC00686,LRN0207,RES0150,Model Deployment,0.723,Addresses skill gap in Model Deployment required for Machine Learning Engineer,True
+REC00687,LRN0207,RES0071,Model Evaluation,0.776,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00688,LRN0208,RES0108,Node.js Basics,0.816,Addresses skill gap in Node.js Basics required for Full Stack Developer,True
+REC00689,LRN0208,RES0110,REST API Design,0.733,Addresses skill gap in REST API Design required for Full Stack Developer,True
+REC00690,LRN0208,RES0100,Database Design (RDBMS),0.784,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,True
+REC00691,LRN0209,RES0159,ETL Fundamentals,0.761,Addresses skill gap in ETL Fundamentals required for Data Engineer,True
+REC00692,LRN0209,RES0170,Apache Spark Basics,0.732,Addresses skill gap in Apache Spark Basics required for Data Engineer,True
+REC00693,LRN0210,RES0126,Cloud Computing Basics,0.678,Addresses skill gap in Cloud Computing Basics required for Cloud/DevOps Engineer,True
+REC00694,LRN0210,RES0131,AWS Core Services,0.774,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,True
+REC00695,LRN0210,RES0133,Docker Fundamentals,0.83,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,False
+REC00696,LRN0211,RES0036,SQL Basics,0.901,Addresses skill gap in SQL Basics required for Data Analyst,False
+REC00697,LRN0211,RES0056,Advanced SQL,0.797,Addresses skill gap in Advanced SQL required for Data Analyst,True
+REC00698,LRN0211,RES0037,Excel for Data Analysis,0.793,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00699,LRN0211,RES0054,Exploratory Data Analysis,0.875,Addresses skill gap in Exploratory Data Analysis required for Data Analyst,True
+REC00700,LRN0212,RES0008,Python Data Structures,0.778,Addresses skill gap in Python Data Structures required for Data Scientist,False
+REC00701,LRN0212,RES0069,Classification Techniques,0.822,Addresses skill gap in Classification Techniques required for Data Scientist,True
+REC00702,LRN0212,RES0071,Model Evaluation,0.836,Addresses skill gap in Model Evaluation required for Data Scientist,True
+REC00703,LRN0213,RES0061,ML Foundations,0.722,Addresses skill gap in ML Foundations required for Machine Learning Engineer,True
+REC00704,LRN0213,RES0084,Deep Learning,0.768,Addresses skill gap in Deep Learning required for Machine Learning Engineer,True
+REC00705,LRN0213,RES0149,Model Deployment,0.859,Addresses skill gap in Model Deployment required for Machine Learning Engineer,True
+REC00706,LRN0214,RES0105,React Fundamentals,0.846,Addresses skill gap in React Fundamentals required for Full Stack Developer,True
+REC00707,LRN0214,RES0107,Node.js Basics,0.83,Addresses skill gap in Node.js Basics required for Full Stack Developer,True
+REC00708,LRN0214,RES0109,REST API Design,0.76,Addresses skill gap in REST API Design required for Full Stack Developer,True
+REC00709,LRN0215,RES0153,Data Modeling,0.788,Addresses skill gap in Data Modeling required for Data Engineer,True
+REC00710,LRN0215,RES0158,ETL Fundamentals,0.813,Addresses skill gap in ETL Fundamentals required for Data Engineer,False
+REC00711,LRN0216,RES0123,Linux Fundamentals,0.843,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,True
+REC00712,LRN0216,RES0125,Cloud Computing Basics,0.753,Addresses skill gap in Cloud Computing Basics required for Cloud/DevOps Engineer,True
+REC00713,LRN0216,RES0130,AWS Core Services,0.819,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,True
+REC00714,LRN0216,RES0144,CI/CD Pipelines,0.693,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00715,LRN0217,RES0035,SQL Basics,0.829,Addresses skill gap in SQL Basics required for Data Analyst,True
+REC00716,LRN0217,RES0033,Descriptive Statistics,0.789,Addresses skill gap in Descriptive Statistics required for Data Analyst,True
+REC00717,LRN0217,RES0053,Exploratory Data Analysis,0.792,Addresses skill gap in Exploratory Data Analysis required for Data Analyst,False
+REC00718,LRN0218,RES0007,Python Data Structures,0.754,Addresses skill gap in Python Data Structures required for Data Scientist,True
+REC00719,LRN0218,RES0066,Regression Techniques,0.788,Addresses skill gap in Regression Techniques required for Data Scientist,True
+REC00720,LRN0218,RES0068,Classification Techniques,0.719,Addresses skill gap in Classification Techniques required for Data Scientist,True
+REC00721,LRN0218,RES0070,Model Evaluation,0.803,Addresses skill gap in Model Evaluation required for Data Scientist,True
+REC00722,LRN0219,RES0081,Neural Networks,0.847,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00723,LRN0219,RES0083,Deep Learning,0.633,Addresses skill gap in Deep Learning required for Machine Learning Engineer,False
+REC00724,LRN0220,RES0096,JavaScript Basics,0.936,Addresses skill gap in JavaScript Basics required for Full Stack Developer,True
+REC00725,LRN0220,RES0104,React Fundamentals,0.821,Addresses skill gap in React Fundamentals required for Full Stack Developer,True
+REC00726,LRN0220,RES0106,Node.js Basics,0.797,Addresses skill gap in Node.js Basics required for Full Stack Developer,True
+REC00727,LRN0221,RES0057,Advanced SQL,0.888,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00728,LRN0221,RES0152,Data Modeling,0.717,Addresses skill gap in Data Modeling required for Data Engineer,True
+REC00729,LRN0221,RES0157,ETL Fundamentals,0.65,Addresses skill gap in ETL Fundamentals required for Data Engineer,False
+REC00730,LRN0221,RES0180,Data Pipeline Design,0.804,Addresses skill gap in Data Pipeline Design required for Data Engineer,True
+REC00731,LRN0222,RES0122,Linux Fundamentals,0.874,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,True
+REC00732,LRN0222,RES0141,Kubernetes Basics,0.711,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,True
+REC00733,LRN0222,RES0143,CI/CD Pipelines,0.856,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00734,LRN0223,RES0048,Data Visualization,0.886,Addresses skill gap in Data Visualization required for Data Analyst,False
+REC00735,LRN0223,RES0032,Descriptive Statistics,0.87,Addresses skill gap in Descriptive Statistics required for Data Analyst,True
+REC00736,LRN0224,RES0063,ML Foundations,0.816,Addresses skill gap in ML Foundations required for Data Scientist,True
+REC00737,LRN0224,RES0065,Regression Techniques,0.884,Addresses skill gap in Regression Techniques required for Data Scientist,True
+REC00738,LRN0225,RES0075,Feature Engineering,0.751,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,True
+REC00739,LRN0225,RES0080,Neural Networks,0.711,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00740,LRN0225,RES0082,Deep Learning,0.956,Addresses skill gap in Deep Learning required for Machine Learning Engineer,True
+REC00741,LRN0226,RES0093,HTML & CSS,0.769,Addresses skill gap in HTML & CSS required for Full Stack Developer,True
+REC00742,LRN0226,RES0095,JavaScript Basics,0.716,Addresses skill gap in JavaScript Basics required for Full Stack Developer,True
+REC00743,LRN0226,RES0103,React Fundamentals,0.783,Addresses skill gap in React Fundamentals required for Full Stack Developer,True
+REC00744,LRN0226,RES0102,Database Design (RDBMS),0.667,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,True
+REC00745,LRN0227,RES0056,Advanced SQL,0.825,Addresses skill gap in Advanced SQL required for Data Engineer,True
+REC00746,LRN0227,RES0151,Data Modeling,0.793,Addresses skill gap in Data Modeling required for Data Engineer,True
+REC00747,LRN0227,RES0162,Data Warehousing,0.668,Addresses skill gap in Data Warehousing required for Data Engineer,True
+REC00748,LRN0227,RES0179,Data Pipeline Design,0.799,Addresses skill gap in Data Pipeline Design required for Data Engineer,True
+REC00749,LRN0228,RES0121,Linux Fundamentals,0.767,Addresses skill gap in Linux Fundamentals required for Cloud/DevOps Engineer,True
+REC00750,LRN0228,RES0135,Docker Fundamentals,0.679,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True
+REC00751,LRN0228,RES0140,Kubernetes Basics,0.845,Addresses skill gap in Kubernetes Basics required for Cloud/DevOps Engineer,True
+REC00752,LRN0228,RES0142,CI/CD Pipelines,0.683,Addresses skill gap in CI/CD Pipelines required for Cloud/DevOps Engineer,True
+REC00753,LRN0229,RES0039,Excel for Data Analysis,0.858,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00754,LRN0229,RES0047,Data Visualization,0.704,Addresses skill gap in Data Visualization required for Data Analyst,True
+REC00755,LRN0229,RES0031,Descriptive Statistics,0.866,Addresses skill gap in Descriptive Statistics required for Data Analyst,True
+REC00756,LRN0230,RES0051,Inferential Statistics,0.679,Addresses skill gap in Inferential Statistics required for Data Scientist,True
+REC00757,LRN0230,RES0062,ML Foundations,0.812,Addresses skill gap in ML Foundations required for Data Scientist,True
+REC00758,LRN0230,RES0064,Regression Techniques,0.787,Addresses skill gap in Regression Techniques required for Data Scientist,False
+REC00759,LRN0231,RES0063,ML Foundations,0.98,Addresses skill gap in ML Foundations required for Machine Learning Engineer,True
+REC00760,LRN0231,RES0074,Feature Engineering,0.515,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,True
+REC00761,LRN0231,RES0079,Neural Networks,0.774,Addresses skill gap in Neural Networks required for Machine Learning Engineer,True
+REC00762,LRN0231,RES0072,Model Evaluation,0.682,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00763,LRN0232,RES0092,HTML & CSS,0.707,Addresses skill gap in HTML & CSS required for Full Stack Developer,True
+REC00764,LRN0232,RES0094,JavaScript Basics,0.771,Addresses skill gap in JavaScript Basics required for Full Stack Developer,True
+REC00765,LRN0232,RES0111,REST API Design,0.881,Addresses skill gap in REST API Design required for Full Stack Developer,True
+REC00766,LRN0232,RES0101,Database Design (RDBMS),0.793,Addresses skill gap in Database Design (RDBMS) required for Full Stack Developer,False
+REC00767,LRN0233,RES0171,Apache Spark Basics,0.791,Addresses skill gap in Apache Spark Basics required for Data Engineer,True
+REC00768,LRN0233,RES0161,Data Warehousing,0.689,Addresses skill gap in Data Warehousing required for Data Engineer,True
+REC00769,LRN0233,RES0178,Data Pipeline Design,0.686,Addresses skill gap in Data Pipeline Design required for Data Engineer,True
+REC00770,LRN0234,RES0132,AWS Core Services,0.814,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,True
+REC00771,LRN0234,RES0134,Docker Fundamentals,0.719,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True
+REC00772,LRN0235,RES0057,Advanced SQL,0.808,Addresses skill gap in Advanced SQL required for Data Analyst,True
+REC00773,LRN0235,RES0038,Excel for Data Analysis,0.761,Addresses skill gap in Excel for Data Analysis required for Data Analyst,True
+REC00774,LRN0235,RES0046,Data Visualization,0.768,Addresses skill gap in Data Visualization required for Data Analyst,False
+REC00775,LRN0236,RES0009,Python Data Structures,0.735,Addresses skill gap in Python Data Structures required for Data Scientist,True
+REC00776,LRN0236,RES0050,Inferential Statistics,0.851,Addresses skill gap in Inferential Statistics required for Data Scientist,True
+REC00777,LRN0236,RES0072,Model Evaluation,0.78,Addresses skill gap in Model Evaluation required for Data Scientist,True
+REC00778,LRN0237,RES0062,ML Foundations,0.759,Addresses skill gap in ML Foundations required for Machine Learning Engineer,False
+REC00779,LRN0237,RES0073,Feature Engineering,0.726,Addresses skill gap in Feature Engineering required for Machine Learning Engineer,False
+REC00780,LRN0237,RES0150,Model Deployment,0.642,Addresses skill gap in Model Deployment required for Machine Learning Engineer,True
+REC00781,LRN0237,RES0071,Model Evaluation,0.782,Addresses skill gap in Model Evaluation required for Machine Learning Engineer,True
+REC00782,LRN0238,RES0091,HTML & CSS,0.802,Addresses skill gap in HTML & CSS required for Full Stack Developer,True
+REC00783,LRN0238,RES0108,Node.js Basics,0.817,Addresses skill gap in Node.js Basics required for Full Stack Developer,True
+REC00784,LRN0238,RES0110,REST API Design,0.83,Addresses skill gap in REST API Design required for Full Stack Developer,True
+REC00785,LRN0239,RES0159,ETL Fundamentals,0.728,Addresses skill gap in ETL Fundamentals required for Data Engineer,True
+REC00786,LRN0239,RES0170,Apache Spark Basics,0.626,Addresses skill gap in Apache Spark Basics required for Data Engineer,False
+REC00787,LRN0239,RES0160,Data Warehousing,0.696,Addresses skill gap in Data Warehousing required for Data Engineer,False
+REC00788,LRN0240,RES0126,Cloud Computing Basics,0.861,Addresses skill gap in Cloud Computing Basics required for Cloud/DevOps Engineer,True
+REC00789,LRN0240,RES0131,AWS Core Services,0.764,Addresses skill gap in AWS Core Services required for Cloud/DevOps Engineer,True
+REC00790,LRN0240,RES0133,Docker Fundamentals,0.824,Addresses skill gap in Docker Fundamentals required for Cloud/DevOps Engineer,True

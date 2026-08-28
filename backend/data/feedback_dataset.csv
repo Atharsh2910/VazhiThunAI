@@ -1,0 +1,361 @@
+feedback_id,feedback_text,feedback_type
+FB0001,I already practiced this extensively in college.,already_known
+FB0002,This took far more of my weekly hours than planned.,too_long
+FB0003,This resource does not match what I actually need to learn.,not_relevant
+FB0004,This helped me a lot in preparing for my interview.,positive
+FB0005,This resource was poorly explained overall.,negative
+FB0006,This explanation assumed context that was never provided.,confusing
+FB0007,I found this to be an average learning experience overall.,neutral
+FB0008,I found myself losing focus due to the length of this course.,too_long
+FB0009,The terminology used here was confusing without definitions.,confusing
+FB0010,This felt like it was meant for someone with more experience.,too_hard
+FB0011,I feel this significantly improved my understanding.,positive
+FB0012,This resource did not add much to what I already knew.,negative
+FB0013,I was not able to take much away from this resource.,negative
+FB0014,"I expected more depth, this was quite basic.",too_easy
+FB0015,This was extremely relevant to my career goals.,positive
+FB0016,This course did not engage me at all.,negative
+FB0017,I feel this resource needs a complete revision.,negative
+FB0018,I could not grasp the concepts explained in this resource.,too_hard
+FB0019,This does not seem connected to my skill gaps.,not_relevant
+FB0020,The difficulty here was mismatched with my mastery score.,too_hard
+FB0021,I feel this was recommended too early in my roadmap.,too_hard
+FB0022,This course did not meet my expectations.,negative
+FB0023,This resource jumped between topics in a confusing way.,confusing
+FB0024,I found this extremely well suited to my learning style.,positive
+FB0025,I think this resource is meant for absolute beginners.,too_easy
+FB0026,I already know this from contributing to open source projects.,already_known
+FB0027,This topic is already familiar to me from self-study.,already_known
+FB0028,I have already worked extensively with this in my previous company.,already_known
+FB0029,This was a reasonably standard course experience.,neutral
+FB0030,"This was a great resource, very well explained.",positive
+FB0031,This resource left several important questions unanswered.,confusing
+FB0032,I had to spread this over many more days than expected.,too_long
+FB0033,I needed much more background before starting this topic.,too_hard
+FB0034,This resource was too long relative to its actual difficulty.,too_long
+FB0035,This did not help me understand the topic any better.,negative
+FB0036,The practice problems here were too simple to be useful.,too_easy
+FB0037,This course met minimum expectations for the topic.,neutral
+FB0038,I do not see why this was placed in my current phase.,not_relevant
+FB0039,I was overwhelmed by the complexity of this resource.,too_hard
+FB0040,"This was too easy, I already knew most of this.",too_easy
+FB0041,"This was too difficult, I could not follow along.",too_hard
+FB0042,This was a fantastic introduction to the topic.,positive
+FB0043,I really valued the depth of this explanation.,positive
+FB0044,This resource does not connect well with my target job description.,not_relevant
+FB0045,I have a fairly neutral opinion of this course.,neutral
+FB0046,"The estimated time for this course was quite inaccurate, too long.",too_long
+FB0047,This course does not seem to match my declared skill gaps.,not_relevant
+FB0048,This felt redundant given what I already know.,too_easy
+FB0049,The duration of this course did not match its depth.,too_long
+FB0050,This resource seems unrelated to my declared interests.,not_relevant
+FB0051,"This resource repeated points, making it feel too long.",too_long
+FB0052,This felt like a refresher rather than new learning.,too_easy
+FB0053,I was underwhelmed by the content of this course.,negative
+FB0054,This did not help me close my skill gap effectively.,negative
+FB0055,"This content is suitable for someone just starting out, not me.",too_easy
+FB0056,This resource was engaging and kept me motivated.,positive
+FB0057,I have already built projects using this technology.,already_known
+FB0058,I have already applied this in a real production environment.,already_known
+FB0059,This resource felt rushed and incomplete.,negative
+FB0060,I found this resource overall quite disappointing.,negative
+FB0061,I don't think this topic is needed for my target company type.,not_relevant
+FB0062,This is a skill I already demonstrated in my last job.,already_known
+FB0063,I feel this resource needs better examples and explanations.,negative
+FB0064,This is a skill I have already demonstrated in interviews before.,already_known
+FB0065,This resource repeated things I learned months ago.,too_easy
+FB0066,This assumed too much prior knowledge that I do not have.,too_hard
+FB0067,"I found this resource's pacing confusing, too fast then too slow.",confusing
+FB0068,This course felt like a waste given my current mastery.,too_easy
+FB0069,"I feel neutral about this course, it was fairly standard.",neutral
+FB0070,I found this resource confusing compared to others I have used.,confusing
+FB0071,I found this course engaging and informative.,positive
+FB0072,I already know this topic very well from my college coursework.,already_known
+FB0073,"This was fine, though not particularly engaging.",neutral
+FB0074,The examples in this resource did not make sense to me.,confusing
+FB0075,This is something I am already confident about from experience.,already_known
+FB0076,I was hoping for something more advanced than this.,too_easy
+FB0077,"The course had too much filler content, making it too long.",too_long
+FB0078,I appreciated the real world examples used in this course.,positive
+FB0079,I already know this well from my prior work experience.,already_known
+FB0080,This course was well paced and easy to follow.,positive
+FB0081,I found this resource poorly structured and hard to follow.,confusing
+FB0082,This course exceeded my expectations in quality.,positive
+FB0083,I don't think this is something a data engineer needs to know.,not_relevant
+FB0084,This resource did not explain things clearly enough.,negative
+FB0085,This is something I picked up during a previous project.,already_known
+FB0086,I found this extremely hard to understand without more context.,too_hard
+FB0087,This resource should have been broken into smaller pieces.,too_long
+FB0088,I found this course to be genuinely high quality.,positive
+FB0089,The wording in this assessment was confusing and ambiguous.,confusing
+FB0090,I feel this resource was okay but could use some improvement.,neutral
+FB0091,I feel this course prepared me well for the assessment.,positive
+FB0092,The video was too long for the amount of new information given.,too_long
+FB0093,I already know this from my time working at a service company.,already_known
+FB0094,I feel this course was adequate for a basic overview.,neutral
+FB0095,This course explanation was too abstract without concrete examples.,confusing
+FB0096,This should have been split into shorter modules.,too_long
+FB0097,The instructions for this assessment were ambiguous and confusing.,confusing
+FB0098,This was too advanced without covering the required basics first.,too_hard
+FB0099,I would prefer something more advanced than this course.,too_easy
+FB0100,This felt like an unnecessary step back for me.,too_easy
+FB0101,The concepts here were too obvious to be useful.,too_easy
+FB0102,"This did not challenge me at all, please give harder content.",too_easy
+FB0103,I got lost midway through this explanation.,confusing
+FB0104,The content was too basic for my current level.,too_easy
+FB0105,This was an unremarkable but functional resource.,neutral
+FB0106,This was not challenging enough for my level.,too_easy
+FB0107,I don't think this belongs in my current learning phase.,not_relevant
+FB0108,This course failed to explain the core concept well.,negative
+FB0109,The complexity here was too much for a first attempt.,too_hard
+FB0110,I feel this course could have been much better structured.,negative
+FB0111,I struggled to understand what this resource was trying to teach.,confusing
+FB0112,I don't think this topic matters for a data analyst role.,not_relevant
+FB0113,I could not keep up with the pace of this course.,too_hard
+FB0114,I could not tell what the main takeaway of this course was.,confusing
+FB0115,"I found this resource to be somewhat useful, somewhat not.",neutral
+FB0116,This project needed skills I have not learned yet.,too_hard
+FB0117,I do not think this is relevant to what I am trying to learn.,not_relevant
+FB0118,This is a skill I already picked up from freelance projects.,already_known
+FB0119,This was too technical for where I currently am.,too_hard
+FB0120,This took almost double the estimated duration to complete.,too_long
+FB0121,This course feels disconnected from my overall roadmap.,not_relevant
+FB0122,This was reasonably useful though not exceptional.,neutral
+FB0123,This is a skill I already possess from my professional background.,already_known
+FB0124,This was a helpful and well organized resource overall.,positive
+FB0125,The diagrams in this resource were more confusing than helpful.,confusing
+FB0126,This dragged through examples that could have been shortened.,too_long
+FB0127,The difficulty of this course does not match my current mastery.,too_hard
+FB0128,This resource should come with a stronger prerequisite warning.,too_hard
+FB0129,"Great explanation, this cleared up my doubts completely.",positive
+FB0130,This resource was passable but not particularly impressive.,neutral
+FB0131,I loved how practical this resource was.,positive
+FB0132,I found this course acceptable but not outstanding.,neutral
+FB0133,This explanation was confusing and hard to follow.,confusing
+FB0134,This seems more suited to a different target role than mine.,not_relevant
+FB0135,This course was way too long for the content it actually covered.,too_long
+FB0136,The difficulty here does not match my mastery score.,too_easy
+FB0137,This resource is not aligned with my actual skill level.,too_easy
+FB0138,I found the pacing of this course just right for me.,positive
+FB0139,I did not understand the flow of this course at all.,confusing
+FB0140,This resource assumed skills I have not yet developed.,too_hard
+FB0141,This resource does not address any of my current skill gaps.,not_relevant
+FB0142,I found the length of this practice set excessive.,too_long
+FB0143,I am not sure this aligns with my chosen specialization.,not_relevant
+FB0144,This resource feels like a mismatch with my stated goal.,not_relevant
+FB0145,"This resource was okay, similar to others I have used.",neutral
+FB0146,The pacing made this feel much longer than necessary.,too_long
+FB0147,I already know this from working as a QA engineer previously.,already_known
+FB0148,This resource served its basic purpose adequately.,neutral
+FB0149,"This was okay, though I have seen better resources.",neutral
+FB0150,This did not stretch my current abilities at all.,too_easy
+FB0151,This felt like it had too many redundant sections.,too_long
+FB0152,This was not a good fit for my current learning needs.,negative
+FB0153,The difficulty rating on this resource seems too low for what I need.,too_easy
+FB0154,I found this project genuinely useful for my portfolio.,positive
+FB0155,This resource was way beyond my current mastery level.,too_hard
+FB0156,This did not live up to the quality of other resources here.,negative
+FB0157,"This explanation skipped steps, making it confusing to follow.",confusing
+FB0158,I really liked the structure and flow of this resource.,positive
+FB0159,This did not match the quality I expected from this platform.,negative
+FB0160,This resource does not push me forward at all.,too_easy
+FB0161,I already completed a similar course on another platform.,already_known
+FB0162,I think this could be condensed into half the time.,too_long
+FB0163,"I really enjoyed this course, it was clear and practical.",positive
+FB0164,I did not gain much value from this course.,negative
+FB0165,"I feel this resource met the basic expectations, nothing more.",neutral
+FB0166,I need something more advanced than this.,too_easy
+FB0167,I could not follow the logic presented in this course.,confusing
+FB0168,This resource's examples did not match the explanation given.,confusing
+FB0169,I feel this course was a waste of my time.,negative
+FB0170,I feel this course neither impressed nor disappointed me.,neutral
+FB0171,I think this was recommended by mistake for my profile.,not_relevant
+FB0172,"I found this resource neither great nor poor, just average.",neutral
+FB0173,I am not sure why this was prioritized over more relevant content.,not_relevant
+FB0174,The explanations here were not enough for such a hard topic.,too_hard
+FB0175,I found this resource below the standard of similar courses.,negative
+FB0176,This resource was fine for what it covered.,neutral
+FB0177,I feel this course missed important parts of the topic.,negative
+FB0178,The course length made it difficult to complete in one sitting.,too_long
+FB0179,This project required skills far beyond what I currently have.,too_hard
+FB0180,I really appreciated the examples used in this course.,positive
+FB0181,This took far more hours than what was estimated.,too_long
+FB0182,This did not provide enough practical value for me.,negative
+FB0183,This was a great fit for my current learning phase.,positive
+FB0184,This course felt disconnected from real world application.,negative
+FB0185,This resource did the job but nothing more.,neutral
+FB0186,This resource underestimated my current skill level.,too_easy
+FB0187,I really liked how this explained a complex topic simply.,positive
+FB0188,The concepts here were too complex without enough explanation.,too_hard
+FB0189,This was neither particularly helpful nor unhelpful.,neutral
+FB0190,I have already used this tool extensively at my workplace.,already_known
+FB0191,This resource was decent but not memorable.,neutral
+FB0192,I think shorter modules would have worked better here.,too_long
+FB0193,I feel this course needs significant improvement.,negative
+FB0194,This took much longer than the estimated time.,too_long
+FB0195,I was unclear on the expected outcome of this exercise.,confusing
+FB0196,I already mastered everything covered in this course.,too_easy
+FB0197,The structure of this project made it hard to know where to start.,confusing
+FB0198,This course moved too fast through complex material.,too_hard
+FB0199,I had to split this across multiple weeks due to its length.,too_long
+FB0200,I have prior experience with this from my current job.,already_known
+FB0201,The course structure made it feel longer than necessary.,too_long
+FB0202,I need more foundational preparation before this topic.,too_hard
+FB0203,This resource feels unrelated to my career target.,not_relevant
+FB0204,The content jumped too many levels ahead of my current skill.,too_hard
+FB0205,I feel this resource could have been much shorter.,too_long
+FB0206,This resource was below my current skill level.,too_easy
+FB0207,I have already mastered this from a previous role.,already_known
+FB0208,"This course covered the basics adequately, nothing special.",neutral
+FB0209,I don't see how this fits my data analyst career path.,not_relevant
+FB0210,"I completed this too quickly, it lacked depth.",too_easy
+FB0211,I have already demonstrated mastery of this in past assessments.,already_known
+FB0212,This topic is already well understood by me from prior training.,already_known
+FB0213,I was expecting something more aligned with my roadmap.,not_relevant
+FB0214,This resource was too lengthy for a single skill topic.,too_long
+FB0215,This was too introductory for someone with my background.,too_easy
+FB0216,This course made a difficult topic feel manageable.,positive
+FB0217,I was not impressed with the depth of this course.,negative
+FB0218,I feel much better prepared after going through this course.,positive
+FB0219,I feel this resource was not worth the time invested.,negative
+FB0220,I found this explanation technically correct but hard to parse.,confusing
+FB0221,I feel like I wasted time on something this simple.,too_easy
+FB0222,The questions in this quiz were too straightforward.,too_easy
+FB0223,I did not have a strong opinion either way about this course.,neutral
+FB0224,This assessment tested things far beyond what was taught.,too_hard
+FB0225,I think this is unrelated to my current milestone.,not_relevant
+FB0226,I found this course far too simple for what I need.,too_easy
+FB0227,I found this topic explained in a roundabout and unclear way.,confusing
+FB0228,I did not enjoy the way this topic was presented.,negative
+FB0229,I already covered this in a course outside this platform.,already_known
+FB0230,"This course was fine, though I expected slightly more.",neutral
+FB0231,This was exactly what I needed at this stage.,positive
+FB0232,"I could not complete the exercises, they were too advanced.",too_hard
+FB0233,This course content does not support my career transition.,not_relevant
+FB0234,This course does not fit into my current learning path.,not_relevant
+FB0235,This resource helped me close a major skill gap.,positive
+FB0236,I found this course to be just about average.,neutral
+FB0237,This seems irrelevant compared to my other recommended resources.,not_relevant
+FB0238,This explanation felt disorganized and difficult to follow.,confusing
+FB0239,This was a well structured and effective learning resource.,positive
+FB0240,This course left many of my questions unanswered.,negative
+FB0241,I enjoyed the hands-on approach of this course.,positive
+FB0242,I learned this already during my engineering degree.,already_known
+FB0243,This took significantly more time than my other resources.,too_long
+FB0244,The course structure jumped around without clear organization.,confusing
+FB0245,This resource felt outdated and not very useful.,negative
+FB0246,This was an average resource overall.,neutral
+FB0247,"This was fine for a quick overview, nothing in depth though.",neutral
+FB0248,I found this to be a fairly typical course experience.,neutral
+FB0249,This resource felt unnecessarily stretched out.,too_long
+FB0250,I think this recommendation missed my actual learning needs.,not_relevant
+FB0251,I found the transitions between topics abrupt and confusing.,confusing
+FB0252,This did not help me feel more prepared for my goal.,negative
+FB0253,This resource gave me a solid foundation in the topic.,positive
+FB0254,I have no strong feelings about this resource either way.,neutral
+FB0255,I was not satisfied with how this topic was covered.,negative
+FB0256,This project helped me understand the concept much better.,positive
+FB0257,"This course was okay, nothing exceptional but not bad either.",neutral
+FB0258,I already learned this thoroughly during my B.Tech program.,already_known
+FB0259,This was one of the best explanations I have come across.,positive
+FB0260,This resource matched my skill level perfectly.,positive
+FB0261,I could not follow how one concept led to the next here.,confusing
+FB0262,The flow between sections in this course was unclear.,confusing
+FB0263,I am not sure this fits into a cloud engineer roadmap.,not_relevant
+FB0264,I found the structure of this course very disorganized.,confusing
+FB0265,This topic needs more foundational content before attempting it.,too_hard
+FB0266,"This resource was clear, concise, and very helpful.",positive
+FB0267,The instructions in this project were unclear and confusing.,confusing
+FB0268,The gap between my skill level and this content was too large.,too_hard
+FB0269,This is a skill I already use regularly at work.,already_known
+FB0270,This resource boosted my confidence in this skill area.,positive
+FB0271,I think this resource belongs to a different learning track.,not_relevant
+FB0272,I found this resource too time consuming for its value.,too_long
+FB0273,This was way too elementary for my target role.,too_easy
+FB0274,This topic was already covered extensively in my degree program.,already_known
+FB0275,The course length was too much for a single topic.,too_long
+FB0276,This project gave me great hands-on practice.,positive
+FB0277,"I finished this in half the estimated time, it was too easy.",too_easy
+FB0278,This is something I already practice as part of my current role.,already_known
+FB0279,This course explanation contradicted itself at points.,confusing
+FB0280,I struggled to complete even the first section of this course.,too_hard
+FB0281,This course barely covered anything new for me.,too_easy
+FB0282,I need a gentler introduction before attempting this again.,too_hard
+FB0283,I found this extremely useful for my current goal.,positive
+FB0284,This resource should be recommended to complete beginners only.,too_easy
+FB0285,I feel this was one of the most useful courses so far.,positive
+FB0286,This topic was explained in a very confusing manner.,confusing
+FB0287,The length of this course did not fit my weekly time budget.,too_long
+FB0288,I am confused why this appears in my recommendations.,not_relevant
+FB0289,I already learned this during a hackathon I participated in.,already_known
+FB0290,This topic felt like a repeat of what I already know.,too_easy
+FB0291,I already have certification in this specific area.,already_known
+FB0292,I found this resource frustrating to work through.,negative
+FB0293,I think the content could be delivered more concisely.,too_long
+FB0294,This is something I already learned during my internship.,already_known
+FB0295,This did not help me prepare adequately for the assessment.,negative
+FB0296,This explanation left me more confused than before.,confusing
+FB0297,I already studied this extensively before joining this platform.,already_known
+FB0298,I found this resource lacking in depth and clarity.,negative
+FB0299,This took much longer than similar resources I have completed.,too_long
+FB0300,This course skipped too many basics that I needed.,too_hard
+FB0301,I feel this was a middle-of-the-road learning resource.,neutral
+FB0302,I think trimming this course would improve the experience.,too_long
+FB0303,I found this resource's examples inconsistent and confusing.,confusing
+FB0304,This did not meet the standard set by other courses here.,negative
+FB0305,The overall length made this hard to fit into my schedule.,too_long
+FB0306,This resource needs a prerequisite course before attempting it.,too_hard
+FB0307,"I have a balanced view of this resource, some good some average.",neutral
+FB0308,This was significantly harder than my current skill level allows.,too_hard
+FB0309,The pace was too slow because the content was too easy.,too_easy
+FB0310,This course lacked clarity in explaining the core concept.,confusing
+FB0311,This resource could definitely be shortened without losing value.,too_long
+FB0312,I do not see how this connects to my target skills.,not_relevant
+FB0313,This course does not align with my target role at all.,not_relevant
+FB0314,The math in this course was too advanced for my level.,too_hard
+FB0315,I have already gained proficiency in this through work projects.,already_known
+FB0316,This dragged on longer than needed to explain the concept.,too_long
+FB0317,The examples used here were too basic for my needs.,too_easy
+FB0318,This resource does not really relate to my current goal.,not_relevant
+FB0319,This felt like covering old ground again.,too_easy
+FB0320,This resource was too dense and technical for my level.,too_hard
+FB0321,This resource used jargon without explaining it clearly.,confusing
+FB0322,"I struggled a lot with this, it felt too advanced.",too_hard
+FB0323,This topic seems out of place in my current phase.,not_relevant
+FB0324,This resource does not seem tailored to my specific goal.,not_relevant
+FB0325,I was disappointed with the quality of this resource.,negative
+FB0326,I already studied this topic in depth during my masters.,already_known
+FB0327,I think this resource needs to be more time efficient.,too_long
+FB0328,This is something I already use daily in my current job.,already_known
+FB0329,"This was an okay experience overall, nothing stood out.",neutral
+FB0330,I don't think this is needed for my specific goal.,not_relevant
+FB0331,The difficulty spike here was too sudden for me.,too_hard
+FB0332,I found the terminology in this resource too advanced.,too_hard
+FB0333,This resource's terminology was inconsistent throughout.,confusing
+FB0334,I am not sure why this was recommended for my goal.,not_relevant
+FB0335,This felt like it could have ended much earlier.,too_long
+FB0336,I already learned this during my previous internship experience.,already_known
+FB0337,I felt completely lost while going through this resource.,too_hard
+FB0338,This does not seem to be part of my core skill requirements.,not_relevant
+FB0339,I feel this course did not respect my time well.,negative
+FB0340,I found this course to be moderately paced and average overall.,neutral
+FB0341,I already know this from my previous data analyst role.,already_known
+FB0342,This course did not build on what I already knew effectively.,negative
+FB0343,This resource was reasonable but forgettable.,neutral
+FB0344,I already cover this material comfortably at work.,too_easy
+FB0345,I did not find this resource useful at all.,negative
+FB0346,I do not see the connection between this and my target role.,not_relevant
+FB0347,This does not seem relevant to a full stack developer role.,not_relevant
+FB0348,The exercises were too simple to be useful.,too_easy
+FB0349,I found this course to be moderately useful.,neutral
+FB0350,The pace of this course was too fast for a beginner like me.,too_hard
+FB0351,I have already covered this in depth through online courses.,already_known
+FB0352,This is a concept I am already very comfortable with.,already_known
+FB0353,I think this resource needs better time estimation.,too_long
+FB0354,This course was acceptable given what it aimed to cover.,neutral
+FB0355,This topic needed clearer step-by-step instructions.,confusing
+FB0356,I got confused about what this resource wanted me to do.,confusing
+FB0357,I already have hands-on experience with this technology.,already_known
+FB0358,I feel much more confident after completing this resource.,positive
+FB0359,I have mixed feelings about this course.,neutral
+FB0360,This does not seem to support my machine learning goal.,not_relevant

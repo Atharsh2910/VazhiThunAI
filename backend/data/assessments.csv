@@ -1,0 +1,37 @@
+assessment_id,title,assessment_type,skill_id,skill_name,num_questions,difficulty_score,pass_threshold
+ASM001,AWS Core Services Assessment,diagnostic,SK044,AWS Core Services,10,0.35,0.6
+ASM002,Advanced SQL Assessment,formative_quiz,SK019,Advanced SQL,10,0.95,0.6
+ASM003,Apache Spark Basics Assessment,milestone_assessment,SK057,Apache Spark Basics,10,0.75,0.6
+ASM004,CI/CD Pipelines Assessment,diagnostic,SK048,CI/CD Pipelines,10,0.75,0.6
+ASM005,Classification Techniques Assessment,formative_quiz,SK023,Classification Techniques,10,0.35,0.6
+ASM006,Cloud Computing Basics Assessment,milestone_assessment,SK042,Cloud Computing Basics,10,0.15,0.6
+ASM007,Data Modeling Assessment,diagnostic,SK051,Data Modeling,10,0.15,0.6
+ASM008,Data Pipeline Design Assessment,formative_quiz,SK060,Data Pipeline Design,10,0.95,0.6
+ASM009,Data Visualization Assessment,milestone_assessment,SK016,Data Visualization,10,0.55,0.6
+ASM010,Data Warehousing Assessment,diagnostic,SK054,Data Warehousing,10,0.35,0.6
+ASM011,Database Design (RDBMS) Assessment,formative_quiz,SK034,Database Design (RDBMS),10,0.35,0.6
+ASM012,Deep Learning Assessment,milestone_assessment,SK028,Deep Learning,10,0.75,0.6
+ASM013,Descriptive Statistics Assessment,diagnostic,SK011,Descriptive Statistics,10,0.15,0.6
+ASM014,Docker Fundamentals Assessment,formative_quiz,SK045,Docker Fundamentals,10,0.55,0.6
+ASM015,ETL Fundamentals Assessment,milestone_assessment,SK053,ETL Fundamentals,10,0.35,0.6
+ASM016,Excel for Data Analysis Assessment,diagnostic,SK013,Excel for Data Analysis,10,0.35,0.6
+ASM017,Exploratory Data Analysis Assessment,formative_quiz,SK018,Exploratory Data Analysis,10,0.75,0.6
+ASM018,Feature Engineering Assessment,milestone_assessment,SK025,Feature Engineering,10,0.55,0.6
+ASM019,Git & Version Control Assessment,diagnostic,SK002,Git & Version Control,10,0.15,0.6
+ASM020,HTML & CSS Assessment,formative_quiz,SK031,HTML & CSS,10,0.15,0.6
+ASM021,Inferential Statistics Assessment,milestone_assessment,SK017,Inferential Statistics,10,0.75,0.6
+ASM022,JavaScript Basics Assessment,diagnostic,SK032,JavaScript Basics,10,0.15,0.6
+ASM023,Kubernetes Basics Assessment,formative_quiz,SK047,Kubernetes Basics,10,0.75,0.6
+ASM024,Linux Fundamentals Assessment,milestone_assessment,SK041,Linux Fundamentals,10,0.15,0.6
+ASM025,ML Foundations Assessment,diagnostic,SK021,ML Foundations,10,0.15,0.6
+ASM026,Model Deployment Assessment,formative_quiz,SK050,Model Deployment,10,0.95,0.6
+ASM027,Model Evaluation Assessment,milestone_assessment,SK024,Model Evaluation,10,0.35,0.6
+ASM028,Neural Networks Assessment,diagnostic,SK027,Neural Networks,10,0.75,0.6
+ASM029,Node.js Basics Assessment,formative_quiz,SK036,Node.js Basics,10,0.55,0.6
+ASM030,Problem Solving (DSA Practice) Assessment,milestone_assessment,SK008,Problem Solving (DSA Practice),10,0.75,0.6
+ASM031,Python Basics Assessment,diagnostic,SK001,Python Basics,10,0.15,0.6
+ASM032,Python Data Structures Assessment,formative_quiz,SK003,Python Data Structures,10,0.35,0.6
+ASM033,REST API Design Assessment,milestone_assessment,SK037,REST API Design,10,0.75,0.6
+ASM034,React Fundamentals Assessment,diagnostic,SK035,React Fundamentals,10,0.55,0.6
+ASM035,Regression Techniques Assessment,formative_quiz,SK022,Regression Techniques,10,0.15,0.6
+ASM036,SQL Basics Assessment,milestone_assessment,SK012,SQL Basics,10,0.15,0.6
