@@ -34,22 +34,23 @@ class LoginRequest(BaseModel):
 @router.post("/auth/register", response_model=APIResponse[Dict[str, Any]])
 def auth_register(request: RegisterRequest, db: Session = Depends(get_db)):
     try:
-        # Supabase sign up
-        auth_response = supabase.auth.sign_up({
-            "email": request.email, 
-            "password": request.password, 
-            "options": {"data": {"display_name": request.display_name}}
-        })
-        user_id = auth_response.user.id
+        # Check if email exists
+        existing_user = db.query(User).filter(User.email == request.email).first()
+        if existing_user:
+            raise HTTPException(status_code=400, detail="User already registered")
+
+        user_id = str(uuid.uuid4())
         
         # Insert into users table
         new_user = User(
             id=user_id,
             email=request.email,
+            password_hash=request.password,
             display_name=request.display_name,
             status="active"
         )
         db.add(new_user)
+        db.flush()
         
         # Insert into learner_profiles table
         new_profile = LearnerProfile(
@@ -64,30 +65,40 @@ def auth_register(request: RegisterRequest, db: Session = Depends(get_db)):
             data={"user_id": user_id, "message": "User registered successfully"}, 
             meta=MetaResponse(request_id=str(uuid.uuid4()))
         )
+    except HTTPException:
+        raise
     except Exception as e:
         db.rollback()
         raise HTTPException(status_code=400, detail=str(e))
 
 @router.post("/auth/login", response_model=APIResponse[Dict[str, Any]])
-def auth_login(request: LoginRequest):
+def auth_login(request: LoginRequest, db: Session = Depends(get_db)):
     try:
-        auth_response = supabase.auth.sign_in_with_password({
-            "email": request.email,
-            "password": request.password
-        })
+        user = db.query(User).filter(User.email == request.email).first()
+        if not user:
+            raise HTTPException(status_code=401, detail="Invalid credentials")
+            
+        if user.password_hash != request.password:
+            raise HTTPException(status_code=401, detail="Invalid credentials")
+            
+        # Generate a simple mock token for hackathon
+        mock_token = f"hackathon_token_{user.id}"
+        
         return APIResponse(
             success=True, 
             data={
-                "access_token": auth_response.session.access_token,
+                "access_token": mock_token,
                 "user": {
-                    "id": auth_response.user.id,
-                    "email": auth_response.user.email
+                    "id": user.id,
+                    "email": user.email
                 }
             }, 
             meta=MetaResponse(request_id=str(uuid.uuid4()))
         )
+    except HTTPException:
+        raise
     except Exception as e:
-        raise HTTPException(status_code=401, detail=str(e))
+        raise HTTPException(status_code=500, detail=str(e))
 
 @router.post("/auth/logout", response_model=APIResponse[Dict[str, Any]])
 def auth_logout():

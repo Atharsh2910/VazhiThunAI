@@ -16,7 +16,7 @@ const Register = () => {
     setError('');
     
     try {
-      const response = await apiClient.post('/auth/register', { name, email, password });
+      const response = await apiClient.post('/auth/register', { display_name: name, email, password });
       if (response.data && response.data.token) {
         localStorage.setItem('token', response.data.token);
         navigate('/onboarding');
