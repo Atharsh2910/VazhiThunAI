@@ -8,6 +8,7 @@ class Settings(BaseSettings):
     SUPABASE_ANON_KEY: str = "mock-anon-key"
     SUPABASE_SERVICE_ROLE_KEY: str = "mock-service-key"
     PINECONE_ENVIRONMENT: str = "mock-env"
+    PINECONE_INDEX_NAME: str = "vazhithunai"
     DATABASE_URL: str = "postgresql://postgres:mock-password@db.mock-project.supabase.co:5432/postgres"
 
     class Config:
