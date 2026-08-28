@@ -192,3 +192,109 @@ class FeedbackDataset(Base):
     feedback_id = Column(String, primary_key=True, index=True)
     feedback_text = Column(Text)
     feedback_type = Column(String)
+
+
+# ─────────────────────────────────────────────────
+# Pitfall & Misconception Detection Models
+# ─────────────────────────────────────────────────
+
+class Concept(Base):
+    """A granular concept within a skill that can have misconceptions."""
+    __tablename__ = "concepts"
+    concept_id = Column(String, primary_key=True, index=True)
+    skill_id = Column(String, ForeignKey("skills.skill_id"), nullable=True)
+    name = Column(String, nullable=False)
+    description = Column(Text, nullable=True)
+
+    pitfalls = relationship("Pitfall", back_populates="concept")
+
+
+class Pitfall(Base):
+    """A documented misconception or common pitfall for a concept."""
+    __tablename__ = "pitfalls"
+    pitfall_id = Column(String, primary_key=True, index=True)
+    concept_id = Column(String, ForeignKey("concepts.concept_id"))
+    title = Column(String, nullable=False)
+    description = Column(Text)
+    # The wrong mental model learners typically hold
+    misconception = Column(Text)
+    # The correct explanation to replace the misconception
+    correct_mental_model = Column(Text)
+    severity = Column(String, default="medium")   # low / medium / high
+    source = Column(String, default="expert")      # expert / population
+    # Deterministic fallback explanation (used when LLM is unavailable)
+    remediation_text = Column(Text)
+    status = Column(String, default="active")      # active / deprecated
+    created_at = Column(DateTime, default=datetime.utcnow)
+
+    concept = relationship("Concept", back_populates="pitfalls")
+    questions = relationship("PitfallQuestion", back_populates="pitfall")
+    learner_pitfalls = relationship("LearnerPitfall", back_populates="pitfall")
+
+
+class PitfallQuestion(Base):
+    """A multiple-choice question designed to detect a specific pitfall."""
+    __tablename__ = "pitfall_questions"
+    question_id = Column(String, primary_key=True, index=True)
+    pitfall_id = Column(String, ForeignKey("pitfalls.pitfall_id"))
+    concept_id = Column(String, ForeignKey("concepts.concept_id"))
+    question_text = Column(Text, nullable=False)
+    # Stored as JSON: {"A": "...", "B": "...", "C": "...", "D": "..."}
+    options = Column(JSON, nullable=False)
+    correct_option = Column(String, nullable=False)  # e.g. "A"
+    explanation = Column(Text)  # explanation of the correct answer
+
+    pitfall = relationship("Pitfall", back_populates="questions")
+    option_mappings = relationship("PitfallOptionMapping", back_populates="question")
+    attempts = relationship("PitfallAttempt", back_populates="question")
+
+
+class PitfallOptionMapping(Base):
+    """Maps each incorrect option to a specific pitfall/misconception."""
+    __tablename__ = "pitfall_option_mappings"
+    mapping_id = Column(String, primary_key=True, index=True)
+    question_id = Column(String, ForeignKey("pitfall_questions.question_id"))
+    option_key = Column(String, nullable=False)     # e.g. "B"
+    pitfall_id = Column(String, ForeignKey("pitfalls.pitfall_id"), nullable=True)
+    # Short explanation of WHY this option indicates that misconception
+    misconception_hint = Column(Text)
+
+    question = relationship("PitfallQuestion", back_populates="option_mappings")
+
+
+class LearnerPitfall(Base):
+    """Tracks a learner's relationship with a specific pitfall over time."""
+    __tablename__ = "learner_pitfalls"
+    id = Column(String, primary_key=True, index=True)
+    learner_id = Column(String, ForeignKey("learners.learner_id"))
+    pitfall_id = Column(String, ForeignKey("pitfalls.pitfall_id"))
+    # Status lifecycle: DETECTED → REMEDIATION → VERIFICATION → RESOLVED / UNRESOLVED
+    status = Column(String, default="DETECTED")
+    confidence_score = Column(Float, default=0.0)   # learner's self-reported confidence
+    evidence_count = Column(Integer, default=1)
+    passed_checks = Column(Integer, default=0)
+    failed_checks = Column(Integer, default=1)
+    first_detected = Column(DateTime, default=datetime.utcnow)
+    last_detected = Column(DateTime, default=datetime.utcnow)
+    resolved_at = Column(DateTime, nullable=True)
+
+    pitfall = relationship("Pitfall", back_populates="learner_pitfalls")
+
+
+class PitfallAttempt(Base):
+    """Records each individual pitfall check attempt by a learner."""
+    __tablename__ = "pitfall_attempts"
+    attempt_id = Column(String, primary_key=True, index=True)
+    learner_id = Column(String, ForeignKey("learners.learner_id"))
+    question_id = Column(String, ForeignKey("pitfall_questions.question_id"))
+    selected_option = Column(String)   # e.g. "B"
+    is_correct = Column(Boolean)
+    # Learner's self-reported confidence 1-5
+    confidence = Column(Integer, default=3)
+    # Classification result: MASTERY / KNOWLEDGE_GAP / MISCONCEPTION
+    classification = Column(String)
+    # ID of the pitfall matched (if MISCONCEPTION)
+    matched_pitfall_id = Column(String, ForeignKey("pitfalls.pitfall_id"), nullable=True)
+    timestamp = Column(DateTime, default=datetime.utcnow)
+
+    question = relationship("PitfallQuestion", back_populates="attempts")

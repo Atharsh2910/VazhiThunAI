@@ -15,8 +15,10 @@ const Layout = () => {
             <nav className="flex space-x-4">
               <Link to="/dashboard" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Dashboard</Link>
               <Link to="/path" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Learning Path</Link>
+              <Link to="/pitfalls" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">🧠 Pitfalls</Link>
               <Link to="/chat" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">AI Assistant</Link>
             </nav>
+
           </div>
         </div>
       </header>
