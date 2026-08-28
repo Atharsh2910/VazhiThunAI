@@ -17,9 +17,8 @@ const Register = () => {
     
     try {
       const response = await apiClient.post('/auth/register', { display_name: name, email, password });
-      if (response.data && response.data.token) {
-        localStorage.setItem('token', response.data.token);
-        navigate('/onboarding');
+      if (response.data && response.data.success) {
+        navigate('/login');
       }
     } catch (err) {
       setError(err.response?.data?.message || 'Failed to create account. Please try again.');

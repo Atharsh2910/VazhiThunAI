@@ -16,8 +16,9 @@ const Login = () => {
     
     try {
       const response = await apiClient.post('/auth/login', { email, password });
-      if (response.data && response.data.token) {
-        localStorage.setItem('token', response.data.token);
+      if (response.data && response.data.success) {
+        const token = response.data.data.access_token;
+        localStorage.setItem('token', token);
         navigate('/dashboard');
       }
     } catch (err) {
