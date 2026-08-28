@@ -1,7 +1,28 @@
-from sqlalchemy import Column, String, Integer, DateTime, ForeignKey, Boolean, Float, Text
+from sqlalchemy import Column, String, Integer, DateTime, ForeignKey, Boolean, Float, Text, JSON
 from sqlalchemy.orm import relationship
 from datetime import datetime, timezone
 from app.models.database import Base
+
+class User(Base):
+    __tablename__ = "users"
+    id = Column(String, primary_key=True, index=True)
+    email = Column(String, unique=True, index=True)
+    display_name = Column(String)
+    status = Column(String, default="active")
+    created_at = Column(DateTime, default=datetime.utcnow)
+
+class LearnerProfile(Base):
+    __tablename__ = "learner_profiles"
+    id = Column(String, primary_key=True, index=True)
+    user_id = Column(String, ForeignKey("users.id"))
+    education = Column(String, nullable=True)
+    current_role = Column(String, nullable=True)
+    experience_years = Column(Integer, nullable=True)
+    interests = Column(JSON, nullable=True)
+    preferred_formats = Column(JSON, nullable=True)
+    weekly_hours = Column(Float, nullable=True)
+    timezone = Column(String, nullable=True)
+    learning_preferences = Column(JSON, nullable=True)
 
 class Learner(Base):
     __tablename__ = "learners"

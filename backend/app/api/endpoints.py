@@ -1,16 +1,90 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Depends
 from typing import Dict, Any, List
 from pydantic import BaseModel
 import uuid
+from sqlalchemy.orm import Session
 
 from app.schemas.base import APIResponse, MetaResponse
+from app.core.config import supabase
+from app.models.database import SessionLocal
+from app.models.orm import User, LearnerProfile
 
 router = APIRouter()
 
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+class RegisterRequest(BaseModel):
+    email: str
+    password: str
+    display_name: str
+
+class LoginRequest(BaseModel):
+    email: str
+    password: str
+
 # 17.1 Authentication
+@router.post("/auth/register", response_model=APIResponse[Dict[str, Any]])
+def auth_register(request: RegisterRequest, db: Session = Depends(get_db)):
+    try:
+        # Supabase sign up
+        auth_response = supabase.auth.sign_up({
+            "email": request.email, 
+            "password": request.password, 
+            "options": {"data": {"display_name": request.display_name}}
+        })
+        user_id = auth_response.user.id
+        
+        # Insert into users table
+        new_user = User(
+            id=user_id,
+            email=request.email,
+            display_name=request.display_name,
+            status="active"
+        )
+        db.add(new_user)
+        
+        # Insert into learner_profiles table
+        new_profile = LearnerProfile(
+            id=str(uuid.uuid4()),
+            user_id=user_id
+        )
+        db.add(new_profile)
+        db.commit()
+        
+        return APIResponse(
+            success=True, 
+            data={"user_id": user_id, "message": "User registered successfully"}, 
+            meta=MetaResponse(request_id=str(uuid.uuid4()))
+        )
+    except Exception as e:
+        db.rollback()
+        raise HTTPException(status_code=400, detail=str(e))
+
 @router.post("/auth/login", response_model=APIResponse[Dict[str, Any]])
-def auth_login():
-    return APIResponse(success=True, data={"token": "mock-token"}, meta=MetaResponse(request_id=str(uuid.uuid4())))
+def auth_login(request: LoginRequest):
+    try:
+        auth_response = supabase.auth.sign_in_with_password({
+            "email": request.email,
+            "password": request.password
+        })
+        return APIResponse(
+            success=True, 
+            data={
+                "access_token": auth_response.session.access_token,
+                "user": {
+                    "id": auth_response.user.id,
+                    "email": auth_response.user.email
+                }
+            }, 
+            meta=MetaResponse(request_id=str(uuid.uuid4()))
+        )
+    except Exception as e:
+        raise HTTPException(status_code=401, detail=str(e))
 
 @router.post("/auth/logout", response_model=APIResponse[Dict[str, Any]])
 def auth_logout():

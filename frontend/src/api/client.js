@@ -31,7 +31,7 @@ apiClient.interceptors.response.use(
     if (error.response && error.response.status === 401) {
       // Clear token and redirect to login or handle logic
       localStorage.removeItem('token');
-      // window.location = '/login'; // if needed
+      window.location.href = '/login';
     }
     return Promise.reject(error);
   }
