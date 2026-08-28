@@ -295,3 +295,167 @@ def get_assessment(id: str):
 @router.post("/assessments/{id}/attempts", response_model=APIResponse[Dict[str, Any]])
 def assessment_attempts(id: str):
     return APIResponse(success=True, data={"status": "attempted"}, meta=MetaResponse(request_id=str(uuid.uuid4())))
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 17.10  Pitfall & Misconception Detection Endpoints
+# ─────────────────────────────────────────────────────────────────────────────
+
+from app.services.pitfall_service import (
+    get_pitfall_check_for_skill,
+    submit_pitfall_answer,
+    get_learner_pitfall_dashboard,
+    start_remediation,
+    submit_verification,
+)
+from app.services.pitfall_analytics import get_all_pitfall_analytics, compute_pitfall_analytics
+from app.models.orm import Concept, Pitfall as PitfallModel, PitfallQuestion as PQModel
+
+
+class PitfallSubmitRequest(BaseModel):
+    learner_id: str
+    question_id: str
+    selected_option: str
+    confidence: int  # 1-5
+
+
+class PitfallRemediateRequest(BaseModel):
+    learner_id: str
+
+
+class PitfallVerifyRequest(BaseModel):
+    learner_id: str
+    question_id: str
+    selected_option: str
+    confidence: int  # 1-5
+
+
+@router.get("/pitfalls/check/{skill_id}", response_model=APIResponse[Dict[str, Any]])
+def get_pitfall_check(skill_id: str, learner_id: str = None, db: Session = Depends(get_db)):
+    """Get a pitfall check question for a given skill."""
+    result = get_pitfall_check_for_skill(db, skill_id, learner_id)
+    if not result:
+        return APIResponse(
+            success=True,
+            data={"available": False, "message": "No pitfall check available for this skill."},
+            meta=MetaResponse(request_id=str(uuid.uuid4()))
+        )
+    return APIResponse(
+        success=True,
+        data={"available": True, **result},
+        meta=MetaResponse(request_id=str(uuid.uuid4()))
+    )
+
+
+@router.post("/pitfalls/submit", response_model=APIResponse[Dict[str, Any]])
+def submit_pitfall_check(request: PitfallSubmitRequest, db: Session = Depends(get_db)):
+    """Submit an answer to a pitfall check question and receive evaluation + explanation."""
+    try:
+        result = submit_pitfall_answer(
+            db=db,
+            learner_id=request.learner_id,
+            question_id=request.question_id,
+            selected_option=request.selected_option,
+            confidence=request.confidence,
+        )
+        return APIResponse(
+            success=True,
+            data=result,
+            meta=MetaResponse(request_id=str(uuid.uuid4()))
+        )
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+
+@router.get("/pitfalls/learner/{learner_id}", response_model=APIResponse[Dict[str, Any]])
+def get_learner_pitfalls(learner_id: str, db: Session = Depends(get_db)):
+    """Get dashboard data for a learner's active and resolved pitfalls."""
+    data = get_learner_pitfall_dashboard(db, learner_id)
+    return APIResponse(
+        success=True,
+        data=data,
+        meta=MetaResponse(request_id=str(uuid.uuid4()))
+    )
+
+
+@router.post("/pitfalls/{pitfall_id}/remediate", response_model=APIResponse[Dict[str, Any]])
+def remediate_pitfall(pitfall_id: str, request: PitfallRemediateRequest, db: Session = Depends(get_db)):
+    """Start remediation for a detected pitfall — returns explanation + recommended resource."""
+    try:
+        result = start_remediation(db, request.learner_id, pitfall_id)
+        return APIResponse(
+            success=True,
+            data=result,
+            meta=MetaResponse(request_id=str(uuid.uuid4()))
+        )
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+
+@router.post("/pitfalls/{pitfall_id}/verify", response_model=APIResponse[Dict[str, Any]])
+def verify_pitfall(pitfall_id: str, request: PitfallVerifyRequest, db: Session = Depends(get_db)):
+    """Submit verification answer after remediation. Returns RESOLVED or UNRESOLVED."""
+    try:
+        result = submit_verification(
+            db=db,
+            learner_id=request.learner_id,
+            pitfall_id=pitfall_id,
+            question_id=request.question_id,
+            selected_option=request.selected_option,
+            confidence=request.confidence,
+        )
+        return APIResponse(
+            success=True,
+            data=result,
+            meta=MetaResponse(request_id=str(uuid.uuid4()))
+        )
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+
+@router.get("/pitfalls/analytics", response_model=APIResponse[Dict[str, Any]])
+def get_pitfall_analytics(db: Session = Depends(get_db)):
+    """Population-level analytics across all pitfalls (admin/debug view)."""
+    analytics = get_all_pitfall_analytics(db)
+    return APIResponse(
+        success=True,
+        data={"pitfalls": analytics, "total": len(analytics)},
+        meta=MetaResponse(request_id=str(uuid.uuid4()))
+    )
+
+
+@router.get("/pitfalls/analytics/{pitfall_id}", response_model=APIResponse[Dict[str, Any]])
+def get_single_pitfall_analytics(pitfall_id: str, db: Session = Depends(get_db)):
+    """Detailed population-level analytics for a single pitfall."""
+    analytics = compute_pitfall_analytics(db, pitfall_id)
+    return APIResponse(
+        success=True,
+        data=analytics,
+        meta=MetaResponse(request_id=str(uuid.uuid4()))
+    )
+
+
+@router.get("/pitfalls/skill/{skill_id}", response_model=APIResponse[Dict[str, Any]])
+def get_pitfalls_for_skill(skill_id: str, db: Session = Depends(get_db)):
+    """Get all pitfalls associated with a skill (via its concepts)."""
+    concepts = db.query(Concept).filter(Concept.skill_id == skill_id).all()
+    concept_ids = [c.concept_id for c in concepts]
+    pitfalls = db.query(PitfallModel).filter(
+        PitfallModel.concept_id.in_(concept_ids),
+        PitfallModel.status == "active"
+    ).all()
+    data = [
+        {
+            "pitfall_id": p.pitfall_id,
+            "title": p.title,
+            "severity": p.severity,
+            "concept_id": p.concept_id,
+        }
+        for p in pitfalls
+    ]
+    return APIResponse(
+        success=True,
+        data={"skill_id": skill_id, "pitfalls": data},
+        meta=MetaResponse(request_id=str(uuid.uuid4()))
+    )
+

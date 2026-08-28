@@ -7,8 +7,12 @@ import LearningPath from './pages/LearningPath';
 import Chat from './pages/Chat';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import PitfallCheck from './pages/PitfallCheck';
+import PitfallsPage from './pages/PitfallsPage';
+import AnalyticsPage from './pages/AnalyticsPage';
+import PitfallDetail from './pages/PitfallDetail';
 import ProtectedRoute from './components/common/ProtectedRoute';
-import './App.css'; // Assuming Tailwind is imported here or in index.css
+import './App.css';
 
 function App() {
   return (
@@ -26,6 +30,11 @@ function App() {
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="path" element={<LearningPath />} />
             <Route path="chat" element={<Chat />} />
+            {/* Pitfall routes */}
+            <Route path="pitfalls" element={<PitfallsPage />} />
+            <Route path="pitfalls/analytics" element={<AnalyticsPage />} />
+            <Route path="pitfalls/check/:skillId" element={<PitfallCheck />} />
+            <Route path="pitfalls/:pitfallId" element={<PitfallDetail />} />
           </Route>
         </Route>
       </Routes>

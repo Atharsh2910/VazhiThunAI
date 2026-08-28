@@ -2,12 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Card from '../components/common/Card';
 import Button from '../components/common/Button';
+import PitfallDashboard from '../components/pitfalls/PitfallDashboard';
+
+// In production this comes from auth context / localStorage
+const DEMO_LEARNER_ID = 'LRN0001';
 
 const Dashboard = () => {
   return (
     <div className="space-y-6">
       <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <Card className="col-span-1 md:col-span-2">
           <h2 className="text-xl font-semibold mb-4">Current Goal</h2>
@@ -17,7 +21,7 @@ const Dashboard = () => {
           </div>
           <p className="text-sm text-gray-500">15% completed • Estimated 5 months remaining</p>
         </Card>
-        
+
         <Card className="col-span-1">
           <h2 className="text-xl font-semibold mb-4">Next Best Action</h2>
           <p className="font-medium text-gray-800 mb-2">Complete Intro to Statistics</p>
@@ -69,6 +73,9 @@ const Dashboard = () => {
           </div>
         </Card>
       </div>
+
+      {/* ── Pitfall Dashboard Widget ── */}
+      <PitfallDashboard learnerId={DEMO_LEARNER_ID} compact={true} />
     </div>
   );
 };
