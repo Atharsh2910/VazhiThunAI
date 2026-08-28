@@ -7,7 +7,10 @@ from sqlalchemy.orm import Session
 from app.schemas.base import APIResponse, MetaResponse
 from app.core.config import supabase
 from app.models.database import SessionLocal
-from app.models.orm import User, LearnerProfile
+from app.models.orm import User, LearnerProfile, Goal, LearningPath
+from app.services.db_services import get_learner_profile, create_goal, get_goal, save_learning_path
+from app.services.chat_service import chat_service
+from app.ai.graph import primary_graph
 
 router = APIRouter()
 
@@ -96,11 +99,15 @@ def auth_me():
 
 # 17.2 Learner
 @router.get("/learners/me", response_model=APIResponse[Dict[str, Any]])
-def get_learner_profile():
-    return APIResponse(success=True, data={"id": "default_learner"}, meta=MetaResponse(request_id=str(uuid.uuid4())))
+def get_learner_profile_endpoint(db: Session = Depends(get_db)):
+    # Assuming user_id is extracted from a verified token, for now hardcoding to "user1"
+    profile = get_learner_profile(db, "user1")
+    if not profile:
+        raise HTTPException(status_code=404, detail="Profile not found")
+    return APIResponse(success=True, data={"id": profile.id, "user_id": profile.user_id}, meta=MetaResponse(request_id=str(uuid.uuid4())))
 
 @router.patch("/learners/me", response_model=APIResponse[Dict[str, Any]])
-def update_learner_profile():
+def update_learner_profile_endpoint(db: Session = Depends(get_db)):
     return APIResponse(success=True, data={"status": "updated"}, meta=MetaResponse(request_id=str(uuid.uuid4())))
 
 @router.get("/learners/me/skills", response_model=APIResponse[Dict[str, Any]])
@@ -108,17 +115,38 @@ def get_learner_skills():
     return APIResponse(success=True, data={"skills": []}, meta=MetaResponse(request_id=str(uuid.uuid4())))
 
 # 17.3 Goals
+class GoalRequest(BaseModel):
+    learner_id: str
+    goal_title: str
+    goal_type: str
+    target_role: str
+    deadline_months: float
+    weekly_hours_committed: float
+
 @router.post("/goals", response_model=APIResponse[Dict[str, Any]])
-def create_goal():
-    return APIResponse(success=True, data={"id": "goal1"}, meta=MetaResponse(request_id=str(uuid.uuid4())))
+def create_goal_endpoint(request: GoalRequest, db: Session = Depends(get_db)):
+    goal = create_goal(
+        db=db,
+        learner_id=request.learner_id,
+        goal_title=request.goal_title,
+        goal_type=request.goal_type,
+        target_role=request.target_role,
+        deadline_months=request.deadline_months,
+        weekly_hours_committed=request.weekly_hours_committed
+    )
+    return APIResponse(success=True, data={"id": goal.goal_id, "title": goal.goal_title}, meta=MetaResponse(request_id=str(uuid.uuid4())))
 
 @router.get("/goals", response_model=APIResponse[Dict[str, Any]])
 def get_goals():
+    # Placeholder for getting multiple goals
     return APIResponse(success=True, data={"goals": []}, meta=MetaResponse(request_id=str(uuid.uuid4())))
 
 @router.get("/goals/{goal_id}", response_model=APIResponse[Dict[str, Any]])
-def get_goal(goal_id: str):
-    return APIResponse(success=True, data={"id": goal_id}, meta=MetaResponse(request_id=str(uuid.uuid4())))
+def get_goal_endpoint(goal_id: str, db: Session = Depends(get_db)):
+    goal = get_goal(db, goal_id)
+    if not goal:
+        raise HTTPException(status_code=404, detail="Goal not found")
+    return APIResponse(success=True, data={"id": goal.goal_id, "title": goal.goal_title}, meta=MetaResponse(request_id=str(uuid.uuid4())))
 
 @router.patch("/goals/{goal_id}", response_model=APIResponse[Dict[str, Any]])
 def update_goal(goal_id: str):
@@ -129,10 +157,15 @@ class ChatRequest(BaseModel):
     user_message: str
     session_id: str = "default_session"
     learner_id: str = "default_learner"
+    history: List[Dict[str, str]] = []
 
 @router.post("/chat", response_model=APIResponse[Dict[str, Any]])
 def chat_endpoint(request: ChatRequest):
-    return APIResponse(success=True, data={"response": "mock response"}, meta=MetaResponse(request_id=str(uuid.uuid4())))
+    response_content = chat_service.generate_chat_response(
+        user_message=request.user_message,
+        history=request.history
+    )
+    return APIResponse(success=True, data={"response": response_content}, meta=MetaResponse(request_id=str(uuid.uuid4())))
 
 @router.post("/chat/stream", response_model=APIResponse[Dict[str, Any]])
 def chat_stream(request: ChatRequest):
@@ -152,17 +185,58 @@ def diagnostics_get(session_id: str):
     return APIResponse(success=True, data={"id": session_id}, meta=MetaResponse(request_id=str(uuid.uuid4())))
 
 # 17.6 Learning Paths
+class GeneratePathRequest(BaseModel):
+    learner_id: str
+    goal_id: str
+    target_role: str
+    deadline_weeks: float
+    user_message: str = "Generate my path"
+
 @router.post("/paths/generate", response_model=APIResponse[Dict[str, Any]])
-def paths_generate():
-    return APIResponse(success=True, data={"path_id": "path1"}, meta=MetaResponse(request_id=str(uuid.uuid4())))
+def paths_generate(request: GeneratePathRequest, db: Session = Depends(get_db)):
+    initial_state = {
+        "learner_id": request.learner_id,
+        "session_id": str(uuid.uuid4()),
+        "user_message": request.user_message,
+        "intent": {},
+        "learner_profile": {},
+        "goal": {},
+        "skill_context": [],
+        "skill_gaps": [],
+        "retrieved_resources": [],
+        "ranked_resources": [],
+        "candidate_path": [],
+        "validated_path": [],
+        "explanation": {},
+        "response": {},
+        "confidence": 0.0,
+        "citations": [],
+        "events": []
+    }
+    final_state = primary_graph.invoke(initial_state)
+    
+    # Save the resulting path to DB
+    path = save_learning_path(
+        db=db,
+        learner_id=request.learner_id,
+        goal_id=request.goal_id,
+        target_role=request.target_role,
+        total_estimated_hours=40.0, # Placeholder
+        deadline_weeks=request.deadline_weeks
+    )
+    
+    return APIResponse(success=True, data={"path_id": path.path_id, "state": final_state}, meta=MetaResponse(request_id=str(uuid.uuid4())))
 
 @router.get("/paths", response_model=APIResponse[Dict[str, Any]])
-def get_paths():
+def get_paths(db: Session = Depends(get_db)):
     return APIResponse(success=True, data={"paths": []}, meta=MetaResponse(request_id=str(uuid.uuid4())))
 
 @router.get("/paths/{path_id}", response_model=APIResponse[Dict[str, Any]])
-def get_path(path_id: str):
-    return APIResponse(success=True, data={"id": path_id}, meta=MetaResponse(request_id=str(uuid.uuid4())))
+def get_path_endpoint(path_id: str, db: Session = Depends(get_db)):
+    path = db.query(LearningPath).filter(LearningPath.path_id == path_id).first()
+    if not path:
+        raise HTTPException(status_code=404, detail="Path not found")
+    return APIResponse(success=True, data={"id": path.path_id, "target_role": path.target_role}, meta=MetaResponse(request_id=str(uuid.uuid4())))
 
 @router.post("/paths/{path_id}/replan", response_model=APIResponse[Dict[str, Any]])
 def path_replan(path_id: str):

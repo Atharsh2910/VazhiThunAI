@@ -1,5 +1,24 @@
+import os
+import json
 from typing import Dict, TypedDict, Any, List
 from langgraph.graph import StateGraph, END
+from langchain_groq import ChatGroq
+from langchain_core.prompts import PromptTemplate
+from app.ai.prompts.templates import (
+    INTENT_DETECTION_PROMPT,
+    GOAL_EXTRACTION_PROMPT,
+    EXPLANATION_GENERATION_PROMPT,
+    REPLANNING_DECISION_PROMPT
+)
+from app.retrieval.pinecone_client import pinecone_client
+from app.services.recommendation import recommendation_engine
+
+# Initialize Groq LLM
+llm = ChatGroq(
+    api_key=os.getenv("GROQ_API_KEY", "mock_groq_key"),
+    model_name=os.getenv("GROQ_MODEL_NAME", "llama3-8b-8192"),
+    temperature=0.0
+)
 
 # Define the State Model as per SRS Section 11
 class LearnerState(TypedDict):
@@ -21,36 +40,114 @@ class LearnerState(TypedDict):
     citations: List[Any]
     events: List[Any]
 
+def parse_json_from_llm(content: str) -> Dict[str, Any]:
+    # Utility to extract JSON from LLM response
+    try:
+        # Simple extraction logic
+        start = content.find('{')
+        end = content.rfind('}') + 1
+        if start != -1 and end != 0:
+            return json.loads(content[start:end])
+    except Exception:
+        pass
+    return {}
+
 # Primary Graph Node Functions
 def intent_detection(state: LearnerState) -> LearnerState:
-    # Logic for intent detection
+    prompt = PromptTemplate.from_template(INTENT_DETECTION_PROMPT)
+    chain = prompt | llm
+    res = chain.invoke({"user_message": state.get("user_message", "")})
+    state["intent"] = parse_json_from_llm(res.content)
     return state
 
 def goal_extraction(state: LearnerState) -> LearnerState:
+    prompt = PromptTemplate.from_template(GOAL_EXTRACTION_PROMPT)
+    chain = prompt | llm
+    res = chain.invoke({
+        "user_message": state.get("user_message", ""),
+        "learner_profile": json.dumps(state.get("learner_profile", {}))
+    })
+    state["goal"] = parse_json_from_llm(res.content)
     return state
 
 def learner_context_load(state: LearnerState) -> LearnerState:
+    # Here we would typically hit a database for learner profile. 
+    # For now, if empty, init defaults.
+    if not state.get("learner_profile"):
+        state["learner_profile"] = {"known_skills": []}
     return state
 
 def skill_graph_retrieval(state: LearnerState) -> LearnerState:
+    # Use Pinecone client to retrieve skill contexts based on target skills in goal
+    goal = state.get("goal", {})
+    target_skills = goal.get("target_skills", [])
+    skill_context = []
+    
+    if target_skills:
+        # Mock embedding since we don't have an embedding model initialized here
+        mock_embedding = [0.1] * 1536 
+        docs = pinecone_client.query_vectors(vector=mock_embedding, top_k=5, namespace="skills")
+        if "matches" in docs:
+            skill_context = [match.get("metadata", {}) for match in docs["matches"]]
+            
+    state["skill_context"] = skill_context
     return state
 
 def gap_analysis(state: LearnerState) -> LearnerState:
+    goal = state.get("goal", {})
+    profile = state.get("learner_profile", {})
+    
+    target_skills = set(goal.get("target_skills", []))
+    known_skills = set(profile.get("known_skills", []))
+    
+    missing_skills = list(target_skills - known_skills)
+    state["skill_gaps"] = [{"missing_skills": missing_skills}]
     return state
 
 def candidate_retrieval(state: LearnerState) -> LearnerState:
+    gaps = state.get("skill_gaps", [])
+    retrieved_resources = []
+    
+    if gaps and gaps[0].get("missing_skills"):
+        # Mock embedding
+        mock_embedding = [0.1] * 1536
+        docs = pinecone_client.query_vectors(vector=mock_embedding, top_k=10, namespace="resources")
+        if "matches" in docs:
+            retrieved_resources = [match.get("metadata", {}) for match in docs["matches"]]
+            
+    state["retrieved_resources"] = retrieved_resources
     return state
 
 def recommendation_ranking(state: LearnerState) -> LearnerState:
+    candidates = state.get("retrieved_resources", [])
+    learner_profile = state.get("learner_profile", {})
+    skill_gaps = state.get("skill_gaps", [{}])[0]
+    
+    ranked = recommendation_engine.rank_candidates(candidates, learner_profile, skill_gaps)
+    state["ranked_resources"] = ranked
     return state
 
 def path_planning(state: LearnerState) -> LearnerState:
+    # Just take top 3 as the planned path for now
+    ranked = state.get("ranked_resources", [])
+    state["candidate_path"] = ranked[:3]
     return state
 
 def constraint_validation(state: LearnerState) -> LearnerState:
+    state["validated_path"] = state.get("candidate_path", [])
     return state
 
 def explanation_generation(state: LearnerState) -> LearnerState:
+    prompt = PromptTemplate.from_template(EXPLANATION_GENERATION_PROMPT)
+    chain = prompt | llm
+    res = chain.invoke({
+        "skill_gaps": json.dumps(state.get("skill_gaps", [])),
+        "candidate_path": json.dumps(state.get("validated_path", [])),
+        "goal": json.dumps(state.get("goal", {}))
+    })
+    
+    state["explanation"] = {"content": res.content}
+    state["response"] = {"message": res.content, "path": state.get("validated_path", [])}
     return state
 
 def response_validation(state: LearnerState) -> LearnerState:
@@ -70,8 +167,15 @@ def risk_analysis(state: LearnerState) -> LearnerState:
     return state
 
 def replanning_decision(state: LearnerState) -> str:
-    # Returns the next node in conditionally branching
-    return "continue"
+    prompt = PromptTemplate.from_template(REPLANNING_DECISION_PROMPT)
+    chain = prompt | llm
+    res = chain.invoke({
+        "events": json.dumps(state.get("events", [])),
+        "learner_profile": json.dumps(state.get("learner_profile", {})),
+        "goal": json.dumps(state.get("goal", {}))
+    })
+    parsed = parse_json_from_llm(res.content)
+    return parsed.get("decision", "continue")
 
 # Build Primary Workflow
 primary_workflow = StateGraph(LearnerState)
