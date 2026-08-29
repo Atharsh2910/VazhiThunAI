@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import Card from '../components/common/Card';
 import Button from '../components/common/Button';
 import WhatIfSimulator from '../components/adaptive/WhatIfSimulator';
@@ -138,7 +139,7 @@ const Chat = () => {
                 }`}>
                   {msg.role === 'ai' ? (
                     <div className="prose prose-sm max-w-none text-gray-800">
-                      <ReactMarkdown>{msg.text}</ReactMarkdown>
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>{msg.text}</ReactMarkdown>
                     </div>
                   ) : (
                     <p className="whitespace-pre-line">{msg.text}</p>
