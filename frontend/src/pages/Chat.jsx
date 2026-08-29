@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
 import Card from '../components/common/Card';
 import Button from '../components/common/Button';
 import WhatIfSimulator from '../components/adaptive/WhatIfSimulator';
@@ -60,7 +61,16 @@ const Chat = () => {
     setLoading(true);
 
     try {
-      const res = await adaptiveApi.chat(DEMO_LEARNER_ID, text, null, []);
+      // Build history from current messages (exclude the one we just added, map to backend format)
+      const history = messages
+        .filter((m) => m.role === 'user' || m.role === 'ai')
+        .slice(-6)
+        .map((m) => ({
+          role: m.role === 'ai' ? 'assistant' : 'user',
+          content: m.text,
+        }));
+
+      const res = await adaptiveApi.generalChat(DEMO_LEARNER_ID, text, history);
       const data = res.data?.data;
 
       const intent = data?.intent;
@@ -126,7 +136,13 @@ const Chat = () => {
                     ? 'bg-indigo-600 text-white rounded-br-none'
                     : 'bg-gray-100 text-gray-800 rounded-bl-none'
                 }`}>
-                  <p className="whitespace-pre-line">{msg.text}</p>
+                  {msg.role === 'ai' ? (
+                    <div className="prose prose-sm max-w-none text-gray-800">
+                      <ReactMarkdown>{msg.text}</ReactMarkdown>
+                    </div>
+                  ) : (
+                    <p className="whitespace-pre-line">{msg.text}</p>
+                  )}
 
                   {/* Show adaptation inline result */}
                   {msg.adaptationResult?.success && msg.adaptationResult.adaptation_type !== 'NO_CHANGE' && (

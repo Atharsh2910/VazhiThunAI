@@ -7,7 +7,7 @@ from sqlalchemy.orm import Session
 from app.schemas.base import APIResponse, MetaResponse
 from app.core.config import supabase
 from app.models.database import SessionLocal
-from app.models.orm import User, LearnerProfile, Goal, LearningPath
+from app.models.orm import User, LearnerProfile, Goal, LearningPath, PathItem, LearnerSkill, LearnerPitfall, Pitfall as PitfallModel
 from app.services.db_services import get_learner_profile, create_goal, get_goal, save_learning_path
 from app.services.chat_service import chat_service
 from app.ai.graph import primary_graph
@@ -171,12 +171,95 @@ class ChatRequest(BaseModel):
     history: List[Dict[str, str]] = []
 
 @router.post("/chat", response_model=APIResponse[Dict[str, Any]])
-def chat_endpoint(request: ChatRequest):
+def chat_endpoint(request: ChatRequest, db: Session = Depends(get_db)):
+    from app.models.orm import Learner, LearnerSkill, Assessment, AssessmentAttempt, Project, Resource
+
+    # 1. Full Learner record (no password)
+    learner = db.query(Learner).filter(Learner.learner_id == request.learner_id).first()
+    learner_data = {
+        "name": learner.full_name,
+        "degree": learner.degree,
+        "college": learner.college,
+        "current_role": learner.current_role,
+        "experience_level": learner.experience_level,
+        "experience_years": learner.experience_years_numeric,
+        "weekly_study_hours": learner.weekly_study_hours,
+        "preferred_format": learner.preferred_learning_format,
+        "target_goal": learner.target_goal,
+        "deadline_months": learner.goal_deadline_months,
+    } if learner else None
+
+    # 2. LearnerProfile (interests, preferences)
+    profile = get_learner_profile(db, request.learner_id)
+    profile_data = {
+        "interests": profile.interests,
+        "learning_preferences": profile.learning_preferences,
+        "preferred_formats": profile.preferred_formats,
+        "education": profile.education,
+    } if profile else None
+
+    # 3. Active Goals
+    active_goals = db.query(Goal).filter(Goal.learner_id == request.learner_id, Goal.status == "active").all()
+    goals_data = [{"title": g.goal_title, "target_role": g.target_role, "core_skills": g.core_target_skills, "deadline_months": g.deadline_months, "weekly_hours": g.weekly_hours_committed} for g in active_goals]
+
+    # 4. Active Learning Path + ALL path items (pending & completed)
+    active_path = db.query(LearningPath).filter(LearningPath.learner_id == request.learner_id, LearningPath.status == "active").first()
+    pending_items_data, completed_items_data = [], []
+    if active_path:
+        all_items = db.query(PathItem).filter(PathItem.path_id == active_path.path_id).order_by(PathItem.sequence_order).all()
+        for item in all_items:
+            entry = {"order": item.sequence_order, "skill": item.skill_name, "status": item.status, "estimated_minutes": item.estimated_minutes, "required": item.required}
+            if item.status == "completed":
+                completed_items_data.append(entry)
+            else:
+                pending_items_data.append(entry)
+        # Limit to keep prompt focused: last 5 completed, next 5 pending
+        completed_items_data = completed_items_data[-5:]
+        pending_items_data = pending_items_data[:5]
+
+    # 5. ALL Learner Skills (mastered + weak)
+    all_skills = db.query(LearnerSkill).filter(LearnerSkill.learner_id == request.learner_id).all()
+    mastered_skills = [{"skill": s.skill_name, "mastery": s.mastery_score, "band": s.mastery_band} for s in all_skills if s.mastery_score and s.mastery_score >= 60]
+    weak_skills = [{"skill": s.skill_name, "mastery": s.mastery_score, "band": s.mastery_band} for s in all_skills if not s.mastery_score or s.mastery_score < 60]
+
+    # 6. Available Assessments (matching skills in path)
+    path_skill_names = list({item.skill_name for item in (db.query(PathItem).filter(PathItem.path_id == active_path.path_id).all() if active_path else [])})
+    available_assessments = db.query(Assessment).filter(Assessment.skill_name.in_(path_skill_names)).limit(10).all() if path_skill_names else []
+    assessments_data = [{"title": a.title, "type": a.assessment_type, "skill": a.skill_name, "difficulty": a.difficulty_score, "pass_threshold": a.pass_threshold} for a in available_assessments]
+
+    # 7. Recent Assessment Attempts (last 5)
+    recent_attempts = db.query(AssessmentAttempt).filter(AssessmentAttempt.learner_id == request.learner_id).order_by(AssessmentAttempt.attempt_id.desc()).limit(5).all()
+    attempts_data = [{"skill": a.skill_name, "score": a.score, "passed": a.passed, "confidence": a.self_reported_confidence} for a in recent_attempts]
+
+    # 8. ALL Learner Pitfalls (all statuses)
+    all_pitfalls = db.query(LearnerPitfall).filter(LearnerPitfall.learner_id == request.learner_id).all()
+    pitfalls_data = []
+    for lp in all_pitfalls:
+        if lp.pitfall:
+            pitfalls_data.append({"title": lp.pitfall.title, "status": lp.status, "misconception": lp.pitfall.misconception, "correct_model": lp.pitfall.correct_mental_model, "severity": lp.pitfall.severity})
+
+    # 9. Matching Projects for target role
+    target_role = goals_data[0]["target_role"] if goals_data else ""
+    projects = db.query(Project).filter(Project.target_role == target_role).limit(5).all() if target_role else []
+    projects_data = [{"title": p.title, "difficulty": p.difficulty_tier, "hours": p.estimated_hours, "skills": p.primary_skills} for p in projects]
+
     response_content = chat_service.generate_chat_response(
         user_message=request.user_message,
-        history=request.history
+        history=request.history,
+        learner_data=learner_data,
+        learner_profile=profile_data,
+        active_goals=goals_data,
+        pending_items=pending_items_data,
+        completed_items=completed_items_data,
+        mastered_skills=mastered_skills,
+        weak_skills=weak_skills,
+        available_assessments=assessments_data,
+        recent_attempts=attempts_data,
+        pitfalls=pitfalls_data,
+        projects=projects_data,
     )
     return APIResponse(success=True, data={"response": response_content}, meta=MetaResponse(request_id=str(uuid.uuid4())))
+
 
 @router.post("/chat/stream", response_model=APIResponse[Dict[str, Any]])
 def chat_stream(request: ChatRequest):
