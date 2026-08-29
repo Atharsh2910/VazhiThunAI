@@ -3,18 +3,25 @@ from typing import Dict, Any, List
 from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 from app.retrieval.pinecone_client import pinecone_client
+from sentence_transformers import SentenceTransformer
+
+try:
+    embedding_model = SentenceTransformer('intfloat/multilingual-e5-large')
+except Exception:
+    embedding_model = None
 
 class ChatService:
     def __init__(self):
-        # We read from environment variables to avoid hardcoded keys
         self.llm = ChatGroq(
             api_key=os.getenv("GROQ_API_KEY", "mock_groq_key"),
             model_name=os.getenv("GROQ_MODEL_NAME", "llama3-8b-8192")
         )
 
     def generate_embedding(self, text: str) -> List[float]:
-        # Mock embedding logic. In a real scenario, use an embedding model like OpenAIEmbeddings or SentenceTransformers
-        return [0.1] * 1536
+        if embedding_model:
+            # e5 models require "query: " prefix for asymmetric search
+            return embedding_model.encode(f"query: {text}").tolist()
+        return [0.1] * 1024
 
     def generate_chat_response(self, user_message: str, history: List[Dict[str, str]] = None) -> str:
         history_str = ""
