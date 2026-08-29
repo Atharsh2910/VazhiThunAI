@@ -12,6 +12,14 @@ from app.ai.prompts.templates import (
 )
 from app.retrieval.pinecone_client import pinecone_client
 from app.services.recommendation import recommendation_engine
+from app.planning.planner import optimize_learning_path
+from sentence_transformers import SentenceTransformer
+
+# Initialize Embedding Model (used for Pinecone retrieval)
+try:
+    embedding_model = SentenceTransformer('intfloat/multilingual-e5-large')
+except Exception:
+    embedding_model = None
 
 # Initialize Groq LLM
 llm = ChatGroq(
@@ -83,10 +91,13 @@ def skill_graph_retrieval(state: LearnerState) -> LearnerState:
     target_skills = goal.get("target_skills", [])
     skill_context = []
     
-    if target_skills:
-        # Mock embedding since we don't have an embedding model initialized here
-        mock_embedding = [0.1] * 1536 
-        docs = pinecone_client.query_vectors(vector=mock_embedding, top_k=5, namespace="skills")
+    if target_skills and embedding_model:
+        # Use real embedding for target skills
+        query_text = " ".join(target_skills)
+        # e5 models require "query: " prefix for asymmetric search
+        query_embedding = embedding_model.encode(f"query: {query_text}").tolist()
+        
+        docs = pinecone_client.query_vectors(vector=query_embedding, top_k=5, namespace="skills")
         if "matches" in docs:
             skill_context = [match.get("metadata", {}) for match in docs["matches"]]
             
@@ -108,10 +119,12 @@ def candidate_retrieval(state: LearnerState) -> LearnerState:
     gaps = state.get("skill_gaps", [])
     retrieved_resources = []
     
-    if gaps and gaps[0].get("missing_skills"):
-        # Mock embedding
-        mock_embedding = [0.1] * 1536
-        docs = pinecone_client.query_vectors(vector=mock_embedding, top_k=10, namespace="resources")
+    if gaps and gaps[0].get("missing_skills") and embedding_model:
+        # Use real embedding for missing skills
+        query_text = " ".join(gaps[0]["missing_skills"])
+        query_embedding = embedding_model.encode(f"query: {query_text}").tolist()
+        
+        docs = pinecone_client.query_vectors(vector=query_embedding, top_k=10, namespace="resources")
         if "matches" in docs:
             retrieved_resources = [match.get("metadata", {}) for match in docs["matches"]]
             
@@ -128,9 +141,13 @@ def recommendation_ranking(state: LearnerState) -> LearnerState:
     return state
 
 def path_planning(state: LearnerState) -> LearnerState:
-    # Just take top 3 as the planned path for now
     ranked = state.get("ranked_resources", [])
-    state["candidate_path"] = ranked[:3]
+    goal = state.get("goal", {})
+    constraints = {
+        "weekly_hours": state.get("learner_profile", {}).get("weekly_hours", 10),
+        "target_deadline": goal.get("target_deadline", "None")
+    }
+    state["candidate_path"] = optimize_learning_path(ranked, constraints)
     return state
 
 def constraint_validation(state: LearnerState) -> LearnerState:
