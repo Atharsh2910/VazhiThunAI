@@ -1,1 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
+
+/* ─── Design Tokens ─────────────────────────────────────────── */
+:root {
+  /* Brand */
+  --color-navy:      #0F172A;
+  --color-blue:      #2563EB;
+  --color-blue-light:#EFF6FF;
+  --color-blue-hover:#1D4ED8;
+  --color-orange:    #F97316;
+  --color-orange-bg: #FFF7ED;
+
+  /* Neutrals */
+  --color-bg:        #F8FAFC;
+  --color-surface:   #FFFFFF;
+  --color-border:    #E2E8F0;
+  --color-border-focus: #2563EB;
+
+  /* Text */
+  --color-text-primary:   #0F172A;
+  --color-text-secondary: #64748B;
+  --color-text-muted:     #94A3B8;
+
+  /* Status */
+  --color-success:   #16A34A;
+  --color-success-bg:#F0FDF4;
+  --color-warning:   #D97706;
+  --color-warning-bg:#FFFBEB;
+  --color-error:     #DC2626;
+  --color-error-bg:  #FEF2F2;
+
+  /* Spacing */
+  --radius-sm:  8px;
+  --radius-md:  10px;
+  --radius-lg:  12px;
+  --radius-xl:  16px;
+  --shadow-sm:  0 1px 3px 0 rgb(0 0 0 / 0.07), 0 1px 2px -1px rgb(0 0 0 / 0.07);
+  --shadow-md:  0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.07);
+}
+
+/* ─── Base ──────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+
+/* ─── Focus ring ─────────────────────────────────────────────── */
+*:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 2px;
+}
+
+/* ─── Utility: hide scrollbar ───────────────────────────────── */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ─── Transition defaults ───────────────────────────────────── */
+button, a, input, textarea, select {
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

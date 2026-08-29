@@ -18,15 +18,15 @@ const QUICK_PROMPTS = [
 ];
 
 const intentLabel = (intent) => ({
-  TOO_HARD:        { icon: '😵', label: 'Too Difficult — Adjusting path', color: 'text-red-600 bg-red-50' },
-  TOO_EASY:        { icon: '👍', label: 'Too Easy — Finding harder resource', color: 'text-emerald-600 bg-emerald-50' },
-  ALREADY_KNOWN:   { icon: '🔁', label: 'Verification requested', color: 'text-purple-600 bg-purple-50' },
-  REQUEST_FASTER:  { icon: '⚡', label: 'Generating faster path scenarios', color: 'text-indigo-600 bg-indigo-50' },
-  REQUEST_LIGHTER: { icon: '🪶', label: 'Creating lighter path simulation', color: 'text-amber-600 bg-amber-50' },
-  CHANGE_HOURS:    { icon: '⏱', label: 'Updating weekly hours', color: 'text-blue-600 bg-blue-50' },
-  CHANGE_DEADLINE: { icon: '📅', label: 'Updating deadline', color: 'text-teal-600 bg-teal-50' },
-  WHY_CHANGED:     { icon: '❓', label: 'Explaining path changes', color: 'text-gray-600 bg-gray-50' },
-  WHAT_IF:         { icon: '📊', label: 'Running simulation', color: 'text-indigo-600 bg-indigo-50' },
+  TOO_HARD:        { icon: '😵', label: 'Too Difficult — Adjusting path', color: 'text-red-700 bg-red-50 border-red-100' },
+  TOO_EASY:        { icon: '👍', label: 'Too Easy — Finding harder resource', color: 'text-emerald-700 bg-emerald-50 border-emerald-100' },
+  ALREADY_KNOWN:   { icon: '🔁', label: 'Verification requested', color: 'text-purple-700 bg-purple-50 border-purple-100' },
+  REQUEST_FASTER:  { icon: '⚡', label: 'Generating faster path scenarios', color: 'text-blue-700 bg-blue-50 border-blue-100' },
+  REQUEST_LIGHTER: { icon: '🪶', label: 'Creating lighter path simulation', color: 'text-amber-700 bg-amber-50 border-amber-100' },
+  CHANGE_HOURS:    { icon: '⏱', label: 'Updating weekly hours', color: 'text-sky-700 bg-sky-50 border-sky-100' },
+  CHANGE_DEADLINE: { icon: '📅', label: 'Updating deadline', color: 'text-teal-700 bg-teal-50 border-teal-100' },
+  WHY_CHANGED:     { icon: '❓', label: 'Explaining path changes', color: 'text-slate-700 bg-slate-100 border-slate-200' },
+  WHAT_IF:         { icon: '📊', label: 'Running simulation', color: 'text-blue-700 bg-blue-50 border-blue-100' },
 }[intent] || null);
 
 const Chat = () => {
@@ -90,8 +90,7 @@ const Chat = () => {
       }
 
     } catch (err) {
-      // Fallback to general response
-      addMessage('ai', "I'm having trouble connecting to the backend right now. Please make sure the backend server is running on port 8000.");
+      addMessage('ai', "I'm having trouble connecting to the backend right now. Please make sure the backend server is running on port 8001.");
     } finally {
       setLoading(false);
     }
@@ -99,20 +98,20 @@ const Chat = () => {
 
   return (
     <div className="max-w-4xl mx-auto h-[82vh] flex flex-col gap-4">
-      <div>
-        <h1 className="text-3xl font-bold text-gray-900">AI Assistant</h1>
-        <p className="text-sm text-gray-500">Chat to adapt your ML Engineer learning path</p>
+      <div className="flex flex-col gap-1">
+        <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight">AI Assistant</h1>
+        <p className="text-sm text-slate-500">Chat to adapt your ML Engineer learning path</p>
       </div>
 
-      <Card className="flex-grow flex flex-col overflow-hidden p-0 min-h-0">
-        {/* Messages */}
-        <div className="flex-grow overflow-y-auto p-5 space-y-3">
+      <Card className="flex-grow flex flex-col overflow-hidden p-0 min-h-0 border border-slate-200">
+        {/* Messages list */}
+        <div className="flex-grow overflow-y-auto p-5 space-y-4">
           {messages.map((msg) => {
             if (msg.role === 'system') {
               const lbl = intentLabel(msg.intent);
               return (
-                <div key={msg.id} className="flex justify-center">
-                  <span className={`text-xs px-3 py-1.5 rounded-full font-medium ${lbl?.color || 'bg-gray-100 text-gray-600'}`}>
+                <div key={msg.id} className="flex justify-center my-2">
+                  <span className={`text-xs px-3 py-1.5 rounded-full border font-semibold ${lbl?.color || 'bg-slate-100 text-slate-600 border-slate-200'}`}>
                     {msg.text}
                   </span>
                 </div>
@@ -121,18 +120,18 @@ const Chat = () => {
 
             return (
               <div key={msg.id} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
-                <div className={`max-w-[80%] rounded-2xl px-4 py-3 text-sm leading-relaxed ${
+                <div className={`max-w-[75%] rounded-xl px-4 py-3 text-sm leading-relaxed ${
                   msg.role === 'user'
-                    ? 'bg-indigo-600 text-white rounded-br-none'
-                    : 'bg-gray-100 text-gray-800 rounded-bl-none'
+                    ? 'bg-blue-600 text-white rounded-tr-none'
+                    : 'bg-slate-50 border border-slate-150 text-slate-800 rounded-tl-none'
                 }`}>
                   <p className="whitespace-pre-line">{msg.text}</p>
 
                   {/* Show adaptation inline result */}
                   {msg.adaptationResult?.success && msg.adaptationResult.adaptation_type !== 'NO_CHANGE' && (
-                    <div className="mt-2 pt-2 border-t border-gray-200 text-xs">
-                      <span className="text-indigo-600 font-medium">✓ Path updated — </span>
-                      <a href="/path" className="text-indigo-500 underline">View changes</a>
+                    <div className="mt-2.5 pt-2.5 border-t border-slate-200/60 text-xs">
+                      <span className="text-blue-600 font-semibold">✓ Path updated — </span>
+                      <a href="/path" className="text-blue-500 underline font-medium">View changes</a>
                     </div>
                   )}
 
@@ -140,7 +139,7 @@ const Chat = () => {
                   {msg.requiresConfirmation && msg.simulationResult && (
                     <button
                       onClick={() => setShowSimulator(true)}
-                      className="mt-2 block text-xs text-indigo-600 font-medium underline"
+                      className="mt-2.5 block text-xs text-blue-600 font-semibold underline hover:text-blue-700"
                     >
                       📊 Open What-If Simulator →
                     </button>
@@ -152,10 +151,10 @@ const Chat = () => {
 
           {loading && (
             <div className="flex justify-start">
-              <div className="bg-gray-100 rounded-2xl rounded-bl-none px-4 py-3">
-                <div className="flex gap-1">
+              <div className="bg-slate-50 border border-slate-100 rounded-xl rounded-tl-none px-4 py-3">
+                <div className="flex gap-1.5 items-center py-1">
                   {[0,1,2].map(i => (
-                    <div key={i} className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: `${i*0.15}s` }} />
+                    <div key={i} className="w-2 h-2 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: `${i*0.15}s` }} />
                   ))}
                 </div>
               </div>
@@ -164,15 +163,15 @@ const Chat = () => {
           <div ref={bottomRef} />
         </div>
 
-        {/* Quick prompts */}
-        <div className="px-4 py-2 border-t border-gray-100 bg-gray-50">
+        {/* Quick prompts toolbar */}
+        <div className="px-5 py-3 border-t border-slate-100 bg-slate-50/50">
           <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hide">
             {QUICK_PROMPTS.map((prompt) => (
               <button
                 key={prompt}
                 onClick={() => handleSend(prompt)}
                 disabled={loading}
-                className="flex-shrink-0 text-xs px-3 py-1.5 rounded-full border border-gray-200 text-gray-600 bg-white hover:bg-gray-50 hover:border-indigo-300 hover:text-indigo-600 transition-colors"
+                className="flex-shrink-0 text-xs px-3.5 py-2 rounded-full border border-slate-200 text-slate-600 bg-white hover:bg-slate-50 hover:border-blue-300 hover:text-blue-600 transition-colors font-medium cursor-pointer"
               >
                 {prompt}
               </button>
@@ -180,19 +179,24 @@ const Chat = () => {
           </div>
         </div>
 
-        {/* Input */}
-        <div className="p-4 border-t border-gray-200 bg-white">
-          <form onSubmit={(e) => { e.preventDefault(); handleSend(); }} className="flex gap-2">
+        {/* Text Input area */}
+        <div className="p-4 border-t border-slate-200 bg-white">
+          <form onSubmit={(e) => { e.preventDefault(); handleSend(); }} className="flex gap-3">
             <input
               id="chat-input"
               type="text"
-              className="flex-grow border border-gray-200 rounded-full px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:border-indigo-300"
-              placeholder="e.g. 'I only have 5 hours a week now' or 'Make it easier'..."
+              className="flex-grow border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-slate-900"
+              placeholder="Type your message, e.g. 'Make it easier'..."
               value={input}
               onChange={(e) => setInput(e.target.value)}
               disabled={loading}
             />
-            <Button id="chat-send-btn" type="submit" className="rounded-full px-5" disabled={loading}>
+            <Button 
+              id="chat-send-btn" 
+              type="submit" 
+              className="px-6 py-2.5 rounded-lg text-sm font-semibold" 
+              disabled={loading}
+            >
               {loading ? '...' : 'Send'}
             </Button>
           </form>

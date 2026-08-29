@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api.endpoints import router as api_router
 from app.api.adaptive_endpoints import adaptive_router
+from app.api.weekly_updates_router import weekly_updates_router
 
 app = FastAPI(title="VazhiThunAI API", version="1.0")
 
@@ -15,6 +16,7 @@ app.add_middleware(
 
 app.include_router(api_router, prefix="/api/v1")
 app.include_router(adaptive_router, prefix="/api/v1")
+app.include_router(weekly_updates_router, prefix="/api/v1")
 
 @app.get("/")
 def read_root():

@@ -11,6 +11,7 @@ import PitfallCheck from './pages/PitfallCheck';
 import PitfallsPage from './pages/PitfallsPage';
 import AnalyticsPage from './pages/AnalyticsPage';
 import PitfallDetail from './pages/PitfallDetail';
+import WeeklyUpdates from './pages/WeeklyUpdates';
 import ProtectedRoute from './components/common/ProtectedRoute';
 import './App.css';
 
@@ -35,6 +36,7 @@ function App() {
             <Route path="pitfalls/analytics" element={<AnalyticsPage />} />
             <Route path="pitfalls/check/:skillId" element={<PitfallCheck />} />
             <Route path="pitfalls/:pitfallId" element={<PitfallDetail />} />
+            <Route path="weekly-updates" element={<WeeklyUpdates />} />
           </Route>
         </Route>
       </Routes>

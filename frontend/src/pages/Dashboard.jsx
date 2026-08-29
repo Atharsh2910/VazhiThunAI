@@ -34,8 +34,12 @@ const Dashboard = () => {
   const nextAction = adaptiveStatus?.current_item;
 
   return (
-    <div className="space-y-6">
-      <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
+    <div className="space-y-8">
+      {/* Top Greeting */}
+      <div className="flex flex-col gap-1">
+        <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight">Good morning, Learner</h1>
+        <p className="text-slate-500 text-sm">Continue building your career with VazhiThunAI.</p>
+      </div>
 
       {/* ── Top row ── */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -47,61 +51,69 @@ const Dashboard = () => {
         </div>
 
         {/* Next Action */}
-        <Card className="col-span-1">
-          <h2 className="text-base font-semibold mb-3 text-gray-700">▶ Next Action</h2>
-          {nextAction ? (
-            <>
-              <p className="font-semibold text-gray-900 mb-1 text-sm">
-                {nextAction.stage_title || nextAction.title}
-              </p>
-              <p className="text-xs text-gray-500 mb-3">
-                {nextAction.phase} · ~{nextAction.estimated_minutes ? Math.round(nextAction.estimated_minutes / 60) : '?'} hrs
-              </p>
-              <Link to="/path">
-                <Button id="dashboard-resume-btn" className="w-full text-sm">Resume Learning</Button>
-              </Link>
-            </>
-          ) : (
-            <>
-              <p className="text-sm text-gray-500 mb-3">Start your ML Engineer journey</p>
-              <Link to="/path">
-                <Button id="dashboard-start-btn" className="w-full text-sm">View Path</Button>
-              </Link>
-            </>
-          )}
+        <Card className="col-span-1 flex flex-col justify-between h-full">
+          <div>
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4">▶ Recommended Next Step</h2>
+            {nextAction ? (
+              <div className="space-y-2">
+                <p className="font-semibold text-slate-900 text-base leading-snug">
+                  {nextAction.stage_title || nextAction.title}
+                </p>
+                <p className="text-xs text-slate-500">
+                  {nextAction.phase} · ~{nextAction.estimated_minutes ? Math.round(nextAction.estimated_minutes / 60) : '?'} hrs
+                </p>
+              </div>
+            ) : (
+              <div className="space-y-2">
+                <p className="text-sm text-slate-500">Start your ML Engineer journey</p>
+              </div>
+            )}
+          </div>
+          
+          <div className="mt-6">
+            <Link to="/path">
+              <Button id="dashboard-resume-btn" className="w-full text-sm py-2.5">
+                {nextAction ? 'Resume Learning' : 'View Path'}
+              </Button>
+            </Link>
+          </div>
         </Card>
       </div>
 
       {/* ── Middle row: Skill Mastery + Recent Adaptations ── */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Card>
-          <h2 className="text-base font-semibold mb-4 text-gray-700">Skill Mastery</h2>
-          <ul className="space-y-3">
+          <h2 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-5">Skill Mastery</h2>
+          <ul className="space-y-4">
             {[
               { name: 'Python', pct: 80, color: 'bg-emerald-500' },
               { name: 'Statistics', pct: 35, color: 'bg-yellow-500' },
-              { name: 'Machine Learning', pct: 15, color: 'bg-blue-500' },
+              { name: 'Machine Learning', pct: 15, color: 'bg-blue-600' },
             ].map((skill) => (
               <li key={skill.name}>
                 <div className="flex justify-between text-xs mb-1">
-                  <span className="font-medium text-gray-700">{skill.name}</span>
-                  <span className="text-gray-400">{skill.pct}%</span>
+                  <span className="font-semibold text-slate-700">{skill.name}</span>
+                  <span className="text-slate-500 font-medium">{skill.pct}%</span>
                 </div>
-                <div className="w-full bg-gray-100 rounded-full h-1.5">
-                  <div className={`${skill.color} h-1.5 rounded-full transition-all duration-700`} style={{ width: `${skill.pct}%` }} />
+                <div className="w-full bg-slate-100 rounded-full h-2">
+                  <div className={`${skill.color} h-2 rounded-full transition-all duration-700`} style={{ width: `${skill.pct}%` }} />
                 </div>
               </li>
             ))}
           </ul>
         </Card>
 
-        <Card>
-          <h2 className="text-base font-semibold mb-4 text-gray-700">Recent Adaptations</h2>
-          <AdaptationHistory events={adaptiveHistory} compact />
+        <Card className="flex flex-col justify-between">
+          <div>
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4">Recent Adaptations</h2>
+            <AdaptationHistory events={adaptiveHistory} compact />
+          </div>
           {adaptiveHistory.length > 0 && (
-            <Link to="/path" className="block mt-3 text-xs text-indigo-600 hover:text-indigo-700">
-              View full path →
-            </Link>
+            <div className="mt-4 pt-3 border-t border-slate-100">
+              <Link to="/path" className="inline-block text-xs font-semibold text-blue-600 hover:text-blue-700">
+                View full path →
+              </Link>
+            </div>
           )}
         </Card>
       </div>

@@ -182,3 +182,16 @@
     border-right-color: var(--border);
   }
 }
+
+.auth-logo {
+  width: 160px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .auth-logo {
+    width: 200px;
+  }
+}

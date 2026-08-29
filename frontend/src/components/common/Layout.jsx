@@ -1,39 +1,48 @@
-import React from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Outlet } from 'react-router-dom';
+import Sidebar from './Sidebar';
+import { Menu, X } from 'lucide-react';
 
+/**
+ * Layout — sets up the sidebar structure on desktop, hamburger toggle on mobile.
+ */
 const Layout = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
-      <header className="bg-white shadow-sm sticky top-0 z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16 items-center">
-            <div className="flex-shrink-0 flex items-center">
-              <Link to="/" className="text-2xl font-bold text-blue-600">
-                VazhiThunAI
-              </Link>
+    <div className="flex h-screen overflow-hidden bg-slate-50">
+      {/* Sidebar navigation */}
+      <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+
+      {/* Main content wrapper */}
+      <div className="flex flex-1 flex-col overflow-hidden">
+        {/* Top bar for mobile header/toggle */}
+        <header className="flex h-16 items-center justify-between border-b border-slate-200 bg-white px-6 lg:justify-end">
+          <button
+            onClick={() => setSidebarOpen(true)}
+            className="rounded-lg p-1.5 text-slate-500 hover:bg-slate-100 lg:hidden"
+            aria-label="Toggle menu"
+          >
+            <Menu className="h-6 w-6" />
+          </button>
+          
+          <div className="flex items-center gap-3">
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-100 text-sm font-semibold text-slate-600">
+              U
             </div>
-            <nav className="flex space-x-4">
-              <Link to="/dashboard" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Dashboard</Link>
-              <Link to="/path" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Learning Path</Link>
-              <Link to="/pitfalls" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">🧠 Pitfalls</Link>
-              <Link to="/chat" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">💬 AI Assistant</Link>
-            </nav>
-
+            <span className="hidden text-sm font-medium text-slate-700 sm:inline-block">
+              Learner
+            </span>
           </div>
-        </div>
-      </header>
+        </header>
 
-      <main className="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <Outlet />
-      </main>
-
-      <footer className="bg-white border-t border-gray-200 mt-auto">
-        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} VazhiThunAI. All rights reserved.
-          </p>
-        </div>
-      </footer>
+        {/* Scrollable page body */}
+        <main className="flex-1 overflow-y-auto p-6 md:p-8">
+          <div className="mx-auto max-w-5xl">
+            <Outlet />
+          </div>
+        </main>
+      </div>
     </div>
   );
 };

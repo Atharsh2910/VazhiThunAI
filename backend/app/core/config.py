@@ -11,6 +11,8 @@ class Settings(BaseSettings):
     PINECONE_INDEX_NAME: str = "vazhithunai"
     DATABASE_URL: str = "postgresql://postgres:mock-password@db.mock-project.supabase.co:5432/postgres"
 
+    WEEKLY_UPDATES_API_KEY: str = ""
+
     class Config:
         env_file = ".env"
         env_file_encoding = 'utf-8'

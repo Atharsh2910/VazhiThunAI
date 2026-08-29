@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import apiClient from '../api/client';
+import Button from '../components/common/Button';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -29,62 +30,85 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-900 via-purple-900 to-black p-4">
-      <div className="relative w-full max-w-md">
-        {/* Glow effect */}
-        <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-2xl blur opacity-25"></div>
-        
-        <div className="relative bg-white/10 backdrop-blur-xl border border-white/20 p-8 rounded-2xl shadow-2xl">
-          <div className="text-center mb-8">
-            <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-pink-500 mb-2">
-              VazhiThunAI
-            </h1>
-            <p className="text-gray-300">Welcome back! Please enter your details.</p>
+    <div className="min-h-screen flex bg-slate-50">
+      {/* Split Layout: Left side illustration/brand panel (hidden on small devices) */}
+      <div className="hidden lg:flex lg:w-1/2 bg-slate-900 text-white flex-col justify-between p-12 relative overflow-hidden">
+        {/* Subtle geometric grid background pattern */}
+        <div className="absolute inset-0 opacity-5 pointer-events-none">
+          <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
+        </div>
+
+        <div className="z-10">
+          <Link to="/" className="flex items-start">
+            <img src="/vazhithunai-logo.png" alt="VazhiThunAI" className="auth-logo" />
+          </Link>
+        </div>
+
+        <div className="z-10 max-w-md space-y-4 my-auto">
+          <h2 className="text-4xl font-bold leading-tight">Your AI-powered career companion.</h2>
+          <p className="text-slate-400 text-base leading-relaxed">
+            Personalized learning paths, automated pitfall detection, and weekly career intelligence updates curated specifically for your career goals.
+          </p>
+        </div>
+
+        <div className="z-10 text-xs text-slate-500">
+          &copy; {new Date().getFullYear()} VazhiThunAI. All rights reserved.
+        </div>
+      </div>
+
+      {/* Right side form card */}
+      <div className="w-full lg:w-1/2 flex items-center justify-center p-6 sm:p-12 bg-white">
+        <div className="w-full max-w-md space-y-8">
+          <div>
+            <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight">Sign in</h1>
+            <p className="mt-2 text-sm text-slate-500">Enter your details to access your dashboard.</p>
           </div>
 
           {error && (
-            <div className="mb-4 p-3 bg-red-500/20 border border-red-500/50 rounded-lg text-red-200 text-sm">
-              {error}
+            <div className="p-4 bg-red-50/50 border border-red-200 rounded-xl text-red-800 text-sm">
+              ⚠️ {error}
             </div>
           )}
 
           <form onSubmit={handleLogin} className="space-y-6">
             <div>
-              <label className="block text-sm font-medium text-gray-200 mb-2">Email</label>
+              <label className="block text-sm font-semibold text-slate-700 mb-2">Email address</label>
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 rounded-lg border border-slate-200 bg-white text-slate-950 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-sm"
                 placeholder="you@example.com"
                 required
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-200 mb-2">Password</label>
+              <div className="flex items-center justify-between mb-2">
+                <label className="block text-sm font-semibold text-slate-700">Password</label>
+              </div>
               <input
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 rounded-lg border border-slate-200 bg-white text-slate-950 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-sm"
                 placeholder="••••••••"
                 required
               />
             </div>
 
-            <button
+            <Button
               type="submit"
               disabled={isLoading}
-              className="w-full py-3 px-4 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold hover:from-cyan-400 hover:to-blue-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full py-3"
             >
               {isLoading ? 'Signing in...' : 'Sign in'}
-            </button>
+            </Button>
           </form>
 
-          <p className="mt-8 text-center text-sm text-gray-400">
+          <p className="text-center text-sm text-slate-500">
             Don't have an account?{' '}
-            <Link to="/register" className="font-medium text-cyan-400 hover:text-cyan-300 transition-colors">
+            <Link to="/register" className="font-semibold text-blue-600 hover:text-blue-500 transition-colors">
               Sign up
             </Link>
           </p>
