@@ -298,3 +298,56 @@ class PitfallAttempt(Base):
     timestamp = Column(DateTime, default=datetime.utcnow)
 
     question = relationship("PitfallQuestion", back_populates="attempts")
+
+
+# ─────────────────────────────────────────────────
+# Adaptive Learning Path / Replanning Engine Models
+# ─────────────────────────────────────────────────
+
+class AdaptationEvent(Base):
+    """Immutable audit log of every adaptation made to a learner's path."""
+    __tablename__ = "adaptation_events"
+
+    event_id = Column(String, primary_key=True, index=True)
+    learner_id = Column(String, ForeignKey("learners.learner_id"), nullable=False)
+    event_type = Column(String, nullable=False)   # RESOURCE_REPLACED | REMEDIATION_INSERTED | PATH_REPLANNED | ITEM_SKIPPED | HOURS_UPDATED | DEADLINE_UPDATED
+    trigger = Column(String, nullable=False)       # TOO_HARD | TOO_EASY | ALREADY_KNOWN | KNOWLEDGE_GAP | MISCONCEPTION | FALLING_BEHIND | HOURS_CHANGE | DEADLINE_CHANGE | FASTER_PATH | LIGHTER_PATH
+    affected_item_id = Column(String, nullable=True)       # path_item_id
+    old_resource_id = Column(String, nullable=True)
+    new_resource_id = Column(String, nullable=True)
+    old_path_snapshot = Column(JSON, nullable=True)        # serialized list of path item ids before change
+    new_path_snapshot = Column(JSON, nullable=True)        # serialized list of path item ids after change
+    reason = Column(Text, nullable=True)                   # structured reason string
+    explanation = Column(Text, nullable=True)              # human-readable explanation (from LLM or deterministic)
+    timestamp = Column(DateTime, default=datetime.utcnow)
+
+
+class AdaptivePathState(Base):
+    """
+    Live per-learner adaptive state for the ML Engineer path.
+    Stores the path as a JSON array of path item descriptors so we can
+    reconstruct both the current path and its history without losing data.
+    """
+    __tablename__ = "adaptive_path_states"
+
+    state_id = Column(String, primary_key=True, index=True)
+    learner_id = Column(String, ForeignKey("learners.learner_id"), nullable=False, unique=True)
+    # Current path: JSON list of dicts with keys:
+    #   id, title, skill_id, skill_name, resource_id, sequence_order,
+    #   status, estimated_minutes, required, phase, item_type
+    #   item_type: 'resource' | 'remediation' | 'verification' | 'project'
+    current_path = Column(JSON, nullable=False, default=list)
+    # Settings
+    weekly_hours = Column(Float, default=8.0)
+    deadline_weeks = Column(Float, default=20.0)
+    # Progress tracking
+    total_hours_logged = Column(Float, default=0.0)
+    current_item_index = Column(Integer, default=0)
+    # Computed fields updated on every adaptation
+    remaining_hours = Column(Float, default=0.0)
+    projected_completion_weeks = Column(Float, default=0.0)
+    is_on_track = Column(Boolean, default=True)
+    # Version counter for optimistic concurrency
+    version = Column(Integer, default=1)
+    created_at = Column(DateTime, default=datetime.utcnow)
+    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
