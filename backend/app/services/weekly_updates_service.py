@@ -27,6 +27,8 @@ from typing import List, Dict, Any, Optional
 from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 
+from app.core.config import settings
+
 logger = logging.getLogger(__name__)
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -203,7 +205,7 @@ def _get_llm() -> Optional[ChatGroq]:
     global _llm
     if _llm is not None:
         return _llm
-    groq_key = os.getenv("GROQ_API_KEY", "")
+    groq_key = settings.GROQ_API_KEY
     if not groq_key or groq_key.startswith("mock"):
         return None
     try:
@@ -299,8 +301,8 @@ def get_weekly_updates(career_path: str, max_updates: int = 7) -> Dict[str, Any]
             return entry["data"]
 
     # ── Validate API key ───────────────────────────────────────────────────
-    api_key = os.getenv("WEEKLY_UPDATES_API_KEY", "")
-    if not api_key:
+    api_key = settings.WEEKLY_UPDATES_API_KEY
+    if not api_key or api_key.startswith("mock"):
         raise RuntimeError(
             "WEEKLY_UPDATES_API_KEY is not configured. "
             "Weekly updates are temporarily unavailable."
