@@ -94,4 +94,13 @@ export const adaptiveApi = {
       current_item_id: currentItemId,
       history,
     }),
+
+  // Omniscient general chat (reads full learner state from DB)
+  generalChat: (learnerId, userMessage, history = []) =>
+    apiClient.post('/chat', {
+      learner_id: learnerId,
+      user_message: userMessage,
+      session_id: 'default_session',
+      history,
+    }),
 };
