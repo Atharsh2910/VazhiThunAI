@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { 
   LayoutDashboard, 
@@ -6,7 +6,10 @@ import {
   MessageSquare, 
   Newspaper, 
   Brain, 
-  LogOut 
+  LogOut,
+  Sun,
+  Moon,
+  User
 } from 'lucide-react';
 
 const navigation = [
@@ -24,11 +27,29 @@ const navigation = [
       { name: 'Weekly Updates', path: '/weekly-updates', icon: Newspaper },
       { name: 'Pitfalls', path: '/pitfalls', icon: Brain },
     ]
+  },
+  {
+    title: 'ACCOUNT',
+    items: [
+      { name: 'My Profile', path: '/profile', icon: User },
+    ]
   }
 ];
 
 const Sidebar = ({ isOpen, onClose }) => {
   const navigate = useNavigate();
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+
+  const toggleTheme = () => {
+    const nextTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(nextTheme);
+    localStorage.setItem('theme', nextTheme);
+    if (nextTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  };
 
   const handleLogout = () => {
     localStorage.removeItem('token');
@@ -94,11 +115,28 @@ const Sidebar = ({ isOpen, onClose }) => {
           ))}
         </nav>
 
-        {/* Footer Area with Logout */}
-        <div className="border-t border-slate-100 p-4">
+        {/* Footer Area with Theme Toggle & Logout */}
+        <div className="border-t border-slate-100 p-4 space-y-1">
+          <button
+            onClick={toggleTheme}
+            className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors cursor-pointer"
+          >
+            {theme === 'dark' ? (
+              <>
+                <Sun className="h-4 w-4 flex-shrink-0 text-slate-400" />
+                Light Mode
+              </>
+            ) : (
+              <>
+                <Moon className="h-4 w-4 flex-shrink-0 text-slate-400" />
+                Dark Mode
+              </>
+            )}
+          </button>
+          
           <button
             onClick={handleLogout}
-            className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-red-50 hover:text-red-600 transition-colors"
+            className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-red-50 hover:text-red-600 transition-colors cursor-pointer"
           >
             <LogOut className="h-4 w-4 flex-shrink-0" />
             Logout

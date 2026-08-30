@@ -12,10 +12,20 @@ import PitfallsPage from './pages/PitfallsPage';
 import AnalyticsPage from './pages/AnalyticsPage';
 import PitfallDetail from './pages/PitfallDetail';
 import WeeklyUpdates from './pages/WeeklyUpdates';
+import Profile from './pages/Profile';
 import ProtectedRoute from './components/common/ProtectedRoute';
 import './App.css';
 
 function App() {
+  React.useEffect(() => {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, []);
+
   return (
     <BrowserRouter>
       <Routes>
@@ -37,6 +47,7 @@ function App() {
             <Route path="pitfalls/check/:skillId" element={<PitfallCheck />} />
             <Route path="pitfalls/:pitfallId" element={<PitfallDetail />} />
             <Route path="weekly-updates" element={<WeeklyUpdates />} />
+            <Route path="profile" element={<Profile />} />
           </Route>
         </Route>
       </Routes>
