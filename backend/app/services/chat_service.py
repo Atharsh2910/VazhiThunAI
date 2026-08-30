@@ -4,10 +4,12 @@ from typing import Dict, Any, List, Optional
 from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 from app.retrieval.pinecone_client import pinecone_client
-from sentence_transformers import SentenceTransformer
 
 try:
+    from sentence_transformers import SentenceTransformer
     embedding_model = SentenceTransformer('intfloat/multilingual-e5-large')
+except ImportError:
+    embedding_model = None
 except Exception:
     embedding_model = None
 

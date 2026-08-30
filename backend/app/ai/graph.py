@@ -13,11 +13,13 @@ from app.ai.prompts.templates import (
 from app.retrieval.pinecone_client import pinecone_client
 from app.services.recommendation import recommendation_engine
 from app.planning.planner import optimize_learning_path
-from sentence_transformers import SentenceTransformer
 
 # Initialize Embedding Model (used for Pinecone retrieval)
 try:
+    from sentence_transformers import SentenceTransformer
     embedding_model = SentenceTransformer('intfloat/multilingual-e5-large')
+except ImportError:
+    embedding_model = None
 except Exception:
     embedding_model = None
 
