@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* ─── Design Tokens ─────────────────────────────────────────── */
 :root {
   /* Brand */
@@ -11,16 +13,18 @@
   --color-orange:    #F97316;
   --color-orange-bg: #FFF7ED;
 
-  /* Neutrals */
-  --color-bg:        #F8FAFC;
-  --color-surface:   #FFFFFF;
-  --color-border:    #E2E8F0;
-  --color-border-focus: #2563EB;
-
-  /* Text */
-  --color-text-primary:   #0F172A;
-  --color-text-secondary: #64748B;
-  --color-text-muted:     #94A3B8;
+  /* Theme variables for light mode */
+  --theme-bg-light: #F8FAFC;
+  --theme-bg-medium: #F1F5F9;
+  --theme-surface: #FFFFFF;
+  --theme-border: #E2E8F0;
+  --theme-border-medium: #CBD5E1;
+  --theme-text-primary: #0F172A;
+  --theme-text-primary-alt: #1E293B;
+  --theme-text-secondary: #475569;
+  --theme-text-secondary-alt: #334155;
+  --theme-text-muted: #94A3B8;
+  --theme-text-muted-alt: #64748B;
 
   /* Status */
   --color-success:   #16A34A;
@@ -37,6 +41,52 @@
   --radius-xl:  16px;
   --shadow-sm:  0 1px 3px 0 rgb(0 0 0 / 0.07), 0 1px 2px -1px rgb(0 0 0 / 0.07);
   --shadow-md:  0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.07);
+}
+
+.dark {
+  /* Brand override in dark mode */
+  --color-navy:      #F8FAFC;
+  --color-blue-light:#1E293B;
+
+  /* Theme variables for dark mode */
+  --theme-bg-light: #0B0F19;
+  --theme-bg-medium: #1F2937;
+  --theme-surface: #111827;
+  --theme-border: #1F2937;
+  --theme-border-medium: #374151;
+  --theme-text-primary: #F9FAFB;
+  --theme-text-primary-alt: #F3F4F6;
+  --theme-text-secondary: #E5E7EB;
+  --theme-text-secondary-alt: #D1D5DB;
+  --theme-text-muted: #6B7280;
+  --theme-text-muted-alt: #9CA3AF;
+}
+
+/* Override tailwind theme colors dynamically */
+@theme {
+  --color-slate-50: var(--theme-bg-light);
+  --color-white: var(--theme-surface);
+  --color-slate-100: var(--theme-bg-medium);
+  --color-slate-200: var(--theme-border);
+  --color-slate-300: var(--theme-border-medium);
+  --color-slate-400: var(--theme-text-muted);
+  --color-slate-500: var(--theme-text-muted-alt);
+  --color-slate-650: var(--theme-border-subtle);
+  --color-slate-600: var(--theme-text-secondary);
+  --color-slate-700: var(--theme-text-secondary-alt);
+  --color-slate-800: var(--theme-text-primary-alt);
+  --color-slate-900: var(--theme-text-primary);
+
+  --color-gray-50: var(--theme-bg-light);
+  --color-gray-100: var(--theme-bg-medium);
+  --color-gray-200: var(--theme-border);
+  --color-gray-300: var(--theme-border-medium);
+  --color-gray-400: var(--theme-text-muted);
+  --color-gray-500: var(--theme-text-muted-alt);
+  --color-gray-600: var(--theme-text-secondary);
+  --color-gray-700: var(--theme-text-secondary-alt);
+  --color-gray-800: var(--theme-text-primary-alt);
+  --color-gray-900: var(--theme-text-primary);
 }
 
 /* ─── Base ──────────────────────────────────────────────────── */

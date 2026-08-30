@@ -1,5 +1,5 @@
-from fastapi import APIRouter, HTTPException, Depends
-from typing import Dict, Any, List
+from fastapi import APIRouter, HTTPException, Depends, Header
+from typing import Dict, Any, List, Optional
 from pydantic import BaseModel
 import uuid
 from sqlalchemy.orm import Session
@@ -29,6 +29,23 @@ class RegisterRequest(BaseModel):
 class LoginRequest(BaseModel):
     email: str
     password: str
+
+def get_current_user_id(authorization: Optional[str] = Header(None)) -> str:
+    if authorization and authorization.startswith("Bearer hackathon_token_"):
+        return authorization.replace("Bearer hackathon_token_", "").strip()
+    return "user1"
+
+class ProfileUpdateRequest(BaseModel):
+    display_name: Optional[str] = None
+    bio: Optional[str] = None
+    career_goal: Optional[str] = None
+    career_path: Optional[str] = None
+    current_level: Optional[str] = None
+    github_url: Optional[str] = None
+    linkedin_url: Optional[str] = None
+    leetcode_url: Optional[str] = None
+    skills: Optional[List[str]] = None
+    avatar: Optional[str] = None
 
 # 17.1 Authentication
 @router.post("/auth/register", response_model=APIResponse[Dict[str, Any]])
@@ -105,20 +122,111 @@ def auth_logout():
     return APIResponse(success=True, data={"status": "logged_out"}, meta=MetaResponse(request_id=str(uuid.uuid4())))
 
 @router.get("/auth/me", response_model=APIResponse[Dict[str, Any]])
-def auth_me():
-    return APIResponse(success=True, data={"id": "user1", "email": "test@test.com"}, meta=MetaResponse(request_id=str(uuid.uuid4())))
+def auth_me(authorization: Optional[str] = Header(None), db: Session = Depends(get_db)):
+    user_id = get_current_user_id(authorization)
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        return APIResponse(success=True, data={"id": "user1", "email": "test@test.com"}, meta=MetaResponse(request_id=str(uuid.uuid4())))
+    return APIResponse(success=True, data={"id": user.id, "email": user.email, "display_name": user.display_name}, meta=MetaResponse(request_id=str(uuid.uuid4())))
 
 # 17.2 Learner
 @router.get("/learners/me", response_model=APIResponse[Dict[str, Any]])
-def get_learner_profile_endpoint(db: Session = Depends(get_db)):
-    # Assuming user_id is extracted from a verified token, for now hardcoding to "user1"
-    profile = get_learner_profile(db, "user1")
+def get_learner_profile_endpoint(db: Session = Depends(get_db), authorization: Optional[str] = Header(None)):
+    user_id = get_current_user_id(authorization)
+    profile = get_learner_profile(db, user_id)
+    
     if not profile:
-        raise HTTPException(status_code=404, detail="Profile not found")
-    return APIResponse(success=True, data={"id": profile.id, "user_id": profile.user_id}, meta=MetaResponse(request_id=str(uuid.uuid4())))
+        user = db.query(User).filter(User.id == user_id).first()
+        if not user:
+            raise HTTPException(status_code=404, detail="User not found")
+        
+        # Create a new profile on-the-fly for newly registered users
+        profile = LearnerProfile(
+            id=str(uuid.uuid4()),
+            user_id=user_id,
+            learning_preferences={}
+        )
+        db.add(profile)
+        db.commit()
+        db.refresh(profile)
+
+    user = db.query(User).filter(User.id == user_id).first()
+    display_name = user.display_name if user else "Learner"
+    email = user.email if user else ""
+    
+    prefs = profile.learning_preferences or {}
+    if not isinstance(prefs, dict):
+        prefs = {}
+
+    return APIResponse(
+        success=True, 
+        data={
+            "id": profile.id, 
+            "user_id": profile.user_id,
+            "display_name": display_name,
+            "email": email,
+            "education": profile.education,
+            "current_role": profile.current_role,
+            "experience_years": profile.experience_years,
+            "weekly_hours": profile.weekly_hours,
+            "bio": prefs.get("bio", ""),
+            "career_goal": prefs.get("career_goal", ""),
+            "career_path": prefs.get("career_path", ""),
+            "current_level": prefs.get("current_level", ""),
+            "github_url": prefs.get("github_url", ""),
+            "linkedin_url": prefs.get("linkedin_url", ""),
+            "leetcode_url": prefs.get("leetcode_url", ""),
+            "skills": prefs.get("skills", []),
+            "avatar": prefs.get("avatar", ""),
+        }, 
+        meta=MetaResponse(request_id=str(uuid.uuid4()))
+    )
 
 @router.patch("/learners/me", response_model=APIResponse[Dict[str, Any]])
-def update_learner_profile_endpoint(db: Session = Depends(get_db)):
+def update_learner_profile_endpoint(
+    request: ProfileUpdateRequest, 
+    db: Session = Depends(get_db), 
+    authorization: Optional[str] = Header(None)
+):
+    user_id = get_current_user_id(authorization)
+    profile = get_learner_profile(db, user_id)
+    if not profile:
+        raise HTTPException(status_code=404, detail="Profile not found")
+        
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    if request.display_name is not None:
+        user.display_name = request.display_name
+
+    prefs = dict(profile.learning_preferences) if profile.learning_preferences else {}
+
+    if request.bio is not None:
+        prefs["bio"] = request.bio
+    if request.career_goal is not None:
+        prefs["career_goal"] = request.career_goal
+    if request.career_path is not None:
+        prefs["career_path"] = request.career_path
+    if request.current_level is not None:
+        prefs["current_level"] = request.current_level
+    if request.github_url is not None:
+        prefs["github_url"] = request.github_url
+    if request.linkedin_url is not None:
+        prefs["linkedin_url"] = request.linkedin_url
+    if request.leetcode_url is not None:
+        prefs["leetcode_url"] = request.leetcode_url
+    if request.skills is not None:
+        prefs["skills"] = request.skills
+    if request.avatar is not None:
+        prefs["avatar"] = request.avatar
+
+    profile.learning_preferences = prefs
+    
+    if request.career_path is not None:
+        profile.current_role = request.career_path
+
+    db.commit()
     return APIResponse(success=True, data={"status": "updated"}, meta=MetaResponse(request_id=str(uuid.uuid4())))
 
 @router.get("/learners/me/skills", response_model=APIResponse[Dict[str, Any]])
