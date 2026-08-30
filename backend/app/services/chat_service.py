@@ -4,14 +4,7 @@ from typing import Dict, Any, List, Optional
 from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 from app.retrieval.pinecone_client import pinecone_client
-
-try:
-    from sentence_transformers import SentenceTransformer
-    embedding_model = SentenceTransformer('intfloat/multilingual-e5-large')
-except ImportError:
-    embedding_model = None
-except Exception:
-    embedding_model = None
+from app.services.embedding_service import get_embedding
 
 # Static knowledge about the VazhiThunAI website — injected into every prompt
 WEBSITE_GUIDE = """
@@ -66,10 +59,7 @@ class ChatService:
         )
 
     def generate_embedding(self, text: str) -> List[float]:
-        if embedding_model:
-            # e5 models require "query: " prefix for asymmetric search
-            return embedding_model.encode(f"query: {text}").tolist()
-        return [0.1] * 1024
+        return get_embedding(text)
 
     def _fmt(self, data: Any, fallback: str = "None") -> str:
         """Safely format any data to a compact, readable string."""

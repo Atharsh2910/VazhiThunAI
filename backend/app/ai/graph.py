@@ -13,15 +13,7 @@ from app.ai.prompts.templates import (
 from app.retrieval.pinecone_client import pinecone_client
 from app.services.recommendation import recommendation_engine
 from app.planning.planner import optimize_learning_path
-
-# Initialize Embedding Model (used for Pinecone retrieval)
-try:
-    from sentence_transformers import SentenceTransformer
-    embedding_model = SentenceTransformer('intfloat/multilingual-e5-large')
-except ImportError:
-    embedding_model = None
-except Exception:
-    embedding_model = None
+from app.services.embedding_service import get_embedding
 
 # Initialize Groq LLM
 llm = ChatGroq(
@@ -93,11 +85,10 @@ def skill_graph_retrieval(state: LearnerState) -> LearnerState:
     target_skills = goal.get("target_skills", [])
     skill_context = []
     
-    if target_skills and embedding_model:
-        # Use real embedding for target skills
+    if target_skills:
+        # Use real embedding for target skills via HuggingFace API
         query_text = " ".join(target_skills)
-        # e5 models require "query: " prefix for asymmetric search
-        query_embedding = embedding_model.encode(f"query: {query_text}").tolist()
+        query_embedding = get_embedding(query_text)
         
         docs = pinecone_client.query_vectors(vector=query_embedding, top_k=5, namespace="skills")
         if "matches" in docs:
@@ -121,10 +112,10 @@ def candidate_retrieval(state: LearnerState) -> LearnerState:
     gaps = state.get("skill_gaps", [])
     retrieved_resources = []
     
-    if gaps and gaps[0].get("missing_skills") and embedding_model:
-        # Use real embedding for missing skills
+    if gaps and gaps[0].get("missing_skills"):
+        # Use real embedding for missing skills via HuggingFace API
         query_text = " ".join(gaps[0]["missing_skills"])
-        query_embedding = embedding_model.encode(f"query: {query_text}").tolist()
+        query_embedding = get_embedding(query_text)
         
         docs = pinecone_client.query_vectors(vector=query_embedding, top_k=10, namespace="resources")
         if "matches" in docs:
