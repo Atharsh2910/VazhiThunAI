@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Card from '../components/common/Card';
 import Button from '../components/common/Button';
 import PitfallDashboard from '../components/pitfalls/PitfallDashboard';
@@ -7,6 +7,7 @@ import AdaptiveStatusCard from '../components/adaptive/AdaptiveStatusCard';
 import AdaptationHistory from '../components/adaptive/AdaptationHistory';
 import WhatIfSimulator from '../components/adaptive/WhatIfSimulator';
 import { adaptiveApi } from '../api/adaptive';
+import { profileApi } from '../api/profile';
 
 const DEMO_LEARNER_ID = 'LRN0001';
 
@@ -14,22 +15,31 @@ const Dashboard = () => {
   const [adaptiveStatus, setAdaptiveStatus] = useState(null);
   const [adaptiveHistory, setAdaptiveHistory] = useState([]);
   const [showSimulator, setShowSimulator] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const load = async () => {
       try {
+        const profileRes = await profileApi.getProfile();
+        const profileData = profileRes.data?.data;
+        
+        if (!profileData?.career_goal || !profileData?.career_path) {
+          navigate('/onboarding');
+          return;
+        }
+
         const [statusRes, histRes] = await Promise.all([
           adaptiveApi.getStatus(DEMO_LEARNER_ID),
           adaptiveApi.getHistory(DEMO_LEARNER_ID, 5),
         ]);
         setAdaptiveStatus(statusRes.data?.data);
         setAdaptiveHistory(histRes.data?.data?.events || []);
-      } catch (_) {
-        // Backend offline — graceful degradation
+      } catch (err) {
+        console.error('Dashboard load failed:', err);
       }
     };
     load();
-  }, []);
+  }, [navigate]);
 
   const nextAction = adaptiveStatus?.current_item;
 

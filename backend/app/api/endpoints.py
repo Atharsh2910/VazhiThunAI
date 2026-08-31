@@ -189,13 +189,20 @@ def update_learner_profile_endpoint(
     authorization: Optional[str] = Header(None)
 ):
     user_id = get_current_user_id(authorization)
-    profile = get_learner_profile(db, user_id)
-    if not profile:
-        raise HTTPException(status_code=404, detail="Profile not found")
-        
+    
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
+        
+    profile = get_learner_profile(db, user_id)
+    if not profile:
+        profile = LearnerProfile(
+            id=str(uuid.uuid4()),
+            user_id=user_id,
+            learning_preferences={}
+        )
+        db.add(profile)
+        db.flush()
 
     if request.display_name is not None:
         user.display_name = request.display_name

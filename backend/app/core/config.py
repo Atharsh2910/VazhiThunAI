@@ -11,6 +11,7 @@ class Settings(BaseSettings):
     PINECONE_ENVIRONMENT: str = "mock-env"
     PINECONE_INDEX_NAME: str = "vazhithunai"
     DATABASE_URL: str = "postgresql://postgres:mock-password@db.mock-project.supabase.co:5432/postgres"
+    HF_API_TOKEN: str = "mock-hf-token"
 
     WEEKLY_UPDATES_API_KEY: str = ""
 
